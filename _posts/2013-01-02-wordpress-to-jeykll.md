@@ -23,8 +23,11 @@ categories: []
 * 了解一下很赞的[makrdown语法](http://wowubuntu.com/markdown/)（todo）
 * 顶级域名的绑定（todo）
 * 如果希望让一些文章为草稿，在首页不显示，但是可以通过url访问，可以参考[这个问答](https://gist.github.com/2870636)
+* 如果希望初次加载50篇文章，滚动异步加载更多文章，可以参考[用jekyll和jQuery实现异步加载文章列表](http://yanping.me/cn/blog/2012/10/10/asynchronous-loading-post-list-with-jekyll-and-jQuery/)
+* 除了利用github自带的jekyll实现静态页，还可以自己下载本机生成站点，参考 [bloggering like a hacker](http://tom.preston-werner.com/2008/11/17/blogging-like-a-hacker.html)
 
 
+最后，这整个博客都是开源的，我的样式、模板、都可以直接使用，但文章内容和图片内容保留版权，请不要无良复制。
 
 
 

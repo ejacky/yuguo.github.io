@@ -141,10 +141,7 @@
   ---------------------------------------------------------------------------------------------------------- */
   
   body.blog div.content > ol li:first-child   { padding-top:0; }
-  li.yearly-archive span.data                    { color:rgba(0,0,0,0.3); display:block; }
-  li.yearly-archive h2 + p                    { padding-bottom:0.5em; }
-  li.yearly-archive h2 + p a                  { color:#333; }
-  li.yearly-archive h2 + p a:hover            { color:#9c6; }
+  .yearly-archive span.data                    { color:rgba(0,0,0,0.3); display:block; }
   
   /* ---------------------------------------------------------------------------------------------------------- 
   11 Media Queries (using a mobile-first approach) ------------------------------------------------------------
