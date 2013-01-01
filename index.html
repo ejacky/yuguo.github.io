@@ -5,8 +5,8 @@ title: Yuguo Blog
 <ol class="yearly-archive">
 
 　　{% for post in site.posts %}
-		{% assign year = {{post.date | date: "%Y"}} %}
-		{% if year contains '2012' post.draft == null %}
+		{% capture year %}{{post.date | date: "%Y"}} {% endcapture %}
+		{% if year == '2012' post.draft == null %}
 	　　　　	<li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a><span class='date'>{{post.date | date: "%m月 %d日"}}{{year}} </span></li>
   		{% endif %}
 	{% endfor %}
