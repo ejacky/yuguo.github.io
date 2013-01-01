@@ -6,7 +6,7 @@ title: Yuguo Blog
 
 　　{% for post in site.posts %}
 		{% if {{post.date | date: "%Y"}} == 2012 and post.draft == null %}
-	　　　　	<li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a><span class='date'>{{post.date | date: "%m月 %d日"}} </span>{{post.date | date: "%Y"}}</li>
+	　　　　	<li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a><span class='date'>{{post.date | date: "%m月 %d日"}} </span>{{{post.date | date: "%Y"}} == 2012}</li>
   		{% endif %}
 	{% endfor %}
 </ol>
