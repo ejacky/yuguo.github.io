@@ -168,15 +168,7 @@
     header nav ul               { padding:2em 0 3em 0; }
     header nav ul li            { display:block; padding:0; }
         
-    div.content h2,
-    div.content h3,
-    div.content h4,
-    div.content p,
-    div.content ol,
-    article ul,
-    article ol,
-    pre,
-    blockquote                  { padding-left:5%; }
+    div.content                { padding-left:5%; }
     form input,
     form textarea               { margin-left:5%; }
     div.content blockquote p    { padding-left:1em; }
@@ -198,15 +190,7 @@
     
     h2#art-direction            { padding-left:15%; }
 
-    div.content h2,
-    div.content h3,
-    div.content h4,
-    div.content p,
-    div.content ol,
-    article ul,
-    article ol,
-    pre,
-    blockquote                  { padding-left:28.787%; /* 190 / 660 = 0.28787 */ }
+    div.content { padding-left:28.787%; /* 190 / 660 = 0.28787 */ }
     form input,
     form textarea               { margin-left:28.787%; /* 190 / 660 = 0.28787 */ width:71%; }
     
