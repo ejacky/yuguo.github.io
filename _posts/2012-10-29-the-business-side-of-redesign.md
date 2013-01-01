@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: 《众妙之门3》——第一章：重新设计的商业思考
 date: 2012-10-29 13:01
 comments: true

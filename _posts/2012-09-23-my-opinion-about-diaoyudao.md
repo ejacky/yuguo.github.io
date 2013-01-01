@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: 你就是那个被利用的
 date: 2012-09-23 11:04
 comments: true

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: 众妙之门——The Smashing Book
 date: 2011-11-25 19:46
 comments: true

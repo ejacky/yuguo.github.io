@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: 为什么星座不科学却那么多人信？
 date: 2010-11-19 13:11
 comments: true

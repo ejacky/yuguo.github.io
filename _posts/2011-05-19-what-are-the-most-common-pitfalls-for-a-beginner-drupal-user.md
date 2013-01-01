@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: 学习Drupal的一些误区
 date: 2011-05-19 22:06
 comments: true

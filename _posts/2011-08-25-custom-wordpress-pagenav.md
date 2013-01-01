@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: 自定义wordpress翻页
 date: 2011-08-25 11:23
 comments: true

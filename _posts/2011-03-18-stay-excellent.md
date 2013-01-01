@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: 优秀的人就应该在优秀的地方
 date: 2011-03-18 12:48
 comments: true

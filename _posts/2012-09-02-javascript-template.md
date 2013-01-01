@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: JavaScript模板入门
 date: 2012-09-02 17:49
 comments: true

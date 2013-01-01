@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: Windows8 UI给web设计的启示
 date: 2011-10-24 18:02
 comments: true

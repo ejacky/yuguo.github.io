@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: 从wordpress迁移到Drupal
 date: 2011-01-28 01:00
 comments: true

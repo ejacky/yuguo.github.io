@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: css框架[2]-YUI
 date: 2010-09-07 21:10
 comments: true

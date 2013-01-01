@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: CodeIgniter简介
 date: 2012-04-18 20:59
 comments: true

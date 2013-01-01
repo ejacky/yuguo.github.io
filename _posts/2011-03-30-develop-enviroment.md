@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: 折腾开发环境
 date: 2011-03-30 17:55
 comments: true

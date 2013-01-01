@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: 小传单设计最容易犯的错
 date: 2011-09-06 14:29
 comments: true

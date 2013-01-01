@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: Custom Post Types
 date: 2011-08-19 11:23
 comments: true

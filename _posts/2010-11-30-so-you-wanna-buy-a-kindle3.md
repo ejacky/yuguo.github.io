@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: 你想买kindle3吗
 date: 2010-11-30 00:43
 comments: true

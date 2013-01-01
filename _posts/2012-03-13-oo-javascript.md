@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: JavaScript中的面向对象函数
 date: 2012-03-13 13:29
 comments: true

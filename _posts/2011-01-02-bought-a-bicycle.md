@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: 买了单车
 date: 2011-01-02 01:58
 comments: true

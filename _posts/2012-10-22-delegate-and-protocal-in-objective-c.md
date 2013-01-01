@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: Objective-C中的“委托（delegate）”和“协议（protocal）”
 date: 2012-10-22 13:01
 comments: true

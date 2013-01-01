@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: 不患莫己知，求为可知也
 date: 2011-08-04 12:25
 comments: true

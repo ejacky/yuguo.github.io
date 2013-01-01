@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: 写一本书
 date: 2011-03-04 20:51
 comments: true

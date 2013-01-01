@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: 租房子时要注意的几点
 date: 2011-02-14 13:50
 comments: true

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: 学习iOS开发——一些经验
 date: 2012-10-14 01:13
 comments: true

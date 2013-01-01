@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: css框架研究
 date: 2010-09-11 11:25
 comments: true

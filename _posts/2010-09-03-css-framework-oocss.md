@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: css框架[1]-oocss
 date: 2010-09-03 17:16
 comments: true

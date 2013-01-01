@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: 关于JPEG压缩优化的一点趣事
 date: 2012-03-30 18:37
 comments: true

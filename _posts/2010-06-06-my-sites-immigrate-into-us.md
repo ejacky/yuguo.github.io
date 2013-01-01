@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: 看来我的博客比我本人还早一点移民美国
 date: 2010-06-06 23:37
 comments: true

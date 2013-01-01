@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: 网站设计评审
 date: 2011-12-19 09:12
 comments: true

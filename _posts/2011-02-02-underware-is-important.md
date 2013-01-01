@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: 内衣很重要
 date: 2011-02-02 00:21
 comments: true

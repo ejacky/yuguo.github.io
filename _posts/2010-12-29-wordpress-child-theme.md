@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: wordpress子主题
 date: 2010-12-29 13:33
 comments: true

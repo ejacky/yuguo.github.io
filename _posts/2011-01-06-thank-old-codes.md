@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: 感谢老代码
 date: 2011-01-06 02:37
 comments: true

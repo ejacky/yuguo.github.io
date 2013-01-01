@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: 圣巴特里爵主教座堂
 date: 2011-10-05 03:11
 comments: true

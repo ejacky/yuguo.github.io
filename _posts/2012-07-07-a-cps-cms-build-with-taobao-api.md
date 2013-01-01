@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: 利用淘宝API构建淘宝客自动发布系统
 date: 2012-07-07 15:03
 comments: true

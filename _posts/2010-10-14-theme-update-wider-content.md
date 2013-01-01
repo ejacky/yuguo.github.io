@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: 主题更新：更宽的图片
 date: 2010-10-14 20:20
 comments: true

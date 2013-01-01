@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: 真烦论文
 date: 2010-06-08 18:21
 comments: true

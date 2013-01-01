@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: 权力距离指数
 date: 2011-06-23 00:42
 comments: true

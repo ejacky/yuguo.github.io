@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: 如何正确地批评
 date: 2010-11-14 22:34
 comments: true

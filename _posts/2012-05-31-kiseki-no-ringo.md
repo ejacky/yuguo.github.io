@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: 农业的未来？——读《这一生，至少当一次傻瓜》
 date: 2012-05-31 09:43
 comments: true

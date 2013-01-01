@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: EmEditor代码片段插件介绍
 date: 2010-08-29 02:26
 comments: true

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: 加强个人能力以避免沟通成本
 date: 2011-02-12 17:47
 comments: true

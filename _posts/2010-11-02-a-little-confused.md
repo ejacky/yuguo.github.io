@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: 其实我有点困惑
 date: 2010-11-02 16:32
 comments: true

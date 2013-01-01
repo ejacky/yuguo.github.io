@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: Less, bootstrap and more
 date: 2011-09-09 12:38
 comments: true

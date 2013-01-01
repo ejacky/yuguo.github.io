@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: 行动力是方法，而不是性格
 date: 2012-06-25 19:42
 comments: true

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: 知识管理和沉淀
 date: 2010-12-25 17:45
 comments: true

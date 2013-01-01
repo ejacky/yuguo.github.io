@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: 什么样的WordPress主题有利于SEO？
 date: 2012-06-18 11:30
 comments: true

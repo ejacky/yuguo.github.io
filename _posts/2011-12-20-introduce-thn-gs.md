@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: 介绍thn.gs
 date: 2011-12-20 20:53
 comments: true

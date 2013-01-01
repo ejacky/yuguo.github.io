@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: 在已有词汇的基础上派生出新的语义是极大的罪恶
 date: 2010-12-31 14:41
 comments: true

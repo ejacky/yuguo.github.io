@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: 朋友问我为什么要健身
 date: 2010-12-01 23:10
 comments: true

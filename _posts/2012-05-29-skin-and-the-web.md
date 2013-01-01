@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: 跟肤那些事儿
 date: 2012-05-29 12:17
 comments: true

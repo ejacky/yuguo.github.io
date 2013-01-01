@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: W3C Unicorn Validator 书签
 date: 2010-08-13 12:53
 comments: true

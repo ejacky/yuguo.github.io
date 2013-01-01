@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: 编程让你更好地写博客
 date: 2011-06-30 18:59
 comments: true

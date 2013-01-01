@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: PHP和DAO设计模式
 date: 2012-07-11 07:09
 comments: true

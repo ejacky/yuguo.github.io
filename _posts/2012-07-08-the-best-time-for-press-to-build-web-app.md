@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: 现在是出版社做移动APP的最好时机
 date: 2012-07-08 14:16
 comments: true

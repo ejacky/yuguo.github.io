@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: 在Cocoa/Objective-C中使用JSON
 date: 2012-10-16 18:10
 comments: true

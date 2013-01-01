@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: 开团购是为了啥
 date: 2011-03-25 10:47
 comments: true

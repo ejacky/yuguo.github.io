@@ -159,7 +159,7 @@
     
     div.primary                 { background:none; float:left; padding:8em 0; width:32%; }
     div.primary div div         { border-top:1px solid rgba(0,0,0,0.05); padding:3em 0; }
-    div.content                 { float:left; padding:3.65em 0 8em 0; width:68%; }
+    div.content                 { float:left; padding:8em 0 8em 0; width:68%; }
     div.ads                     { display:block; }
     h1,
     div.ads p                   { width:85%; }
@@ -168,7 +168,7 @@
     header nav ul               { padding:2em 0 3em 0; }
     header nav ul li            { display:block; padding:0; }
         
-    div.content                { padding-left:5%; }
+    div.content-inner                { padding-left:5%; }
     form input,
     form textarea               { margin-left:5%; }
     div.content blockquote p    { padding-left:1em; }
@@ -190,7 +190,7 @@
     
     h2#art-direction            { padding-left:15%; }
 
-    div.content { padding-left:28.787%; /* 190 / 660 = 0.28787 */ }
+    div.content-inner { padding-left:28.787%; /* 190 / 660 = 0.28787 */ }
     form input,
     form textarea               { margin-left:28.787%; /* 190 / 660 = 0.28787 */ width:71%; }
     

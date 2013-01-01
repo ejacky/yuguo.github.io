@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: 春休
 date: 2011-02-21 13:40
 comments: true

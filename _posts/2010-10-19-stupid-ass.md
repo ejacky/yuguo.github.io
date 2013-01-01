@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: 我勒个去
 date: 2010-10-19 09:16
 comments: true

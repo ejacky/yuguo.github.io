@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: 为什么飞机票越到后面买越贵
 date: 2011-05-18 00:49
 comments: true

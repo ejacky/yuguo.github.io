@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: 行为和影响
 date: 2011-01-25 00:47
 comments: true

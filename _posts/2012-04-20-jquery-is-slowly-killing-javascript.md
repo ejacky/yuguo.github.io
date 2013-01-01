@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: jQuery要杀死js了
 date: 2012-04-20 17:43
 comments: true

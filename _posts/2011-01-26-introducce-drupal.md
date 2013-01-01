@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: 介绍Drupal
 date: 2011-01-26 11:15
 comments: true

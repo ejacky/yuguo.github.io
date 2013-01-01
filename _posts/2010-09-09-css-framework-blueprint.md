@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: css框架[4]-blueprint
 date: 2010-09-09 01:01
 comments: true

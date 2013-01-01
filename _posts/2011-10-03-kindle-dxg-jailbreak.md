@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: Kindle DXG越狱+汉化
 date: 2011-10-03 11:49
 comments: true

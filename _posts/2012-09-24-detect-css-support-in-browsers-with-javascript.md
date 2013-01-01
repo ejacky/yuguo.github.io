@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: JavaScript快速检测浏览器对CSS3特性的支持
 date: 2012-09-24 16:01
 comments: true

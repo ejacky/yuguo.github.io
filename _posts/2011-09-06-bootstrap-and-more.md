@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: bootstrap启示录
 date: 2011-09-06 23:41
 comments: true

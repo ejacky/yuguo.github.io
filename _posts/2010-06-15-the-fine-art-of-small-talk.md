@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: 学习聊天
 date: 2010-06-15 07:12
 comments: true

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: 用kindle3读书
 date: 2010-10-12 20:37
 comments: true

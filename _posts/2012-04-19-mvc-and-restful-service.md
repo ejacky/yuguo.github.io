@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: 单入口、MVC和Restful Service
 date: 2012-04-19 20:00
 comments: true

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: 字体是个深坑
 date: 2012-07-20 17:27
 comments: true

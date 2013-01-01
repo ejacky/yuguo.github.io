@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: 匹配项目的栅格化系统
 date: 2011-01-07 00:39
 comments: true
