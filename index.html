@@ -5,10 +5,8 @@ title: Yuguo Blog
 <ol class="yearly-archive">
 
 　　{% for post in site.posts %}
-		{% if {{{post.date | date: "%Y"}} == '2012'} %}
-			{% unless post.draft %}
-	　　　　		<li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a><span class='date'>{{post.date | date: "%m月 %d日"}} </span></li>
-	  		{% endunless %}
+		{% if {{post.date | date: "%Y"}} == '2012' and post.draft == empty %}
+	　　　　	<li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a><span class='date'>{{post.date | date: "%m月 %d日"}} </span></li>
   		{% endif %}
 	{% endfor %}
 </ol>
