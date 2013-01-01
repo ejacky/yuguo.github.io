@@ -84,9 +84,10 @@
   04 Basic Layout ---------------------------------------------------------------------------------------------
   ---------------------------------------------------------------------------------------------------------- */
   
-  div.primary                 { background:#f6f6f6; padding:10%; /*outline:1px solid red;*/ }
+  div.primary                 { background:#f6f6f6; padding:10%; position: relative; /*outline:1px solid red;*/ }
   div.content                 { padding:10%; /*outline:1px solid blue;*/ }
   div.ads                     { display:none; }
+  div.blog {line-height: 1.3;}
   
   /* Most layout declared in media queries, below */
     
