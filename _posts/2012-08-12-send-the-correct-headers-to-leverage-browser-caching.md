@@ -13,19 +13,19 @@ Expire头的设置在服务器端进行，服务请求通过在HTTP相应中增�
 
 比如<a href="http://33pu.net/">33号铺</a>的样式返回的Expires：
 
-<a href="http://yuguo.us/weblog/files/2012/08/1.png"><img class="aligncenter size-full wp-image-1348" title="1" src="http://yuguo.us/weblog/files/2012/08/1.png" alt="" width="448" height="282" /></a>
+<a href="http://yuguo.github.com/blog/files/2012/08/1.png"><img class="aligncenter size-full wp-image-1348" title="1" src="http://yuguo.github.com/blog/files/2012/08/1.png" alt="" width="448" height="282" /></a>
 
 所以浏览器再次访问这个资源的时候，可能是输入地址访问，我们可以看到：
 
-<a href="http://yuguo.us/weblog/files/2012/08/2.png"><img class="aligncenter size-full wp-image-1349" title="2" src="http://yuguo.us/weblog/files/2012/08/2.png" alt="" width="731" height="153" /></a>
+<a href="http://yuguo.github.com/blog/files/2012/08/2.png"><img class="aligncenter size-full wp-image-1349" title="2" src="http://yuguo.github.com/blog/files/2012/08/2.png" alt="" width="731" height="153" /></a>
 
 如果我F5，会看到下图（304下面解释）
 
-<a href="http://yuguo.us/weblog/files/2012/08/12.png"><img class="aligncenter size-full wp-image-1363" title="1" src="http://yuguo.us/weblog/files/2012/08/12.png" alt="" width="745" height="52" /></a>
+<a href="http://yuguo.github.com/blog/files/2012/08/12.png"><img class="aligncenter size-full wp-image-1363" title="1" src="http://yuguo.github.com/blog/files/2012/08/12.png" alt="" width="745" height="52" /></a>
 
 最好如果我Ctrl+F5，就会看到下图：
 
-<a href="http://yuguo.us/weblog/files/2012/08/3.png"><img class="aligncenter size-full wp-image-1350" title="3" src="http://yuguo.us/weblog/files/2012/08/3.png" alt="" width="959" height="69" /></a>
+<a href="http://yuguo.github.com/blog/files/2012/08/3.png"><img class="aligncenter size-full wp-image-1350" title="3" src="http://yuguo.github.com/blog/files/2012/08/3.png" alt="" width="959" height="69" /></a>
 
 如果你的服务器是Apache，可以通过ExpiresDefault来配置一个相对现在日期的时间段。比如：
 <pre>ExpiresDefault "access plus 10 years"</pre>
@@ -39,11 +39,11 @@ Expire头的设置在服务器端进行，服务请求通过在HTTP相应中增�
 
 所以第一次请求：
 
-<a href="http://yuguo.us/weblog/files/2012/08/11.png"><img class="aligncenter size-full wp-image-1351" title="1" src="http://yuguo.us/weblog/files/2012/08/11.png" alt="" width="713" height="434" /></a>
+<a href="http://yuguo.github.com/blog/files/2012/08/11.png"><img class="aligncenter size-full wp-image-1351" title="1" src="http://yuguo.github.com/blog/files/2012/08/11.png" alt="" width="713" height="434" /></a>
 
 对于第二次请求：
 
-<a href="http://yuguo.us/weblog/files/2012/08/21.png"><img class="aligncenter size-full wp-image-1352" title="2" src="http://yuguo.us/weblog/files/2012/08/21.png" alt="" width="583" height="407" /></a>
+<a href="http://yuguo.github.com/blog/files/2012/08/21.png"><img class="aligncenter size-full wp-image-1352" title="2" src="http://yuguo.github.com/blog/files/2012/08/21.png" alt="" width="583" height="407" /></a>
 
 注意看清楚Request和Response的区别。
 

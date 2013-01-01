@@ -11,11 +11,11 @@ blueprint跟960grids一样，是一个基于栅格理论的框架，它用两个
 <h2>栅格系统</h2>
 来自射雕前辈的栅格系统介绍：
 
-[caption id="attachment_195" align="aligncenter" width="633" caption="栅格系统"]<a href="http://lifesinger.org/blog/2008/10/grid-system-2/" target="_blank"><img class="size-full wp-image-195" title="栅格系统" src="http://yuguo.us/weblog/files/2010/09/grid_vocabulary.png" alt="栅格系统" width="633" height="478" /></a>[/caption]
+[caption id="attachment_195" align="aligncenter" width="633" caption="栅格系统"]<a href="http://lifesinger.org/blog/2008/10/grid-system-2/" target="_blank"><img class="size-full wp-image-195" title="栅格系统" src="http://yuguo.github.com/blog/files/2010/09/grid_vocabulary.png" alt="栅格系统" width="633" height="478" /></a>[/caption]
 
 blueprint的grid是标准24格，5像素边距，10像素边距，30像素栏。(30+10)*12-5*2=950。如下图：
 
-[caption id="attachment_194" align="aligncenter" width="650" caption="oocss的栅格系统"]<a href="http://yuguo.us/weblog/files/2010/09/2010-9-8-22-58-10.jpg"><img class="size-full wp-image-194" title="oocss的栅格系统" src="http://yuguo.us/weblog/files/2010/09/2010-9-8-22-58-10.jpg" alt="oocss的栅格系统" width="650" height="476" /></a>[/caption]
+[caption id="attachment_194" align="aligncenter" width="650" caption="oocss的栅格系统"]<a href="http://yuguo.github.com/blog/files/2010/09/2010-9-8-22-58-10.jpg"><img class="size-full wp-image-194" title="oocss的栅格系统" src="http://yuguo.github.com/blog/files/2010/09/2010-9-8-22-58-10.jpg" alt="oocss的栅格系统" width="650" height="476" /></a>[/caption]
 <h2>规则</h2>
 这些数字可能会把人绕的很晕，但实际上我们只需要记住整数就好了。这一点记在脑中：一行能显示24个单位的div，<em>最后一个div必须标明.last类</em>（div是形象的说法，用html5的section也完全没问题）。
 

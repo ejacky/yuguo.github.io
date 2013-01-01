@@ -26,4 +26,4 @@ thn.gs可以完美解决这几个问题，快去试试吧，特性：
 </ul>
 自己试试吧！
 
-<a href="http://thn.gs/"><img class="aligncenter size-large wp-image-1083" title="http://thn.gs" src="http://yuguo.us/weblog/files/2011/12/QQ拼音截图未命名-1024x615.png" alt="http://thn.gs" width="1024" height="615" /></a>
+<a href="http://thn.gs/"><img class="aligncenter size-large wp-image-1083" title="http://thn.gs" src="http://yuguo.github.com/blog/files/2011/12/QQ拼音截图未命名-1024x615.png" alt="http://thn.gs" width="1024" height="615" /></a>

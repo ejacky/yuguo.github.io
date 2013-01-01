@@ -12,7 +12,7 @@ categories: []
  &lt;?php next_posts_link( __( 'Older posts') ); ?&gt;
 &lt;/div&gt;</pre>
 也就是说后台设置了每页显示10篇文章之后，就会每10篇一个翻页。
-<a href="http://yuguo.us/weblog/files/2012/02/1.png"><img class="aligncenter size-full wp-image-1138" title="1" src="http://yuguo.us/weblog/files/2012/02/1.png" alt="" width="577" height="453" data-pinit="registered" /></a>
+<a href="http://yuguo.github.com/blog/files/2012/02/1.png"><img class="aligncenter size-full wp-image-1138" title="1" src="http://yuguo.github.com/blog/files/2012/02/1.png" alt="" width="577" height="453" data-pinit="registered" /></a>
 <h2>无限滚动</h2>
 当屏幕滚动到页面底部的时候，我们希望触发一个事件来ajax载入新的文章进来。有一个js插件可以很方便的做到这一点：<a href="https://github.com/paulirish/infinite-scroll">infinitescroll.js</a>
 

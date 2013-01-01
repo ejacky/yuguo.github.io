@@ -15,7 +15,7 @@ categories: []
 	<li>基于特性检测</li>
 	<li>js库简单好用</li>
 </ul>
-<p style="text-align: center;"><img class="aligncenter size-full wp-image-1407" title="modernizr" src="http://yuguo.us/weblog/files/2012/09/1.png" alt="modernizr" width="557" height="160" /></p>
+<p style="text-align: center;"><img class="aligncenter size-full wp-image-1407" title="modernizr" src="http://yuguo.github.com/blog/files/2012/09/1.png" alt="modernizr" width="557" height="160" /></p>
 除此之外还有一种不太好的方法，那就是判断浏览器的UA，不好的原因是UA可能会伪造，而且版本判断繁琐，还有不稳定。
 
 优点：性能可能是最优的
@@ -52,7 +52,7 @@ if ( supports('textShadow') ) {
 这就是最终代码，原理是：
 
 1.创建一个div，然后可以获得div.style，这是它所支持的属性的数组列表。
-<p style="text-align: center;"><img class="aligncenter size-full wp-image-1408" title="div.style" src="http://yuguo.us/weblog/files/2012/09/2.png" alt="div.style" width="247" height="363" /></p>
+<p style="text-align: center;"><img class="aligncenter size-full wp-image-1408" title="div.style" src="http://yuguo.github.com/blog/files/2012/09/2.png" alt="div.style" width="247" height="363" /></p>
 2.检查text是否包含在数组中，如果是，直接返回true。
 
 3.检查各种前缀，比如Webkit加上text，即webkitTransition，如果包含在style中，返回true。

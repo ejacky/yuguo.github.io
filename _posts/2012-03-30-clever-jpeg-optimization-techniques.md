@@ -9,7 +9,7 @@ categories: []
 
 原文地址：<a href="http://www.smashingmagazine.com/2009/07/01/clever-jpeg-optimization-techniques/">http://www.smashingmagazine.com/2009/07/01/clever-jpeg-optimization-techniques/</a>
 <h2>8x8像素格</h2>
-<a href="http://yuguo.us/weblog/files/2012/03/grid-block1.png"><img class="aligncenter size-full wp-image-1151" title="grid-block" src="http://yuguo.us/weblog/files/2012/03/grid-block1.png" alt="" width="527" height="527" data-pinit="registered" /></a>
+<a href="http://yuguo.github.com/blog/files/2012/03/grid-block1.png"><img class="aligncenter size-full wp-image-1151" title="grid-block" src="http://yuguo.github.com/blog/files/2012/03/grid-block1.png" alt="" width="527" height="527" data-pinit="registered" /></a>
 
 这是一个黑白格的图片，在保存为JPEG的时候选择“质量”很低的话，就会出现模糊的锯齿。这种锯齿我们经常见到，但神奇的是左上角的那个正方形的边缘非常完美，这是因为JPEG储存图片的时候会把图片存为一系列8x8像素的块。
 
@@ -25,7 +25,7 @@ categories: []
 
 核心思想就是把图片模式设置为<strong>lab颜色</strong>的话，会在通道中看见图片被分成明度、a、b三个通道。跟RGB模式有3个通道分别储存红色绿色蓝色不一样的是，lab颜色模式中明度通道储存某一点的明亮程度，a通道储存某一点的红色和绿色有多少，b通道储存蓝色和黄色有多少。
 
-<a href="http://yuguo.us/weblog/files/2012/03/2.jpg"><img class="aligncenter size-full wp-image-1152" title="2" src="http://yuguo.us/weblog/files/2012/03/2.jpg" alt="" width="256" height="127" data-pinit="registered" /></a>
+<a href="http://yuguo.github.com/blog/files/2012/03/2.jpg"><img class="aligncenter size-full wp-image-1152" title="2" src="http://yuguo.github.com/blog/files/2012/03/2.jpg" alt="" width="256" height="127" data-pinit="registered" /></a>
 
 那么图片中有一些黑色的部分的话，那么就会在明度通道中有暗度信息表明这一点非常之暗，同时又会在红绿通道中储存信息表明这一点很红。这从人眼可视的角度来看就是冗余信息，因为<strong>很暗的黑色和很暗的红色对于人眼都是黑色</strong>。
 

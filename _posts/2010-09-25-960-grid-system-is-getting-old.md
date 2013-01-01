@@ -26,11 +26,11 @@ categories: []
 <h3>问题是？</h3>
 960网格的问题是gutter的宽度和内容的宽度。减去960px两边的margin（两边的gutter叫做margin），实际上的内容显示区域只有940px，这在往日可能没有关系，因为那时候文字是12px的，而现在很多站点的文字是13px的（译者注，中文博客的很多站点也开始使用14px的正文）。既然文字变大了，你不认为应该增大gutter宽度和内容宽度吗？
 
-<img class="aligncenter size-full wp-image-275" title="960gs" src="http://yuguo.us/weblog/files/2010/09/960gs.gif" alt="960gs" width="470" height="401" />
+<img class="aligncenter size-full wp-image-275" title="960gs" src="http://yuguo.github.com/blog/files/2010/09/960gs.gif" alt="960gs" width="470" height="401" />
 <h2>978网格</h2>
 我用在<a href="http://themify.me/">Themify</a>上的网格是978px，12栏，每栏54像素，30px gutter。我发现它在1024x768px的显示器上显示十分完美。<em>去掉了左右边距</em>用来最大化内容区宽度。并且我增加了gutter的宽度到30像素，所以你的内容有更多呼吸的空间。效果如下：
 
-<img class="aligncenter size-full wp-image-276" title="978-grid" src="http://yuguo.us/weblog/files/2010/09/978-grid.gif" alt="978-grid" width="470" height="355" />
+<img class="aligncenter size-full wp-image-276" title="978-grid" src="http://yuguo.github.com/blog/files/2010/09/978-grid.gif" alt="978-grid" width="470" height="355" />
 <h2>以下是原文后的评论</h2>
 （集中翻译关于960gs和978gs的评论，灰色部分为我的评论）：
 

@@ -9,7 +9,7 @@ wordpress 3.0开始引入了一个新的特性叫做Custom Post Types。
 
 在此功能出现之前我们要实现一些区别于“普通文章”的自定义文章的时候，往往需要用到Custom Fields。用户发表任何类型的“文章”——任何类型——都需要新建一个post，然后在Custom Fields中填入不同的名值对来进行自定义。这对用户不是很友好的一种方式。
 
-<img title="custom fields" src="http://yuguo.us/weblog/files/2011/08/custom-fields.png" alt="" width="710" height="270" />
+<img title="custom fields" src="http://yuguo.github.com/blog/files/2011/08/custom-fields.png" alt="" width="710" height="270" />
 
 今天介绍的Custom Post Types会在后台边栏生成一个开发者自定义的类型，同时还有自定义挂件哦~
 <h3>1.什么是Custom Post Types</h3>
@@ -50,7 +50,7 @@ Fields在这里不是选项，而是输入区域。我们已经知道的输入�
 
 对于我们刚刚创建的event来说，这些输入区域是不够的。比如我们现在想在边栏加一个Custom fields box，叫link，如下图：
 
-<a href="http://yuguo.us/weblog/files/2011/08/custom-fields.png"></a><a href="http://yuguo.us/weblog/files/2011/08/project-options.png"><img class="aligncenter size-full wp-image-840" title="project-options" src="http://yuguo.us/weblog/files/2011/08/project-options.png" alt="" width="581" height="322" /></a>
+<a href="http://yuguo.github.com/blog/files/2011/08/custom-fields.png"></a><a href="http://yuguo.github.com/blog/files/2011/08/project-options.png"><img class="aligncenter size-full wp-image-840" title="project-options" src="http://yuguo.github.com/blog/files/2011/08/project-options.png" alt="" width="581" height="322" /></a>
 
 代码如下（同样是加在function.php中）：
 <pre>add_action("admin_init", "portfolio_meta_box");

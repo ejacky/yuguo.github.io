@@ -55,7 +55,7 @@ categories: []
 在设计过程中，你需要做出的两个重要决定是，是否要设计跨平台的产品，是否应该采用原生技术。
 
 本章节的目的是，鼓励你（作为一名用户体验设计师）去理解你的领域，以便你能正确地回答这些问题，我们先来看下什么是所谓的原生应用程序。
-<p style="text-align: center;"><img class="aligncenter size-full wp-image-1495" title="" src="http://yuguo.us/weblog/files/2012/11/web-or-native-3.png" alt="" /></p>
+<p style="text-align: center;"><img class="aligncenter size-full wp-image-1495" title="" src="http://yuguo.github.com/blog/files/2012/11/web-or-native-3.png" alt="" /></p>
 图9-1 是的，这里有很多设备。但是，你的应用程序不必支持所有这些设备。关注用户的设备并确定你的目标用户，使你的应用程序完美支持他们使用的平台和设备。如果你主要创建的是内容型的网站，而不是交互型的应用程序，那么通过渐进增强技术支持大量的平台是很容易的。
 <h2>“原生（native）”是什么？</h2>
 你是否看到过一些人不了解“原生”的真正含义却随意使用“原生”这个短语？让我们来改变这一切吧，从了解人们对“原生”的误解开始。
@@ -65,7 +65,7 @@ categories: []
 虽然计算机曾经是以二进制的形式被编码的，但我们现在已不再使用这种冷冰冰的编码方式了。然而，我们重新设计的每一种编程语言（像C语言、Python、JavaScript等等）最终都被翻译为机器语言“0”和“1”，这些机器语言又被编译为晶体管中是否存在电流这些技术都是建立在抽象层面的。例如，Python是由C语言写的。每个从高层级（包括现代计算机系统技术）抽象出来的层级都是为了使开发者更容易地开发应用程序，因此，虽然从技术角度来说，将“原生”解释为二进制编码是正确的，但在今天却是一个毫无意义的定义。
 
 那么，现在我们了解“原生”不是“0”和“1”之后，我们再来搞清楚“原生”到底是什么吧。
-<p style="text-align: center;"><img class="aligncenter size-full wp-image-1495" title="" src="http://yuguo.us/weblog/files/2012/11/web-or-native-4.png" alt="" /></p>
+<p style="text-align: center;"><img class="aligncenter size-full wp-image-1495" title="" src="http://yuguo.github.com/blog/files/2012/11/web-or-native-4.png" alt="" /></p>
 图9-2 对于某种操作系统来说，Web技术可能是原生技术。这里是一台三星笔记本，它运行着Chrome操作系统，其中，HTML，CSS和JavaScript（Web 应用程序）是原生技术。（图片来源：Google的促销图片）
 <h2>原生文化</h2>
 “原生”是指形成平台文化、语言、惯例和规范的技术（即语言和框架）。它是一个底层抽象的概念，包括特定平台的主要符号、手势，以及用户与平台软件互动时的交互行为。这些元素是最重要的元素，因为它们构成了平台的文化和规范。<a title="" href="file:///E:/Dropbox/%E7%BF%BB%E8%AF%91%E9%A1%B9%E7%9B%AE/%E5%AE%8C%E6%95%B4%E7%BF%BB%E8%AF%91/%E7%AC%AC9%E7%AB%A0%20%E7%A7%BB%E5%8A%A8%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C%E8%AE%BE%E8%AE%A1%E8%80%83%E8%99%91%E7%9A%84%E5%9B%A0%E7%B4%A0%EF%BC%9A%E2%80%9CWeb%E8%BF%98%E6%98%AF%E5%8E%9F%E7%94%9F%EF%BC%9F%E2%80%9D%EF%BC%88lyndiduan%EF%BC%89.doc#_ftn1">[2]</a>它们也是语言（视觉和行为上的），是用户使用平台时，为了和平台软件进行交流互动而需要学习的语言。反过来说，它们也是平台软件和用户交流时使用的文字、短语和理念。在特定平台中，这些元素越有用，越一致，那么为此平台创建原生软件的优势就越大。
@@ -90,13 +90,13 @@ categories: []
 </div>
 </div>
 </div>
-<p style="text-align: center;"><img class="aligncenter size-full wp-image-1495" title="" src="http://yuguo.us/weblog/files/2012/11/web-or-native-5.png" alt="" /></p>
+<p style="text-align: center;"><img class="aligncenter size-full wp-image-1495" title="" src="http://yuguo.github.com/blog/files/2012/11/web-or-native-5.png" alt="" /></p>
 图9-3 Apple的人机交互规则清晰地表明，iOS平台的原生软件在视觉和操作上是怎样设计的。这些交互规则有利于定义平台文化。
 
 另外，还存在一些像Android那样的原生平台，它们的风格大多由制造商、运营商和用户来深度定制，因此Android系统的手机和软件之间有很少的（甚至没有）一致性。这些平台的原生软件设计师很难提供一致的用户体验。
 
 &nbsp;
-<p style="text-align: center;"><img class="aligncenter size-full wp-image-1495" title="" src="http://yuguo.us/weblog/files/2012/11/web-or-native-6.png" alt="" /></p>
+<p style="text-align: center;"><img class="aligncenter size-full wp-image-1495" title="" src="http://yuguo.github.com/blog/files/2012/11/web-or-native-6.png" alt="" /></p>
 <p style="text-align: center;">图9-4 Swype键盘确实很酷。仅仅点击几个字母，它便可以自动猜出你想要的单词。</p>
 不幸的是，它不支持所有的Android平台设备，只支持一些；在其他设备上，有的采用和iPhone键盘相似的键盘，有的采用不同的第三方键盘。虽然，最初看起来这些选择很不错，但是这意味着Android平台没有一个一致的用户体验。因为制造商、运营商和用户定义了很多的Android风格，所以Android平台的用户体验也有很多种。这就造成设计师创建应用软件时很难使用一个共同的设计语言。
 
@@ -118,13 +118,13 @@ categories: []
 
 </div>
 </div>
-<p style="text-align: center;"><img class="aligncenter size-full wp-image-1495" title="" src="http://yuguo.us/weblog/files/2012/11/web-or-native-7.png" alt="" /></p>
+<p style="text-align: center;"><img class="aligncenter size-full wp-image-1495" title="" src="http://yuguo.github.com/blog/files/2012/11/web-or-native-7.png" alt="" /></p>
 图9-5 将Feathers软件引进Android平台，需要设计不同的软件版本以支持Android平台不同类型的键盘。
 
 相似地，在像Web这样没有一致的视觉语言和文化的平台上，非原生的应用反而会有较少的障碍，在一些情况下甚至可能会提供更好的可用性和用户体验。
 
 非原生软件提升用户体验的一个很好的例子便是Gmail。在Windows这样的操作系统中，使用邮件客户端时，你需要寻找和安装客户端软件，保持更新，保证你的邮件能够在不同设备上同步，并确保你的消息经过病毒和恶意插件扫描。Gmail却很简单，你在任何一个设备的浏览器中输入一个URL地址，便可以打开你的邮件。非常完美！
-<p style="text-align: center;"><img class="aligncenter size-full wp-image-1495" title="" src="http://yuguo.us/weblog/files/2012/11/web-or-native-8.png" alt="" /></p>
+<p style="text-align: center;"><img class="aligncenter size-full wp-image-1495" title="" src="http://yuguo.github.com/blog/files/2012/11/web-or-native-8.png" alt="" /></p>
 图9-6 Gmail这个Web软件提供了不同平台之间的一致性体验。用户不必安装任何程序，也不必担心他们的邮件在不同设备中是否同步。
 
 Gmail也说明了，创建优秀的跨平台用户体验需要优化许多特定平台。Gmail软件虽然可以同时支持台式电脑和移动平台，但确实还是有几个高质量的版本。
@@ -140,13 +140,13 @@ Gmail也说明了，创建优秀的跨平台用户体验需要优化许多特定
 
 </div>
 </div>
-<p style="text-align: center;"><img class="aligncenter size-full wp-image-1495" title="" src="http://yuguo.us/weblog/files/2012/11/web-or-native-9.png" alt="" /></p>
+<p style="text-align: center;"><img class="aligncenter size-full wp-image-1495" title="" src="http://yuguo.github.com/blog/files/2012/11/web-or-native-9.png" alt="" /></p>
 图9-7 浏览器是一个运行在操作系统环境下的原生操作系统软件。Web软件是一个运行在浏览器环境下的原生Web软件。然而，Web软件不是一个原生的操作系统软件。Web软件和操作系统之间有一个分隔带（浏览器）。相似地，一个Flash软件运行在浏览器的一个虚拟机器中，它也不是一个原生的浏览器软件。（图片：Rosmarie Voegtli，smashed.by/voegtli）
 <h2>混合的应用程序</h2>
 原生应用程序包涵了其运行平台的文化，Web软件包涵了其运行的浏览器的文化。但是，我们忽略了第三种应用程序（现在有许多应用程序都属于这种）：混合应用程序。
 
 我们需要理解各种技术并恰当地运用它们。Web编写技术（尤其是HTWL和CSS）有利于创建复杂的文档和漂亮的样式。这样，在需要展现丰富内容的时候，许多原生应用程序的设计师会选择使用HTML和CSS技术。这些应用程序被称为混合应用程序，因为它们是原生和Web技术的结合。
-<p style="text-align: center;"><img class="aligncenter size-full wp-image-1495" title="" src="http://yuguo.us/weblog/files/2012/11/web-or-native-10.png" alt="" /></p>
+<p style="text-align: center;"><img class="aligncenter size-full wp-image-1495" title="" src="http://yuguo.github.com/blog/files/2012/11/web-or-native-10.png" alt="" /></p>
 图9-8 iPhone上的Facebook是一个混合型应用程序。
 
 iPhone上的Facebook是一个混合型应用程序，它的某些部分设计（比如那些新闻消息）使用了Web技术。
@@ -212,7 +212,7 @@ Web应用在用户体验上超越原生应用的主要优势是，易于部署�
 </div>
 </div>
 </div>
-<p style="text-align: center;"><img class="aligncenter size-full wp-image-1495" title="" src="http://yuguo.us/weblog/files/2012/11/web-or-native-11.png" alt="" /></p>
+<p style="text-align: center;"><img class="aligncenter size-full wp-image-1495" title="" src="http://yuguo.github.com/blog/files/2012/11/web-or-native-11.png" alt="" /></p>
 图9-9 原生Web应用和原生操作系统应用的用户流之间的界线很模糊。事实上，在基于Web技术的操作系统中，原生Web应用就是原生操作系统应用。
 
 然而，由于app stores的发展，原生应用正在追赶Web应用的易于部署和访问。像苹果的app store，发现应用的过程和在浏览器输入URL一样简单。事实上，你可以输入URL进入App Store中的一个应用，然后在那里简单点击一个按钮就可以下载并安装它。
@@ -252,13 +252,13 @@ Web应用拥有的另一个优势是，其用户可以从任何一个设备上�
 <a title="" href="file:///E:/Dropbox/%E7%BF%BB%E8%AF%91%E9%A1%B9%E7%9B%AE/%E5%AE%8C%E6%95%B4%E7%BF%BB%E8%AF%91/%E7%AC%AC9%E7%AB%A0%20%E7%A7%BB%E5%8A%A8%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C%E8%AE%BE%E8%AE%A1%E8%80%83%E8%99%91%E7%9A%84%E5%9B%A0%E7%B4%A0%EF%BC%9A%E2%80%9CWeb%E8%BF%98%E6%98%AF%E5%8E%9F%E7%94%9F%EF%BC%9F%E2%80%9D%EF%BC%88lyndiduan%EF%BC%89.doc#_ftnref1">[11]</a> 在“我的网站将只支持最新版本的浏览器”的网站杂志上，阅读“一个版本的宣言”：smashed.by/netsu
 
 </div>
-<img class="aligncenter size-full wp-image-1495" title="" src="http://yuguo.us/weblog/files/2012/11/web-or-native-12.png" alt="" />
+<img class="aligncenter size-full wp-image-1495" title="" src="http://yuguo.github.com/blog/files/2012/11/web-or-native-12.png" alt="" />
 
 图9-10 Kelly Sommers有一个很好的示例应用程序，它体现了连续性客户端的体验：smashed.by/multi.用户能够在他们的Windows Phone7上观看视频，也可以在Web客户端继续观看，当然也可以在他们的手机上继续观看。
 
 如果你设想下，你就会知道在连续性客户端体验时代，Web变成了JAC（just another client仅仅是另一个客户端）。在某种情境下，或许Web是最好的客户端，但用户还是应该能够切换到一些原生客户端的，而且不必担心同步数据的问题。随着高科技的发展，连续性客户端将很快成为主流，而不是一个新奇的期望。例如，iCloud的出现，使开发者能较容易地实现它们。
 <div></div>
-<p style="text-align: center;"><img class="aligncenter size-full wp-image-1495" title="" src="http://yuguo.us/weblog/files/2012/11/web-or-native-13.png" alt="" /></p>
+<p style="text-align: center;"><img class="aligncenter size-full wp-image-1495" title="" src="http://yuguo.github.com/blog/files/2012/11/web-or-native-13.png" alt="" /></p>
 图9-11 关于连续性客户端体验，即时消息应用程序Trillian便是一个很好的例子。（Image: Trillian Blog, smashed.by/trillian.)
 <h2>原生是未来的趋势</h2>
 今天，Web仅仅是另外一个原生平台，展望未来，它不得不凭借自身的独特优势与原生平台进行竞争，而不是凭借Internet赋予它的优势，因为其他原生平台也正在实现并拥有这些相同的优势。
@@ -277,12 +277,12 @@ Web产品一般会被分为内容型和行为型两种。我们通常将内容�
 
 当一个产品更接近内容型时，我们会使用渐进增强的技术分层实现基本功能和基于内容的核心交互动作，以此保证更多的人们能够访问到。这些渐进增强的功能通常既不是先进的格式或布局，也不是一些别出心裁的导引类交互行为。我们可以使内容适合于不同尺寸的屏幕，使有限的导引类交互行为适合于不同的输入机制。这不是一项简单的工程，但也不是不可能实现的。
 
-<img src="http://yuguo.us/weblog/files/2012/11/web-or-native-14.png" alt="" width="880" />
+<img src="http://yuguo.github.com/blog/files/2012/11/web-or-native-14.png" alt="" width="880" />
 
 图9-12 文档和应用之间
 
 然而，当产品从文档型向应用型转变时，实现渐进增强将变得更加困难。事实上，这也可能会变得完全没有意义或不可能。例如，你将怎么优雅降级一个图片在线编辑器？在一个不能显示图形的功能型手机上，一个图形编辑器应如何工作？你将会使其显示什么内容？
-<p style="text-align: center;"><img class="aligncenter size-full wp-image-1495" title="" src="http://yuguo.us/weblog/files/2012/11/web-or-native-15.png" alt="" /></p>
+<p style="text-align: center;"><img class="aligncenter size-full wp-image-1495" title="" src="http://yuguo.github.com/blog/files/2012/11/web-or-native-15.png" alt="" /></p>
 图9-13 当Web还只是用来收集文档的时候，Web的创建者Tim Berners-Lee提出了Web的通用原则。这不太适用于应用程序的设计，因为应用程序有着不同的设计限制和要求。在.Net magazine(smashed.by/netmag)上可以看到Lea Verou对John Allsopp反驳的评论。
 
 应用不是内容型的，而是行为型的。无论应用程序是什么内容，我们对其进行优雅降级将不总是有意义。应用通常是完全由行为构成的，这些行为促使用户去创建内容。再来看图片编辑器的例子：图片编辑器本身没有任何内容，但它能够使用户创建内容。
@@ -343,7 +343,7 @@ Web产品一般会被分为内容型和行为型两种。我们通常将内容�
 请不要被各个工具供应商误导“在5分钟内可创建一个跨平台应用”，他们不懂这个，除非你是在创建最简单的to-do列表应用。一个开发技术的真正测试不像你创建一个5分钟小样那么简单，也不像完成7%目标那么快速，更像是解决过去的3%的开发问题一样简单，这包括占据1%的所有重要的用户体验优化。在开发应用过程中，这些细节最终占据了你大量的时间和精力。
 <h3>Web和其他跨平台技术</h3>
 广义地说，跨平台技术可以被分为两类：创建原生二进制的技术和那些其他的技术。我们也可以按照是否使用原生框架来对它们进行更一步的分类，二进制-框架矩阵图如下：
-<p style="text-align: center;"><img class="aligncenter size-full wp-image-1495" title="" src="http://yuguo.us/weblog/files/2012/11/web-or-native-16.png" alt="" /></p>
+<p style="text-align: center;"><img class="aligncenter size-full wp-image-1495" title="" src="http://yuguo.github.com/blog/files/2012/11/web-or-native-16.png" alt="" /></p>
 图9-14 二进制-框架矩阵图
 
 原生二进制是一个可以由某种设备的操作系统直接驱动的应用程序包，这是我们提到原生应用时通常会想到的。
@@ -406,13 +406,13 @@ Web产品一般会被分为内容型和行为型两种。我们通常将内容�
 
 </div>
 </div>
-<p style="text-align: center;"><img class="aligncenter size-full wp-image-1495" title="" src="http://yuguo.us/weblog/files/2012/11/web-or-native-17.png" alt="" /></p>
+<p style="text-align: center;"><img class="aligncenter size-full wp-image-1495" title="" src="http://yuguo.github.com/blog/files/2012/11/web-or-native-17.png" alt="" /></p>
 图9-15 一些常见的原生技术和跨平台技术之间的对比
 
 原生并不一定更好，但它是原生的。
 
 如果你要创建一个遵守既定平台规范（也就是文化和语言）的应用，那么唯一方法是使用原生技术。例如，在Web平台上，被创建的Flash应用将看起来和感觉起来都不像是使用原生Web编写技术（像HTML、CSS和JavaScript这样的）编写的原生Web应用。相似地，在iPhone这样的平台上，使用Cocoa Touch框架中的组件创建的应用，将看起来和感觉起来不像是原生iPhone应用。这并不说明，Flash应用没有HTML应用好。在某种情况下，特别是像游戏这样的沉浸式应用，Flash应用可能会提供更好的用户体验。举个例子，Machinarium是iPad上基于Flash技术的一款既可爱又漂亮的游戏。特别是对于像游戏和电子书这样的沉浸式应用，一个像Unity或Corona这样的跨平台技术可以减少开发时间，更容易地实现那些对于原生技术来说较难实现的功能。（比如一个3D环境或物理引擎）。
-<p style="text-align: center;"><img class="aligncenter size-full wp-image-1495" title="" src="http://yuguo.us/weblog/files/2012/11/web-or-native-18.png" alt="" /></p>
+<p style="text-align: center;"><img class="aligncenter size-full wp-image-1495" title="" src="http://yuguo.github.com/blog/files/2012/11/web-or-native-18.png" alt="" /></p>
 图9-16 iPad上的Machinarium，由Flash技术创建的一款沉浸式原生应用。
 
 这不是说，你应该害怕跨平台技术，但你需要仔细思考，权衡利弊，最后做出一个明智的决定，是否要在开发过程中添加另一个抽象层。每一个跨平台技术都有不同的优势和劣势，各自适合某种类型的应用。Corona可能是2D图形化游戏的完美选择，Titanium Mobile则适合创建一个跨平台应用。

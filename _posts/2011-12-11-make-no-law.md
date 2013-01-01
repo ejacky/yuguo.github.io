@@ -7,7 +7,7 @@ categories: []
 ---
 若批评不自由，则赞美无意义。
 <h2>关于这《批评官员的尺度》</h2>
-<a href="http://union.dangdang.com/transfer.php?sys_id=1&amp;ad_type=10&amp;from=P-298749&amp;backurl=http%3A%2F%2Fproduct.dangdang.com%2Fproduct.aspx%3Fproduct_id%3D22469001"><img class="aligncenter size-full wp-image-1059" title="批评官员的尺度" src="http://yuguo.us/weblog/files/2011/12/s6643899.jpg" alt="批评官员的尺度" width="303" height="438" /></a>
+<a href="http://union.dangdang.com/transfer.php?sys_id=1&amp;ad_type=10&amp;from=P-298749&amp;backurl=http%3A%2F%2Fproduct.dangdang.com%2Fproduct.aspx%3Fproduct_id%3D22469001"><img class="aligncenter size-full wp-image-1059" title="批评官员的尺度" src="http://yuguo.github.com/blog/files/2011/12/s6643899.jpg" alt="批评官员的尺度" width="303" height="438" /></a>
 
 <a href="http://union.dangdang.com/transfer.php?sys_id=1&amp;ad_type=10&amp;from=P-298749&amp;backurl=http%3A%2F%2Fproduct.dangdang.com%2Fproduct.aspx%3Fproduct_id%3D22469001">《批评官员的尺度》</a>在中国大陆的出版，真是令人欣喜。贯穿全书的是一个案件——《纽约时报》诉警察局沙利文案。通过这个案件，我们能看出美国是如何通过立法保障媒体的。
 

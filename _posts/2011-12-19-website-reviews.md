@@ -28,12 +28,12 @@ categories: []
 
 USERFOCUS给出了247条<a href="http://www.userfocus.co.uk/resources/guidelines.html">评分指引</a>。
 
-[caption id="attachment_1075" align="aligncenter" width="500" caption="各类评分数据"]<img class="size-full wp-image-1075" title="table" src="http://yuguo.us/weblog/files/2011/12/table.jpg" alt="" width="500" height="240" />[/caption]
+[caption id="attachment_1075" align="aligncenter" width="500" caption="各类评分数据"]<img class="size-full wp-image-1075" title="table" src="http://yuguo.github.com/blog/files/2011/12/table.jpg" alt="" width="500" height="240" />[/caption]
 
 所有条目相加得出一个总分，此外还能输出一个表来告知如何改进。
 
-[caption id="attachment_1076" align="aligncenter" width="500" caption="雷达目标指示图——一个各项指标良好的网站"]<img class="size-full wp-image-1076" title="12" src="http://yuguo.us/weblog/files/2011/12/12.jpg" alt="" width="500" height="301" />[/caption]
+[caption id="attachment_1076" align="aligncenter" width="500" caption="雷达目标指示图——一个各项指标良好的网站"]<img class="size-full wp-image-1076" title="12" src="http://yuguo.github.com/blog/files/2011/12/12.jpg" alt="" width="500" height="301" />[/caption]
 
-[caption id="attachment_1074" align="aligncenter" width="500" caption="雷达目标指示图——一个各项指标很差的网站"]<img class="size-full wp-image-1074" title="21" src="http://yuguo.us/weblog/files/2011/12/21.jpg" alt="" width="500" height="301" />[/caption]
+[caption id="attachment_1074" align="aligncenter" width="500" caption="雷达目标指示图——一个各项指标很差的网站"]<img class="size-full wp-image-1074" title="21" src="http://yuguo.github.com/blog/files/2011/12/21.jpg" alt="" width="500" height="301" />[/caption]
 
-[caption id="attachment_1077" align="aligncenter" width="500" caption="竞品分析"]<img class="size-full wp-image-1077" title="71" src="http://yuguo.us/weblog/files/2011/12/71.jpg" alt="" width="500" height="301" />[/caption]
+[caption id="attachment_1077" align="aligncenter" width="500" caption="竞品分析"]<img class="size-full wp-image-1077" title="71" src="http://yuguo.github.com/blog/files/2011/12/71.jpg" alt="" width="500" height="301" />[/caption]
