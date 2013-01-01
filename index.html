@@ -5,9 +5,9 @@ title: Yuguo Blog
 <ol class="yearly-archive">
 
 　　{% for post in site.posts %}
-		{% if {{{post.date | date_to_string}} contains '2012'} %}
+		{% if {{{post.date | date: "%Y %h"}} contains '2012'} %}
 			{% unless post.draft %}
-	　　　　		<li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a><span class='data'>{{ post.date | date_to_string }}</span></li>
+	　　　　		<li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a><span class='data'>{{post.date | date: "%Y %h"}} </span></li>
 	  		{% endunless %}
   		{% endif %}
 	{% endfor %}
