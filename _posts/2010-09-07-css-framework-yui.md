@@ -7,7 +7,7 @@ categories: []
 ---
 YUI是Yahoo!的一套JavaScript和CSS库，可以建立富交互的web应用程序，并且使得脚本编程、Ajax都变得很容易。现行的YUI有两个版本：YUI2和YUI3。其中YUI2是建立在2006年提出的YUI版本之上的稳定版本，已经有很多站点在采用这个库，并且有良好的文档。而YUI3是新一代的CSS和JavaScript库，可能还不是很全面，但很多地方都是有经验的工程师采用最新的标准制定，值得期待，YUI3同样是有良好文档的。
 
-<!--more-->
+
 
 <em>本文只讨论YUI2的CSS部分</em>。
 <h2>YUI CSS框架的组成</h2>
@@ -137,7 +137,7 @@ YUI用非语义化的类名和ID名来布局，同时为了给读屏器提供更
 </tr>
 </tbody>
 </table>
-</div>
+
 代码里面一堆这种类名难道不是一个抓狂的理由吗？
 
 [caption id="attachment_180" align="aligncenter" width="643" caption="table布局"]<a href="http://yuguo.us/weblog/files/2010/09/2010-9-6-20-47-34.png"><img class="size-full wp-image-180" title="table布局" src="http://yuguo.us/weblog/files/2010/09/2010-9-6-20-47-34.png" alt="table布局" width="643" height="183" /></a>[/caption]

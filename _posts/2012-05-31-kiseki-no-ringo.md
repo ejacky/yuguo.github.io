@@ -16,7 +16,7 @@ categories: []
 既然想死，那就在死之前当一次傻瓜吧。
 
 《这一生，至少当一次傻瓜》</blockquote>
-<!--more-->
+
 
 此外2013年还会推出电影<a href="http://movie.douban.com/subject/10575206/">《奇迹的苹果》</a>。
 

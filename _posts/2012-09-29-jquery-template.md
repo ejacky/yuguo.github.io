@@ -7,7 +7,7 @@ categories: []
 ---
 之前写过一篇文章<a href="http://yuguo.us/weblog/javascript-template/">JavaScript模板入门</a>，在那篇文章中介绍了handlebar这个模板库，本文介绍另一种，对于熟悉jQuery语法的同学会用起来更方便，那就是jQuery模板，目前还在beta阶段。
 
-在jQuery的官网上可以看到有两种语法，但是其中一种已经不推荐了（<a href="http://api.jquery.com/tmpl/">http://api.jquery.com/tmpl/</a>），而是推荐jQuery.tmpl()（<a href="http://api.jquery.com/jquery.tmpl/">http://api.jquery.com/jquery.tmpl/</a>），本文也只会介绍这种方法。<!--more-->
+在jQuery的官网上可以看到有两种语法，但是其中一种已经不推荐了（<a href="http://api.jquery.com/tmpl/">http://api.jquery.com/tmpl/</a>），而是推荐jQuery.tmpl()（<a href="http://api.jquery.com/jquery.tmpl/">http://api.jquery.com/jquery.tmpl/</a>），本文也只会介绍这种方法。
 <h2>$.tmpl()</h2>
 语法很简单，在页面引入了jQuery.js和jQuery.tmpl.js（<a href="http://api.jquery.com/category/plugins/templates/">http://api.jquery.com/category/plugins/templates/</a>）以后，使用代码：
 <pre>$.tmpl( "&lt;li&gt;${Name}&lt;/li&gt;", { "Name" : "John Doe" }).appendTo( "#target" );</pre>

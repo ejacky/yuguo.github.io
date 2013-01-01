@@ -9,7 +9,7 @@ categories: []
 
 <img class="aligncenter size-full wp-image-1086" title="webmaster" src="http://yuguo.us/weblog/files/2011/12/webmaster.png" alt="" width="666" height="546" />
 
-<em><!--more-->Google Analytics</em>主要作用对页面内容、速度、目标人群（国家、语言、设备、页面时间、跳转）等信息跟踪，需要网站主在每一个页面上贴上<em>Google Analytics</em>的分析js代码。
+<em>Google Analytics</em>主要作用对页面内容、速度、目标人群（国家、语言、设备、页面时间、跳转）等信息跟踪，需要网站主在每一个页面上贴上<em>Google Analytics</em>的分析js代码。
 
 <em>Webmaster Tools</em>主要作用是跟踪网站在搜索引擎中的表现：对于某个关键词搜索出现多少次、排名、点击等数据，需要网站主认证对网站拥有所有权（可以通过上传文件或者meta的方法来认证）。
 

@@ -18,7 +18,7 @@ categories: []
 	<li>你不喜欢复杂，热爱简单。</li>
 	<li>你需要清晰、完善的文档。</li>
 </ul>
-<h2><!--more-->易于安装和配置</h2>
+<h2>易于安装和配置</h2>
 CodeIgniter几乎不需要配置，把它放在Apache的某个目录就可以直接运行了。
 <h2>友好灵活的URL路由</h2>
 根据MVC模式，CodeIgniter的URL一般如以下形式表示：

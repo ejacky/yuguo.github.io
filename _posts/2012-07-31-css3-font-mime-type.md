@@ -7,7 +7,7 @@ categories: []
 ---
 越深入研究CSS3字体这个话题，就越发现很多问题都处于空白或者争论状态，比如MIME TYPE。
 
-我用IE9打开QZone看了一下HTTP请求，IE9支持3种字体格式所以下载了3个字体文件，它们的MIME类型都是text/html，这当然是错误的。<!--more-->
+我用IE9打开QZone看了一下HTTP请求，IE9支持3种字体格式所以下载了3个字体文件，它们的MIME类型都是text/html，这当然是错误的。
 
 <a href="http://yuguo.us/weblog/files/2012/07/1.png"><img class="aligncenter size-full wp-image-1325" title="1" src="http://yuguo.us/weblog/files/2012/07/1.png" alt="" width="832" height="62" /></a>
 

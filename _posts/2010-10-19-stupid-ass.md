@@ -8,7 +8,7 @@ categories: []
 好端端的一个头像显示服务，全球通用，被那些傻逼们搞成这个样子：
 
 <img class="aligncenter size-full wp-image-337" title="2010-10-19-1-40-32" src="http://yuguo.us/weblog/files/2010/10/2010-10-19-1-40-32.png" alt="" width="557" height="220" />
-<!--more-->
+
 
 自己随手PS了一个本地头像，冒昧地套用在所有读者身上，希望不要介意。头像后面的那个人是“郭嘉”，你懂的。
 

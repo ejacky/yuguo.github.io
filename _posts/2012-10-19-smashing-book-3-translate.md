@@ -9,7 +9,7 @@ categories: []
 
 <a class="nbg" href="http://img1.douban.com/lpic/s4539433.jpg"><img src="http://img1.douban.com/mpic/s4539433.jpg" alt="众妙之门" /></a> <a class="nbg" href="http://img1.douban.com/lpic/s9071823.jpg"><img src="http://img1.douban.com/mpic/s9071823.jpg" alt="众妙之门2" /></a>
 
-<!--more-->
+
 
 因为我之前写了<a href="http://yuguo.us/weblog/the-smashing-book/">《众妙之门》的书评</a>，随后又校对了《众妙之门2》，我深深喜欢本系列书囊括的话题，所以自告奋勇向人民出版社的编辑<a href="http://weibo.com/u/2216685563">赵轩</a>申请众妙之门3的翻译工作。原因有几点：一是因为自己的工作就是专业前端开发，所以对专业内容的理解可能会比职业译者更好，这是对自己能力的自信；二是能把Smashing Book这样优秀的Web杂志书搬到中国，是非常有意义的一件事情；三是我并不打算自己一个人完成所有的翻译，而是把对此感兴趣的同事集合起来分配任务，通力合作，做一次小小的“众包”翻译的尝试。赵轩得知我的计划也非常高兴，因为团队合作显然会比单人的译者更快地完成全书，但在进度、措辞一致性、和内容质量上就一定要我来整体把关。
 

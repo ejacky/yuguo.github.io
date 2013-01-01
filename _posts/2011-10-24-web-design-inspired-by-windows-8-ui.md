@@ -9,7 +9,7 @@ Windows 8下载放出一段时间了，国外对Windows 8在网页设计中能�
 
 本文介绍一些Windows 8风格的网页设计的资源。
 
-<!--more-->
+
 <h2><a href="http://www.doublejdesign.co.uk/downloads/demo/windows8like/">A Web Design Inspired by Windows 8 UI</a></h2>
 这是一个根据Windows 8 UI做的主题。在主题首页展示最新的博客、缩略图，还有一些个人信息。在正文页边栏显示tag、Category等信息。
 

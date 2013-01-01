@@ -9,7 +9,7 @@ Drupal是一个相当不错的CMS。在这几年CMS的蓬勃发展中，他跟wo
 
 因为我对wordpress更加熟悉，所以介绍Drupal的时候会作出对比，从一个熟悉的概念介绍一个陌生的概念往往是一种很有效的学习方法。
 
-<!--more-->
+
 <h2>Drupal与wordpress的不同</h2>
 这二个系统经常被拿来跟对方比较。<a href="http://changingway.org/2010/04/29/drupal-and-wordpress-two-years-on/">changingway.org</a>的结论是“wordpress更容易上手。而当页面开始复杂的时候，Drupal是更好的选择”。这些年来两个系统互相从对方身上学习优点，都在变得更加易用、更易配置。
 <h3>哪些人适合使用wordpress搭建站点</h3>

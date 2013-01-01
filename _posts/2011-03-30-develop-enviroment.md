@@ -10,7 +10,7 @@ categories: []
 	<li>公司的安全部门会给IE浏览器加上自动代理，此代理会让IETester崩溃，会让新版Opera无法被Fiddler抓包。</li>
 	<li>Fiddler无限抽风，抓的了一部分抓不了另一部分，而且反应奇慢，完全不可控。</li>
 </ol>
-<!--more-->然后问<a href="http://code.sh/">大猫</a>他是怎么代理服务器和本地的。总结如下：
+然后问<a href="http://code.sh/">大猫</a>他是怎么代理服务器和本地的。总结如下：
 
 服务器简单，直接修改hosts文件。
 

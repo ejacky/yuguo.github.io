@@ -8,7 +8,7 @@ categories: []
 <h2>﻿云端书签案例一</h2>
 在看到一篇不错的文章的时候，我会点击书签栏上的Read Later（详情<a href="http://www.instapaper.com/u">http://www.instapaper.com/u</a>），然后本文就会保存在我的云端帐号上。
 
-<!--more-->
+
 
 <img class="aligncenter size-full wp-image-632" title="一篇不错的文章" src="http://yuguo.us/weblog/files/2011/01/QQ拼音截图未命名.png" alt="" width="579" height="455" />
 

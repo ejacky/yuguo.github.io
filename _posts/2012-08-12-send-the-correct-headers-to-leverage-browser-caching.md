@@ -5,7 +5,7 @@ date: 2012-08-12 18:57
 comments: true
 categories: []
 ---
-web页面变得越来越胖，这意味着更多脚本、样式、图片和flash。初次访问站点的访客不得不请求很多HTTP请求，但是可以通过设置Expire头来让这些文件缓存起来，避免重复的HTTP请求。Expire头经常用在图片上，但在脚本、样式和flash上都应使用这一技术。<!--more-->
+web页面变得越来越胖，这意味着更多脚本、样式、图片和flash。初次访问站点的访客不得不请求很多HTTP请求，但是可以通过设置Expire头来让这些文件缓存起来，避免重复的HTTP请求。Expire头经常用在图片上，但在脚本、样式和flash上都应使用这一技术。
 <h2>Expire</h2>
 Expire头的设置在服务器端进行，服务请求通过在HTTP相应中增加Expire头来告诉客户端该文件可以缓存多久，比如：
 <pre>Expires: Thu, 15 Apr 2020 20:00:00 GMT</pre>

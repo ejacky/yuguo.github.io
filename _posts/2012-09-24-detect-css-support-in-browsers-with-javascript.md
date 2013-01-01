@@ -7,7 +7,7 @@ categories: []
 ---
 在项目中需要快速检测浏览器是否支持某CSS3特性，比如检测是否支持“transform”，然后我的布局会有两种完全不同的版式。
 
-当然除开本文介绍的这种快速方法，还有一种更有名和更通用的方法，那就是<a href="http://modernizr.com/">modernizr</a>，运行脚本之后它会在html的class上加上浏览器支持的所有特性的列表。<!--more-->
+当然除开本文介绍的这种快速方法，还有一种更有名和更通用的方法，那就是<a href="http://modernizr.com/">modernizr</a>，运行脚本之后它会在html的class上加上浏览器支持的所有特性的列表。
 
 优点：
 <ul>

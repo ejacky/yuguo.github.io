@@ -9,7 +9,7 @@ categories: []
 
 1.RSS 输出自从第四周流水记就停止了，这真是一个严重的问题，幸亏某热心读者<a rel="external" href="http://21haolou.tk/blogs/read">Moon.Wong</a>评论指出来，我才发现这个bug，原来是上上周学习Google Date API的时候，WP输出的Feed不能通过API抓取到，我就试着改了下核心代码中的RSS，当时没有发现问题。大学的时候就听从了前辈的建议，订阅自己的博客，能检查自己的博客是否出了问题。现在懒了，都没注意自己博客feed了。
 
-<!--more-->
+
 
 2.嵌套评论的JS出错了，我用Chrome都没发觉这个问题。偶尔用FF，发现Firebug提示JS错误，一看，漏掉了comment-reply这个JS，无法动态嵌套了，已经修复。
 

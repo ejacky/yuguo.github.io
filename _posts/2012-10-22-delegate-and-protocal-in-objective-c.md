@@ -7,7 +7,7 @@ categories: []
 ---
 委托是Objective-C中最常用的一种回调机制。大部分情况下，“协议”的用法是跟“委托”同义的，所以本文一起来讲。
 
-委托是一个指向一个对象的指针，该对象有一系列方法，该对象的委托人（另一个对象）非常清楚这些方法，并且会在某些事件发生的时候调用这些方法。简单的说，这是一种机制，允许后创建的对象（later-created object）来调用<em>特定的回调函数</em>。<!--more-->
+委托是一个指向一个对象的指针，该对象有一系列方法，该对象的委托人（另一个对象）非常清楚这些方法，并且会在某些事件发生的时候调用这些方法。简单的说，这是一种机制，允许后创建的对象（later-created object）来调用<em>特定的回调函数</em>。
 
 一个简单的例子是<a href="http://developer.apple.com/library/ios/#documentation/uikit/reference/UIAlertView_Class/UIAlertView/UIAlertView.html">UIAlertView</a>（没有编辑器写长类名真不习惯），你创建一个UIAlertView的实例来显示一个对话框，用户会点击OK或者Cancel，那么对话框得知哪个按钮被点击之后，它需要告诉你这一信息（调用你的方法），但它不知道调用哪个对象，调用哪个方法。
 

@@ -5,7 +5,7 @@ date: 2012-07-30 09:39
 comments: true
 categories: []
 ---
-使用CSS3自定义字体的时候，为了兼容所有浏览器，服务器需要输出4种格式的字体，分别是eot、svg、ttf和woff。<!--more-->
+使用CSS3自定义字体的时候，为了兼容所有浏览器，服务器需要输出4种格式的字体，分别是eot、svg、ttf和woff。
 
 CSS代码：
 <pre>@font-face {

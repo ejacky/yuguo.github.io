@@ -10,7 +10,7 @@ categories: []
 因为函数也是数据，所以可以给变量赋值。通过给变量复制，从而定义函数，这种方法叫做<strong>函数直接量</strong>。
 <pre>function f(){return 1;}//函数构造方法</pre>
 <pre>var f = function(){return 1;} //函数直接量</pre>
-二者是完全一样的。<!--more-->
+二者是完全一样的。
 <h2>匿名函数</h2>
 正如数据可以匿名一样，函数也可以匿名：
 <pre>"test"; //数据的匿名</pre>

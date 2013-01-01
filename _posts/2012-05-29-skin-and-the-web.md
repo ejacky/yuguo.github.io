@@ -7,7 +7,7 @@ categories: []
 ---
 Qzone是跟肤的，用户选择不同的皮肤的时候会看到不同的颜色。每一套“颜色”包括几种背景色、几种线条色、几种文字色、几种渐变色等。
 
-互联网上还在跟肤的完整已经非常少了，但在Qzone这是一个很大的赢利点，因为跟肤配合各种付费皮肤和付费帽子、付费名片等各种自定义，极大地提高了Qzone用户中付费的比例。而Qzone<a title="腾讯2012第一季度财报" href="http://tech.qq.com/zt2012/tencent12q1/index.htm" target="_blank">用户数量又是惊人的</a>。<!--more-->
+互联网上还在跟肤的完整已经非常少了，但在Qzone这是一个很大的赢利点，因为跟肤配合各种付费皮肤和付费帽子、付费名片等各种自定义，极大地提高了Qzone用户中付费的比例。而Qzone<a title="腾讯2012第一季度财报" href="http://tech.qq.com/zt2012/tencent12q1/index.htm" target="_blank">用户数量又是惊人的</a>。
 
 <a href="http://yuguo.us/weblog/files/2012/05/图片1.jpg"><img class="aligncenter size-full wp-image-1205" title="图片1" src="http://yuguo.us/weblog/files/2012/05/图片1.jpg" alt="" width="867" height="541" data-pinit="registered" /></a>
 

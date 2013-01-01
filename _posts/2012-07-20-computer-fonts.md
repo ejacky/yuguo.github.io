@@ -21,7 +21,7 @@ categories: []
 
 当我脑中浮现出这些问题的时候，辣就是一个深坑啊有木有！两个小时查了80+个英文站，结论如下：
 <h2>outline和bitmap</h2>
-简单的说，字体格式分三类其中两大类分别是outline的和bitmap的，就是矢量和点位图。点位图字体是常用语Linux系统的一种老式字体，对于每个固定的font-size都会储存每一个文字的点位图片。矢量字体就是常用的opentype和truetype之类了，字体储存的是矢量信息，所以字体设置不同的font-size的时候都可以缩放。<!--more-->
+简单的说，字体格式分三类其中两大类分别是outline的和bitmap的，就是矢量和点位图。点位图字体是常用语Linux系统的一种老式字体，对于每个固定的font-size都会储存每一个文字的点位图片。矢量字体就是常用的opentype和truetype之类了，字体储存的是矢量信息，所以字体设置不同的font-size的时候都可以缩放。
 <h2>outline字体可以内嵌bitmap</h2>
 The <code>'EBSC'</code> table provides a mechanism for forcing the TrueType scaler to use a particular size of embedded bitmap when generating glyphs for a different point size.
 

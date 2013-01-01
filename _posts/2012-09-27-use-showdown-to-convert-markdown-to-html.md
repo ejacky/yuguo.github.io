@@ -7,7 +7,7 @@ categories: []
 ---
 有的时候我们会有这样一种需求，我们有一个用markdown格式编写的文档，希望在一个页面上展示出来（很有可能是github），我不能用任何服务器端的语言，只能用静态数据和JavaScript。我也不希望使用任何桌面转义软件，因为这样每次发布都会很复杂——编写markdown，转义html，发布html。
 
-而我最开始使用markdown而不是html的原因是它非常快，而且在纯文本的状态下就非常具有可读性。<!--more-->
+而我最开始使用markdown而不是html的原因是它非常快，而且在纯文本的状态下就非常具有可读性。
 
 而且我不需要一个web端的编辑器，我会在本地的APP上编写markdown，这也是为了方便版本管理。
 
@@ -18,9 +18,9 @@ categories: []
 <a href="http://softwaremaniacs.org/playground/showdown-highlight/showdown.js">download</a>
 
 usage：
-<pre>var text = "Markdown *rocks*."; 
-var converter = new Showdown.converter();   
-var html = converter.makeHtml(text);  
+<pre>var text = "Markdown *rocks*.";
+var converter = new Showdown.converter();  
+var html = converter.makeHtml(text); 
 alert(html);</pre>
 <code>就是这么简单。</code>
 

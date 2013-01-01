@@ -6,7 +6,7 @@ comments: true
 categories: []
 ---
 平时在使用jQuery进行AJAX操作的时候，新生成的元素事件会失效，有时候不得不重新绑定一下事件，但是这样做很麻烦。jQuery1.3增加了一个live()方法，下面是手册上的说明：
-<blockquote>jQuery 1.3中新增的方法。给<em>所有当前以及将来会匹配的元素</em>绑定一个事件处理函数（比如click事件）。也能绑定<em>自定义事件</em>。<!--more-->
+<blockquote>jQuery 1.3中新增的方法。给<em>所有当前以及将来会匹配的元素</em>绑定一个事件处理函数（比如click事件）。也能绑定<em>自定义事件</em>。
 
 目前支持 click, dblclick, mousedown, mouseup, mousemove, mouseover, mouseout, keydown, keypress, keyup。
 

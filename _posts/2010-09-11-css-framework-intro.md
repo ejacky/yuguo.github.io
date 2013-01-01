@@ -6,10 +6,10 @@ comments: true
 categories: []
 ---
 这是对两周CSS框架研究工作的总结，以及一些关于分享会的感悟。
-<!--more-->
+
 <div id="__ss_5175295" style="width: 598px;"><strong><a title="css框架研究" href="http://www.slideshare.net/chandleryu/css-5175295">css框架研究</a></strong><object id="__sse5175295" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="598px" height="481px" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"><param name="allowFullScreen" value="true" /><param name="allowScriptAccess" value="always" /><param name="src" value="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=chandleryu-css-framework-100910141934-phpapp01&amp;rel=0&amp;stripped_title=css-5175295" /><param name="name" value="__sse5175295" /><param name="allowfullscreen" value="true" /><embed id="__sse5175295" type="application/x-shockwave-flash" width="598px" height="481px" src="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=chandleryu-css-framework-100910141934-phpapp01&amp;rel=0&amp;stripped_title=css-5175295" name="__sse5175295" allowscriptaccess="always" allowfullscreen="true"></embed></object>
-<div style="padding: 5px 0 12px;">View more <a href="http://www.slideshare.net/">presentations</a> from <a href="http://www.slideshare.net/chandleryu">chandleryu</a>.</div>
-</div>
+<div style="padding: 5px 0 12px;">View more <a href="http://www.slideshare.net/">presentations</a> from <a href="http://www.slideshare.net/chandleryu">chandleryu</a>.
+
 几点总结：
 
 1.在对外界的影响上，我一直是一个不积极的人。我从来不去试图改变什么，只是表达自己。当然，表达自己肯定是以希望说服对方为目的的，但这并不作为我必须完成的目标。我说EmEditor很好用，只是表达，他人如果说记事本很好用，我会说OK。我说CSS框架的24格很好用，希望设计师和全组重构都去做，如果对方不接受，我也OK。如果以说服对方为目的，那就一定会需要“评判”——judgement。

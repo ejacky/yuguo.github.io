@@ -7,7 +7,7 @@ categories: []
 ---
 wordpress 3.0开始引入了一个新的特性叫做Custom Post Types。
 
-在此功能出现之前我们要实现一些区别于“普通文章”的自定义文章的时候，往往需要用到Custom Fields。用户发表任何类型的“文章”——任何类型——都需要新建一个post，然后在Custom Fields中填入不同的名值对来进行自定义。这对用户不是很友好的一种方式。<!--more-->
+在此功能出现之前我们要实现一些区别于“普通文章”的自定义文章的时候，往往需要用到Custom Fields。用户发表任何类型的“文章”——任何类型——都需要新建一个post，然后在Custom Fields中填入不同的名值对来进行自定义。这对用户不是很友好的一种方式。
 
 <img title="custom fields" src="http://yuguo.us/weblog/files/2011/08/custom-fields.png" alt="" width="710" height="270" />
 
@@ -85,5 +85,5 @@ event_meta_options所做的就是创建一个表单，用来保存link值。
 <a href="http://www.shejibox.com/wordpress-custom-post-types/">http://www.shejibox.com/wordpress-custom-post-types/</a>
 
 <a href="http://wp.tutsplus.com/tutorials/widgets/using-custom-post-types-to-create-a-killer-portfolio/">http://wp.tutsplus.com/tutorials/widgets/using-custom-post-types-to-create-a-killer-portfolio/</a>
-<div><span style="color: #0000ee; -webkit-text-decorations-in-effect: underline;">
-</span></div>
+<span style="color: #0000ee; -webkit-text-decorations-in-effect: underline;">
+</span>

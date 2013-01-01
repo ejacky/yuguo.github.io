@@ -9,7 +9,7 @@ categories: []
 
 <a style="background-color: transparent;" href="http://union.dangdang.com/transfer.php?from=P-298749&amp;ad_type=10&amp;sys_id=1&amp;backurl=http://product.dangdang.com/product.aspx?product_id=20959927"><img class="aligncenter size-full wp-image-1028" title="smashing-book-zhcn" src="http://yuguo.us/weblog/files/2011/11/smashing-book-zhcn.jpg" alt="众妙之门" width="294" height="450" /></a>
 
-<!--more-->对比一下，我觉得封面是不如<em>Smashing Book</em>，线条太多，对齐线也太多。
+对比一下，我觉得封面是不如<em>Smashing Book</em>，线条太多，对齐线也太多。
 
 <a style="background-color: transparent;" href="http://yuguo.us/weblog/files/2011/11/smashing-book-front.png"><img class="aligncenter size-full wp-image-1027" title="smashing-book-front" src="http://yuguo.us/weblog/files/2011/11/smashing-book-front.png" alt="Smashing Book Front" width="342" height="365" /></a>
 <h2>关于Smashing Magazine</h2>

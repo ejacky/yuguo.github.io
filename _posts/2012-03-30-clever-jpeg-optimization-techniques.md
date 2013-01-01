@@ -7,7 +7,7 @@ categories: []
 ---
 今天看了一篇老文，对JPEG的压缩优化有了更深刻的理解，对JPEG存储数据的方法也更加了解。
 
-原文地址：<a href="http://www.smashingmagazine.com/2009/07/01/clever-jpeg-optimization-techniques/">http://www.smashingmagazine.com/2009/07/01/clever-jpeg-optimization-techniques/<!--more--></a>
+原文地址：<a href="http://www.smashingmagazine.com/2009/07/01/clever-jpeg-optimization-techniques/">http://www.smashingmagazine.com/2009/07/01/clever-jpeg-optimization-techniques/</a>
 <h2>8x8像素格</h2>
 <a href="http://yuguo.us/weblog/files/2012/03/grid-block1.png"><img class="aligncenter size-full wp-image-1151" title="grid-block" src="http://yuguo.us/weblog/files/2012/03/grid-block1.png" alt="" width="527" height="527" data-pinit="registered" /></a>
 

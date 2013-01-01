@@ -21,7 +21,7 @@ categories: []
 	<li>Bold</li>
 	<li>One or two special CSS classes for emphasizing or de-emphasizing text</li>
 </ul>
-<div><!--more-->让用户能自定义文本的颜色的话，页面就会乱七八糟的，如果只允许使用i和b的话，就会好很多了。</div>
+让用户能自定义文本的颜色的话，页面就会乱七八糟的，如果只允许使用i和b的话，就会好很多了。
 <h3>用户编辑CSS和HTML是否有必要？</h3>
 极少数用户能熟练掌握CSS和HTML，或者能理解HTML标签的语义化。所以不应该给与太大的自由度。
 <h3>给与的特性太多</h3>

@@ -7,7 +7,7 @@ categories: []
 ---
 前段时间我准备开源<a href="https://github.com/yuguo/33pu">33pu</a>的代码的时候，觉得自己的代码不够清晰，所以加上了大量的phpdoc注释。
 
-phpdoc注释类似javadoc注释，是一种格式严格的注释风格，在每一个class和function上都需要有phpdoc注释说明function的意图、参数、返回值。我开始做这件事的时候觉得新鲜而有趣，更重要的是内心充满了神圣的自豪感——我在使代码更好。<!--more-->
+phpdoc注释类似javadoc注释，是一种格式严格的注释风格，在每一个class和function上都需要有phpdoc注释说明function的意图、参数、返回值。我开始做这件事的时候觉得新鲜而有趣，更重要的是内心充满了神圣的自豪感——我在使代码更好。
 
 但是随之我开始觉得无聊，我的很多function都是非常简短的，3行代码，用了不错的function命名，在这种情况下phpdoc显得冗长而没有必要，而且让源码的行数大大增加。
 

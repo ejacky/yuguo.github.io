@@ -7,7 +7,7 @@ categories: []
 ---
 <blockquote>我最愛你是介乎法國與旺角的詩意　俾我再送多你一次　再送多一次　到你家多一次　送到去門前　再行多一圈　再兜多一轉　其實我不願離開這公司　全都因為對你太鍾意　其實我心願離開這公司　然之後一同與你搞生意　誰都知是對你太鍾意
 
-my little airport<!--more--></blockquote>
+my little airport</blockquote>
 <style>
 .article-body p a img {margin-left:-166px;}</style>
 从高中听“在动物园散步才是正经事”，开始喜欢上这个声音柔软、键盘怪异、吉他温柔的组合。喜欢他们唱歌，独白……如果在一个时期听某个歌手的歌，那她对于自己的意义就不只限于是歌了，听着她就会唤起一段记忆和感觉。

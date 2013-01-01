@@ -9,7 +9,7 @@ categories: []
 
 本文不是所有的解决方案大全，只是选取介绍其中较优的方式。一些空标签和嵌套过多，或者HTTP请求过多的方法也能完成任务，但这些糟糕的方法即使介绍出来也是没有人使用的，就不浪费时间了。
 
-<!--more-->
+
 
 <a href="http://yuguo.us/wp-content/blogs.dir/5/files/2010/10/demo/"><span style="color: #ff0000;"><em>所有例子的DEMO在这里。</em></span></a>
 

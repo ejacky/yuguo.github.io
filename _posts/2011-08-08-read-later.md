@@ -7,7 +7,7 @@ categories: []
 ---
 今天购买了第一个收费iPad应用程序：Instapaper。
 <h3>关于Instapaper</h3>
-之前<a href="http://yuguo.us/weblog/read-with-kindle3/">买了kindle</a>之后就开始使用Instapaper来把网络上看到的好文Read Later下来，然后导入到kindle中去阅读。后来又写了一篇小短文“<a href="http://yuguo.us/weblog/one-idea-about-cloud-bookmark/">关于云端书签的一个想法</a>”介绍Instapaper。<!--more-->
+之前<a href="http://yuguo.us/weblog/read-with-kindle3/">买了kindle</a>之后就开始使用Instapaper来把网络上看到的好文Read Later下来，然后导入到kindle中去阅读。后来又写了一篇小短文“<a href="http://yuguo.us/weblog/one-idea-about-cloud-bookmark/">关于云端书签的一个想法</a>”介绍Instapaper。
 
 Instapaper设计的主要特点如下：
 <ul>

@@ -5,7 +5,7 @@ date: 2012-05-02 16:09
 comments: true
 categories: []
 ---
-欣喜的是，继<a href="http://yuguo.us/weblog/the-smashing-book/">《众妙之门》</a>之后，人民邮电出版社继续推出了《Smashing Book 2》的译本——《众妙之门2》。《众妙之门2》是一本大视角的前端设计类精选书籍，章节内容精选自<a href="http://www.smashingmagazine.com/">Smashing Magazine</a>网站。这不是第一本《众妙之门》的再版，而是一本全新的书。<!--more-->
+欣喜的是，继<a href="http://yuguo.us/weblog/the-smashing-book/">《众妙之门》</a>之后，人民邮电出版社继续推出了《Smashing Book 2》的译本——《众妙之门2》。《众妙之门2》是一本大视角的前端设计类精选书籍，章节内容精选自<a href="http://www.smashingmagazine.com/">Smashing Magazine</a>网站。这不是第一本《众妙之门》的再版，而是一本全新的书。
 <h2>优点</h2>
 <strong>1.大视角</strong>
 

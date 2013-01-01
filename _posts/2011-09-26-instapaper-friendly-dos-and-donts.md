@@ -8,7 +8,7 @@ categories: []
 <h2>什么是Instapaper</h2>
 <a href="http://www.instapaper.com/">Instapaper</a>是一个提供Read Later服务的跨平台解决方案。在任何地方（比如浏览器中，或者Google Reader中，邮件等）选择Read Later之后，还能在任何地方（iPad，iPhone，kindle）阅读。
 
-<!--more-->
+
 <h2>什么是Instapaper Friendly？</h2>
 当读者访问你的网站，而且你的网站是阅读性质的（比如博客、相册），而不是社交性质的（比如SNS，Twitter），那么你的读者很有可能会使用Instapaper来Read Later。如果读者保存下来的内容乱七八糟，要么没有保存到正文，要么保存了广告，或者评论，那就不是友好的。反之则是友好的。
 
@@ -38,7 +38,7 @@ Instapaper给网站开发者一些公开的建议，包括对正文文本解析�
 	<li><code>instapaper_body</code>: The first element with this class will be used as the body container. All text outside of this element will be removed from the text output. If omitted, Instapaper will try to locate a suitable body container that includes all article text with minimal clutter. If such a container cannot be found with confidence, the HTML <code>&lt;body&gt;</code> element will be used.</li>
 	<li><code>instapaper_ignore</code>: Any elements with this class, and their contents, will be removed from the text output. It’s not necessary to specify this on anything outside of the <code>instapaper_body</code>element, if present.</li>
 </ul>
-<div>也就是说，通过3个class名，可以显式地告诉Instapaper如何读取内容。instapaper_title这个class里的元素会作为标题，如果没有这个class，那么会获取页面的&lt;title&gt;标签。</div>
+也就是说，通过3个class名，可以显式地告诉Instapaper如何读取内容。instapaper_title这个class里的元素会作为标题，如果没有这个class，那么会获取页面的&lt;title&gt;标签。
 <h3>前端代码的最佳实践</h3>
 <h4>使用语义化的html标签，不使用inline style</h4>
 比如&lt;h2&gt;、&lt;h3&gt;作为段落标题，使用&lt;strong&gt;而不是&lt;span style="font-weight:bold"&gt;加粗，使用&lt;code&gt;来输出代码，使用&lt;li&gt;输出代码，使用&lt;p&gt;而不是&lt;br/&gt;来区分段落……因为当Read Later之后，站点样式就失效了。

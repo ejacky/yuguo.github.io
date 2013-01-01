@@ -47,7 +47,7 @@ Express中可以有3种值：
 	<li>双引号包围的字符串常量。String constants in double quotes.</li>
 	<li>其他变量的名字。The name of another variable defined in a live template.</li>
 </ul>
-<div>预设的函数有一些会很有用，比如用time()输出当前的时间。</div>
+预设的函数有一些会很有用，比如用time()输出当前的时间。
 <h3>例子</h3>
 以下是我用代码片段来给项目带来快捷的一些例子。从这些例子中主要可以看出使用代码片段的几个优势：
 <ol>

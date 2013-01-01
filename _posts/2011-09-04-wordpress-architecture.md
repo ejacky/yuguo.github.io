@@ -14,10 +14,10 @@ categories: []
 <a href="http://yuguotheme.com/?themedemo=Architecture">Demo页</a>
 
 主题设计的大部分是@tianweier，小部分是我自己乱调。设计简洁，有层次。代码全部由我完成，参考了Twenty官方主题，以及GA插件的部分代码。
-<!--more-->
+
 <h2>截图</h2>
-<div class="mceTemp mceIEcenter"><dl id="attachment_916" class="wp-caption aligncenter" style="width: 996px;"><dt class="wp-caption-dt"><img class="size-full wp-image-916" title="首页截图" src="http://yuguo.us/weblog/files/2011/09/Architecture-1.png" alt="首页截图" width="986" height="851" /></dt></dl></div>
-<div class="mceTemp mceIEcenter"><dl id="attachment_917" class="wp-caption aligncenter" style="width: 979px;"><dt class="wp-caption-dt"><img class="size-full wp-image-917" title="内页截图" src="http://yuguo.us/weblog/files/2011/09/Architecture-2.png" alt="内页截图" width="969" height="861" /></dt></dl></div>
+<div class="mceTemp mceIEcenter"><dl id="attachment_916" class="wp-caption aligncenter" style="width: 996px;"><dt class="wp-caption-dt"><img class="size-full wp-image-916" title="首页截图" src="http://yuguo.us/weblog/files/2011/09/Architecture-1.png" alt="首页截图" width="986" height="851" /></dt></dl>
+<div class="mceTemp mceIEcenter"><dl id="attachment_917" class="wp-caption aligncenter" style="width: 979px;"><dt class="wp-caption-dt"><img class="size-full wp-image-917" title="内页截图" src="http://yuguo.us/weblog/files/2011/09/Architecture-2.png" alt="内页截图" width="969" height="861" /></dt></dl>
 <h2>特性</h2>
 <ul>
 	<li>html5；</li>
@@ -33,7 +33,7 @@ categories: []
 </ul>
 <h2>支持</h2>
 <h3>1.如何自定义menu？</h3>
-<div class="mceTemp mceIEcenter"><dl id="attachment_923" class="wp-caption aligncenter" style="width: 266px;"><dt class="wp-caption-dt"><img class="size-full wp-image-923" title="自定义menu" src="http://yuguo.us/weblog/files/2011/09/Architecture-3.png" alt="自定义menu" width="256" height="45" /></dt></dl></div>
+<div class="mceTemp mceIEcenter"><dl id="attachment_923" class="wp-caption aligncenter" style="width: 266px;"><dt class="wp-caption-dt"><img class="size-full wp-image-923" title="自定义menu" src="http://yuguo.us/weblog/files/2011/09/Architecture-3.png" alt="自定义menu" width="256" height="45" /></dt></dl>
 自定义方法为，在后台Appearance中找到Menus之后，自定义一些链接（任意链接，站内或者站外都可以）后添加到一个menu就可以了。本主题只设定了一个menu。
 <h3><a href="http://yuguo.us/weblog/files/2011/09/Architecture-4.png"><img class="aligncenter size-full wp-image-924" title="后台自定义menu" src="http://yuguo.us/weblog/files/2011/09/Architecture-4.png" alt="后台自定义menu" width="921" height="424" /></a></h3>
 <h3>2.如何自定义Google Analytics代码？</h3>

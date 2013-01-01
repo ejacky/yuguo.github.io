@@ -9,7 +9,7 @@ categories: []
 
 如果没有读过之前我的@font-face实战，请移步：<a href="http://yuguo.us/weblog/font-face-in-action/">http://yuguo.us/weblog/font-face-in-action/</a>
 
-为了讲清楚流程，我用PS很不职业地画了一个流程图。<!--more-->
+为了讲清楚流程，我用PS很不职业地画了一个流程图。
 
 <a href="http://yuguo.us/weblog/files/2012/07/font.png"><img class="aligncenter size-full wp-image-1275" title="font" src="http://yuguo.us/weblog/files/2012/07/font.png" alt="" width="712" height="925" /></a>
 

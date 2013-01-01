@@ -7,7 +7,7 @@ categories: []
 ---
 今天看到一个有意思的demo，用纯css3实现了幻灯片。
 
-<a href="http://csscience.com/responsiveslidercss3/">http://csscience.com/responsiveslidercss3/<!--more--></a>
+<a href="http://csscience.com/responsiveslidercss3/">http://csscience.com/responsiveslidercss3/</a>
 
 Best In Test: Firefox (transition performance)
 Full Support: Chrome, Firefox, Opera, Safari (latest versions of all browsers)
@@ -30,10 +30,10 @@ select选中之后就会通过CSS3来触发margin的改变。
 #slide4:checked ~ #slides .inner { margin-left:-300%; }
 #slide5:checked ~ #slides .inner { margin-left:-400%; }</pre>
 然后同时改变label的显示和隐藏，也就是替换成其他的label。
-<pre>#slide1:checked ~ #controls label:nth-child(2), 
-#slide2:checked ~ #controls label:nth-child(3), 
-#slide3:checked ~ #controls label:nth-child(4), 
-#slide4:checked ~ #controls label:nth-child(5), 
+<pre>#slide1:checked ~ #controls label:nth-child(2),
+#slide2:checked ~ #controls label:nth-child(3),
+#slide3:checked ~ #controls label:nth-child(4),
+#slide4:checked ~ #controls label:nth-child(5),
 #slide5:checked ~ #controls label:nth-child(1) {
 	background: url('next.png') no-repeat;
 	float: right;

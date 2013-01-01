@@ -9,7 +9,7 @@ Tumblr是我很喜欢的一个产品，超轻量级，现在已经被block了，
 
 原文地址：http://www.smashingmagazine.com/2010/07/22/a-complete-guide-to-tumblr/
 
-译者：余果（https://yuguo.us）<!--more-->
+译者：余果（https://yuguo.us）
 
 &lt;!-------分割线-------------&gt;
 

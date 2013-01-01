@@ -7,7 +7,7 @@ categories: []
 ---
 语义网是什么？维基百科定义：
 <blockquote><strong>语义网</strong> (Semantic Web) 是由<a title="万维网联盟" href="http://zh.wikipedia.org/wiki/%E4%B8%87%E7%BB%B4%E7%BD%91%E8%81%94%E7%9B%9F">万维网联盟</a>的<a title="蒂姆·伯纳斯-李" href="http://zh.wikipedia.org/wiki/%E8%92%82%E5%A7%86%C2%B7%E4%BC%AF%E7%BA%B3%E6%96%AF-%E6%9D%8E">蒂姆·伯纳斯-李</a>(Tim Berners-Lee)在<a title="1998年" href="http://zh.wikipedia.org/wiki/1998%E5%B9%B4">1998年</a>提出的一个概念，它的核心是：通过给<a title="万维网" href="http://zh.wikipedia.org/wiki/%E4%B8%87%E7%BB%B4%E7%BD%91">万维网</a>上的文档 (如: HTML)添加能够被<a title="计算机" href="http://zh.wikipedia.org/wiki/%E8%AE%A1%E7%AE%97%E6%9C%BA">计算机</a>所理解的语义(Meta data)，从而使整个互联网成为一个通用的信息交换媒介。语义万维网通过使用标准、<a title="置标语言" href="http://zh.wikipedia.org/wiki/%E7%BD%AE%E6%A0%87%E8%AF%AD%E8%A8%80">置标语言</a>和相关的处理工具来扩展万维网的能力。不过语义网概念实际上是基于很多现有技术的(某些技术甚至可以追溯到20世纪60年代末期), 也依赖于后来和<a title="XML" href="http://zh.wikipedia.org/wiki/XML">text-and-markup</a>与<a title="知识表现" href="http://zh.wikipedia.org/wiki/%E7%9F%A5%E8%AF%86%E8%A1%A8%E7%8E%B0">知识表现</a>的综合。</blockquote>
-语义网蓄势未发，除了基础工作庞大繁杂之外，还有一个经济学上的原因，可以用网络的外部性来解释。<!--more-->
+语义网蓄势未发，除了基础工作庞大繁杂之外，还有一个经济学上的原因，可以用网络的外部性来解释。
 
 何为网络外部性？《<a href="http://union.dangdang.com/transfer.php?sys_id=1&amp;ad_type=10&amp;from=P-298749&amp;backurl=http%3A%2F%2Fproduct.dangdang.com%2Fproduct.aspx%3Fproduct_id%3D22788285" target="_blank">大数据</a>》是这么说的：
 <blockquote>让我们穿越回1876年，电话刚刚被美国人贝尔发明的时候。

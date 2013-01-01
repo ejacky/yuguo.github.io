@@ -11,7 +11,7 @@ categories: []
 
 此外也更新了自己的PS Action库，增加了一个能resize 960px然后压缩为合适质量的Action。希望我的博客流量能顶住。
 
-<!--more-->
+
 
 
 我爱宫崎葵 :)

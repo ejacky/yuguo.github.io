@@ -15,7 +15,7 @@ LZ说：
 <pre><code>http://localhost/menuname.de?foo=bar&amp;amp;number=0</code></pre>
 这个问题相当具有代表性，有169个赞。
 
-<!--more-->
+
 
 <code>1L回答：</code>
 

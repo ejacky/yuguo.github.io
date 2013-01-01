@@ -18,7 +18,7 @@ categories: []
 	<li>完美兼容</li>
 	<li>快速上手</li>
 </ol>
-<!--more-->
+
 
 <a href="http://www.google.com/trends?q=css+framework"><img class="aligncenter size-full wp-image-125" title="CSS框架搜索趋势" src="http://yuguo.us/weblog/files/2010/08/1.png" alt="CSS框架搜索趋势" width="586" height="224" /></a>
 

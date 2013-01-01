@@ -6,7 +6,7 @@ comments: true
 categories: []
 ---
 上一篇已经实现了瀑布流wordpress主题的基本布局，接下来讲ajax加载内容。
-<h2><!--more-->翻页代码</h2>
+<h2>翻页代码</h2>
 标准的wordpress翻页代码是在大循环之外有以下代码：
 <pre>&lt;div id="nav-previous"&gt;
  &lt;?php next_posts_link( __( 'Older posts') ); ?&gt;

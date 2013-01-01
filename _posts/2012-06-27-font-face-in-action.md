@@ -7,7 +7,7 @@ categories: []
 ---
 以前都只是理论，最近我在Qzone真正开始使用字体来实现图标。
 
-如果以前都不了解这一话题，可以先看看<a href="https://twitter.com/#!/mienflying">@shenfei</a>的两篇超赞文章：<a href="http://www.qianduan.net/css3-icon-font-guide.html">《CSS3 icon font完全指南》</a>和<a href="http://www.qianduan.net/icon-font-large-collecting.html">《icon font大搜罗》</a>。<!--more-->
+如果以前都不了解这一话题，可以先看看<a href="https://twitter.com/#!/mienflying">@shenfei</a>的两篇超赞文章：<a href="http://www.qianduan.net/css3-icon-font-guide.html">《CSS3 icon font完全指南》</a>和<a href="http://www.qianduan.net/icon-font-large-collecting.html">《icon font大搜罗》</a>。
 
 与一些CSS3的渐进增强不一样，使用字体来实现图标是跨浏览器兼容的，甚至IE6都完美兼容。当然，需要在代码和字体文件上下一些功夫。
 

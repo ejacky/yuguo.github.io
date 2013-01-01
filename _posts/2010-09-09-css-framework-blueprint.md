@@ -7,7 +7,7 @@ categories: []
 ---
 blueprint跟960grids一样，是一个基于栅格理论的框架，它用两个简洁不简单的<a href="http://www.blueprintcss.org/tests/" target="_blank">demo页</a>把我征服了，不信你可以试试这两个demo，只在Firebug中修改类名来修改布局。
 
-<!--more-->
+
 <h2>栅格系统</h2>
 来自射雕前辈的栅格系统介绍：
 

@@ -8,7 +8,7 @@ categories: []
 随意记录一下一些经验，对新手可能有帮助。
 <h2>数组NSArray</h2>
 操作数组的时候计算数组包含的对象个数是：
-<pre><code>[dataArray count]<!--more--></code></pre>
+<pre><code>[dataArray count]</code></pre>
 获取索引处的对象
 <pre><code>[dataArray objectAtIndex:2]</code></pre>
 删除指定索引处对象
