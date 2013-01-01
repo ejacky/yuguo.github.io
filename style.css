@@ -145,3 +145,92 @@
   li.yearly-archive h2 + p a                  { color:#333; }
   li.yearly-archive h2 + p a:hover            { color:#9c6; }
   
+  /* ---------------------------------------------------------------------------------------------------------- 
+  11 Media Queries (using a mobile-first approach) ------------------------------------------------------------
+  ---------------------------------------------------------------------------------------------------------- */
+  
+  /* 11a - 720 up */
+  @media screen and (min-width:720px) {
+  
+    html                        { padding:0 8%; }
+    body                        { margin:0 auto; }
+    div.fauxcolumn              { bottom:0; left:0; position:fixed; top:0; width:34.755%; background:#f6f6f6; }
+    
+    div.primary                 { background:none; float:left; padding:8em 0; width:32%; }
+    div.primary div div         { border-top:1px solid rgba(0,0,0,0.05); padding:3em 0; }
+    div.content                 { float:left; padding:3.65em 0 8em 0; width:68%; }
+    div.ads                     { display:block; }
+    h1,
+    div.ads p                   { width:85%; }
+    div.ads span                { display:block; /* Purely for the sake of the span */ width:90%; }
+    
+    header nav ul               { padding:2em 0 3em 0; }
+    header nav ul li            { display:block; padding:0; }
+        
+    div.content h2,
+    div.content h3,
+    div.content h4,
+    div.content p,
+    div.content ol,
+    article ul,
+    article ol,
+    pre,
+    blockquote                  { padding-left:5%; }
+    form input,
+    form textarea               { margin-left:5%; }
+    div.content blockquote p    { padding-left:1em; }
+    
+    article figure figcaption   { padding-left:5%; }
+    
+    div#comments ol li article header div.gravatar-container { left:5%; }
+    div#comments ol li article header h3,
+    div#comments ol li article header h3 + p { padding:0 0 0 20%; }
+    
+  }
+  
+  /* 11b - 880 up */
+  @media screen and (min-width:880px) {
+  
+    h1,
+    div.ads p                   { width:46.875%; }
+    div.ads span                { width:70%; }
+    
+    h2#art-direction            { padding-left:15%; }
+
+    div.content h2,
+    div.content h3,
+    div.content h4,
+    div.content p,
+    div.content ol,
+    article ul,
+    article ol,
+    pre,
+    blockquote                  { padding-left:28.787%; /* 190 / 660 = 0.28787 */ }
+    form input,
+    form textarea               { margin-left:28.787%; /* 190 / 660 = 0.28787 */ width:71%; }
+    
+    article figure figcaption   { left:0; padding:0.825em 0 0 5%; position:absolute; width:25%; }
+    
+    div#comments ol li article header div.gravatar-container { left:15%; }
+    div#comments ol li article header h3,
+    div#comments ol li article header h3 + p { padding:0 0 0 28.787%; }
+    
+  }
+  
+  /* 11c - 1350 up */
+  @media screen and (min-width:1350px) {
+    html                        { padding:0 16%; }
+    div.fauxcolumn              { width:37.75%; }
+  }
+
+  /* 11d - 1700 up */
+  @media screen and (min-width:1700px) {
+    html                        { padding:0 23%; }
+    div.fauxcolumn              { width:40.25%; }
+  }
+
+  /* 11e - 2000 up */
+  @media screen and (min-width:2000px) {
+    html                        { padding:0 30%; }
+    div.fauxcolumn              { width:42.85%; }
+  }
