@@ -178,7 +178,7 @@ textarea                          { overflow: auto; vertical-align: top; resize:
 table                            { border-collapse: collapse; border-spacing: 0; }
 
 td                            { vertical-align: top; }
-  
+
   /*
   ================================================
   Handcrafted by Elliot Jay Stocks
@@ -274,7 +274,7 @@ td                            { vertical-align: top; }
   p.note,
   p.small-print,
   blockquote + cite,
-  li.yearly-archive p span,
+  li.yearly-archive span.data,
   div#comments ol li article header h3 + p { font-family:"Skolar Italic", "Georgia", "Times New Roman", serif; font-style:italic; }
 
   /* 02d - Headings */

@@ -4,6 +4,6 @@ title: Yuguo Blog
 ---
 <ul>
 　　{% for post in site.posts %}
-　　　　<li class='yearly-archive group'><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a><span>{{ post.date | date_to_string }}</span></li>
+　　　　<li class='yearly-archive group'><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a><span class='data'>{{ post.date | date_to_string }}</span></li>
 　　{% endfor %}
 </ul>
