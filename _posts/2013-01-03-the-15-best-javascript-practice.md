@@ -5,7 +5,6 @@ date: 2013-01-03 00:07
 comments: true
 categories: []
 ---
-
 本文档整理大部分公认的、或者少有争议的JavaScript良好书写规范（Best Practice）。一些显而易见的常识就不再论述（比如要用对象支持识别判断，而不是浏览器识别判断；比如不要嵌套太深）。条目顺序按重要级粗略的从高到低排列。
 
 ## 把外部JavaScript文件放在HTML底部
