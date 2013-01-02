@@ -7,8 +7,11 @@ categories: []
 ---
 <h2>起因</h2>
 我的博客下面有这样的翻页条，它是基于一个叫做PageNavi的插件生成的。
+
 <img class="aligncenter size-full wp-image-864" title="pagenav_1" src="http://yuguo.us/files/2011/08/pagenav_1.png" alt=""   />
+
 插件很复杂，有语言设置，还能在后台由用户设置具体条目或者显示信息。
+
  <a href="http://yuguo.us/files/2011/08/pagenav_2.png"><img class="aligncenter size-full wp-image-865" title="pagenav_2" src="http://yuguo.us/files/2011/08/pagenav_2.png" alt=""   /></a>虽然它很强大，但我如果想把我的博客主题开源发布出去，那么要求用户全都下载这个插件不是一个很好的选择。而且这么多自定义项并不是每个用户都需要的。 所以我决定把它整合到主题中去。步骤如下：
 <ol>
 	<li>创建函数</li>
@@ -26,6 +29,7 @@ categories: []
   if( !empty($wp_query-&gt;query_vars['s']) ) $a['add_args'] = array( 's' =&gt; get_query_var( 's' ) );
   $a['total'] = $max;
   $a['current'] = $current;
+
   //请配置下面的参数，用来设置页面的pagenav
   $total = 0; //1 - display the text "Page N of N", 0 - not display
   $a['mid_size'] = 2; //how many links to show on the left and right of the current
@@ -33,6 +37,7 @@ categories: []
   $a['prev_text'] = '«'; //text of the "Previous page" link
   $a['next_text'] = '»'; //text of the "Next page" link
   $a['type'] = 'plain';
+
   if ($max &gt; 1) echo '&lt;div class="yuguo-pagenavi"&gt;';
   if ($total == 1 &amp;&amp; $max &gt; 1) $pages = '&lt;span class="pages"&gt;Page ' . $current . ' of ' . $max . '&lt;/span&gt;'."\r\n";
   echo $pages . paginate_links($a);
