@@ -143,7 +143,7 @@
   /* 11a - 720 up */
   @media screen and (min-width:720px) {
   
-    html                        { padding:0 8%; }
+    html                        { padding:0 6%; }
     body                        { margin:0 auto; }
     div.fauxcolumn              { bottom:0; left:0; position:fixed; top:0; width:34.755%; background:#f6f6f6; }
     
