@@ -6,7 +6,6 @@ comments: true
 categories: []
 ---
 Drupal的核心是由一个轻量级的框架构成的。当你从drupal.org下载Drupal时，得到的就是Drupal核心。它负责提供基本的功能，用以支持系统的其它部分。
-
 无论是核心还是扩展，它的基本单位都是模块。你可以自行下载其他的的模块以扩展功能。
 <h2>Core Modules</h2>
 核心模块提供了这么一些特性：
