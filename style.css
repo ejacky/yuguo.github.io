@@ -138,7 +138,7 @@
   
   body.blog div.content > ol li:first-child   { padding-top:0; }
   .yearly-archive {margin-top: -40px;}
-  .yearly-archive h2 {color:rgba(0,0,0,0.3);font-size: 4em;margin: 10px;}
+  .yearly-archive h2 {color:rgba(0,0,0,0.3);font-size: 4em;margin: 10px 0;}
   .yearly-archive a {color:#333;}
   .yearly-archive span.date                    { color:rgba(0,0,0,0.3); display:block; }
   
