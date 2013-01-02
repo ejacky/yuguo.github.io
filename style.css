@@ -44,7 +44,6 @@
   pre                         { background:rgba(0,0,0,0.1);  }
   pre                         { margin:0.5em 0; padding-left:1em; }
   pre code                    { background:none; }
-  h2 + p                      { color:rgba(0,0,0,0.3); padding:1.5em 0; }
   p.note                      { color:rgba(0,0,0,0.3); }
   figcaption,
   p.copyright,
@@ -132,8 +131,8 @@
   ---------------------------------------------------------------------------------------------------------- */
   
   body.blog div.content > ol li:first-child   { padding-top:0; }
-  .yearly-archive {margin-top: -20px;}
-  .yearly-archive h2 {color:rgba(0,0,0,0.3);}
+  .yearly-archive {margin-top: -30px;}
+  .yearly-archive h2 {color:rgba(0,0,0,0.3);font-style: 4em;margin-bottom: 1em;}
   .yearly-archive a {color:#333;}
   .yearly-archive span.date                    { color:rgba(0,0,0,0.3); display:block; }
   
