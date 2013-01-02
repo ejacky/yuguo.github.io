@@ -86,7 +86,7 @@
   ---------------------------------------------------------------------------------------------------------- */
   
   header nav ul               { padding:1em 0 0 0; }
-  header nav ul li            { display:inline; padding:0 1em 0 0; }
+  header nav ul li            { display:inline; padding:0 1em 0 0; margin-bottom: 0.5em 0;}
   header nav ul li a          { color:#9c6; border:none; }
   div.content img             { margin:1em 0; max-width:100%; }
   article figure figcaption   { padding:0 5% 2em 0; }
@@ -106,15 +106,17 @@
   /* ---------------------------------------------------------------------------------------------------------- 
   07 Blog Posts -----------------------------------------------------------------------------------------------
   ---------------------------------------------------------------------------------------------------------- */
-  .single-post {color:rgba(0,0,0,0.6);}
-  .single-post h1 {font-size:1.5em;}
-  .single-post .post-date {color:rgba(0,0,0,0.3);display: block;margin-bottom: 1em;}
+  .single-post {color:rgba(0,0,0,0.7);margin-top: -10px;}
+  .single-post h1 {font-size:2.5em;}
+  .single-post .post-date {color:rgba(0,0,0,0.4);display: block;margin-bottom: 1em;}
   .single-post .previous-next-nav {overflow: hidden;*zoom:1;}
   .single-post .previous {float:left;}
   .single-post .next {float:right;}
+  .single-post ul,
+  .single-post ol {margin:0.5em 0;}
   .single-post ul li {list-style: disc inside none;}
   .single-post ol li{list-style-type: decimal;}
-  .single-post li {color: rgba(0,0,0,0.3);margin-left: 2em;}
+  .single-post li {color: rgba(0,0,0,0.4);margin-left: 2em;}
 
   div#comments                                { padding-top:2em; }
   div#comments ol li                          { border-bottom:1px solid rgba(0,0,0,0.1);  list-style:none; margin:0; padding:2em 0; }
