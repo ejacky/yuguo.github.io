@@ -19,16 +19,16 @@ Windows 8下载放出一段时间了，国外对Windows 8在网页设计中能�
 
 目前还只是一个demo页，它们没有主题下载放出。如果有时间，我打算近期把这个主题实现，当然，要加上一些feature。
 
-<a href="http://www.doublejdesign.co.uk/downloads/demo/windows8like/"><img class="aligncenter size-large wp-image-999" title="win8like-01" src="http://yuguo.github.com/blog/files/2011/10/win8like-01-1024x640.jpg" alt="" width="1024" height="640" /></a>
+<a href="http://www.doublejdesign.co.uk/downloads/demo/windows8like/"><img class="aligncenter size-large wp-image-999" title="win8like-01" src="http://yuguo.us/files/2011/10/win8like-01-1024x640.jpg" alt="" width="1024" height="640" /></a>
 
-<a href="http://www.doublejdesign.co.uk/downloads/demo/windows8like/"><img class="aligncenter size-large wp-image-1000" title="win8likewp-03" src="http://yuguo.github.com/blog/files/2011/10/win8likewp-03-1024x615.png" alt="" width="1024" height="615" /></a>
+<a href="http://www.doublejdesign.co.uk/downloads/demo/windows8like/"><img class="aligncenter size-large wp-image-1000" title="win8likewp-03" src="http://yuguo.us/files/2011/10/win8likewp-03-1024x615.png" alt="" width="1024" height="615" /></a>
 <h2><a title="Permanent Link to Full Windows 8 GUI Theme set (psd)" href="http://www.webdesignshock.com/windows-8-theme/" rel="bookmark">Full Windows 8 GUI Theme set (psd)</a></h2>
 这是一个免费的Windows 8主题的GUI，可以基于它做自己的设计。
 
 总共15M，真的很牛逼！
 
-<a href="http://www.webdesignshock.com/windows-8-theme/"><img class="aligncenter size-full wp-image-1002" title="windows8" src="http://yuguo.github.com/blog/files/2011/10/windows8.jpg" alt="" width="630" height="500" /></a>
+<a href="http://www.webdesignshock.com/windows-8-theme/"><img class="aligncenter size-full wp-image-1002" title="windows8" src="http://yuguo.us/files/2011/10/windows8.jpg" alt="" width="630" height="500" /></a>
 <h2><a href="http://thecustomizewindows.com/2011/06/metro-website-design-template-v4-like-windows-8-interface/"> Metro Website Design Template V4 like Windows 8 interface</a></h2>
 Metro Website Design Template V4是基于Windows 8的设计风格的一个模板，包括html/css/js/icon等。
 
-<a href="http://thecustomizewindows.com/2011/06/metro-website-design-template-v4-like-windows-8-interface/"><img class="aligncenter size-full wp-image-1003" title="windows-metro" src="http://yuguo.github.com/blog/files/2011/10/windows-metro.png" alt="" width="1001" height="547" /></a>
+<a href="http://thecustomizewindows.com/2011/06/metro-website-design-template-v4-like-windows-8-interface/"><img class="aligncenter size-full wp-image-1003" title="windows-metro" src="http://yuguo.us/files/2011/10/windows-metro.png" alt="" width="1001" height="547" /></a>

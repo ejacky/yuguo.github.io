@@ -25,7 +25,7 @@ Google Reader, Twitter, 群里随手打开的链接，邮件……都是发现�
 
 以此两条原则为前提，对于每一个条目进行以下处理：
 
-<img class="aligncenter size-full wp-image-488" title="资料整理" src="http://yuguo.github.com/blog/files/2010/12/1.png" alt="资料整理" width="757" height="315" />
+<img class="aligncenter size-full wp-image-488" title="资料整理" src="http://yuguo.us/files/2010/12/1.png" alt="资料整理" width="757" height="315" />
 
 <em>只是整理，而不进行任何消化。</em>只需要15分钟就可以处理200个待读条目的整理工作。
 
@@ -33,7 +33,7 @@ Google Reader, Twitter, 群里随手打开的链接，邮件……都是发现�
 
 1.Read Later是指<em>稍后阅读</em>的意思。我用一个云端书签网站<a href="http://www.instapaper.com/">http://www.instapaper.com</a>提供的JavaScript书签来做到这一点。在Instapaper注册一个帐号之后，在自己的浏览器书签栏会有一个“Read Later”书签，点击之后就会把当前页面的内容保存到Instapaper的服务器。随时随地想要阅读的时候，可以从这里找到。它最大的特点是可以把书签里的内容输出成一个适合kindle或者其他移动设备比如iPhone和kpad阅读的格式，下载了这个文件之后传送到kindle上就能在移动设备上阅读。读完之后记得点“Archive”来存档方便以后查阅。
 
-<a href="http://www.instapaper.com"><img class="aligncenter size-full wp-image-489" title="Instapaper" src="http://yuguo.github.com/blog/files/2010/12/2.jpg" alt="Instapaper" width="981" height="509" /></a>
+<a href="http://www.instapaper.com"><img class="aligncenter size-full wp-image-489" title="Instapaper" src="http://yuguo.us/files/2010/12/2.jpg" alt="Instapaper" width="981" height="509" /></a>
 
 2.<em>保存书签</em>，这在Chrome上尤其有用，因为能设定把浏览器书签同步到google账户，所以在公司设置的书签能在家里或者任何地方看到。Firefox之前是需要用插件达到这一功能，不过新版的似乎已经原生支持同步了。很久没用Firefox，也不太清楚。
 <h2>分析知识</h2>
@@ -41,7 +41,7 @@ Google Reader, Twitter, 群里随手打开的链接，邮件……都是发现�
 
 这里有一个很有意思的应用——Freedom，它的作用就是设定一个时间段比如45分钟之内机器无法联网，在windows和mac平台都有对应的程序。
 
-<a href="http://macfreedom.com/"><img title="Freedom" src="http://yuguo.github.com/blog/files/2010/12/3.png" alt="Freedom" width="259" height="379" /></a>
+<a href="http://macfreedom.com/"><img title="Freedom" src="http://yuguo.us/files/2010/12/3.png" alt="Freedom" width="259" height="379" /></a>
 
 它最主要的思想是摆脱会自动刷新的微博页面，摆脱会让自己顺手点开的各种链接。不过我认为最重要的是养成像流水一样阅读的习惯，不要被链接主导了思维。
 

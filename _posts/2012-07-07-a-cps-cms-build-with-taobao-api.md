@@ -21,32 +21,32 @@ categories: []
 
 1.首先初始化数据库之后就可以登录。
 
-<a href="http://yuguo.github.com/blog/files/2012/07/0.jpg"><img class="aligncenter size-full wp-image-1254" title="0" src="http://yuguo.github.com/blog/files/2012/07/0.jpg" alt="" width="316" height="202" /></a><a href="http://yuguo.github.com/blog/files/2012/07/1.jpg">
+<a href="http://yuguo.us/files/2012/07/0.jpg"><img class="aligncenter size-full wp-image-1254" title="0" src="http://yuguo.us/files/2012/07/0.jpg" alt="" width="316" height="202" /></a><a href="http://yuguo.us/files/2012/07/1.jpg">
 </a>
 
 2.添加网站希望推广的产品的分类。我通过API抓取到淘宝客所有的分类，比如我就会添加男装下面的几个子类（T恤，衬衫等）。
 
-<a href="http://yuguo.github.com/blog/files/2012/07/3.jpg"><img class="aligncenter size-full wp-image-1255" title="3" src="http://yuguo.github.com/blog/files/2012/07/3.jpg" alt="" width="991" height="524" /></a>
+<a href="http://yuguo.us/files/2012/07/3.jpg"><img class="aligncenter size-full wp-image-1255" title="3" src="http://yuguo.us/files/2012/07/3.jpg" alt="" width="991" height="524" /></a>
 
 3.添加好分类之后修改slug（但是不能修改ID，否则用API来拉取数据就会错误）
 
-<a href="http://yuguo.github.com/blog/files/2012/07/4.jpg"><img class="aligncenter size-full wp-image-1256" title="4" src="http://yuguo.github.com/blog/files/2012/07/4.jpg" alt="" width="712" height="300" /></a>
+<a href="http://yuguo.us/files/2012/07/4.jpg"><img class="aligncenter size-full wp-image-1256" title="4" src="http://yuguo.us/files/2012/07/4.jpg" alt="" width="712" height="300" /></a>
 
 4.可以开始添加条目了，在后台进行搜索
 
-<a href="http://yuguo.github.com/blog/files/2012/07/6.jpg"><img class="aligncenter size-full wp-image-1257" title="6" src="http://yuguo.github.com/blog/files/2012/07/6.jpg" alt="" width="573" height="163" /></a>
+<a href="http://yuguo.us/files/2012/07/6.jpg"><img class="aligncenter size-full wp-image-1257" title="6" src="http://yuguo.us/files/2012/07/6.jpg" alt="" width="573" height="163" /></a>
 
 5.选择分类来过滤结果
 
-<a href="http://yuguo.github.com/blog/files/2012/07/7.jpg"><img class="aligncenter size-full wp-image-1258" title="7" src="http://yuguo.github.com/blog/files/2012/07/7.jpg" alt="" width="744" height="768" /></a>
+<a href="http://yuguo.us/files/2012/07/7.jpg"><img class="aligncenter size-full wp-image-1258" title="7" src="http://yuguo.us/files/2012/07/7.jpg" alt="" width="744" height="768" /></a>
 
 6.点击一个希望发布的条目，会通过API来ajax抓取到这个条目的其他图片，弹出浮层来显示这些图片。
 
-<a href="http://yuguo.github.com/blog/files/2012/07/8.jpg"><img class="aligncenter size-large wp-image-1259" title="8" src="http://yuguo.github.com/blog/files/2012/07/8-1024x508.jpg" alt="" width="1024" height="508" /></a>
+<a href="http://yuguo.us/files/2012/07/8.jpg"><img class="aligncenter size-large wp-image-1259" title="8" src="http://yuguo.us/files/2012/07/8-1024x508.jpg" alt="" width="1024" height="508" /></a>
 
 7.再次点击一个中意的图片（这个图片会最终发布到首页），会通过API再次ajax抓取到店铺信息，点击链接，还有佣金比等——然后自动发布！（也是ajax的）
 
-<a href="http://yuguo.github.com/blog/files/2012/07/10.jpg"><img class="aligncenter size-full wp-image-1261" title="10" src="http://yuguo.github.com/blog/files/2012/07/10.jpg" alt="" width="469" height="427" /></a>
+<a href="http://yuguo.us/files/2012/07/10.jpg"><img class="aligncenter size-full wp-image-1261" title="10" src="http://yuguo.us/files/2012/07/10.jpg" alt="" width="469" height="427" /></a>
 
 感觉怎样~整个过程都是最大地优化编辑的发布过程，应该比市面上所有的淘宝客管理系统更方便。
 

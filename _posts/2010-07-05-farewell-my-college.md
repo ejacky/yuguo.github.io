@@ -5,7 +5,7 @@ date: 2010-07-05 05:47
 comments: true
 categories: []
 ---
-<p style="text-align: center;"><a href="http://yuguo.github.com/blog/files/2010/07/IMG_3389.jpg"><img class="aligncenter size-full wp-image-29" title="毕业照" src="http://yuguo.github.com/blog/files/2010/07/IMG_3389.jpg" alt="" width="600" height="463" /></a>右下是我</p>
+<p style="text-align: center;"><a href="http://yuguo.us/files/2010/07/IMG_3389.jpg"><img class="aligncenter size-full wp-image-29" title="毕业照" src="http://yuguo.us/files/2010/07/IMG_3389.jpg" alt="" width="600" height="463" /></a>右下是我</p>
 回首我的大学生活，脑海中浮现的是从西安城区到校区一路的站名。公交五公司、市建四公司（我是湖北人，读这个很拗口）、郭杜、北雷……这些站名一个一个冒出来，我就像在公交车上一样，一路颠簸地就到了学校。
 
 偏僻也许是我对大学最初的印象。新校区在很偏远的南郊，但学校内部能够自给自足，对我们这种宅男更是不缺少什么。宿舍条件很好，8人住两室一厅，有阳台、客厅和洗手间和厕所。我们在新校区住了3年，对宿舍感情很深，后来搬到老校区，宿舍就比较差了，个人没有自己的桌子，洗澡也不方便，而且不通风，夏天热死人。

@@ -41,7 +41,7 @@ categories: []
 
 另外，一些购物类推荐网站身上，也多有Pinterest的影子，比如<a id="" href="http://star.vancl.com/" shape="rect" target="_blank">凡客达人</a>、<a id="" href="http://www.meilishuo.com/" shape="rect" target="_blank">美丽说</a>、<a id="" href="http://www.mogujie.com/welcome" shape="rect" target="_blank">蘑菇街</a>（<a id="" href="http://www.mogujie.com/book/" shape="rect" target="_blank">book</a>）、<a id="" href="http://wow.taobao.com/" shape="rect" target="_blank">淘宝哇哦</a>、<a id="" href="http://www.xinxian.com/" shape="rect" target="_blank">新鲜网</a>等。
 
-[caption id="attachment_1129" align="aligncenter" width="983" caption="33号铺"]<a href="http://33pu.net/"><img class="size-full wp-image-1129" title="33号铺" src="http://yuguo.github.com/blog/files/2012/02/1.jpg" alt="33号铺" width="983" height="736" data-pinit="registered" /></a>[/caption]
+[caption id="attachment_1129" align="aligncenter" width="983" caption="33号铺"]<a href="http://33pu.net/"><img class="size-full wp-image-1129" title="33号铺" src="http://yuguo.us/files/2012/02/1.jpg" alt="33号铺" width="983" height="736" data-pinit="registered" /></a>[/caption]
 <h2>0.开始</h2>
 按照一般的经验规则，我们采用一个空主题作为基础来进行修改。因为空主题（blank theme）会不断更新，具有一些最新的wordpress的函数和best practice。使用空主题就不用自己从头开始。
 

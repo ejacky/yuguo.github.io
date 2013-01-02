@@ -21,4 +21,4 @@ categories: []
 
 3.一个在页面上蒙上栅格的<a href="http://gridder.andreehansson.se/" target="_blank">书签</a>，以此来测试当前页面是否符合栅格。不过这个工具不太灵活，默认显示960像素，也无法设定margin。我有一个更好的<a href="http://www.sprymedia.co.uk/article/Design" target="_blank">书签工具</a>，并且不仅有显示栅格的功能，还有几种规格的尺子。
 
-[caption id="attachment_190" align="aligncenter" width="650" caption="960grids的代码生成工具"]<a href="http://yuguo.github.com/blog/files/2010/09/2010-9-8-17-32-50-copy.png"><img class="size-full wp-image-190" title="960grids的代码生成工具" src="http://yuguo.github.com/blog/files/2010/09/2010-9-8-17-32-50-copy.png" alt="960grids的代码生成工具" width="650" height="456" /></a>[/caption]
+[caption id="attachment_190" align="aligncenter" width="650" caption="960grids的代码生成工具"]<a href="http://yuguo.us/files/2010/09/2010-9-8-17-32-50-copy.png"><img class="size-full wp-image-190" title="960grids的代码生成工具" src="http://yuguo.us/files/2010/09/2010-9-8-17-32-50-copy.png" alt="960grids的代码生成工具" width="650" height="456" /></a>[/caption]

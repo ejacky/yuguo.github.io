@@ -12,8 +12,8 @@ categories: []
 Best In Test: Firefox (transition performance)
 Full Support: Chrome, Firefox, Opera, Safari (latest versions of all browsers)
 Partial Support: IE9 (Functional, but does not support transitions)
-<pre><a href="http://yuguo.github.com/blog/files/2012/04/1.jpg">
-<img title="1" src="http://yuguo.github.com/blog/files/2012/04/1.jpg" alt="" width="857" height="623" data-pinit="registered" /></a></pre>
+<pre><a href="http://yuguo.us/files/2012/04/1.jpg">
+<img title="1" src="http://yuguo.us/files/2012/04/1.jpg" alt="" width="857" height="623" data-pinit="registered" /></a></pre>
 <h2>幻灯片</h2>
 所有的幻灯片&lt;article&gt;挨着浮动在一起，然后放到一个大容器#slides #overflow #inner中。大容器通过#overflow溢出隐藏。当点击左右的滑动箭头的时候，对#inner设置left-margin: -100%;就会让所有幻灯片滑到左边。
 

@@ -16,8 +16,8 @@ categories: []
 
 我爱宫崎葵 :)
 
-<img class="aligncenter size-full wp-image-323 full" src="http://yuguo.github.com/blog/files/2010/10/01-78-copy.jpg" alt="" />
+<img class="aligncenter size-full wp-image-323 full" src="http://yuguo.us/files/2010/10/01-78-copy.jpg" alt="" />
 
-<img class="aligncenter size-full wp-image-323 full" src="http://yuguo.github.com/blog/files/2010/10/01-87-copy.jpg" alt=""/>
+<img class="aligncenter size-full wp-image-323 full" src="http://yuguo.us/files/2010/10/01-87-copy.jpg" alt=""/>
 
-<img class="aligncenter size-full wp-image-323 full" src="http://yuguo.github.com/blog/files/2010/10/01-85-copy.jpg" alt="" />
+<img class="aligncenter size-full wp-image-323 full" src="http://yuguo.us/files/2010/10/01-85-copy.jpg" alt="" />

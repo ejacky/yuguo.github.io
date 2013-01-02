@@ -47,11 +47,11 @@ Instapaper给网站开发者一些公开的建议，包括对正文文本解析�
 
 也不要把&lt;h1&gt;标签放在&lt;li&gt;等其他标签中，从语义化来讲这是不对的。比如<a href="http://ooxx.me">大猫</a>的日志页：
 
-<a href="http://ooxx.me/mybloglog-farewell.orz"><img class="aligncenter size-full wp-image-956" title="instapaper-2" src="http://yuguo.github.com/blog/files/2011/09/instapaper-2.png" alt="错误地使用h1标签" width="527" height="560" /></a>
+<a href="http://ooxx.me/mybloglog-farewell.orz"><img class="aligncenter size-full wp-image-956" title="instapaper-2" src="http://yuguo.us/files/2011/09/instapaper-2.png" alt="错误地使用h1标签" width="527" height="560" /></a>
 
 那么在Instapaper的text中显示如下：
 
-<img class="aligncenter size-full wp-image-957" title="instapaper-3" src="http://yuguo.github.com/blog/files/2011/09/instapaper-3.png" alt="错误地使用h1，导致在Instapaper中显示错误" width="579" height="145" />
+<img class="aligncenter size-full wp-image-957" title="instapaper-3" src="http://yuguo.us/files/2011/09/instapaper-3.png" alt="错误地使用h1，导致在Instapaper中显示错误" width="579" height="145" />
 <h4>&lt;h1&gt;标签要带链接并指向本页url</h4>
 帮助text来找到原文页面。不是必须的，但是会更友好。
 <h4>不要错误地使用&lt;section&gt;标签</h4>
@@ -64,7 +64,7 @@ Instapaper给网站开发者一些公开的建议，包括对正文文本解析�
 <h2>最终优化结果</h2>
 下面的截图是优化之后的结果，就像一篇文章一样，阅读体验很好。
 
-<img class="aligncenter size-full wp-image-960" title="instapaper-5" src="http://yuguo.github.com/blog/files/2011/09/instapaper-5.png" alt="" width="564" height="796" />
+<img class="aligncenter size-full wp-image-960" title="instapaper-5" src="http://yuguo.us/files/2011/09/instapaper-5.png" alt="" width="564" height="796" />
 
 相关资料：
 

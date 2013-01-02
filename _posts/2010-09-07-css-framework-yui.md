@@ -37,11 +37,11 @@ YUI是Yahoo!的一套JavaScript和CSS库，可以建立富交互的web应用程�
 
 用百分比做content宽度已经在oocss中见识到了，非常灵活。比如Yahoo!的首页，去掉最外面的宽度设定之后，页面就变成自适应布局了，赞。
 
-[caption id="attachment_178" align="aligncenter" width="650" caption="基于百分数的布局"]<a href="http://yuguo.github.com/blog/files/2010/09/2010-9-7-20-13-31.jpg"><img class="size-full wp-image-178" title="基于百分数的布局" src="http://yuguo.github.com/blog/files/2010/09/2010-9-7-20-13-31.jpg" alt="基于百分数的布局" width="650" height="795" /></a>[/caption]
+[caption id="attachment_178" align="aligncenter" width="650" caption="基于百分数的布局"]<a href="http://yuguo.us/files/2010/09/2010-9-7-20-13-31.jpg"><img class="size-full wp-image-178" title="基于百分数的布局" src="http://yuguo.us/files/2010/09/2010-9-7-20-13-31.jpg" alt="基于百分数的布局" width="650" height="795" /></a>[/caption]
 <h3>3.<span style="font-weight: normal; font-size: 13px;"><a href="http://developer.yahoo.com/yui/grids/builder/">YUI grids builder</a></span></h3>
 YUI grids builder是一个自动生成代码工具（web APP），通过调整一个工具栏里面的预设值，能输出对应的代码，这个工具十分方便，但是由于YUI可选的布局选项很少，所以没有发挥出原本可以的更强大功能来。团队内部框架或者oocss都可以从这里有所借鉴。
 
-[caption id="attachment_182" align="aligncenter" width="650" caption="YUI grids builder"]<a href="http://yuguo.github.com/blog/files/2010/09/2010-9-6-20-47-09-copy.png"><img class="size-full wp-image-182" title="YUI grids builder" src="http://yuguo.github.com/blog/files/2010/09/2010-9-6-20-47-09-copy.png" alt="YUI grids builder" width="650" height="501" /></a>[/caption]
+[caption id="attachment_182" align="aligncenter" width="650" caption="YUI grids builder"]<a href="http://yuguo.us/files/2010/09/2010-9-6-20-47-09-copy.png"><img class="size-full wp-image-182" title="YUI grids builder" src="http://yuguo.us/files/2010/09/2010-9-6-20-47-09-copy.png" alt="YUI grids builder" width="650" height="501" /></a>[/caption]
 <h3>4.与ARIA Landmark Roles结合</h3>
 YUI用非语义化的类名和ID名来布局，同时为了给读屏器提供更好的语义化，YUI会提供AIRA标记，来表明这一块的功能（BTW，从很久以前起的WordPress的默认主题也有role属性，当时我还为了通过验证而把这些东西删了）：
 <pre>   &lt;div id="hd" role="banner"&gt;&lt;h1&gt;Header&lt;/h1&gt;&lt;/div&gt;
@@ -140,7 +140,7 @@ YUI用非语义化的类名和ID名来布局，同时为了给读屏器提供更
 
 代码里面一堆这种类名难道不是一个抓狂的理由吗？
 
-[caption id="attachment_180" align="aligncenter" width="643" caption="table布局"]<a href="http://yuguo.github.com/blog/files/2010/09/2010-9-6-20-47-34.png"><img class="size-full wp-image-180" title="table布局" src="http://yuguo.github.com/blog/files/2010/09/2010-9-6-20-47-34.png" alt="table布局" width="643" height="183" /></a>[/caption]
+[caption id="attachment_180" align="aligncenter" width="643" caption="table布局"]<a href="http://yuguo.us/files/2010/09/2010-9-6-20-47-34.png"><img class="size-full wp-image-180" title="table布局" src="http://yuguo.us/files/2010/09/2010-9-6-20-47-34.png" alt="table布局" width="643" height="183" /></a>[/caption]
 
 还不如table布局简单呢。
 <h3>2.不灵活</h3>
