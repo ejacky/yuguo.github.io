@@ -1,2 +1,2 @@
 baseurl: /
-permalink: http://yuguo.us/weblog/:title/ 
+permalink: weblog/:title/ 
