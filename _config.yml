@@ -1,4 +1,4 @@
 auto:true
 baseurl: /
 permalink: weblog/:title/
-markdown:rdiscount 
+markdown:redcarpet 
