@@ -8,50 +8,7 @@
 　　<body>
 	<div class="blog">
 		<div class="container group">
-  			<div class="fauxcolumn"></div>
-	      <div class="primary">
-	        <header>
-	          <h1><a href="/">余果</a> 是一名前端工程师，在腾讯社交平台部做前端开发。平时喜欢看书，研究网站开发，iOS开发，数据可视化等。
-	          </h1>
-	          <nav>
-	            <ul>
-	              <li>
-	                <a class="blog" href="/">首页</a>
-	              </li>
-	              <li>
-	                <a class="speaking" href="http://twitter.com/yuguo">Twitter</a>
-	              </li>
-	              <li>
-	                <a class="speaking" href="http://www.douban.com/people/yuguo/">Douban</a>
-	              </li>
-	            </ul>
-	          </nav>
-	        </header>
-			
-			<div class="ads">
-        
-	          <div class="fusionads">
-	            <h2>广告</h2>
-	            
-	            <span class="fusionentire">
-	              <a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">
-	                <img src="http://yuguo.github.com/files/2013/01/1.jpg" alt="Treehouse ad" />
-	              </a>
-	              <span class="fusiontext">
-	                <a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">
-	                  Home&More淘宝店是一个还不错的家居淘宝店，Yuguo的女朋友开的。
-	                  
-	                </a>
-	              </span>
-	            </span>
-	            <p><a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">homemore.taobao.com/</a></p>
-	          </div><!-- .fusionads -->
-	          
-	          
-	                    
-	        </div><!-- .ads -->
-	                  
-	      </div><!-- .primary -->
+  			{% include 'sidebar' %}
 	             
 	        <div class="content">
 		      	<div class="content-inner">
@@ -61,18 +18,7 @@
 			
 		</div>
 		
-		<p class="copyright">&copy; 2009&#8201;&ndash;&#8201;2012 Yuguo. All rights reserved. Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a> and host by <a href="http://github.com/">Github</a>. To keep updated with new content, you might like to <a href="http://feeds.feedburner.com/yuguo">subscribe to my RSS feed</a>.</p>
-
-　　　　<script type="text/javascript">
-		var _gaq = _gaq || [];
-		_gaq.push(['_setAccount', 'UA-741276-12']);
-		_gaq.push(['_trackPageview']);
-		(function() {
-		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
-		})();
-		</script>
+		{% include 'footer' %}
 
 　　</body>
 　　</html>
