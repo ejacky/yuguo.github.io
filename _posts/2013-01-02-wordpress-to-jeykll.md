@@ -16,12 +16,12 @@ categories: []
 * 对于上一步中产生的所有.md，可能会有一些非法标签，比如`<div>`这样的。用你的编辑器做一下全局性的搜索，用markdown语法替换之。
 * 评论转移，然后用discus之类的第三方js插件实现（事实上我没有做这一步，因为不喜欢discus这种非开源的方法，我希望会有兼容gravtar的方案）
 * 处理首页和日志页的样式
-* 原有博客的路径全部做转向（todo）
 * feedburner支持很简单，因为之前对访客的入口是feedburner的烧录地址，所以我只需要在github根目录生成新的[feed.xml](https://github.com/yuguo/yuguo.github.com/blob/master/feed.xml)，然后再feedburner中修改源路径即可，用户感知不到这个变化。
 
 
 最后补充一些资源：
-* 了解一下很赞的[makrdown语法](http://wowubuntu.com/markdown/)（todo）
+* 了解一下很赞的[makrdown语法](http://wowubuntu.com/markdown/)
+* 修改模板的时候请参考[Template Data](https://github.com/mojombo/jekyll/wiki/Template-Data)
 * 顶级域名的绑定非常方便，如果你像我一样在[dnspod](http://dnspod.cn)托管dns，那么登陆之后直接把顶级域名的A记录修改为，请参考[官方指南](https://help.github.com/articles/setting-up-a-custom-domain-with-pages)
 * 对于html页，使用的是[liquid模板](https://github.com/shopify/liquid/wiki/liquid-for-designers)
 * 对于每篇post前面的信息，叫做[YAML头](https://github.com/mojombo/jekyll/wiki/YAML-Front-Matter)，有一些是官方的，有一些是可以自定义，然后在liquid模板中使用
