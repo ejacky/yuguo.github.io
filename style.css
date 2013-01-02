@@ -8,9 +8,9 @@
   ::selection                 { background:#333; color:#fff; }
 
  /* 02d - Headings */
-  h1                          { color:rgba(0,0,0,0.3); }
-  h1 a                        { color:#333; }
-  h1 a:hover                  { color:#9c6; }
+  .primary h1                          { color:rgba(0,0,0,0.3); }
+  .primary h1 a                        { color:#333; }
+  .primary h1 a:hover                  { color:#9c6; }
   h2                          { font-size:1.875em; letter-spacing:-0.025em; line-height:1.3125em; }
   h3,
   h4                          { font-size:1.125em; padding:2em 0 0.5em 0; }
@@ -45,6 +45,7 @@
   pre                         { background:rgba(0,0,0,0.1);  }
   pre                         { margin:0.5em 0; padding-left:1em; }
   pre code                    { background:none; }
+  h2 + p                      { color:rgba(0,0,0,0.3); padding:1.5em 0; }
   p.note                      { color:rgba(0,0,0,0.3); }
   figcaption,
   p.copyright,
@@ -144,7 +145,7 @@
     div.primary div div         { border-top:1px solid rgba(0,0,0,0.05); padding:3em 0; }
     div.content                 { float:left; padding:8em 0 8em 0; width:68%; }
     div.ads                     { display:block; }
-    h1,
+    .primary h1,
     div.ads p                   { width:85%; }
     div.ads span                { display:block; /* Purely for the sake of the span */ width:90%; }
     
@@ -167,7 +168,7 @@
   /* 11b - 880 up */
   @media screen and (min-width:880px) {
   
-    h1,
+    .primary h1,
     div.ads p                   { width:46.875%; }
     div.ads span                { width:70%; }
     
