@@ -107,9 +107,11 @@
   /* ---------------------------------------------------------------------------------------------------------- 
   07 Blog Posts -----------------------------------------------------------------------------------------------
   ---------------------------------------------------------------------------------------------------------- */
-    
-  .content .previous {float:left;}
-  .content .next {float:right;}
+  .single-post h1 {font-size:1.5em;}
+  .single-post .post-date {color:rgba(0,0,0,0.3);}
+  .single-post .previous-next-nav {overflow: hidden;*zoom:1;}
+  .single-post .previous {float:left;}
+  .single-post .next {float:right;}
 
   div#comments                                { padding-top:2em; }
   div#comments ol li                          { border-bottom:1px solid rgba(0,0,0,0.1);  list-style:none; margin:0; padding:2em 0; }
