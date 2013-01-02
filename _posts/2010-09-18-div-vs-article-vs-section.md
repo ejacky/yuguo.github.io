@@ -6,14 +6,10 @@ comments: true
 categories: []
 ---
 关于html5中新元素section/article和div的区别，虽然有一种感觉应该用什么，但没有明确的指导。以下是html5doctor的文章中的一节，我觉得这一节非常精准地描述了三者的区别。
-
 篇幅越是短小，意味着原文的遣词越是精准，所以也放上原文以供批评。
 
-
 原文地址：<a href="http://html5doctor.com/the-section-element/">http://html5doctor.com/the-section-element/</a>
-
 译文地址：<a href="http://yuguo.us/weblog/div-vs-article-vs-section/">http://yuguo.us/weblog/div-vs-article-vs-section/</a>
-
 以下是译文
 <h2>使用法则</h2>
 凡事有例外，但以下法则适用于99%的情况:

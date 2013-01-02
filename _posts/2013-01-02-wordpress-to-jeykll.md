@@ -5,18 +5,14 @@ date: 2013-01-02 18:17
 comments: true
 categories: []
 ---
-
 昨天在WordPress的编辑器里写一篇关于jade语法的文章，因为有很多代码片段，有的需要格式化，有的只是要使用code标签。我在编辑模式和html模式下各种抓狂之后，我决定放弃WordPress，使用github。这样我就可以在我喜欢的编辑器中，用我熟悉的markdown语法来写博客。
-
 迁移需要这样几步工作：
-
 * 先阅读阮一峰的一篇很赞的文章[搭建一个免费的，无限流量的Blog----github Pages和Jekyll入门](http://www.ruanyifeng.com/blog/2012/08/blogging_with_jekyll.html) 
 * 把wordpress的文章导出为静态.md，放在第一步生成的`_posts`文件夹中
 * 对于上一步中产生的所有.md，可能会有一些非法标签，比如`<div>`这样的。用你的编辑器做一下全局性的搜索，用markdown语法替换之。
 * 评论转移，然后用discus之类的第三方js插件实现（事实上我没有做这一步，因为不喜欢discus这种非开源的方法，我希望会有兼容gravtar的方案）
 * 处理首页和日志页的样式
 * feedburner支持很简单，因为之前对访客的入口是feedburner的烧录地址，所以我只需要在github根目录生成新的[feed.xml](https://github.com/yuguo/yuguo.github.com/blob/master/feed.xml)，然后再feedburner中修改源路径即可，用户感知不到这个变化。
-
 
 最后补充一些资源：
 * 了解一下很赞的[makrdown语法](http://wowubuntu.com/markdown/)
@@ -29,9 +25,6 @@ categories: []
 * 如果希望初次加载50篇文章，滚动异步加载更多文章，可以参考[用jekyll和jQuery实现异步加载文章列表](http://yanping.me/cn/blog/2012/10/10/asynchronous-loading-post-list-with-jekyll-and-jQuery/)
 * 除了利用github自带的jekyll实现静态页，还可以自己下载本机生成站点，参考 [bloggering like a hacker](http://tom.preston-werner.com/2008/11/17/blogging-like-a-hacker.html)
 
-
 最后，这整个博客都是开源的，我的样式、模板、都可以直接使用，但文章内容和图片内容保留版权，请不要无良复制。
-
-
 
 

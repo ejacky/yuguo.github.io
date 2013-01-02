@@ -15,9 +15,7 @@ categories: []
 <a href="http://yuguo.us/files/2012/02/1.png"><img class="aligncenter size-full wp-image-1138" title="1" src="http://yuguo.us/files/2012/02/1.png" alt=""   data-pinit="registered" /></a>
 <h2>无限滚动</h2>
 当屏幕滚动到页面底部的时候，我们希望触发一个事件来ajax载入新的文章进来。有一个js插件可以很方便的做到这一点：<a href="https://github.com/paulirish/infinite-scroll">infinitescroll.js</a>
-
 infinitescroll有一个<a href="http://www.infinite-scroll.com/">官网</a>，但已经停止更新好多年了，代码和文档都已经失效。最新的代码在<a href="https://github.com/paulirish/infinite-scroll">github</a>可以下载。读源代码也有比较清晰的说明。
-
 引入infinitescroll.js之后可以在你的站点js中加入以下代码：
 <pre>$container.infinitescroll({//这里是所有条目的容器，我们在上一篇中已经有了jQuery Object，就是$container</pre>
 <pre>    navSelector  : "#nav-previous",
@@ -28,7 +26,5 @@ infinitescroll有一个<a href="http://www.infinite-scroll.com/">官网</a>，�
                    // selector for all items you'll retrieve
   });</pre>
 除了基本的用法之外，插件还提供了一些参数来配置一些自定义风格，比如载入的动画。
-
 此外，在masonry的官网也有介绍<a href="http://masonry.desandro.com/demos/infinite-scroll.html">如何跟infinitescroll插件</a>结合。
-
 ajax载入就讲到这里，下一篇《自定义文章数据》。

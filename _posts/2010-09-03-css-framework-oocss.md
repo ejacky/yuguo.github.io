@@ -18,63 +18,41 @@ categories: []
 	<li>完美兼容</li>
 	<li>快速上手</li>
 </ol>
-
-
 <a href="http://www.google.com/trends?q=css+framework"><img class="aligncenter size-full wp-image-125" title="CSS框架搜索趋势" src="http://yuguo.us/files/2010/08/1.png" alt="CSS框架搜索趋势"   /></a>
-
 关于快速上手，我觉得不是那么简单。诚然任何人可以下载一个css框架开始在实际中开始使用，可是每个CSS框架有各自的适用环境。而选择一个适合自己项目的框架（<em>或者从不使用框架到使用框架的思维转变</em>）需要对当前流行的大部分框架有所了解和研究。这是一个陡峭的学习曲线。基于此，我决定分别研究这些知名框架。
 <h2>OOCSS是什么</h2>
 <a href="http://oocss.org/" target="_blank">oocss</a>是一个CSS框架，它的主要设计原则是：
-
 1.分离struct和skin（官方用到skin这个词，这里的skin跟内容不太一样。皮肤是用来extend基本的模块的，如果不设置皮肤，页面也可以精确地显示内容，并且内容有合理的位置和宽度和高度，但是没有特定的圆角或者颜色），这一点在后面有详细的说明
-
 2.分离容器和内容（所有的包含了一个独立块的div都可以认为是容器【或许html5里面的Article元素可以更准确地描述"容器"这个词】，容器和内容分开，确保布局不会因为内容的问题溢出或者错乱。并且可维护性也很强。）
 <h2>OOCSS的文件结构</h2>
 oocss包含4个基本文件和 一些扩展样式。
-
 [caption id="attachment_129" align="aligncenter"  caption="OOCSS文件请求"]<img class="size-full wp-image-129" title="OOCSS文件请求" src="http://yuguo.us/files/2010/09/2010-9-1-16-56-08.png" alt="OOCSS文件请求"   />[/caption]
-
 4个基本文件包括：
-
 libraries.css 用来定义Reset和文字的基本设置。
-
 templete.css 用来定义头部和底部、以及中部的布局。oocss支持最多三栏布局，左右定宽之后中间会自适应。
-
 grids.css 用来定义小范围内的浮动布局。这个很有意思的是所有的浮动条目都用百分比来定宽，并且最后一个条目.lastunit不设定宽度，这样前面的条目过宽或者过窄的话也不会把最后一条挤下来。
-
 content.css 是对内容和定义的样式。它对所有标题和P都加上padding:10，太有魄力了，不过这种大规模的对HTML元素定义padding，总让人觉得心里不安啊。
-
 此外还有扩展文件。在这个<a href="http://oocss.org/velocity/exercise3.html" target="_blank">官方sample</a>中，除了载入上述文件以外，还载入了两个特定的样式文件：mod.css和mod_skins.css。这两个样式根据特定项目可以自行编写，oocss只是做一个示例，告诉我们模块化是怎么工作的。
 <h2>OOCSS的特点</h2>
 <h3>1.分离容器（container）和内容（content）</h3>
 当我第一次用Firebug查看OOCSS的示例代码结构的时候，我有一种被震惊的感觉，然后就是长久的“我怎么没想到呢”这样的思考。
-
 [caption id="attachment_151" align="aligncenter"  caption="oocss的container和content是分离的"]<img class="size-full wp-image-151" title="oocss的container和content是分离的" src="http://yuguo.us/files/2010/09/2010-9-1-17-18-33-copy1.png" alt="oocss的container和content是分离的"   />[/caption]
-
 它把容器设置为padding:0;margin:0;这样就可以直接设置容器的宽度（像素或者百分比），而不用担心掉下去。
-
 布局用的templete.css
 <h3>2.mod.css这一个文件专门定义基类，而mod_skins.css用来美化基类</h3>
 在编程语言中，对象是可扩展的，oocss中引进了这个概念。mod.css和mod_skins.css分别是定义基类mod和子类mod_extend的地方。
-
 [caption id="attachment_140" align="aligncenter"  caption="oocss的模块性"]<a href="http://yuguo.us/files/2010/09/2010-9-2-20-34-591.png"><img class="size-full wp-image-140" title="oocss的模块性" src="http://yuguo.us/files/2010/09/2010-9-2-20-34-591.png" alt="oocss的模块性"   /></a>[/caption]
 <h3>3.mod具有相当的通用性</h3>
 [caption id="attachment_142" align="aligncenter"  caption="oocss中mod的结构"]<a href="http://yuguo.us/files/2010/09/2010-9-3-14-27-35.png"><img class="size-full wp-image-142" title="oocss中mod的结构" src="http://yuguo.us/files/2010/09/2010-9-3-14-27-35.png" alt="oocss中mod的结构"   /></a>[/caption]
-
 mod具有通用性的一个必须的缺陷是，具有冗余代码。mod是可扩展，可拉伸的（设定不同的宽度就会以不同的宽度延展开来），这样就必须在四个角上使用空标签。oocss采用空的b标签，对此，oocss的官方解释是：
 <blockquote>屏幕阅读器会忽略空的b标签。使用这个表象标签（b是加粗）来实现表象具有优势。这个标签可以通过服务器端或者脚本引入，以至于有一天所有的CSS圆角和阴影都被支持了，可以关闭脚本并拥有漂亮，干净，语义化的HTML。</blockquote>
 此外b标签超短，还能节省字节。
-
 不过我觉得上面代码有一点不好的就是，除了mod扩展出了onlinestore之外，hd也扩展除了online类，这很奇怪。
-
 既然onlinestore扩展自mod，那么应该假设onlinestore一定具有mod所具有的结构也就是hd，所以不需要用
-
 .onlinestore .online {}这样来定义样式，只需要
-
 .onlinestore .hd{}来扩展这个头部，不是吗？
 <h3>4.注释短小实用</h3>
 mod_skins.css中的注释会清晰地表明是扩展自哪个模块类，这样当需要写出class="mod mod_extend"这样的class的时候，就不会像class="mod_extend"这样漏掉基类。
-
 [caption id="attachment_144" align="aligncenter"  caption="oocss的css注释"]<a href="http://yuguo.us/files/2010/09/2010-9-3-15-44-111.png"><img class="size-full wp-image-144" title="oocss的css注释" src="http://yuguo.us/files/2010/09/2010-9-3-15-44-111.png" alt="oocss的css注释"   /></a>[/caption]
 <h3>5.下划线_IE hack</h3>
 oocss使用了_width这种IE hack，对此oocss的官方解释是：
@@ -90,21 +68,14 @@ oocss使用了_width这种IE hack，对此oocss的官方解释是：
 <h2>oocss的缺点</h2>
 <h3>1.HTTP请求教多</h3>
 4个基本CSS+2个模块CSS就是6个HTTP请求，这在大公司的多PV的网页上是绝对不允许出现的。
-
 诚然，文件多的优点是功能细分，需要修改模块样式的就不会去改grid或者content。缺点则是多余的HTTP请求导致的用户loading时间。
-
 要解决这个问题就需要把样式合并，然后加上详细的注释。把全站需要用到的4个公共样式合并成一个，用明显的注释和空行（可以的话，给两行空行）分开。另外全站用到的mod.css也可以合并到这个公共样式中。其它各个站点需要的剩下文件则合并到各自样式文件中。
-
 另外介绍一下鬼哥<a href="http://t.qq.com/ghostzhang">@ghostzhang</a>的<a href="http://www.cssforest.org/blog/index.php?id=168">模块注释</a>：
-
 [caption id="attachment_145" align="aligncenter"  caption="mod的注释"]<a href="http://yuguo.us/files/2010/09/2010-9-3-16-03-10.png"><img class="size-full wp-image-145" title="mod的注释" src="http://yuguo.us/files/2010/09/2010-9-3-16-03-10.png" alt="mod的注释"   /></a>[/caption]
-
 由于合并后没有一个单独的文件保存所有的mod或者所有的mod_extend，所以需要详细的注释来标明这个mod或者mod_extend。
 <h3>2.类命名，看上去很美</h3>
 提供的sample里的class-name都太短，掩饰了其本质的复杂性，怎么说呢？
-
 官方提供的sample里面mod.css中有两个基类提供给大家扩展，分别是mod和complex，囧，以mod命名怎么看都过于敷衍并且不具备扩展性。complex更像是mod的扩展，而实际上一点都不复杂。
-
 我想说的是，在真正的页面多、扩展多的页面中，css的命名不会很简单，sample里面出现的class="mod onlinestore"看上去很美，更现实的情况可能是class="mod_box_sidebar mod_outline_store"这样的，看上去有点纠结是不是？
 <h3>3.没有考虑到（或者强调）免入侵性</h3>
 为了避免在写CSS样式的时候出现很纠结的
@@ -112,27 +83,16 @@ oocss使用了_width这种IE hack，对此oocss的官方解释是：
 这样的的命名，一般希望在定下最开始的.mod_box_sidebar之后后面的名字少一点，否则一个样式表下来可能有一半的字节数用在定位选择器了。
 <blockquote>.mod_box_sidebar .cont .more {}</blockquote>
 是不是好的多？
-
 但是！
-
 有一个问题。
-
 什么问题？
-
 .mod_box_sidebar 中不能有嵌套模块，否则.cont这样的短命名就可能影响到它的内容中去。我称之为<em>容器入侵了内容。</em>
-
 这就是为什么鬼哥要在模块的注释里面注明是否“可嵌套”。作为不可嵌套的模块，才能用.hd .ft这样的类名哦。
 <h2>总结</h2>
 oocss上手非常容易，扩展方便，代码不兼容W3C，不适合大型站点。
-
 参考资料：
-
 oocss官方：<a href="http://oocss.org/">http://oocss.org/</a>
-
 涛哥翻译的oocss FAQ：<a href="http://www.99css.com/?p=65">http://www.99css.com/?p=65</a>
-
 stackoverflow上关于css框架的讨论：<a href="http://stackoverflow.com/questions/203069/what-is-the-best-css-framework-and-are-they-worth-the-effort">What is the best CSS Framework and are they worth the effort?</a>
-
 当然最重要的参考资料还是Chrome的开发者工具、HttpWatch :)
-
 PS：本来准备研究完oocss、YUI、960column之后再一起发表出来，因为只是研究一个框架的话无法全面的比较和对比数据。现在想想，还是先发出来，热烈欢迎各位批评指点 :)
