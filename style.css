@@ -132,6 +132,8 @@
   ---------------------------------------------------------------------------------------------------------- */
   
   body.blog div.content > ol li:first-child   { padding-top:0; }
+  .yearly-archive {margin-top: -20px;}
+  .yearly-archive h2 {color:rgba(0,0,0,0.3);}
   .yearly-archive a {color:#333;}
   .yearly-archive span.date                    { color:rgba(0,0,0,0.3); display:block; }
   
