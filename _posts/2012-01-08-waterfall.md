@@ -10,7 +10,7 @@ categories: []
 
 比如最早的 <a href="http://pinterest.com/">Pinterest</a>，然后国内的<a href="http://33pu.net">33号铺</a>，<a href="http://markzhi.com/">Mark之</a>，<a href="http://www.mogujie.com/book/clothing/">蘑菇街</a>，还有<a href="http://qzone.qq.com">Qzone</a>的好友相册，以及淘宝最新上线的“<a href="http://wow.taobao.com/">哇哦</a>” 等等，都是采用这种布局方法。
 
-<img class="aligncenter size-full wp-image-1105" title="Pinterest瀑布流布局" src="http://yuguo.us/files/2012/01/waterfall.png" alt="Pinterest瀑布流布局" width="935" height="674" />
+<img class="aligncenter size-full wp-image-1105" title="Pinterest瀑布流布局" src="http://yuguo.us/files/2012/01/waterfall.png" alt="Pinterest瀑布流布局"   />
 
 兼容性较强的实现方法有两种，taobaoUED<a href="http://ued.taobao.com/blog/2011/09/14/waterfall/">有介绍</a>：
 <ol>

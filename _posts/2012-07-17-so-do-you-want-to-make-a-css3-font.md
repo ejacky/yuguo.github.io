@@ -11,7 +11,7 @@ categories: []
 
 为了讲清楚流程，我用PS很不职业地画了一个流程图。
 
-<a href="http://yuguo.us/files/2012/07/font.png"><img class="aligncenter size-full wp-image-1275" title="font" src="http://yuguo.us/files/2012/07/font.png" alt="" width="712" height="925" /></a>
+<a href="http://yuguo.us/files/2012/07/font.png"><img class="aligncenter size-full wp-image-1275" title="font" src="http://yuguo.us/files/2012/07/font.png" alt=""   /></a>
 
 所以问题是当我们制作一个全新字体库的时候，里面的图形都要我们从矢量设计稿中扒出来，这是一个相对比较人工的操作，而且是团队协作的时候比较容易起冲突的操作。
 

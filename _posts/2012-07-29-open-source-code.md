@@ -23,7 +23,7 @@ so，我<a href="https://github.com/yuguo/33pu">把代码放在了github上开�
 
 我甚至还优化了安装程序，这样方便别人尽量方便的部署代码。
 
-代码发布出去之后反响非常热烈，在v2ex上有<a href="http://www.v2ex.com/t/43322">82人收藏这个帖子</a>，当天网站流量达到1200多PV，比平时的30PV多出了40倍，在github上两天内有100多个watch和20多个fork信息，然后我偶然查看github的PHP语言排行榜的时候发现<a href="https://github.com/languages/PHP">本周最热门的项目中</a>，33pu竟然排名第四！<img class="aligncenter size-full wp-image-1308" title="33pu" src="http://yuguo.us/files/2012/07/2000.png" alt="" width="677" height="270" />
+代码发布出去之后反响非常热烈，在v2ex上有<a href="http://www.v2ex.com/t/43322">82人收藏这个帖子</a>，当天网站流量达到1200多PV，比平时的30PV多出了40倍，在github上两天内有100多个watch和20多个fork信息，然后我偶然查看github的PHP语言排行榜的时候发现<a href="https://github.com/languages/PHP">本周最热门的项目中</a>，33pu竟然排名第四！<img class="aligncenter size-full wp-image-1308" title="33pu" src="http://yuguo.us/files/2012/07/2000.png" alt=""   />
 
 无论这些数据能否给我的网站带来实际转化率，我都觉得无所谓了，因为这一切太酷了！
 

@@ -32,7 +32,7 @@ CSS域： <a href="http://ctc.qzonestyle.gtimg.cn/">http://</a><a href="http://c
 
 但是HTML与字体是跨域！
 高级浏览器访问html页面的时候，对于CSS文件中使用的字体文件的请求，会带一个origin:头，这个头就是html页面所在的域。
-<a href="http://yuguo.us/files/2012/12/1.png"><img class="aligncenter size-full wp-image-1511" title="1" src="http://yuguo.us/files/2012/12/1.png" alt="" width="487" height="201" /></a>
+<a href="http://yuguo.us/files/2012/12/1.png"><img class="aligncenter size-full wp-image-1511" title="1" src="http://yuguo.us/files/2012/12/1.png" alt=""   /></a>
 
 
 高级浏览器（Firefox，IE9+）会对比自己发出的Request header中的Origin:和返回字体文件的Response header的Access-Control-Allow-Origin:域

@@ -9,7 +9,7 @@ categories: []
 
 
 
-<a href="http://yuguo.us/files/2010/08/2010-8-8-13-18-34.png"><img class="aligncenter size-full wp-image-51" title="弹出窗口" src="http://yuguo.us/files/2010/08/2010-8-8-13-18-34.png" alt="弹出窗口" width="614" height="408" /></a>
+<a href="http://yuguo.us/files/2010/08/2010-8-8-13-18-34.png"><img class="aligncenter size-full wp-image-51" title="弹出窗口" src="http://yuguo.us/files/2010/08/2010-8-8-13-18-34.png" alt="弹出窗口"   /></a>
 
 我参考了之前做过的Action，觉得过程可以优化。之前的Action会<span style="color: #ff0000;">按照特定的优化比例</span>（jpg大概70%）来给切片保存质量，然后储存在<span style="color: #ff0000;">D盘下的某中文名特定文件夹</span>。切片是通过<span style="color: #ff0000;">分割线</span>来完成。
 

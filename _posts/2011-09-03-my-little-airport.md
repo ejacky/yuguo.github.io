@@ -30,18 +30,18 @@ nicole的法语独白、英语独白、粤语独白配上阿p的键盘都非常�
 
 nicole很少面对观众，更多时候都是跟阿p深情对望。
 
-<a href="http://yuguo.us/files/2011/09/IMGP5838.jpg"><img class="aligncenter size-large wp-image-907" title="IMGP5838" src="http://yuguo.us/files/2011/09/IMGP5838-1024x682.jpg" alt="" width="1024" height="682" /></a>
+<a href="http://yuguo.us/files/2011/09/IMGP5838.jpg"><img class="aligncenter size-large wp-image-907" title="IMGP5838" src="http://yuguo.us/files/2011/09/IMGP5838-1024x682.jpg" alt=""   /></a>
 
-<a href="http://yuguo.us/files/2011/09/IMGP5805.jpg"><img class="aligncenter size-large wp-image-901" title="my little airport" src="http://yuguo.us/files/2011/09/IMGP5805-1024x682.jpg" alt="" width="1024" height="682" /></a>
+<a href="http://yuguo.us/files/2011/09/IMGP5805.jpg"><img class="aligncenter size-large wp-image-901" title="my little airport" src="http://yuguo.us/files/2011/09/IMGP5805-1024x682.jpg" alt=""   /></a>
 
-<a href="http://yuguo.us/files/2011/09/IMGP5809.jpg"><img class="aligncenter size-large wp-image-902" title="my little airport" src="http://yuguo.us/files/2011/09/IMGP5809-1024x682.jpg" alt="" width="1024" height="682" /></a>
+<a href="http://yuguo.us/files/2011/09/IMGP5809.jpg"><img class="aligncenter size-large wp-image-902" title="my little airport" src="http://yuguo.us/files/2011/09/IMGP5809-1024x682.jpg" alt=""   /></a>
 
-<a href="http://yuguo.us/files/2011/09/IMGP5832.jpg"><img class="aligncenter size-large wp-image-905" title="IMGP5832" src="http://yuguo.us/files/2011/09/IMGP5832-1024x682.jpg" alt="" width="1024" height="682" /></a>
+<a href="http://yuguo.us/files/2011/09/IMGP5832.jpg"><img class="aligncenter size-large wp-image-905" title="IMGP5832" src="http://yuguo.us/files/2011/09/IMGP5832-1024x682.jpg" alt=""   /></a>
 
-<a href="http://yuguo.us/files/2011/09/IMGP5817.jpg"><img class="aligncenter size-large wp-image-904" title="my little airport" src="http://yuguo.us/files/2011/09/IMGP5817-1024x682.jpg" alt="" width="1024" height="682" /></a>
+<a href="http://yuguo.us/files/2011/09/IMGP5817.jpg"><img class="aligncenter size-large wp-image-904" title="my little airport" src="http://yuguo.us/files/2011/09/IMGP5817-1024x682.jpg" alt=""   /></a>
 
-<a href="http://yuguo.us/files/2011/09/IMGP5835.jpg"><img class="aligncenter size-large wp-image-906" title="my little airport" src="http://yuguo.us/files/2011/09/IMGP5835-1024x682.jpg" alt="" width="1024" height="682" /></a>
+<a href="http://yuguo.us/files/2011/09/IMGP5835.jpg"><img class="aligncenter size-large wp-image-906" title="my little airport" src="http://yuguo.us/files/2011/09/IMGP5835-1024x682.jpg" alt=""   /></a>
 
-<a href="http://yuguo.us/files/2011/09/IMGP5810.jpg"><img class="aligncenter size-large wp-image-903" title="my little airport" src="http://yuguo.us/files/2011/09/IMGP5810-1024x572.jpg" alt="" width="1024" height="572" /></a>
+<a href="http://yuguo.us/files/2011/09/IMGP5810.jpg"><img class="aligncenter size-large wp-image-903" title="my little airport" src="http://yuguo.us/files/2011/09/IMGP5810-1024x572.jpg" alt=""   /></a>
 
 整个演唱会相对比别的安静，大家都在听nicole唱歌。

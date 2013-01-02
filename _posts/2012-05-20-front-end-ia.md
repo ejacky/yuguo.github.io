@@ -32,7 +32,7 @@ categories: []
 	<li>扁平的层级结构特点是：顶层有很多类目，但层级数较少；</li>
 	<li>锥形的层级结构特点是：顶层类目较少，但层级数很多；</li>
 </ul>
-<a href="http://yuguo.us/files/2012/05/ia-1.png"><img class="aligncenter size-full wp-image-1199" title="ia-1" src="http://yuguo.us/files/2012/05/ia-1.png" alt="" width="562" height="325" data-pinit="registered" /></a>
+<a href="http://yuguo.us/files/2012/05/ia-1.png"><img class="aligncenter size-full wp-image-1199" title="ia-1" src="http://yuguo.us/files/2012/05/ia-1.png" alt=""   data-pinit="registered" /></a>
 
 一个层级结构也可以描述为严格型（strict）和多元层级型（polyhierarchy）：
 <ul>

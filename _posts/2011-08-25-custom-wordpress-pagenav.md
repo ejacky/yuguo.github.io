@@ -8,11 +8,11 @@ categories: []
 <h2>起因</h2>
 我的博客下面有这样的翻页条，它是基于一个叫做PageNavi的插件生成的。
 
-<img class="aligncenter size-full wp-image-864" title="pagenav_1" src="http://yuguo.us/files/2011/08/pagenav_1.png" alt="" width="541" height="65" />
+<img class="aligncenter size-full wp-image-864" title="pagenav_1" src="http://yuguo.us/files/2011/08/pagenav_1.png" alt=""   />
 
 插件很复杂，有语言设置，还能在后台由用户设置具体条目或者显示信息。
 
- <a href="http://yuguo.us/files/2011/08/pagenav_2.png"><img class="aligncenter size-full wp-image-865" title="pagenav_2" src="http://yuguo.us/files/2011/08/pagenav_2.png" alt="" width="554" height="554" /></a>虽然它很强大，但我如果想把我的博客主题开源发布出去，那么要求用户全都下载这个插件不是一个很好的选择。而且这么多自定义项并不是每个用户都需要的。 所以我决定把它整合到主题中去。步骤如下：
+ <a href="http://yuguo.us/files/2011/08/pagenav_2.png"><img class="aligncenter size-full wp-image-865" title="pagenav_2" src="http://yuguo.us/files/2011/08/pagenav_2.png" alt=""   /></a>虽然它很强大，但我如果想把我的博客主题开源发布出去，那么要求用户全都下载这个插件不是一个很好的选择。而且这么多自定义项并不是每个用户都需要的。 所以我决定把它整合到主题中去。步骤如下：
 <ol>
 	<li>创建函数</li>
 	<li>在index.php中插入调用代码</li>

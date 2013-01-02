@@ -13,7 +13,7 @@ categories: []
 <h3>logo不是&lt;figure&gt;</h3>
 它被滥用了。
 
-<figure><a href="http://yuguo.us/files/2011/08/taobao-logo.png"><img class="aligncenter size-full wp-image-857" title="taobao-logo" src="http://yuguo.us/files/2011/08/taobao-logo.png" alt="" width="525" height="162" /></a>
+<figure><a href="http://yuguo.us/files/2011/08/taobao-logo.png"><img class="aligncenter size-full wp-image-857" title="taobao-logo" src="http://yuguo.us/files/2011/08/taobao-logo.png" alt=""   /></a>
 <figcaption>淘宝的logo错误地使用的figure标签</figcaption>
 </figure>
 

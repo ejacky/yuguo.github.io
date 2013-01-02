@@ -9,7 +9,7 @@ Qzone是跟肤的，用户选择不同的皮肤的时候会看到不同的颜色
 
 互联网上还在跟肤的完整已经非常少了，但在Qzone这是一个很大的赢利点，因为跟肤配合各种付费皮肤和付费帽子、付费名片等各种自定义，极大地提高了Qzone用户中付费的比例。而Qzone<a title="腾讯2012第一季度财报" href="http://tech.qq.com/zt2012/tencent12q1/index.htm" target="_blank">用户数量又是惊人的</a>。
 
-<a href="http://yuguo.us/files/2012/05/图片1.jpg"><img class="aligncenter size-full wp-image-1205" title="图片1" src="http://yuguo.us/files/2012/05/图片1.jpg" alt="" width="867" height="541" data-pinit="registered" /></a>
+<a href="http://yuguo.us/files/2012/05/图片1.jpg"><img class="aligncenter size-full wp-image-1205" title="图片1" src="http://yuguo.us/files/2012/05/图片1.jpg" alt=""   data-pinit="registered" /></a>
 
 之前朋友网的前身校友网也是跟肤的，后来去掉了。所以也许未来不跟肤会是趋势，但无论如何现在的架构需要我们跟肤，那么我略微整理一下相关的知识，也许对于其他人都没帮助，但可以帮助大家看清我们做这些事的大背景，也促使大家有所思考，如何在某些“限制”下完成设计。
 <h2>方法</h2>
@@ -25,7 +25,7 @@ Qzone是跟肤的，用户选择不同的皮肤的时候会看到不同的颜色
 <h2>规范</h2>
 十几个工程师还有同样多的设计师都要统一利用class来定义强色和弱色，这个需要很好的培训和文档。培训的话腾讯使用导师制度，一般都能很快学习如何使用这种class，比如c_tx,c_tx2,c_tx3,c_bg,bg2等等等等……文档则是日常查阅用法的地方。文档规定了各种色值的用法，并且提供了工具面板直接在当前页切换配色，同时指明了规范责任人，如果在工作中与任何人有冲突了，就拉责任人进来沟通。
 
-<a href="http://yuguo.us/files/2012/05/11.jpg"><img class="aligncenter size-full wp-image-1206" title="1" src="http://yuguo.us/files/2012/05/11.jpg" alt="" width="755" height="522" data-pinit="registered" /></a>
+<a href="http://yuguo.us/files/2012/05/11.jpg"><img class="aligncenter size-full wp-image-1206" title="1" src="http://yuguo.us/files/2012/05/11.jpg" alt=""   data-pinit="registered" /></a>
 
 我们能够使用的颜色性的class包括几大类：
 

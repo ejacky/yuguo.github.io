@@ -7,7 +7,7 @@ categories: []
 ---
 <strong>Google Analytics</strong>今天升级了，可以把<strong>Webmaster Tools</strong>的数据共享到<em>Google Analytics</em>，以后跟踪SEO数据不用再登录<em>Webmaster Tools</em>了，可以直接从<em>Google Analytics</em>中的Traffic Source-&gt; SEO里面查看了。
 
-<img class="aligncenter size-full wp-image-1086" title="webmaster" src="http://yuguo.us/files/2011/12/webmaster.png" alt="" width="666" height="546" />
+<img class="aligncenter size-full wp-image-1086" title="webmaster" src="http://yuguo.us/files/2011/12/webmaster.png" alt=""   />
 
 <em>Google Analytics</em>主要作用对页面内容、速度、目标人群（国家、语言、设备、页面时间、跳转）等信息跟踪，需要网站主在每一个页面上贴上<em>Google Analytics</em>的分析js代码。
 

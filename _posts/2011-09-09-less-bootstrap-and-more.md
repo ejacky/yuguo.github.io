@@ -8,7 +8,7 @@ categories: []
 今天分享的关于LessCSS和Bootstrap的一些介绍，这是理论部分。
 <div id="__ss_9184161" style="width: 595px;">以后再介绍实战。
 
-<div style="width: 595px;"><strong style="display: block; margin: 12px 0 4px;"><a title="Less, bootstrap and more" href="http://www.slideshare.net/chandleryu/less-bootstrap-and-more" target="_blank">Less, bootstrap and more</a></strong> <iframe src="http://www.slideshare.net/slideshow/embed_code/9184161" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" width="595" height="497"></iframe>
+<div style="width: 595px;"><strong style="display: block; margin: 12px 0 4px;"><a title="Less, bootstrap and more" href="http://www.slideshare.net/chandleryu/less-bootstrap-and-more" target="_blank">Less, bootstrap and more</a></strong> <iframe src="http://www.slideshare.net/slideshow/embed_code/9184161" frameborder="0" margin margin scrolling="no"  ></iframe>
 <div id="__ss_9184161" style="width: 595px;">
 <div style="padding: 5px 0 12px;">View more <a href="http://www.slideshare.net/" target="_blank">presentations</a> from <a href="http://www.slideshare.net/chandleryu" target="_blank">chandleryu</a>
 <h2>后续跟进</h2>

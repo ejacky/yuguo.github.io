@@ -15,7 +15,7 @@ Live Template最核心的思想是通过一个字段（Abbreviation）来展开�
 
 在IDEA中Ctrl+Alt+S打开设置，然后搜索Live Template，之后我们会看见很多group，比如html、css、zen css等，我这个模版是在css中触发，所以我在css group里新建一个模版。Group只是用来管理Live Template，跟在什么环境下触发没关系，还可以自己建一些group比如“项目”
 
-<a href="http://yuguo.us/files/2011/08/live_template_1.png"><img class="aligncenter size-full wp-image-888" title="live_template_1" src="http://yuguo.us/files/2011/08/live_template_1.png" alt="" width="540" height="527" /></a>
+<a href="http://yuguo.us/files/2011/08/live_template_1.png"><img class="aligncenter size-full wp-image-888" title="live_template_1" src="http://yuguo.us/files/2011/08/live_template_1.png" alt=""   /></a>
 
 css group里新建一个fs模版
 
@@ -25,7 +25,7 @@ Template text中的文本我写的是
 <pre>font-size:$v1$px;font-size:$v2$rem;</pre>
 展开快捷键是默认的（Tab），最后只有在CSS上下文（注意，是CSS上下文，不是CSS文件，这样在HTML中的&lt;style&gt;里也是能展开这个Template的）中输入：fs（Tab）之后，就会出现下面的截图：
 
-<a href="http://yuguo.us/files/2011/08/live_template_2.png"><img class="aligncenter size-full wp-image-889" title="live_template_2" src="http://yuguo.us/files/2011/08/live_template_2.png" alt="" width="227" height="45" /></a>
+<a href="http://yuguo.us/files/2011/08/live_template_2.png"><img class="aligncenter size-full wp-image-889" title="live_template_2" src="http://yuguo.us/files/2011/08/live_template_2.png" alt=""   /></a>
 
 我随便设置了两个变量$v1$和$v2$，只是作为用户输入的一个placeholder，也可以是任何其他值。除了两个预设变量。
 <h3>预设变量</h3>
@@ -39,7 +39,7 @@ $SELECTION$被用于“环绕模版”中，所谓环绕模版，就是当模版
 <h3>Expression</h3>
 在编辑模板的对话框中点击Edit varibles按钮的时候，会出现一个对话框，其中可以编辑每一个变量的Expression。
 
-<a href="http://yuguo.us/files/2011/08/edit_varibles.png"><img class="aligncenter size-full wp-image-893" title="edit_varibles" src="http://yuguo.us/files/2011/08/edit_varibles.png" alt="" width="651" height="270" /></a>
+<a href="http://yuguo.us/files/2011/08/edit_varibles.png"><img class="aligncenter size-full wp-image-893" title="edit_varibles" src="http://yuguo.us/files/2011/08/edit_varibles.png" alt=""   /></a>
 
 Express中可以有3种值：
 <ul>

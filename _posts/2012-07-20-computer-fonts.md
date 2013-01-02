@@ -5,15 +5,15 @@ date: 2012-07-20 17:27
 comments: true
 categories: []
 ---
-<a href="http://yuguo.us/files/2012/07/2.png"><img class="aligncenter size-full wp-image-1282" title="2" src="http://yuguo.us/files/2012/07/2.png" alt="" width="214" height="72" /></a>
+<a href="http://yuguo.us/files/2012/07/2.png"><img class="aligncenter size-full wp-image-1282" title="2" src="http://yuguo.us/files/2012/07/2.png" alt=""   /></a>
 
 如图，左边是12号的Arial字体，右边是12号的宋体，为啥他们一个有边缘半透明一个没有呢？
 
-<a href="http://yuguo.us/files/2012/07/3.png"><img class="aligncenter size-full wp-image-1283" title="3" src="http://yuguo.us/files/2012/07/3.png" alt="" width="283" height="100" /></a>
+<a href="http://yuguo.us/files/2012/07/3.png"><img class="aligncenter size-full wp-image-1283" title="3" src="http://yuguo.us/files/2012/07/3.png" alt=""   /></a>
 
 如图，上面的是Chrome下的48号图标字体，下图是49号，为啥下面的明显比上面平滑呢？
 
-<a href="http://yuguo.us/files/2012/07/4.png"><img class="aligncenter size-full wp-image-1284" title="4" src="http://yuguo.us/files/2012/07/4.png" alt="" width="233" height="82" /></a>
+<a href="http://yuguo.us/files/2012/07/4.png"><img class="aligncenter size-full wp-image-1284" title="4" src="http://yuguo.us/files/2012/07/4.png" alt=""   /></a>
 
 如图，IE渲染图标的时候为什么垂直方向比水平方向更平滑呢？
 

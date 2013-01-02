@@ -9,7 +9,7 @@ categories: []
 
 我喜欢互联网，从高中就喜欢。互联网的每一天都在发生惊奇的改变，每天都能从网上发现看一眼下巴就会掉下来的想法和技术，早上鬼哥给我们发一个书签，点击之后能在当前页面载入一个标尺来，太神奇了。这就是JavaScript。它能做什么？它没有做不到的。
 
-<img class="aligncenter size-full wp-image-45" title="2010-8-3 23-41-59" src="http://yuguo.us/files/2010/08/2010-8-3-23-41-59.png" alt="" width="618" height="370" />
+<img class="aligncenter size-full wp-image-45" title="2010-8-3 23-41-59" src="http://yuguo.us/files/2010/08/2010-8-3-23-41-59.png" alt=""   />
 
 现在每天上下班用FF插件Xmarks来同步书签栏，无论在家里还是在公司都可以确保看到一样的ToDo List，常用工具和所有工具性书签、备份等。用SugarSync同步文件夹，包括照片、文档、电子书等等。这就是云计算带来的最大福利之一……数据同步。
 
