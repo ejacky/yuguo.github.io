@@ -10,7 +10,7 @@
   h1                          { color:rgba(0,0,0,0.3); }
   h1 a                        { color:#333; }
   h1 a:hover                  { color:#9c6; }
-  h2                          { font-size:1.875em; letter-spacing:-0.025em; line-height:1.3125em; padding-top:2em; }
+  h2                          { font-size:1.875em; letter-spacing:-0.025em; line-height:1.3125em; }
   h3,
   h4                          { font-size:1.125em; padding:2em 0 0.5em 0; }
   h3 + h4                     { padding-top:0; } /* Only an h4 that follows an h3 */
@@ -22,15 +22,6 @@
   @-moz-document url-prefix() {
     a { display:inline-block; /* For weird Firefox strikethrough-like bug */ }
   }
-  h2 a                        { color:#333; }
-  h3 a,
-  p a,
-  li a,
-  figcaption a                { border-bottom:1px solid #9c6; color:#333; }
-  h2 + p a,
-  figcaption a,
-  p.note a,
-  p.small-print a             { color:rgba(0,0,0,0.3); }
   h3 a:hover,
   p a:hover,
   h2 + p a:hover,
