@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 15条JavaScript最佳实践
-date: 2013-01-02 00:07
+date: 2013-01-03 00:07
 comments: true
 categories: []
 ---
