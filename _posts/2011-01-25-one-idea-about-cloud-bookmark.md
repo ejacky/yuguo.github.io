@@ -7,7 +7,6 @@ categories: []
 ---
 <h2>﻿云端书签案例一</h2>
 在看到一篇不错的文章的时候，我会点击书签栏上的Read Later（详情<a href="http://www.instapaper.com/u">http://www.instapaper.com/u</a>），然后本文就会保存在我的云端帐号上。
-
 <img class="aligncenter size-full wp-image-632" title="一篇不错的文章" src="http://yuguo.us/files/2011/01/QQ拼音截图未命名.png" alt=""   />
 然后我登录到我的主页之后，就能看到我所有Read Later的文章。这时候我点击Kindle按钮生成一个mobi格式的文件，我把它拷贝到Kindle上去阅读。
 <img class="aligncenter size-full wp-image-633" title="保存到kindle格式" src="http://yuguo.us/files/2011/01/QQ拼音截图未命名1.png" alt=""   />

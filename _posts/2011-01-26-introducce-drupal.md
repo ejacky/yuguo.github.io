@@ -7,7 +7,6 @@ categories: []
 ---
 Drupal是一个相当不错的CMS。在这几年CMS的蓬勃发展中，他跟wordpress一起发展壮大起来，这说明在CMS业不会有一家独大的现象，每个站点都有适合自己的系统。在认识Drupal之前我用过的几个CMS都是以博客为主的系统——比如wordpress，而如果希望用以博客为主的CMS来做新闻站点或者类目复杂一点的信息发布站点就会比较麻烦。当然了，完全可以用不是那么适合的工具做出各种类型的站点，但那只能说明开发者牛叉并且很爱折腾。我觉得以显示自己技术的折腾都是耍流氓，所以我开始使用Drupal。
 因为我对wordpress更加熟悉，所以介绍Drupal的时候会作出对比，从一个熟悉的概念介绍一个陌生的概念往往是一种很有效的学习方法。
-
 <h2>Drupal与wordpress的不同</h2>
 这二个系统经常被拿来跟对方比较。<a href="http://changingway.org/2010/04/29/drupal-and-wordpress-two-years-on/">changingway.org</a>的结论是“wordpress更容易上手。而当页面开始复杂的时候，Drupal是更好的选择”。这些年来两个系统互相从对方身上学习优点，都在变得更加易用、更易配置。
 <h3>哪些人适合使用wordpress搭建站点</h3>

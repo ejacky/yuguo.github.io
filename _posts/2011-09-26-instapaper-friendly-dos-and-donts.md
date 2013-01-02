@@ -7,7 +7,6 @@ categories: []
 ---
 <h2>什么是Instapaper</h2>
 <a href="http://www.instapaper.com/">Instapaper</a>是一个提供Read Later服务的跨平台解决方案。在任何地方（比如浏览器中，或者Google Reader中，邮件等）选择Read Later之后，还能在任何地方（iPad，iPhone，kindle）阅读。
-
 <h2>什么是Instapaper Friendly？</h2>
 当读者访问你的网站，而且你的网站是阅读性质的（比如博客、相册），而不是社交性质的（比如SNS，Twitter），那么你的读者很有可能会使用Instapaper来Read Later。如果读者保存下来的内容乱七八糟，要么没有保存到正文，要么保存了广告，或者评论，那就不是友好的。反之则是友好的。
 Read Later之后的text文件拥有以下特性的页面是友好的：

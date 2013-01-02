@@ -13,7 +13,6 @@ categories: []
 * 评论转移，然后用discus之类的第三方js插件实现（事实上我没有做这一步，因为不喜欢discus这种非开源的方法，我希望会有兼容gravtar的方案）
 * 处理首页和日志页的样式
 * feedburner支持很简单，因为之前对访客的入口是feedburner的烧录地址，所以我只需要在github根目录生成新的[feed.xml](https://github.com/yuguo/yuguo.github.com/blob/master/feed.xml)，然后再feedburner中修改源路径即可，用户感知不到这个变化。
-
 最后补充一些资源：
 * 了解一下很赞的[makrdown语法](http://wowubuntu.com/markdown/)
 * 修改模板的时候请参考[Template Data](https://github.com/mojombo/jekyll/wiki/Template-Data)
@@ -24,7 +23,4 @@ categories: []
 * 如果希望让一些文章为草稿，在首页不显示，但是可以通过url访问，可以参考[这个问答](https://gist.github.com/2870636)
 * 如果希望初次加载50篇文章，滚动异步加载更多文章，可以参考[用jekyll和jQuery实现异步加载文章列表](http://yanping.me/cn/blog/2012/10/10/asynchronous-loading-post-list-with-jekyll-and-jQuery/)
 * 除了利用github自带的jekyll实现静态页，还可以自己下载本机生成站点，参考 [bloggering like a hacker](http://tom.preston-werner.com/2008/11/17/blogging-like-a-hacker.html)
-
 最后，这整个博客都是开源的，我的样式、模板、都可以直接使用，但文章内容和图片内容保留版权，请不要无良复制。
-
-

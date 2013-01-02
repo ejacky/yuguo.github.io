@@ -10,7 +10,6 @@ categories: []
 关键代码如下：
 <pre><code>&lt;span&gt;&lt;a href="#"&gt;文字文字文字文字&lt;/a&gt;&lt;/span&gt;</code></pre>
 <pre><code>body {font: normal 12px/1.5 tahoma, arial, 宋体;}</code></pre>
-
 <img class="aligncenter size-full wp-image-355" title="1" src="http://yuguo.us/files/2010/10/1.png" alt="" />
 在IE6下的text-decoration:underline，下划线窜上来把文字切了一刀，看上去很猥琐很不爽。找了半天，原因着实不明。想起前辈们的教导：百思不得其解的IE6/7 bug就是hasLayout，于是给里面的超级链接加上_float:left，搞定。
 但是，问题又来了，在IE6下，成了这个样子：

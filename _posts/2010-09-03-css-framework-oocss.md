@@ -18,7 +18,6 @@ categories: []
 	<li>完美兼容</li>
 	<li>快速上手</li>
 </ol>
-
 <a href="http://www.google.com/trends?q=css+framework"><img class="aligncenter size-full wp-image-125" title="CSS框架搜索趋势" src="http://yuguo.us/files/2010/08/1.png" alt="CSS框架搜索趋势"   /></a>
 关于快速上手，我觉得不是那么简单。诚然任何人可以下载一个css框架开始在实际中开始使用，可是每个CSS框架有各自的适用环境。而选择一个适合自己项目的框架（<em>或者从不使用框架到使用框架的思维转变</em>）需要对当前流行的大部分框架有所了解和研究。这是一个陡峭的学习曲线。基于此，我决定分别研究这些知名框架。
 <h2>OOCSS是什么</h2>

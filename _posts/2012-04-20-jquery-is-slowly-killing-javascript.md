@@ -11,7 +11,6 @@ LZ说：
 【169】我是jQuery玩家，我想获得当前URL的参数，比如
 <pre><code>http://localhost/menuname.de?foo=bar&amp;amp;number=0</code></pre>
 这个问题相当具有代表性，有169个赞。
-
 <code>1L回答：</code>
 【261】要得到参数你应该这样搞：
 <pre><code>$(document).ready(function() { var pathname = window.location.pathname; });</code></pre>
