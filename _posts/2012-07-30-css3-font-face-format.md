@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: CSS3 @font-face 语法分析
 date: 2012-07-30 09:39
 comments: true

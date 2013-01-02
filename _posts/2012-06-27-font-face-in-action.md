@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: @font-face实战
 date: 2012-06-27 17:29
 comments: true

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 前端交互视觉——众妙之门2
 date: 2012-05-02 16:09
 comments: true

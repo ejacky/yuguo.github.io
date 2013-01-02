@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 善始善终还是即时退出
 date: 2011-03-21 18:06
 comments: true

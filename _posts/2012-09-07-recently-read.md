@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 最近在读的
 date: 2012-09-07 09:53
 comments: true

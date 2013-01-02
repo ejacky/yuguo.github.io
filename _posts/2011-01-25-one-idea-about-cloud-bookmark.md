@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 关于云端书签的一个想法
 date: 2011-01-25 18:07
 comments: true

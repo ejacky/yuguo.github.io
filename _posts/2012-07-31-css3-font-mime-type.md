@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: CSS3字体的MIME TYPE
 date: 2012-07-31 12:37
 comments: true

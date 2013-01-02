@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 960px宽的网格已经过时了？
 date: 2010-09-25 09:52
 comments: true

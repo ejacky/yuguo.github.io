@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 每一件意义重大的小事——读《代码整洁之道》
 date: 2012-08-16 09:31
 comments: true

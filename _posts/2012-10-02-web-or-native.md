@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Web还是Native？
 date: 2012-10-02 00:48
 comments: true

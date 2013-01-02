@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 15条JavaScript最佳实践
 date: 2012-09-02 16:58
 comments: true

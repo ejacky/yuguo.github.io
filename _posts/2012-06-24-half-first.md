@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 先做一半
 date: 2012-06-24 21:04
 comments: true

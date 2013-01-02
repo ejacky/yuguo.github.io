@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 《众妙之门3》译后感
 date: 2012-10-19 12:03
 comments: true

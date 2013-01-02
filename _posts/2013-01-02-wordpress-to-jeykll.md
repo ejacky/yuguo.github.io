@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: WordPress迁移到github(jeykll)全攻略
 date: 2013-01-02 18:17
 comments: true

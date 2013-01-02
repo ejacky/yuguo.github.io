@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 扩展jQuery：自定义Live函数
 date: 2011-04-27 20:39
 comments: true

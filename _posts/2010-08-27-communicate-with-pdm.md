@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 如何和产品经理交流
 date: 2010-08-27 00:58
 comments: true

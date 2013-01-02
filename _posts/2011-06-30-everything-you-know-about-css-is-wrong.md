@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 关于CSS你知道的都是错的
 date: 2011-06-30 17:23
 comments: true

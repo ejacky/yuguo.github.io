@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 那么你想制作CSS3字体吗？
 date: 2012-07-17 11:38
 comments: true

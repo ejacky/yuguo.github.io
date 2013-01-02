@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 教育的问题
 date: 2011-06-08 16:53
 comments: true

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: HTML5拖拽文件以及显示文件
 date: 2011-03-16 10:21
 comments: true

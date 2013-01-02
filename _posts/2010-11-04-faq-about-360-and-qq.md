@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 给我的朋友：FAQ
 date: 2010-11-04 11:33
 comments: true

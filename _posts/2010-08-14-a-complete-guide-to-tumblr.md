@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Tumblr是神马
 date: 2010-08-14 18:41
 comments: true

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 如何正确设置缓存
 date: 2012-08-12 18:57
 comments: true

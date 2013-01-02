@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 如何质疑设计稿
 date: 2010-11-20 15:19
 comments: true

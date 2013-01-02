@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Webmaster Tooles数据可导入Google Analytics
 date: 2011-12-22 09:53
 comments: true

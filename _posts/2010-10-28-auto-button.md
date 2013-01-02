@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 自适应按钮
 date: 2010-10-28 09:03
 comments: true

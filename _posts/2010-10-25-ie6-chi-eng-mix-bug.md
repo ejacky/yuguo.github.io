@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: IE6下中英文混排的bug
 date: 2010-10-25 17:54
 comments: true

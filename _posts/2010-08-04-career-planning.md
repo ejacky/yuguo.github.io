@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 如果非要说发展方向的话……
 date: 2010-08-04 00:15
 comments: true

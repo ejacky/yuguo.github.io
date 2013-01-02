@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 理论的重要性
 date: 2011-01-04 01:02
 comments: true

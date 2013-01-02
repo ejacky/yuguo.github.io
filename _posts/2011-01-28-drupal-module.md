@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Drupal模块
 date: 2011-01-28 14:19
 comments: true

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+　　<html>
+　　<head>
+　　　　<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="/style.css" />
+　　　　<title>{{ page.title }}</title>
+　　</head>
+　　<body>
+	<div class="blog">
+		<div class="container group">
+  			{% include sidebar.html %}
+	             
+	        <div class="content">
+		      	<div class="content-inner">
+		      	{{ content }}
+		      	</div>
+	        </div>
+			
+		</div>
+		
+		{% include footer.html %}
+
+　　</body>
+　　</html>

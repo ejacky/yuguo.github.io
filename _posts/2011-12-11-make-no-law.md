@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 批评官员的尺度
 date: 2011-12-11 13:27
 comments: true

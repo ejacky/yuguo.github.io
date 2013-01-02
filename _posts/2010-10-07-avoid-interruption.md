@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 避免打断
 date: 2010-10-07 16:55
 comments: true

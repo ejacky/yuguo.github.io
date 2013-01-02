@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 中国是个大商场
 date: 2011-09-03 00:55
 comments: true

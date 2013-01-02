@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 怎样阅读一本书
 date: 2010-11-16 16:23
 comments: true

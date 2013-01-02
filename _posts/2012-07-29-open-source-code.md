@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 开源代码
 date: 2012-07-29 20:04
 comments: true

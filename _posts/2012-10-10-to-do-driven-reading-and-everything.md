@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: TO-DO驱动的阅读（以及所有事情）
 date: 2012-10-10 10:02
 comments: true

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 哪一种生活不美好？
 date: 2010-12-19 02:14
 comments: true

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 请求、缓存、图片利用率和人力成本
 date: 2012-05-23 23:00
 comments: true

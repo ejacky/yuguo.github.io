@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 避免figure元素的错误用法
 date: 2011-08-22 00:35
 comments: true

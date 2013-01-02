@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 几部电影
 date: 2010-12-18 02:22
 comments: true

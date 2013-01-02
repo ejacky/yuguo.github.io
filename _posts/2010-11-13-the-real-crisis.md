@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 真正的危机
 date: 2010-11-13 16:43
 comments: true

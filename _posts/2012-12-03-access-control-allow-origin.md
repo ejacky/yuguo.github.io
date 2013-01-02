@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 自定义Access-Control-Allow-Origin策略以解决字体文件跨域权限问题
 date: 2012-12-03 12:21
 comments: true

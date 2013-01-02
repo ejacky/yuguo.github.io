@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 瀑布流介绍
 date: 2012-01-08 18:04
 comments: true

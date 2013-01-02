@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 论文……若实在要说学到了什么
 date: 2010-06-10 01:16
 comments: true

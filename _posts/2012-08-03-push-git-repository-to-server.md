@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 使用git部署站点
 date: 2012-08-03 10:18
 comments: true

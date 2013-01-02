@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 使用PHP来调用REST API
 date: 2012-06-04 13:42
 comments: true

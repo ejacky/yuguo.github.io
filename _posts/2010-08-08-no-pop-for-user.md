@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 不要给用户弹出窗口
 date: 2010-08-08 13:17
 comments: true

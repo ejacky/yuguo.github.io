@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 牙病
 date: 2010-08-16 20:06
 comments: true

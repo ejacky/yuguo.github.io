@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: jade语法简介
 date: 2013-01-01 18:20
 comments: true

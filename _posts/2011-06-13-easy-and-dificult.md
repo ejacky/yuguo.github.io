@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 简单和困难
 date: 2011-06-13 15:47
 comments: true

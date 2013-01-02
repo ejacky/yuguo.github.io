@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 开始工作了
 date: 2010-07-18 18:06
 comments: true

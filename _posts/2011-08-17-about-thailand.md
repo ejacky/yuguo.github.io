@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 泰国游
 date: 2011-08-17 23:43
 comments: true

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 做一个瀑布流的wordpress主题【1】
 date: 2012-02-03 18:25
 comments: true

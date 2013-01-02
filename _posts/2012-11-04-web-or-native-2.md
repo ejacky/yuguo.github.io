@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 《众妙之门3》——第九章：移动用户体验设计考虑的因素：“是Web，还是原生？”
 date: 2012-11-04 16:15
 comments: true

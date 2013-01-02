@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Instapaper Friendly -- dos and don&#039;ts
 date: 2011-09-26 11:04
 comments: true

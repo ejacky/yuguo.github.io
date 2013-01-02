@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 概念的本土化比正确性更加重要
 date: 2011-01-22 16:22
 comments: true

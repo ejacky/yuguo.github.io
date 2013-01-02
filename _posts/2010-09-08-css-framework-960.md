@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: css框架[3]-960grids
 date: 2010-09-08 20:02
 comments: true

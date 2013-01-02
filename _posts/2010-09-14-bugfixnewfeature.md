@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: bugfix+newfeature
 date: 2010-09-14 00:03
 comments: true

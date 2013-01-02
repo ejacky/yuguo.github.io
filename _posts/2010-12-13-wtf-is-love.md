@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 假如我进入了男生权利
 date: 2010-12-13 01:32
 comments: true

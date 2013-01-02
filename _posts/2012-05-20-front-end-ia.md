@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 为什么需要架构
 date: 2012-05-20 23:47
 comments: true

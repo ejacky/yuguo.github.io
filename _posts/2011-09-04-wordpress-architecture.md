@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 主题开源：Architecture
 date: 2011-09-04 17:35
 comments: true

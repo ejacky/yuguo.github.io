@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 非即时沟通技巧
 date: 2010-11-25 11:36
 comments: true

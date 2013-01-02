@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 我爱你的1000个理由
 date: 2011-04-06 21:39
 comments: true

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Git的优缺点
 date: 2012-08-01 22:03
 comments: true

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 巴甫洛夫的条件反射实验
 date: 2010-10-03 18:27
 comments: true

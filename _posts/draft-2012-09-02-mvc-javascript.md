@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 主题阅读：JavaScript和MVC
 date: 2012-09-02 16:58
 comments: true

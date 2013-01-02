@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: read later
 date: 2011-08-08 19:32
 comments: true

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 项目升级
 date: 2011-12-16 09:16
 comments: true

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: CMS的能力和责任
 date: 2011-09-27 00:13
 comments: true

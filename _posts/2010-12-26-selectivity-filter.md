@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 选择性过滤
 date: 2010-12-26 14:06
 comments: true

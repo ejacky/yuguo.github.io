@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 从声讨百度看韩寒的carry能力
 date: 2011-03-26 16:34
 comments: true

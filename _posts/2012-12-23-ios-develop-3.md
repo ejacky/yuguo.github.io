@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: iOS开发随笔——异步编程
 date: 2012-12-23 18:17
 comments: true

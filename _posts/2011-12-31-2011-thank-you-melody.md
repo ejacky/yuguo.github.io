@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 2011，感谢有你
 date: 2011-12-31 22:48
 comments: true

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 疯狂的雪碧图
 date: 2011-01-06 16:22
 comments: true

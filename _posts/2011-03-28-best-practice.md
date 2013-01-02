@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Best Practice
 date: 2011-03-28 12:21
 comments: true

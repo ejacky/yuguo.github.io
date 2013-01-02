@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 关于div/article/section的区别
 date: 2010-09-18 17:35
 comments: true

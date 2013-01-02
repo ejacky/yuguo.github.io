@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: iOS开发随笔
 date: 2012-12-14 10:27
 comments: true

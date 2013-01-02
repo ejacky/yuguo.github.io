@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 再见大学
 date: 2010-07-05 05:47
 comments: true

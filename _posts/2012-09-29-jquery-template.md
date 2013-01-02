@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: jQuery模板
 date: 2012-09-29 09:39
 comments: true
