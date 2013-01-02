@@ -14,19 +14,11 @@ stig的开源JSON框架是一个非常易用的框架，它可以把任何JSON�
 2.把下载来的文件解压，把Classes文件夹拖到xcode中，选择Copy items into destination group’s folder (if needed)。
 
 3.源码引入你的项目中后，你需要import到你的代码中：
-
-```
-#import "SBJson.h"
-```
+<pre>#import "SBJson.h"</pre>
 4.以下是一个有名值对的JSON字符串，所以转化成了NSDictionary。
-
-```
-NSString *someJSONDemo = @"{\"name\":\"yuguo\"}";
-NSLog(@"The name is : %@",[(NSDictionary *)[someJSONDemo JSONValue] objectForKey:@"name"]);
-```
+<pre>NSString *someJSONDemo = @"{\"name\":\"yuguo\"}";
+NSLog(@"The name is : %@",[(NSDictionary *)[someJSONDemo JSONValue] objectForKey:@"name"]);</pre>
 5.如果需要把NSDictionary或者NSArray转化成JSON字符串：
-
-```
-[obj JSONRepresentation]
-```
-
+<pre>[obj JSONRepresentation]</pre>
+<pre></pre>
+&nbsp;
