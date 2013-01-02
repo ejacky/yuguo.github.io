@@ -32,12 +32,16 @@ CodeIgniter几乎不需要配置，把它放在Apache的某个目录就可以直
 </ul>
 <h2>按需加载辅助函数</h2>
 CodeIgniter包含一些实用的辅助函数，但这并不意味着它会让你的服务器更慢，因为这些辅助函数是默认不加载的，需要通过$this-&gt;load来加载特定的模块。CodeIgniter的核心是非常小巧快速的。
+
 比如URL辅助函数就是一个非常实用的函数，这样当网站的根目录改变的时候更有移植性。我之前做的网站挂载在海外服务器上，后来事故率高了以后移植到国内的服务器和域名，所以让你的代码有移植性是很重要的。
 <h2>全局加载资源</h2>
 CodeIgniter 带有"自动装载"功能可以允许系统每次运行时自动初始化类库、辅助函数和模型。如果你需要某些资源在整个应用程序中全局使用，为方便起见可以考虑自动装载它们。
+
 要自动装载资源，打开 <var>application/config/autoload.php</var> 文件，然后将你想要自动装载的项目添加到 <samp>autoload</samp>数组中，你会发现该文件中对应于上面每个项目类型指示。
+
 所以如果要在全局加载url和file两个辅助函数，可以在autoload.php中编辑以下代码：
 <pre>$autoload['helper'] = array('url', 'file');</pre>
 <h2>文档</h2>
 CodeIgniter的另一个巨大优势就是它拥有详细的（中文）文档，当然非中文的资料更多，所以还是要学好英文，也是练习英文的好机会。
+
 <a href="http://codeigniter.org.cn/user_guide/index.html">http://codeigniter.org.cn/user_guide/index.html</a>

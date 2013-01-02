@@ -6,6 +6,7 @@ comments: true
 categories: []
 ---
 我最开始的时候迁移站点都是傻乎乎的用FTP一个文件一个文件上传，一个wordpress需要半小时，而且容易中断，后来<a href="http://ooxx.me/">damao</a>告诉我用wget这个神器，就发现其实可以通过SSH在服务器端直接做一些操作，速度非常快。
+
 最近一段时间越来越喜欢用git来管理代码，而且代码变化越来越块越来越多，现在的工作流不再合适。因为版本管理和代码部署脱节了——使用git来管理版本，更新了代码之后，还需要其他工具来把代码同步到服务器，这就很冗余了，所以我尝试用git直接把代码push到服务器。
 <h2>在服务器上的设置：</h2>
 首先需要一个支持SSH的服务器，比如<a href="http://miao.in/">miao.in</a>，在终端中输入命令：
@@ -34,10 +35,17 @@ master对应你自己的分支的名字就好，prod的意思是product。
 善用.gitignore。
 <h4>还有问题？</h4>
 多多使用以下命令来检查git状态：
+
 git status
+
 git log --pretty=oneline
+
 git remote
+
 git branch
+
 还有问题请google、stackoverflow……
+
 最后有问题，请留言。
+
 &nbsp;

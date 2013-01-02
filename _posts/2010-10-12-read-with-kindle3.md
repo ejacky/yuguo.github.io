@@ -13,6 +13,7 @@ categories: []
 	<li>包装很好，在Amazon的原始包装上再包了两层泡沫。</li>
 	<li>kindle3的包装是一次性的，打开之后不能再合上，所以可以判断没有拆过。</li>
 </ol>
+
 <h2>硬件</h2>
 <ol>
 	<li>实测12.4cm * 19cm，厚度0.8cm</li>
@@ -42,4 +43,5 @@ categories: []
 	<li><em>update:试了一下</em><a href="http://www.instapaper.com"><em>Instapaper</em></a><em>，云端同步的Read it later服务。Kindle用户标记文章以后可以稍后下载.mobi文件，然后通过Email或者USB下载到自己的Kindle（这个过程稍显繁琐）。我觉得这样很好，因为Kindle适合read不适合browser。</em></li>
 </ol>
 就想到这么多，你们还有什么想问的？
+
 update：入手kindle3之后的两个月，我更新了一篇文章<a href="http://yuguo.us/weblog/so-you-wanna-buy-a-kindle3/">《你想Kindle3吗》</a>，更专注于体验上的一些细节，如果有兴趣，欢迎阅读和评论。
