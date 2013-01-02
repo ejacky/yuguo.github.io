@@ -156,7 +156,7 @@
     header nav ul               { padding:2em 0 3em 0; }
     header nav ul li            { display:block; padding:0; }
         
-    div.content-inner                { padding-left:5%; }
+    div.content-inner                { margin:0 auto;width:90%;}
     form input,
     form textarea               { margin-left:5%; }
     div.content blockquote p    { padding-left:1em; }
@@ -178,7 +178,7 @@
     
     h2#art-direction            { padding-left:15%; }
 
-    div.content-inner { padding-left:28.787%; /* 190 / 660 = 0.28787 */ }
+    div.content-inner { width:80%; /* 190 / 660 = 0.28787 */ }
     form input,
     form textarea               { margin-left:28.787%; /* 190 / 660 = 0.28787 */ width:71%; }
     
