@@ -193,10 +193,9 @@ td                            { vertical-align: top; }
   .primary h1                          { color:rgba(0,0,0,0.3); }
   .primary h1 a                        { color:#333; }
   .primary h1 a:hover                  { color:#9c6; }
-  h2                          { font-size:1.875em; letter-spacing:-0.025em; line-height:1.3125em; }
-  h3,
-  h4                          { font-size:1.125em; padding:2em 0 0.5em 0; }
-  h3 + h4                     { padding-top:0; } /* Only an h4 that follows an h3 */
+  h2                          { font-size:1.575em; letter-spacing:-0.025em; line-height:1.3125em; }
+  h3 {font-size: 1.3em;}
+  h4                          { font-size:1.125em; }
   p + h3,
   li + h3                     { padding-top:1.5em; } /* Only an h3 that follows a p or an li */
 
