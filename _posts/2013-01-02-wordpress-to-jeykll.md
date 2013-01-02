@@ -3,7 +3,7 @@ layout: default
 title: WordPress迁移到github(jeykll)全攻略
 date: 2013-01-02 18:17
 comments: true
-draft: true
+published: false
 categories: []
 ---
 

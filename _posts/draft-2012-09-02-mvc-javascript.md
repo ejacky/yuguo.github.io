@@ -3,7 +3,7 @@ layout: default
 title: 主题阅读：JavaScript和MVC
 date: 2012-09-02 16:58
 comments: true
-draft: true
+published: false
 categories: []
 ---
 <h2>什么是MVC架构的JavaScript？</h2>

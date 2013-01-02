@@ -5,7 +5,7 @@ title: Yuguo Blog
 <ol class="yearly-archive">
 
 　　{% for post in site.posts %}
-	{% unless post.next and post.draft == null %}
+	{% unless post.next %}
       <h2>{{ post.date | date: '%Y' }}</h2>
     {% else %}
       {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
