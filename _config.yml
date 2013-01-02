@@ -1,1 +1,2 @@
-baseurl: /blog
+baseurl: /
+permalink: /weblog/:title/ 
