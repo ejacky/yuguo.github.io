@@ -38,8 +38,7 @@
   li                          { list-style:none; }
   article ul li               { list-style-type:disc; margin-left:1em; }
   article ol li               { list-style-type:upper-roman; margin-left:1em; }
-  blockquote p                { border-left:10px solid rgba(0,0,0,0.05); font-size:1.5em; line-height:1.3125em; margin:0.5em 0; padding-left:1em; }
-  blockquote + p cite         { display:block; margin-top:-1em; padding-bottom:1em; text-align:right; }
+  blockquote                { border-left:10px solid rgba(0,0,0,0.05); margin:0.5em 0; padding-left:1em; }
   article.single p:first-child + p {  line-height:1.5em; }
   code, 
   pre                         { background:rgba(0,0,0,0.1);  }
@@ -100,7 +99,7 @@
   div.fusionads a,
   div.authenticjobs p a       { border:none; color:rgba(0,0,0,0.3); }
   div.fusionads p             { padding-top:1em; }
-  div.fusionads img           { margin:1em 0; }
+  div.fusionads img           { margin:1em 0; max-width:100%;}
   div.authenticjobs img       { float:left; margin:0.5em 1em 1em 0; }
   div.authenticjobs p.job-listings + p { clear:both; }
   div.primary.sticky          { }
@@ -109,6 +108,9 @@
   07 Blog Posts -----------------------------------------------------------------------------------------------
   ---------------------------------------------------------------------------------------------------------- */
     
+  .content .previous {float:left;}
+  .content .next {float:right;}
+
   div#comments                                { padding-top:2em; }
   div#comments ol li                          { border-bottom:1px solid rgba(0,0,0,0.1);  list-style:none; margin:0; padding:2em 0; }
   div#comments ol li:last-child               { border:none; }
