@@ -1,6 +1,6 @@
 ---
 layout: post
-title: WordPress迁移到github(jeykll)提纲
+title: WordPress迁移到github(jeykll)
 date: 2013-01-02 18:17
 comments: true
 categories: []
