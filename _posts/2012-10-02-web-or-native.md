@@ -6,11 +6,8 @@ comments: true
 categories: []
 ---
 概述：本文主要描述的问题是，在智能手机端（ios和android），怎样提供服务是更好的方法？Web app还是Native app？我的个人意见是在富应用上，最好是用Native app，而不是web应用。
-
 背景：我大学有3个室友，我本科毕业后，在腾讯做前端，他们读研，后来也都走上了前端道路，但都略有其他方向的专攻，今年分别在百度和微软中国拿到了offer。所以我们都对前端技术有比较深的感情。
-
 以下是群里的对话，略有编辑。
-
 Yuguo: 23:34:52
 准备学ios开发。就好像刚翻译的那本书里说的，当你只有一个锤子，你看啥都是钉子，我只会前端开发，就什么问题都想用web的方式去解决，就是从技术去思考，不是从需求。
 杨继红: 23:35:26
@@ -71,7 +68,5 @@ Yuguo: 00:17:10
 老板的目标是就是三大平台都可以上，方法无所谓
 杨继红: 00:17:15
 嗯，目前来说，web app的体验上跟native app差距比较大
-
 最后补一个链接，Web App和Native App相结合拉动Native App的方案，我觉得这种方法很赞。
-
 <a href="https://developer.apple.com/library/safari/#documentation/AppleApplications/Reference/SafariWebContent/PromotingAppswithAppBanners/PromotingAppswithAppBanners.html#//apple_ref/doc/uid/TP40002051-CH6-SW1" target="_blank">Promoting Apps with Smart App Banners</a>

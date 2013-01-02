@@ -36,7 +36,6 @@ categories: []
 在运行时获取某些视图可以用方法
 <pre><code>- (UIView *)viewWithTag:(NSInteger)</code>tag</pre>
 在storyboard中可以看到所有视图的默认tag都是0，可以改成特定的值，比如1。
-
 如果要获得某个视图里的tag为某值的子视图，可以用这个自定义类方法
 <pre><code>+(UIView*) getSubViewInViewWithTag:(UIView*)view withTag:(NSInteger)tag { for (UIView *subview in view.subviews) { if(subview.tag==tag) return subview; } return nil; }</code></pre>
 <h2> indexPath转成整数？</h2>
