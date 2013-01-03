@@ -15,22 +15,21 @@ categories: [JavaScript]
 
 后来我们知道了不要在JavaScript中对DOM进行style定制，而是只需要在CSS文件中定义好对应的class，然后在JavaScript中使用这个class就好。
 
-接下来我们要做的就是用JavaScript模板把HTML结构（在这个案例中，是&lt;li&gt;标签）也从JavaScript中分离。
+接下来我们要做的就是用JavaScript模板把HTML结构（在这个案例中，是<li>标签）也从JavaScript中分离。
 
 市面上的JavaScript模板很多了，以<a href="http://handlebarsjs.com/">handlebars</a>这个优秀的模板为例吧：
 
 我们在页面的html中定义模板：
 
-		&lt;script id="list-template" type="text/x-handlebars-template"&gt;
-		&lt;li&gt;{{title}}&lt;/li&gt;
-		&lt;/script&gt;
+	<script id="list-template" type="text/x-handlebars-template">
+	<li>{{title}}</li>
+	</script>
 		
 然后在我们的逻辑JavaScript代码中可以把数据拼接到这一模版中：
-<pre>var source = $("#list-template").html(); //模板源，一般放在html的script中，这里我们使用jQuery，也可以使用其它方法直接获得内容字符串
 
-var template = Handlebars.compile(source);  //编译生成一个模板template
-
-var context = {title:"This is a todo item"} //获得数据，数据一般从ajax或者input中取得
-
-var html = template(context); //数据+模板=新的html</pre>
+	var source = $("#list-template").html(); //模板源，一般放在html的script中，这里我们使用jQuery，也可以使用其它方法直接获得内容字符串
+	var template = Handlebars.compile(source);  //编译生成一个模板template
+	var context = {title:"This is a todo item"} //获得数据，数据一般从ajax或者input中取得
+	var html = template(context); //数据+模板=新的html
+	
 这就是基本的 用法了，更多逻辑可以参考官方文档：<a href="http://handlebarsjs.com/">http://handlebarsjs.com/</a>
