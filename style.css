@@ -328,6 +328,7 @@ td                            { vertical-align: top; }
   body.blog div.content > ol li:first-child   { padding-top:0; }
   .archive-page {margin-top: -40px;}
   .archive-page h2 {color:rgba(0,0,0,0.3);font-size: 4em;margin: 10px 0;}
+  .archive-page h3 {color:rgba(0,0,0,0.3);font-size: 2em;margin: 10px 0;}
   .archive-page a {color:#333;}
   .archive-page span.date                    { color:rgba(0,0,0,0.3); display:block; }
   
@@ -342,9 +343,9 @@ td                            { vertical-align: top; }
     body                        { margin:0 auto; }
     div.fauxcolumn              { bottom:0; left:0; position:fixed; top:0; width:34.755%; background:#f6f6f6; }
     
-    div.primary                 { background:none; float:left; padding:8em 0; width:32%; }
+    div.primary                 { background:none; float:left; padding:100px 0; width:32%; }
     div.primary div div         { border-top:1px solid rgba(0,0,0,0.05); padding:3em 0; }
-    div.content                 { float:left; padding:8em 0 8em 0; width:68%; }
+    div.content                 { float:left; padding:100px 0 ; width:68%; }
     div.ads                     { display:block; }
     .primary h1,
     .primary p                   { width:85%; }

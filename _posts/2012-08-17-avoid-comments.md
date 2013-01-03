@@ -3,7 +3,7 @@ layout: post
 title: 避免注释
 date: 2012-08-17 21:29
 comments: true
-categories: [水]
+categories: [项目架构]
 ---
 前段时间我准备开源<a href="https://github.com/yuguo/33pu">33pu</a>的代码的时候，觉得自己的代码不够清晰，所以加上了大量的phpdoc注释。
 phpdoc注释类似javadoc注释，是一种格式严格的注释风格，在每一个class和function上都需要有phpdoc注释说明function的意图、参数、返回值。我开始做这件事的时候觉得新鲜而有趣，更重要的是内心充满了神圣的自豪感——我在使代码更好。
