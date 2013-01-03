@@ -21,11 +21,9 @@ categories: [JavaScript]
 
 我们在页面的html中定义模板：
 
-{% raw %}
 	<script id="list-template" type="text/x-handlebars-template">
-	<li>{{title}}</li>
+	<li>{&#123;title&#125;}</li>
 	</script>
-{% endraw %}
 		
 然后在我们的逻辑JavaScript代码中可以把数据拼接到这一模版中：
 
