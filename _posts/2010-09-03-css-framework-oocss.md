@@ -24,7 +24,7 @@ categories: [CSS]
 <h2>OOCSS的文件结构</h2>
 oocss包含4个基本文件和 一些扩展样式。
 
-[caption id="attachment_129" align="aligncenter"  caption="OOCSS文件请求"]<img class="size-full wp-image-129" title="OOCSS文件请求" src="http://yuguo.us/files/2010/09/2010-9-1-16-56-08.png" alt="OOCSS文件请求"   />[/caption]
+<img class="size-full wp-image-129" title="OOCSS文件请求" src="http://yuguo.us/files/2010/09/2010-9-1-16-56-08.png" alt="OOCSS文件请求"   />
 
 4个基本文件包括：
 
@@ -40,7 +40,7 @@ content.css 是对内容和定义的样式。它对所有标题和P都加上padd
 <h2>OOCSS的特点</h2><h3>1.分离容器（container）和内容（content）</h3>
 当我第一次用Firebug查看OOCSS的示例代码结构的时候，我有一种被震惊的感觉，然后就是长久的“我怎么没想到呢”这样的思考。
 
-[caption id="attachment_151" align="aligncenter"  caption="oocss的container和content是分离的"]<img class="size-full wp-image-151" title="oocss的container和content是分离的" src="http://yuguo.us/files/2010/09/2010-9-1-17-18-33-copy1.png" alt="oocss的container和content是分离的"   />[/caption]
+<img class="size-full wp-image-151" title="oocss的container和content是分离的" src="http://yuguo.us/files/2010/09/2010-9-1-17-18-33-copy1.png" alt="oocss的container和content是分离的"   />
 
 它把容器设置为padding:0;margin:0;这样就可以直接设置容器的宽度（像素或者百分比），而不用担心掉下去。
 
@@ -48,9 +48,9 @@ content.css 是对内容和定义的样式。它对所有标题和P都加上padd
 <h3>2.mod.css这一个文件专门定义基类，而mod_skins.css用来美化基类</h3>
 在编程语言中，对象是可扩展的，oocss中引进了这个概念。mod.css和mod_skins.css分别是定义基类mod和子类mod_extend的地方。
 
-[caption id="attachment_140" align="aligncenter"  caption="oocss的模块性"]<a href="http://yuguo.us/files/2010/09/2010-9-2-20-34-591.png"><img class="size-full wp-image-140" title="oocss的模块性" src="http://yuguo.us/files/2010/09/2010-9-2-20-34-591.png" alt="oocss的模块性"   /></a>[/caption]
+<a href="http://yuguo.us/files/2010/09/2010-9-2-20-34-591.png"><img class="size-full wp-image-140" title="oocss的模块性" src="http://yuguo.us/files/2010/09/2010-9-2-20-34-591.png" alt="oocss的模块性"   /></a>
 <h3>3.mod具有相当的通用性</h3>
-[caption id="attachment_142" align="aligncenter"  caption="oocss中mod的结构"]<a href="http://yuguo.us/files/2010/09/2010-9-3-14-27-35.png"><img class="size-full wp-image-142" title="oocss中mod的结构" src="http://yuguo.us/files/2010/09/2010-9-3-14-27-35.png" alt="oocss中mod的结构"   /></a>[/caption]
+<a href="http://yuguo.us/files/2010/09/2010-9-3-14-27-35.png"><img class="size-full wp-image-142" title="oocss中mod的结构" src="http://yuguo.us/files/2010/09/2010-9-3-14-27-35.png" alt="oocss中mod的结构"   /></a>
 
 mod具有通用性的一个必须的缺陷是，具有冗余代码。mod是可扩展，可拉伸的（设定不同的宽度就会以不同的宽度延展开来），这样就必须在四个角上使用空标签。oocss采用空的b标签，对此，oocss的官方解释是：
 <blockquote>屏幕阅读器会忽略空的b标签。使用这个表象标签（b是加粗）来实现表象具有优势。这个标签可以通过服务器端或者脚本引入，以至于有一天所有的CSS圆角和阴影都被支持了，可以关闭脚本并拥有漂亮，干净，语义化的HTML。</blockquote>
@@ -66,7 +66,7 @@ mod具有通用性的一个必须的缺陷是，具有冗余代码。mod是可�
 <h3>4.注释短小实用</h3>
 mod_skins.css中的注释会清晰地表明是扩展自哪个模块类，这样当需要写出class="mod mod_extend"这样的class的时候，就不会像class="mod_extend"这样漏掉基类。
 
-[caption id="attachment_144" align="aligncenter"  caption="oocss的css注释"]<a href="http://yuguo.us/files/2010/09/2010-9-3-15-44-111.png"><img class="size-full wp-image-144" title="oocss的css注释" src="http://yuguo.us/files/2010/09/2010-9-3-15-44-111.png" alt="oocss的css注释"   /></a>[/caption]
+<a href="http://yuguo.us/files/2010/09/2010-9-3-15-44-111.png"><img class="size-full wp-image-144" title="oocss的css注释" src="http://yuguo.us/files/2010/09/2010-9-3-15-44-111.png" alt="oocss的css注释"   /></a>
 <h3>5.下划线_IE hack</h3>
 oocss使用了_width这种IE hack，对此oocss的官方解释是：
 <ol><blockquote>
@@ -83,7 +83,7 @@ oocss使用了_width这种IE hack，对此oocss的官方解释是：
 
 另外介绍一下鬼哥<a href="http://t.qq.com/ghostzhang">@ghostzhang</a>的<a href="http://www.cssforest.org/blog/index.php?id=168">模块注释</a>：
 
-[caption id="attachment_145" align="aligncenter"  caption="mod的注释"]<a href="http://yuguo.us/files/2010/09/2010-9-3-16-03-10.png"><img class="size-full wp-image-145" title="mod的注释" src="http://yuguo.us/files/2010/09/2010-9-3-16-03-10.png" alt="mod的注释"   /></a>[/caption]
+<a href="http://yuguo.us/files/2010/09/2010-9-3-16-03-10.png"><img class="size-full wp-image-145" title="mod的注释" src="http://yuguo.us/files/2010/09/2010-9-3-16-03-10.png" alt="mod的注释"   /></a>
 
 由于合并后没有一个单独的文件保存所有的mod或者所有的mod_extend，所以需要详细的注释来标明这个mod或者mod_extend。
 <h3>2.类命名，看上去很美</h3>
