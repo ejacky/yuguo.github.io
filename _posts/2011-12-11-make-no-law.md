@@ -3,7 +3,7 @@ layout: post
 title: 批评官员的尺度
 date: 2011-12-11 13:27
 comments: true
-categories: [默认]
+categories: [书]
 ---
 若批评不自由，则赞美无意义。
 <h2>关于这《批评官员的尺度》</h2>

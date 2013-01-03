@@ -3,7 +3,7 @@ layout: post
 title: jQuery要杀死js了
 date: 2012-04-20 17:43
 comments: true
-categories: [默认]
+categories: [JavaScript]
 ---
 今天在stackoverflow上看到这么一个问题：
 <a href="http://stackoverflow.com/questions/406192/how-to-get-the-current-url-in-jquery">http://stackoverflow.com/questions/406192/how-to-get-the-current-url-in-jquery</a>

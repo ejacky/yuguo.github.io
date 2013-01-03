@@ -3,7 +3,7 @@ layout: post
 title: css框架研究
 date: 2010-09-11 11:25
 comments: true
-categories: [默认]
+categories: [CSS]
 ---
 这是对两周CSS框架研究工作的总结，以及一些关于分享会的感悟。
 <div id="__ss_5175295" style="width: 598px;"><strong><a title="css框架研究" href="http://www.slideshare.net/chandleryu/css-5175295">css框架研究</a></strong><object id="__sse5175295" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="598px" height="481px" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"><param name="allowFullScreen" value="true" /><param name="allowScriptAccess" value="always" /><param name="src" value="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=chandleryu-css-framework-100910141934-phpapp01&amp;rel=0&amp;stripped_title=css-5175295" /><param name="name" value="__sse5175295" /><param name="allowfullscreen" value="true" /><embed id="__sse5175295" type="application/x-shockwave-flash" width="598px" height="481px" src="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=chandleryu-css-framework-100910141934-phpapp01&amp;rel=0&amp;stripped_title=css-5175295" name="__sse5175295" allowscriptaccess="always" allowfullscreen="true"></embed></object>

@@ -3,7 +3,7 @@ layout: post
 title: 瀑布流介绍
 date: 2012-01-08 18:04
 comments: true
-categories: [默认]
+categories: [JavaScript]
 ---
 <h2>关于瀑布流</h2>
 最近几个月突然流行一种布局方式——瀑布流。

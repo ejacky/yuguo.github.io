@@ -3,7 +3,7 @@ layout: post
 title: 关于JPEG压缩优化的一点趣事
 date: 2012-03-30 18:37
 comments: true
-categories: [默认]
+categories: [做需求]
 ---
 今天看了一篇老文，对JPEG的压缩优化有了更深刻的理解，对JPEG存储数据的方法也更加了解。
 原文地址：<a href="http://www.smashingmagazine.com/2009/07/01/clever-jpeg-optimization-techniques/">http://www.smashingmagazine.com/2009/07/01/clever-jpeg-optimization-techniques/</a>

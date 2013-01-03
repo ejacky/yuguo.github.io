@@ -3,7 +3,7 @@ layout: post
 title: css框架[2]-YUI
 date: 2010-09-07 21:10
 comments: true
-categories: [默认]
+categories: [CSS]
 ---
 YUI是Yahoo!的一套JavaScript和CSS库，可以建立富交互的web应用程序，并且使得脚本编程、Ajax都变得很容易。现行的YUI有两个版本：YUI2和YUI3。其中YUI2是建立在2006年提出的YUI版本之上的稳定版本，已经有很多站点在采用这个库，并且有良好的文档。而YUI3是新一代的CSS和JavaScript库，可能还不是很全面，但很多地方都是有经验的工程师采用最新的标准制定，值得期待，YUI3同样是有良好文档的。
 <em>本文只讨论YUI2的CSS部分</em>。

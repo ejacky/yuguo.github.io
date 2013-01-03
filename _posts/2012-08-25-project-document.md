@@ -3,7 +3,7 @@ layout: post
 title: 谈谈项目文档
 date: 2012-08-25 12:52
 comments: true
-categories: [默认]
+categories: [水]
 ---
 我认为好的项目文档需要满足两个要求：
 <ul>

@@ -3,7 +3,7 @@ layout: post
 title: 众妙之门——The Smashing Book
 date: 2011-11-25 19:46
 comments: true
-categories: [默认]
+categories: [书]
 ---
 大名鼎鼎的、金光闪闪的、无以伦比的世界最著名网页设计网站<a title="Smashing Magazine" href="http://www.smashingmagazine.com/" target="_blank">Smashing Magazine</a>出书了，名字叫<strong>《Smashing Book》</strong>，并且很快地有了中文版，还入乡随俗起了个《老子》第一章的名字：《<strong><a href="http://union.dangdang.com/transfer.php?from=P-298749&amp;ad_type=10&amp;sys_id=1&amp;backurl=http://product.dangdang.com/product.aspx?product_id=20959927">众妙之门</a></strong>》。看看封面：
 <a style="background-color: transparent;" href="http://union.dangdang.com/transfer.php?from=P-298749&amp;ad_type=10&amp;sys_id=1&amp;backurl=http://product.dangdang.com/product.aspx?product_id=20959927"><img class="aligncenter size-full wp-image-1028" title="smashing-book-zhcn" src="http://yuguo.us/files/2011/11/smashing-book-zhcn.jpg" alt="众妙之门"   /></a>

@@ -3,7 +3,7 @@ layout: post
 title: CMS的能力和责任
 date: 2011-09-27 00:13
 comments: true
-categories: [默认]
+categories: [CMS]
 ---
 看到一篇很好玩而且有意义的文章：<a title="Permanent Link to With Great (CMS) Power Comes Great Responsibility" href="http://sixrevisions.com/user-interface/with-great-cms-power-comes-great-responsibility/" rel="bookmark">With Great (CMS) Power Comes Great Responsibility</a>
 文章的主要观点是对现代强大的CMS的质疑：

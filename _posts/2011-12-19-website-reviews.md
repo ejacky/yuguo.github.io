@@ -3,7 +3,7 @@ layout: post
 title: 网站设计评审
 date: 2011-12-19 09:12
 comments: true
-categories: [默认]
+categories: [做需求]
 ---
 比起“<strong>网站设计评审</strong>”，我们更多的听说的一个词是“<strong>代码评审</strong>”。
 <strong>代码评审</strong>就是一个团队或者社区中的成员互相审查各自的代码，并以此改善各自的代码。那么<strong>网站设计评审</strong>是指什么呢？其实我们都已经在做这样的事情了，打开一个页面的时候，我们会说，设计的很好啊，很烂啊，用户可用性很好啊，很差啊……其实这些“评审”都很主观。

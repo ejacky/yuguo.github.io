@@ -3,7 +3,7 @@ layout: post
 title: css框架[3]-960grids
 date: 2010-09-08 20:02
 comments: true
-categories: [默认]
+categories: [CSS]
 ---
 960grids是一个欢乐的框架，极端理性+方便+易于维护，同时极端冗余，适用于设计师使用。
 960grids框架是基于栅格理论而建立的，射雕前辈的两篇日志《<a href="http://lifesinger.org/blog/2008/10/grid-system-1/" target="_blank">网页栅格系统研究（1）：960的秘密</a>》和《<a href="http://lifesinger.org/blog/2008/10/grid-system-2/" target="_blank">网页栅格系统研究（2）：蛋糕的切法</a>》详细地介绍了960像素是怎么来的，950像素又是怎么回事。

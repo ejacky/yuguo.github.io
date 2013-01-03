@@ -3,7 +3,7 @@ layout: post
 title: bugfix+newfeature
 date: 2010-09-14 00:03
 comments: true
-categories: [默认]
+categories: [做需求]
 ---
 发现两个臭虫，解决之。
 1.RSS 输出自从第四周流水记就停止了，这真是一个严重的问题，幸亏某热心读者<a rel="external" href="http://21haolou.tk/blogs/read">Moon.Wong</a>评论指出来，我才发现这个bug，原来是上上周学习Google Date API的时候，WP输出的Feed不能通过API抓取到，我就试着改了下核心代码中的RSS，当时没有发现问题。大学的时候就听从了前辈的建议，订阅自己的博客，能检查自己的博客是否出了问题。现在懒了，都没注意自己博客feed了。

@@ -3,7 +3,7 @@ layout: post
 title: 小传单设计最容易犯的错
 date: 2011-09-06 14:29
 comments: true
-categories: [默认]
+categories: [设计]
 ---
 <ol>
 	<li>用了3种或者3种以上的字体（如果同样的字体用了两种不同的描边，算两种字体）。</li>

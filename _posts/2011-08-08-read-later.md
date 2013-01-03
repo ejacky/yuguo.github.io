@@ -3,7 +3,7 @@ layout: post
 title: read later
 date: 2011-08-08 19:32
 comments: true
-categories: [默认]
+categories: [产品]
 ---
 今天购买了第一个收费iPad应用程序：Instapaper。
 <h3>关于Instapaper</h3>

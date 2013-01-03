@@ -3,7 +3,7 @@ layout: post
 title: JavaScript中的面向对象函数
 date: 2012-03-13 13:29
 comments: true
-categories: [默认]
+categories: [JavaScript]
 ---
 最近在读《Object-Oriented JavaScript》，里面对于函数的介绍非常让人印象深刻。
 <h2>函数就是数据</h2>

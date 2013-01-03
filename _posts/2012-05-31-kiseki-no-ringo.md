@@ -3,7 +3,7 @@ layout: post
 title: 农业的未来？——读《这一生，至少当一次傻瓜》
 date: 2012-05-31 09:43
 comments: true
-categories: [默认]
+categories: [书]
 ---
 <a href="http://book.douban.com/subject/4025257/">《这一生，至少当一次傻瓜》</a>的封皮介绍是：
 <blockquote>一个切成两半的苹果，放了两年都不腐烂，只如枯萎般越缩越小，最后变成淡红色的干果，散发出淡淡的清香……这就是木村阿公的奇迹苹果，不施农药、不用肥料，却比任何高级品种都香甜可口！

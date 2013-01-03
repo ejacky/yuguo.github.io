@@ -3,7 +3,7 @@ layout: post
 title: 用kindle3读书
 date: 2010-10-12 20:37
 comments: true
-categories: [默认]
+categories: [书]
 ---
 这几天用kindle3读书，有一些经验和心得，希望对有意购买的童鞋们有帮助。
 <h2>购买/物流</h2>

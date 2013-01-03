@@ -3,7 +3,7 @@ layout: post
 title: 介绍thn.gs
 date: 2011-12-20 20:53
 comments: true
-categories: [默认]
+categories: [GTD]
 ---
 今天发现一个非常不错的管理项目的GTD online app： <a href="http://thn.gs/">http://thn.gs</a>。
 我在工作中需要跟踪很多项目的进展情况，并且项目的变化也会非常快，有可能上午还在重构，下午就开发体验然后提测了。飞鱼介绍他<a href="http://qilei.org/201111/how-to-improve-the-daily-works/">用excel来跟踪项目进展</a>，非常清晰，但是有几个缺点：

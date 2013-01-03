@@ -3,7 +3,7 @@ layout: post
 title: 感谢老代码
 date: 2011-01-06 02:37
 comments: true
-categories: [默认]
+categories: [做需求]
 ---
 感谢糟糕的老代码。
 如果不是握有十全把握，我不会有勇气去批评和修改。为了具有说服力，我才会不断学习。

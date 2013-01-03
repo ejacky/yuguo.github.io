@@ -3,7 +3,7 @@ layout: post
 title: 疯狂的雪碧图
 date: 2011-01-06 16:22
 comments: true
-categories: [默认]
+categories: [做需求]
 ---
 重构工程师是掌控天平的人。
 在制作雪碧图这件事上，要考虑自己行为造成的如下影响：<em>服务器流量</em>、<em>HTTP请求数</em>、<em>可扩展性</em>。理解了使用它的优势和劣势，才能写出更好的代码。

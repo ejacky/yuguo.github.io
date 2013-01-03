@@ -3,7 +3,7 @@ layout: post
 title: Custom Post Types
 date: 2011-08-19 11:23
 comments: true
-categories: [默认]
+categories: [CMS]
 ---
 wordpress 3.0开始引入了一个新的特性叫做Custom Post Types。
 在此功能出现之前我们要实现一些区别于“普通文章”的自定义文章的时候，往往需要用到Custom Fields。用户发表任何类型的“文章”——任何类型——都需要新建一个post，然后在Custom Fields中填入不同的名值对来进行自定义。这对用户不是很友好的一种方式。
