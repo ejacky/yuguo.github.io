@@ -3,7 +3,7 @@ layout: post
 title: Tumblr是神马
 date: 2010-08-14 18:41
 comments: true
-categories: [产品介绍]
+categories: [产品]
 
 ---
 
@@ -12,8 +12,6 @@ Tumblr是我很喜欢的一个产品，超轻量级，现在已经被block了，
 原文地址：http://www.smashingmagazine.com/2010/07/22/a-complete-guide-to-tumblr/
 
 译者：余果（https://yuguo.us）
-
-&lt;!-------分割线-------------&gt;
 
 可以认为Tumblr是一个小型博客。Twitter和腾讯围脖在国内称为“微博”实际上是个不准确的宣传用语，属于商业上的命名规则。如果按学术上的命名规则来说，他们不属于“博客”科的。围脖允许人们发表140字以内的文字和图片，而Tumblr允许你发表任意文字数量的日志，但它更适合（同时也在鼓励）小型的日志。它是140字微博和大型博客（像我这个yuguo.us/weblog）之间的一个过渡。
 

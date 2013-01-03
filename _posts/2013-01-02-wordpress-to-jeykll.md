@@ -3,7 +3,7 @@ layout: post
 title: WordPress迁移到github(jeykll)
 date: 2013-01-02 18:17
 comments: true
-categories: [水]
+categories: [开源]
 
 ---
 

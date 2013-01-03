@@ -3,7 +3,7 @@ layout: post
 title: 学用代码片段
 date: 2011-09-01 14:48
 comments: true
-categories: [水]
+categories: [编程]
 
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: 谈谈项目文档
 date: 2012-08-25 12:52
 comments: true
-categories: [水]
+categories: [项目架构]
 
 ---
 
