@@ -4,8 +4,11 @@ title: Drupal模块
 date: 2011-01-28 14:19
 comments: true
 categories: [CMS]
+
 ---
+
 Drupal的核心是由一个轻量级的框架构成的。当你从drupal.org下载Drupal时，得到的就是Drupal核心。它负责提供基本的功能，用以支持系统的其它部分。
+
 无论是核心还是扩展，它的基本单位都是模块。你可以自行下载其他的的模块以扩展功能。
 <h2>Core Modules</h2>
 核心模块提供了这么一些特性：
@@ -22,5 +25,4 @@ Drupal的核心是由一个轻量级的框架构成的。当你从drupal.org下�
 	<li>RSS Feed和Feed聚合——RSS Feed and Feed Aggregator</li>
 	<li>安全/新特性的升级提醒——Security/new release update notification</li>
 	<li>用户profile——User profiles</li>
-	<li>多种登录权限设定（用户等级，IP地址，Email）——Various access control restrictions (user roles, IP addresses, email)</li>
-</ul>
+	<li>多种登录权限设定（用户等级，IP地址，Email）——Various access control restrictions (user roles, IP addresses, email)</li></ul>

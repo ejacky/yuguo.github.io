@@ -4,10 +4,10 @@ title: 2011，感谢有你
 date: 2011-12-31 22:48
 comments: true
 categories: [水]
+
 ---
 <a href="http://sweetmelody.us">Melody</a>，马上就是2012了，过去的一年中欢笑汗水都是你陪我一起度过，2012也不许松开我的手。
-<a href="http://yuguo.us/files/2011/12/2011melody.jpg"><img class="aligncenter size-full wp-image-1098" title="2011melody" src="http://yuguo.us/files/2011/12/2011melody.jpg" alt=""   /></a>
-<ol>
+<a href="http://yuguo.us/files/2011/12/2011melody.jpg"><img class="aligncenter size-full wp-image-1098" title="2011melody" src="http://yuguo.us/files/2011/12/2011melody.jpg" alt=""   /></a><ol>
 	<li>你总是想着我，跟别人散步的时候也会给我发短信。</li>
 	<li>你说你喜欢帅哥，然后紧紧抱着我。</li>
 	<li>你有点不靠谱，我能感觉自己能帮助你。</li>
@@ -54,5 +54,4 @@ categories: [水]
 	<li>你做事没有毅力，但我提醒之后总是能继续下去。</li>
 	<li>你对我父母很细心。</li>
 	<li>我加班到很晚回家你会等我。</li>
-	<li>你是缺点跟优点一样多的小孩，未来有无尽的可能性。</li>
-</ol>
+	<li>你是缺点跟优点一样多的小孩，未来有无尽的可能性。</li></ol>
