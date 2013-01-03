@@ -3,7 +3,7 @@ layout: post
 title: IE6下中英文混排的bug
 date: 2010-10-25 17:54
 comments: true
-categories: []
+categories: [默认]
 ---
 今天花了点时间攻克了一个困扰我很久的bug，听我慢慢道来。
 最开始的时候是这样的：

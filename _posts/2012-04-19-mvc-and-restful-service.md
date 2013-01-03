@@ -3,7 +3,7 @@ layout: post
 title: 单入口、MVC和Restful Service
 date: 2012-04-19 20:00
 comments: true
-categories: []
+categories: [默认]
 ---
 首先解释三个名词。
 <h2>单入口web程序</h2>

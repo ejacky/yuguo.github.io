@@ -4,7 +4,7 @@ title: jade语法简介
 date: 2013-01-01 18:20
 comments: true
 published: false
-categories: []
+categories: [默认]
 ---
 Jade是一种高性能的模板引擎，可以快速书写html，是nodejs的Express创建项目时默认的引擎，它的优点是：
 <ul>

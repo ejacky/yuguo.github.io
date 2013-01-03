@@ -3,7 +3,7 @@ layout: post
 title: Instapaper Friendly -- dos and don&#039;ts
 date: 2011-09-26 11:04
 comments: true
-categories: []
+categories: [默认]
 ---
 <h2>什么是Instapaper</h2>
 <a href="http://www.instapaper.com/">Instapaper</a>是一个提供Read Later服务的跨平台解决方案。在任何地方（比如浏览器中，或者Google Reader中，邮件等）选择Read Later之后，还能在任何地方（iPad，iPhone，kindle）阅读。

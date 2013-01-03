@@ -3,7 +3,7 @@ layout: post
 title: 工作、健身以及练习一万个小时
 date: 2010-11-26 09:40
 comments: true
-categories: []
+categories: [默认]
 ---
 是的，这周主要就干了这三件事情：工作、健身、阅读《outliers》中的一章“10000 hours”。
 <h2>工作</h2>

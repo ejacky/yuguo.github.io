@@ -3,7 +3,7 @@ layout: post
 title: JavaScript模板入门
 date: 2012-09-02 17:49
 comments: true
-categories: []
+categories: [JavaScript]
 ---
 我最开始写过一个富交互的页面，其中的JavaScript代码包含了很多html标签。
 比如要在一个列表中利用ajax插入一个li的时候，我会直接把数据跟html标签拼接成一句完整的html，然后插入到ul中。无论数据是从服务器端拿回的，或者是从用户的input输入中拿到的——无论哪种方法都是一样。

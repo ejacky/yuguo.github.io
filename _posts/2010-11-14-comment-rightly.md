@@ -3,7 +3,7 @@ layout: post
 title: 如何正确地批评
 date: 2010-11-14 22:34
 comments: true
-categories: []
+categories: [默认]
 ---
 在博客上微博上发表了自己的观点之后，常常会期待有价值的评论，那么什么叫有价值的评论，我认为必须的一个条件是<em>达成共识</em>。
 <h2>达成共识</h2>

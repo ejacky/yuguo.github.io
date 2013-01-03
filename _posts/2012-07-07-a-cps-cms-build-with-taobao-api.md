@@ -3,7 +3,7 @@ layout: post
 title: 利用淘宝API构建淘宝客自动发布系统
 date: 2012-07-07 15:03
 comments: true
-categories: []
+categories: [默认]
 ---
 【更新】33号铺的源码已开源：<a href="https://github.com/yuguo/33pu">https://github.com/yuguo/33pu</a>
 大概几个月之前我开始对淘宝客产生兴趣，所谓淘宝客就是通过一个链接在淘宝上购物消费之后，这个链接所绑定的淘宝客帐号会获得分成。如今淘宝客已经成为一个非常大的产业，包括美丽说和蘑菇街都是做的非常不错的，但是只针对女生，可能因为女生更喜欢社交和秀，所以市场会比男生大很多。我想男生更容易接受的可能是杂志形式的导购，结论导向，倾向于快速购买。所以我打算自己做一个男生服装导购的网站——<strong><a href="http://33pu.net" target="_blank">33号铺</a></strong>。

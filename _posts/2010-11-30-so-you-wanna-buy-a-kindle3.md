@@ -3,7 +3,7 @@ layout: post
 title: 你想买kindle3吗
 date: 2010-11-30 00:43
 comments: true
-categories: []
+categories: [默认]
 ---
 先贴出一篇基础性的文章，购买kindle3之后一周写的。
 <a href="http://yuguo.us/weblog/read-with-kindle3/">http://yuguo.us/weblog/read-with-kindle3/</a>

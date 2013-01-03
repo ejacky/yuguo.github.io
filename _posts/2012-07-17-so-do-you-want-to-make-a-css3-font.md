@@ -3,7 +3,7 @@ layout: post
 title: 那么你想制作CSS3字体吗？
 date: 2012-07-17 11:38
 comments: true
-categories: []
+categories: [CSS3]
 ---
 最近使用CSS3字体的项目发布了，在组里分享了一下相关流程。
 如果没有读过之前我的@font-face实战，请移步：<a href="http://yuguo.us/weblog/font-face-in-action/">http://yuguo.us/weblog/font-face-in-action/</a>

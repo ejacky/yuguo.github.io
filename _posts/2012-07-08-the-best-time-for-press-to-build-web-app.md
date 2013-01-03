@@ -3,7 +3,7 @@ layout: post
 title: 现在是出版社做移动APP的最好时机
 date: 2012-07-08 14:16
 comments: true
-categories: []
+categories: [默认]
 ---
 <h2>为什么现在是最好时机？</h2>
 THE NEXT BIG THING就是还没有发生巨大变革的行业。

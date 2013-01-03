@@ -3,7 +3,7 @@ layout: post
 title: 每一件意义重大的小事——读《代码整洁之道》
 date: 2012-08-16 09:31
 comments: true
-categories: []
+categories: [书]
 ---
 最近在读<a href="http://union.dangdang.com/transfer.php?sys_id=1&amp;ad_type=10&amp;from=P-298749&amp;backurl=http%3A%2F%2Fproduct.dangdang.com%2Fproduct.aspx%3Fproduct_id%3D20750190">《代码整洁之道》</a>，先说一些自己的心得，我觉得无论什么语言的程序员，无论什么开发方向——移动也好，web也好，桌面也好——学会如何编写整洁的代码（clean code）都是至关重要的一堂课。
 这门课的名字也许一点都不酷，但它会完全改变我们的生活。它会让我们从一个日日夜夜加班、陷入代码泥沼中的苦逼开发仔变成开心工作效率工作的型男。

@@ -3,7 +3,7 @@ layout: post
 title: 权力距离指数
 date: 2011-06-23 00:42
 comments: true
-categories: []
+categories: [默认]
 ---
 在《异类》里有一个很有意思的概念：权力距离指数。
 它是指一种特定文化中重视和尊重权威的程度。

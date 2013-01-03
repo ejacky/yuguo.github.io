@@ -3,7 +3,7 @@ layout: post
 title: 主题开源：Architecture
 date: 2011-09-04 17:35
 comments: true
-categories: []
+categories: [默认]
 ---
 我把我的博客主题开源了，根据小平的命名，主题名叫Architecture。
 主题转移到<a title="Free WordPress Theme" href="http://yuguotheme.com">Yuguotheme</a>维护，Yuguotheme是专业的WordPress主题站点，欢迎留言。

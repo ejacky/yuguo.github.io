@@ -3,7 +3,7 @@ layout: post
 title: 写一些简短的东西
 date: 2011-03-11 19:32
 comments: true
-categories: []
+categories: [默认]
 ---
 写简短东西的要诀：
 <ul>

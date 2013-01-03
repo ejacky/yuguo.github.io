@@ -3,7 +3,7 @@ layout: post
 title: 中国是个大商场
 date: 2011-09-03 00:55
 comments: true
-categories: []
+categories: [默认]
 ---
 <blockquote>我最愛你是介乎法國與旺角的詩意　俾我再送多你一次　再送多一次　到你家多一次　送到去門前　再行多一圈　再兜多一轉　其實我不願離開這公司　全都因為對你太鍾意　其實我心願離開這公司　然之後一同與你搞生意　誰都知是對你太鍾意
 my little airport</blockquote>

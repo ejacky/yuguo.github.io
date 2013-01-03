@@ -3,7 +3,7 @@ layout: post
 title: Webmaster Tooles数据可导入Google Analytics
 date: 2011-12-22 09:53
 comments: true
-categories: []
+categories: [默认]
 ---
 <strong>Google Analytics</strong>今天升级了，可以把<strong>Webmaster Tools</strong>的数据共享到<em>Google Analytics</em>，以后跟踪SEO数据不用再登录<em>Webmaster Tools</em>了，可以直接从<em>Google Analytics</em>中的Traffic Source-&gt; SEO里面查看了。
 <img class="aligncenter size-full wp-image-1086" title="webmaster" src="http://yuguo.us/files/2011/12/webmaster.png" alt=""   />

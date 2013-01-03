@@ -3,7 +3,7 @@ layout: post
 title: 《众妙之门3》译后感
 date: 2012-10-19 12:03
 comments: true
-categories: []
+categories: [书]
 ---
 《众妙之门3：重新设计网站》（Smashing Book 3: Redesign the Web）是人民邮电出版社出版的继<a href="http://book.douban.com/subject/5351808/">《众妙之门》</a>和<a href="http://book.douban.com/subject/10575920/">《众妙之门2》</a>之后的第3本，前两版也因为广受好评而分别进行了再版和重印。《众妙之门3》不是前两本的再版，而是紧跟时尚潮流，讲述最新html5和css3、移动网页设计的单独的一本书。
 <a class="nbg" href="http://img1.douban.com/lpic/s4539433.jpg"><img src="http://img1.douban.com/mpic/s4539433.jpg" alt="众妙之门" /></a> <a class="nbg" href="http://img1.douban.com/lpic/s9071823.jpg"><img src="http://img1.douban.com/mpic/s9071823.jpg" alt="众妙之门2" /></a>

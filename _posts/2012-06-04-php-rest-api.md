@@ -3,7 +3,7 @@ layout: post
 title: 使用PHP来调用REST API
 date: 2012-06-04 13:42
 comments: true
-categories: []
+categories: [默认]
 ---
 表征状态转移（英文：Representational State Transfer，简称REST）是<a title="Roy Fielding（尚未撰写）" href="http://zh.wikipedia.org/w/index.php?title=Roy_Fielding&amp;action=edit&amp;redlink=1">Roy Fielding</a>博士在2000年他的博士论文中提出来的一种<a title="软件架构" href="http://zh.wikipedia.org/wiki/%E8%BD%AF%E4%BB%B6%E6%9E%B6%E6%9E%84">软件架构</a>风格。
 越来越多的公司开放了API，比如<a href="http://open.qq.com/">腾讯开放平台</a>，<a href="http://open.taobao.com">淘宝开放平台</a>，<a href="http://open.baidu.com/">百度开放平台</a>，<a href="https://developers.google.com/">Google Developers</a>等。开放的方式各不相同，有REST和SOAP两种。

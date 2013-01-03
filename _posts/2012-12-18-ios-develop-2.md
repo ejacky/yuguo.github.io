@@ -3,7 +3,7 @@ layout: post
 title: iOS开发随笔-2
 date: 2012-12-18 07:54
 comments: true
-categories: []
+categories: [iOS]
 ---
 <h2>关于segue</h2>
 segue就是在storyboard中描述两个场景（scene）的过渡关系的一个对象。

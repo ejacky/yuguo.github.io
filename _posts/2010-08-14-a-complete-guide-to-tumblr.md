@@ -3,7 +3,7 @@ layout: post
 title: Tumblr是神马
 date: 2010-08-14 18:41
 comments: true
-categories: []
+categories: [默认]
 ---
 Tumblr是我很喜欢的一个产品，超轻量级，现在已经被block了，看到这篇文章还是翻译过来。用户体验确实不错，产品经理和设计师，还有开发者都可以学习一下。
 原文地址：http://www.smashingmagazine.com/2010/07/22/a-complete-guide-to-tumblr/

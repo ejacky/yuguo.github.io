@@ -3,7 +3,7 @@ layout: post
 title: Less, bootstrap and more
 date: 2011-09-09 12:38
 comments: true
-categories: []
+categories: [默认]
 ---
 今天分享的关于LessCSS和Bootstrap的一些介绍，这是理论部分。
 <div id="__ss_9184161" style="width: 595px;">以后再介绍实战。

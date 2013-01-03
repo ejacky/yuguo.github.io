@@ -3,7 +3,7 @@ layout: post
 title: 再见大学
 date: 2010-07-05 05:47
 comments: true
-categories: []
+categories: [默认]
 ---
 <p style="text-align: center;"><a href="http://yuguo.us/files/2010/07/IMG_3389.jpg"><img class="aligncenter size-full wp-image-29" title="毕业照" src="http://yuguo.us/files/2010/07/IMG_3389.jpg" alt=""   /></a>右下是我</p>
 回首我的大学生活，脑海中浮现的是从西安城区到校区一路的站名。公交五公司、市建四公司（我是湖北人，读这个很拗口）、郭杜、北雷……这些站名一个一个冒出来，我就像在公交车上一样，一路颠簸地就到了学校。

@@ -3,7 +3,7 @@ layout: post
 title: 折腾开发环境
 date: 2011-03-30 17:55
 comments: true
-categories: []
+categories: [默认]
 ---
 今天终于被搞爆发了，与代码无关，纯折腾。
 <ol>

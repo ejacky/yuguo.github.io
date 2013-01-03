@@ -3,7 +3,7 @@ layout: post
 title: 编程让你更好地写博客
 date: 2011-06-30 18:59
 comments: true
-categories: []
+categories: [默认]
 ---
 我在《<a href="http://rebuildpattern.com/node/18">重构模式</a>》里面说过：“我是一个全职前端开发者，我一天到晚都在写作——用CSS表达自己的观点和哲学”。
 wordpress代码的注释里写着：Code is poetry. 也是想表达相同的观点：代码是用来表达自己观点的载体。驾驭代码的能力与驾驭文字的能力是非常相似的。

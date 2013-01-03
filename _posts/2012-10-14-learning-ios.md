@@ -3,7 +3,7 @@ layout: post
 title: 学习iOS开发——一些经验
 date: 2012-10-14 01:13
 comments: true
-categories: []
+categories: [iOS]
 ---
 两周以来陆陆续续各种看书和视频，做各种demo，对iOS有初步入门了，说一下我的经验吧。
 【视频】<a href="http://www.youku.com/playlist_show/id_16853809.html">斯坦福大学2011秋iOS公开课</a> （难度★★★，优点是教授功力非常强，不会出现其他书籍会犯的一些“不优雅”的错误，绝对值得一遍又一遍地听。缺点是字幕其实翻译的有点敷衍，漏了很多内容，适合听力好一点的童鞋。）

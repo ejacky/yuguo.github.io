@@ -3,7 +3,7 @@ layout: post
 title: Objective-C中的“委托（delegate）”和“协议（protocal）”
 date: 2012-10-22 13:01
 comments: true
-categories: []
+categories: [iOS]
 ---
 委托是Objective-C中最常用的一种回调机制。大部分情况下，“协议”的用法是跟“委托”同义的，所以本文一起来讲。
 委托是一个指向一个对象的指针，该对象有一系列方法，该对象的委托人（另一个对象）非常清楚这些方法，并且会在某些事件发生的时候调用这些方法。简单的说，这是一种机制，允许后创建的对象（later-created object）来调用<em>特定的回调函数</em>。

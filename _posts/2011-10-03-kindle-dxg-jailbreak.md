@@ -3,7 +3,7 @@ layout: post
 title: Kindle DXG越狱+汉化
 date: 2011-10-03 11:49
 comments: true
-categories: []
+categories: [默认]
 ---
 前段时间买了Kindle DXG之后发现有诸多不方便的地方：
 <ul>

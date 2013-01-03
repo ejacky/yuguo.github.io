@@ -3,7 +3,7 @@ layout: post
 title: iOS开发随笔
 date: 2012-12-14 10:27
 comments: true
-categories: []
+categories: [iOS]
 ---
 随意记录一下一些经验，对新手可能有帮助。
 <h2>数组NSArray</h2>

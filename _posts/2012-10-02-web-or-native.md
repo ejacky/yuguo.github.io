@@ -3,7 +3,7 @@ layout: post
 title: Web还是Native？
 date: 2012-10-02 00:48
 comments: true
-categories: []
+categories: [iOS]
 ---
 概述：本文主要描述的问题是，在智能手机端（ios和android），怎样提供服务是更好的方法？Web app还是Native app？我的个人意见是在富应用上，最好是用Native app，而不是web应用。
 背景：我大学有3个室友，我本科毕业后，在腾讯做前端，他们读研，后来也都走上了前端道路，但都略有其他方向的专攻，今年分别在百度和微软中国拿到了offer。所以我们都对前端技术有比较深的感情。

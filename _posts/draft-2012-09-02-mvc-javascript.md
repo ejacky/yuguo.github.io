@@ -4,7 +4,7 @@ title: 主题阅读：JavaScript和MVC
 date: 2012-09-02 16:58
 comments: true
 published: false
-categories: []
+categories: [默认]
 ---
 <h2>什么是MVC架构的JavaScript？</h2>
 <a href="http://www.alistapart.com/articles/javascript-mvc/">A List Apart: JavaScript MVC</a>

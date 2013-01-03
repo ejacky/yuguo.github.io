@@ -3,7 +3,7 @@ layout: post
 title: 旗帜鲜明地犯过于绝对的错误是一种美德
 date: 2010-12-03 08:40
 comments: true
-categories: []
+categories: [默认]
 ---
 文章标题有点难懂？这么说吧：
 在一种特定的情况下，我会跟产品经理说：

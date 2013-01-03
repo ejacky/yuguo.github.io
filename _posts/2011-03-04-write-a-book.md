@@ -3,7 +3,7 @@ layout: post
 title: 写一本书
 date: 2011-03-04 20:51
 comments: true
-categories: []
+categories: [默认]
 ---
 最近没有更新博客，而是在另一个我创建的站点（<a href="http://rebuildpattern.com">http://rebuildpattern.com</a>）上更新一些技术内容。
 每过一段时间我会回头看以前写过的东西，最近的一次我有两个发现：

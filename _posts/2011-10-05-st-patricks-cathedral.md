@@ -3,7 +3,7 @@ layout: post
 title: 圣巴特里爵主教座堂
 date: 2011-10-05 03:11
 comments: true
-categories: []
+categories: [默认]
 ---
 去武汉的时候买了一盒3D拼图送给小平，买回来之后两个人花了一些零碎时间拼好了~发图上来得瑟一下~
 拼图原型是<a href="http://zh.wikipedia.org/wiki/%E5%9C%A3%E5%B7%B4%E7%89%B9%E9%87%8C%E7%88%B5%E4%B8%BB%E6%95%99%E5%BA%A7%E5%A0%82_(%E7%BA%BD%E7%BA%A6)">圣巴特里爵主座堂</a>。

@@ -3,7 +3,7 @@ layout: post
 title: iOS开发随笔——异步编程
 date: 2012-12-23 18:17
 comments: true
-categories: []
+categories: [iOS]
 ---
 `Grand Central Dispatch` 简称（GCD，这个缩写有点大不敬……）是苹果公司开发的一种多线程技术，它提供了一个比较简单的接口来让开发者操作多线程，而不用关心太多底层实现。
 <h2>Blocks</h2>

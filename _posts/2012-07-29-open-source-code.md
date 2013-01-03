@@ -3,7 +3,7 @@ layout: post
 title: 开源代码
 date: 2012-07-29 20:04
 comments: true
-categories: []
+categories: [开源]
 ---
 最近读文章：<a href="http://tom.preston-werner.com/2011/11/22/open-source-everything.html">open source everything</a>，作者是github的联合创始人Tom。他的其他文章都非常好，强烈推荐大家读一下。不过本文只是要谈谈我对开源软件的想法。
 最近我花了一点课外时间做了淘宝客的导购系统：<a href="http://33pu.net/">33号铺</a>，使用的是codeigniter、jQuery、bootstrap等一些快速开发框架。代码方面并没有什么值得夸耀，我也在PHP开发上几乎完全没有经验（除非你称改改wordpress主题为PHP开发经验），但我根据我对交互上的一些理解，利用各种框架和api算是把这个系统架构起来了——我甚至把主要功能做出来之后，才想到要登录安全方面的问题。

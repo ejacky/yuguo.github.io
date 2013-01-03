@@ -3,7 +3,7 @@ layout: post
 title: 什么样的WordPress主题有利于SEO？
 date: 2012-06-18 11:30
 comments: true
-categories: []
+categories: [默认]
 ---
 SEO是一个内外兼修的工作，这么说是因为内容和外链都非常重要。当我们谈论“什么样的WordPress主题有利于SEO”的时候，我们是说内容这一部分。
 以下是smashingmagazine列出的几点“<a title="有利于SEO的WordPress主题的特征" href="http://wp.smashingmagazine.com/2012/06/14/wordpress-theme-seo/">有利于SEO的WordPress主题的特征</a>”：
