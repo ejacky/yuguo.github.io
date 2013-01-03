@@ -300,12 +300,12 @@ td                            { vertical-align: top; }
   .single-post li {color: rgba(0,0,0,0.4);margin-left: 2em;}
   .single-post pre {background-color: #f8f8f8;border: 1px solid #ccc;font-size: 13px;line-height: 19px;overflow: auto;padding: 6px 10px;border-radius: 3px;}
 
-  .tag-box {overflow: hidden;*zoom:1;}
+  .tag-box {overflow: hidden;*zoom:1;margin-bottom: 20px;}
   .tag-box li {float:left;margin-right: 15px;}
-  .tag-box li a {display: block;background: #fefefe;border: 1px solid #ddd;border-radius: 15px;
+  .tag-box li a {display: block;background: #fefefe;border: 1px solid #ddd;border-radius: 5px;
     padding: 2px 7px;position: relative;}
   .tag-box li span {position: absolute;color: #fff;background: #FE6600;display: block;padding: 0 5px;font-size: 12px;
-    border-radius: 3px;right: -10px;top: -5px;}
+    border-radius: 10px;right: -13px;top: -5px;}
 
   div#comments                                { padding-top:2em; }
   div#comments ol li                          { border-bottom:1px solid rgba(0,0,0,0.1);  list-style:none; margin:0; padding:2em 0; }
@@ -326,10 +326,10 @@ td                            { vertical-align: top; }
   ---------------------------------------------------------------------------------------------------------- */
   
   body.blog div.content > ol li:first-child   { padding-top:0; }
-  .yearly-archive {margin-top: -40px;}
-  .yearly-archive h2 {color:rgba(0,0,0,0.3);font-size: 4em;margin: 10px 0;}
-  .yearly-archive a {color:#333;}
-  .yearly-archive span.date                    { color:rgba(0,0,0,0.3); display:block; }
+  .archive-page {margin-top: -40px;}
+  .archive-page h2 {color:rgba(0,0,0,0.3);font-size: 4em;margin: 10px 0;}
+  .archive-page a {color:#333;}
+  .archive-page span.date                    { color:rgba(0,0,0,0.3); display:block; }
   
   /* ---------------------------------------------------------------------------------------------------------- 
   11 Media Queries (using a mobile-first approach) ------------------------------------------------------------
