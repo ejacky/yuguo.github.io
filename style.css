@@ -267,7 +267,7 @@ td                            { vertical-align: top; }
   ---------------------------------------------------------------------------------------------------------- */
   
   header nav ul               { padding:1em 0 0 0; }
-  header nav ul li            { display:inline; padding:0 1em 0 0; margin-bottom: 0.5em 0;}
+  header nav ul li            { display:inline; padding:0 1em 0 0; margin-bottom: 0.5em;}
   header nav ul li a          { color:#9c6; border:none; }
   div.content img             { margin:1em 0; max-width:100%; }
   article figure figcaption   { padding:0 5% 2em 0; }
@@ -324,10 +324,9 @@ td                            { vertical-align: top; }
   /* ---------------------------------------------------------------------------------------------------------- 
   08 Blog Archive ---------------------------------------------------------------------------------------------
   ---------------------------------------------------------------------------------------------------------- */
-  
-  body.blog div.content > ol li:first-child   { padding-top:0; }
-  .archive-page {margin-top: -40px;}
-  .archive-page h2 {color:rgba(0,0,0,0.3);font-size: 4em;margin: 10px 0;}
+
+  .archive-page {margin-top: -35px;}
+  .archive-page h2 {color:rgba(0,0,0,0.3);font-size: 4em;margin:0 0 10px;}
   .archive-page h3 {color:rgba(0,0,0,0.3);font-size: 2em;margin: 10px 0;}
   .archive-page a {color:#333;}
   .archive-page span.date                    { color:rgba(0,0,0,0.3); display:block; }
