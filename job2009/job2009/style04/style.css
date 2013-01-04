@@ -1,0 +1,151 @@
+/*
+Name: pixer press
+Author URI: http://yuguodesign.com
+Description: This is a simple theme designed by <a href="http://yuguodesign.com>Yuguo</a>.
+Version: 0.1
+Author: Yuguo
+Author URI: http://yuguodesign.com
+Tags: web2.0
+*/
+/* Begin Typography & Colors */
+body {
+	font-family: 'Century Gothic', '微软雅黑', Verdana, Arial, Sans-Serif;
+	text-align:center;
+	font-size:0.8em;
+	line-height:1.6em;
+	color:#000;
+	}
+a {
+	color:#111;
+	text-decoration:none;
+}	
+	
+/*  Wrapper  */
+#wrapper {
+	background:url("images/home_bg.gif") #fff no-repeat center top;
+}
+
+/*  Content  */
+#content {
+	width:560px;
+	margin:0 auto;
+	position:relative;
+}
+
+#content h1 a{
+	margin:0 auto;
+	display:block;
+	background:url("images/logo.gif") no-repeat center top;
+	width:347px;
+	height:89px;
+	text-indent:-5000px;
+}
+
+#content h5 {
+	text-indent:3em;
+}
+
+#content h1 a:hover {
+	background:url("images/logo.gif") no-repeat 0 -89px;
+}
+
+#intro {
+	margin:90px 40px 30px 50px;
+}
+
+#intro, #sidebar {
+	text-align:left;
+}
+
+#intro h2 {
+	background:url("images/welcome.gif") no-repeat left top;
+	text-indent:-5000px;
+	width:472px;
+	height:65px;
+}
+
+#intro p {
+	margin:2em 0;
+}
+
+/*  Sidebar  */
+#find-me {
+	position:absolute;
+	top:220px;
+	left:-70px;
+}
+
+#find-me h2 {
+	display:none;
+}
+
+#find-me a {
+	text-indent:-5000px;
+	display:block;
+	height:61px;
+	width:61px;
+	margin-bottom:7px;
+}
+
+#find-me a#blog {
+	background:url("images/icons.gif") no-repeat 0 0;
+}
+
+#find-me a#blog:hover {
+	background:url("images/icons.gif") no-repeat -61px 0;
+}
+
+#find-me a#twitter {
+	background:url("images/icons.gif") no-repeat  0 -61px;
+}
+
+#find-me a#twitter:hover {
+	background:url("images/icons.gif") no-repeat -61px -61px;
+}
+
+#find-me a#douban {
+	background:url("images/icons.gif") no-repeat  0 -122px;
+}
+
+#find-me a#douban:hover {
+	background:url("images/icons.gif") no-repeat -61px -122px;
+}
+
+#find-me a#gmail {
+	background:url("images/icons.gif") no-repeat  0 -183px;
+}
+
+#find-me a#gmail:hover {
+	background:url("images/icons.gif") no-repeat -61px -183px;
+}
+
+#find-me a#flickr {
+	background:url("images/icons.gif") no-repeat  0 -244px;
+}
+
+#find-me a#flickr:hover {
+	background:url("images/icons.gif") no-repeat -61px -244px;
+}
+
+#link-list {
+	margin:170px 0 20px 40px;
+
+}
+
+#link-list h2{
+	display:none;
+}
+
+#link-list li{
+
+}
+
+#link-list li a:hover{
+	background:url("images/check.gif") no-repeat right center;
+}
+
+#link-list a span {
+	background:url("images/li.gif") no-repeat 0 50%;
+	padding:0 30px;
+	line-height:27px;
+}

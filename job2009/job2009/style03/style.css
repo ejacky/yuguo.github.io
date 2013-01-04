@@ -1,0 +1,165 @@
+/*
+Name: pixer press
+Author URI: http://yuguodesign.com
+Description: This is a simple theme designed by <a href="http://yuguodesign.com>Yuguo</a>.
+Version: 0.1
+Author: Yuguo
+Author URI: http://yuguodesign.com
+Tags: web2.0
+*/
+/* Begin Typography 
+**************************************************************************************************/
+body {
+	font-family: 'Century Gothic', '微软雅黑', Verdana, Arial, Sans-Serif;
+	background:url("images/home_bg.jpg") repeat left top;
+	text-align:center;
+	font-size:0.8em;
+	line-height:1.6em;
+	}
+	
+/* Begin Colors 
+**************************************************************************************************/
+	
+body {
+	color:#000;
+	}	
+	
+
+a, #wrapper {
+	color:#666;
+}
+
+a:hover {
+	color:#888;
+}
+
+
+/*   Header  */
+#header {
+	height:122px;
+}
+
+#header h1 a{
+	display:block;
+	width:370px;
+	height:72px;
+	background:url("images/logo.png") no-repeat left top;
+	text-indent:-5000px;
+}	
+
+#header h5 {
+	text-indent:1em;
+	text-shadow:2px 2px 2px #fff;
+}
+
+	
+/*  Wrapper   
+**************************************************************************************************/
+#wrapper {
+	text-align:left;
+}
+
+/*  Content  
+**************************************************************************************************/
+#intro {
+	margin-left:222px;
+	padding-bottom:30px;
+	width:587px;
+	background:url("images/introBottom.png") repeat-y left bottom;
+}
+
+#intro h2 {
+	padding:20px;
+	margin:0;
+	background:url("images/introTop.png") no-repeat top left;
+	font-size:2em;
+	font-weight:normal;
+
+}
+
+#intro p {
+	padding:0 20px 0px 20px;
+	margin-top:20px;
+}
+
+
+/*  Sidebar   
+**************************************************************************************************/
+#find-me, #link-list {
+	position:absolute;
+	top:170px;
+}
+
+#find-me {
+	left:140px;
+}
+
+#find-me h2 {
+	display:none;
+}
+
+#find-me a {
+	text-indent:-5000px;
+	display:block;
+	height:32px;
+	width:32px;
+	margin-bottom:20px;
+}
+
+#find-me a#blog {
+	background:url("images/icons.png") no-repeat 0 0;
+}
+
+#find-me a#blog:hover {
+	background:url("images/icons.png") no-repeat -32px 0;
+}
+
+#find-me a#douban {
+	background:url("images/icons.png") no-repeat 0 -32px;
+}
+
+#find-me a#douban:hover {
+	background:url("images/icons.png") no-repeat -32px -32px;
+}
+
+#find-me a#flickr {
+	background:url("images/icons.png") no-repeat 0 -64px;
+}
+
+#find-me a#flickr:hover {
+	background:url("images/icons.png") no-repeat -32px -64px;
+}
+
+#find-me a#gmail {
+	background:url("images/icons.png") no-repeat 0 -96px;
+}
+
+#find-me a#gmail:hover {
+	background:url("images/icons.png") no-repeat -32px -96px;
+}
+
+#find-me a#twitter {
+	background:url("images/icons.png") no-repeat 0 -128px;
+}
+
+#find-me a#twitter:hover {
+	background:url("images/icons.png") no-repeat -32px -128px;
+}
+
+/*   Link list    
+**************************************************************************************************/
+#link-list {
+	width:247px;
+	left:805px;
+	padding-top:20px;
+	background:url("images/linkListTop.png") no-repeat top left;
+}
+
+#link-list ul{
+	padding-bottom:20px;
+	background:url("images/linkListBottom.png") no-repeat bottom left;
+}
+
+#link-list h2, #link-list li {
+	margin-left:40px;
+}
