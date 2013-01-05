@@ -256,7 +256,7 @@ td                            { vertical-align: top; }
   ---------------------------------------------------------------------------------------------------------- */
   
   div.primary                 { background:#f6f6f6; padding:10%; position: relative; /*outline:1px solid red;*/ }
-  div.content                 { padding:10%; /*outline:1px solid blue;*/ }
+  div.content                 { padding:10%; position: relative;/*outline:1px solid blue;*/ }
   div.ads                     { display:none; }
   div.blog {line-height: 1.5;}
   
