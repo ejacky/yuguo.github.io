@@ -309,20 +309,6 @@ td                            { vertical-align: top; }
   .tag-box li span {position: absolute;color: #fff;background: #FE6600;display: block;padding: 0 5px;font-size: 12px;
     border-radius: 10px;right: -13px;top: -5px;}
 
-  div#comments                                { padding-top:2em; }
-  div#comments ol li                          { border-bottom:1px solid rgba(0,0,0,0.1);  list-style:none; margin:0; padding:2em 0; }
-  div#comments ol li:last-child               { border:none; }
-  div#comments ol li article header div.gravatar-container { left:0; max-width:80px; position:absolute; top:-0.5em; width:10%; }
-  div#comments ol li article header div.gravatar-container img { width:100%; }
-  div#comments ol li article header h3,
-  div#comments ol li article header h3 + p    { padding:0 0 0 15%; }
-  div#comments ol li article header h3 + p,
-  div#comments ol li article header h3 + p a  { color:rgba(0,0,0,0.3); }
-  div#comments ol li article li               { border:none; list-style:circle; }
-
-  div.video-wrapper                           { margin-bottom:1em; }
-  /* p iframe { margin-left:-40%; width:140%; } */
-
   /* ----------------------------------------------------------------------------------------------------------
   08 Blog Archive ---------------------------------------------------------------------------------------------
   ---------------------------------------------------------------------------------------------------------- */

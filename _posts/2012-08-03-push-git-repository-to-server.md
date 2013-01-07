@@ -15,17 +15,15 @@ categories: [开源]
 
 	cd /var/www/yoursite
 	git init .
-	git config receive.denyCurrentBranch ignore git
-	config --bool receive.denyNonFastForwards false
+	git config receive.denyCurrentBranch ignore
+	git config --bool receive.denyNonFastForwards false
 	cd .git/hooks
 	wget http://utsl.gen.nz/git/post-update
 	chmod +x post-update
 
 <h2>在本地git中配置：</h2>
 
-	[remote "prod"] url = your-ssh-username@your-host:/var/www/yoursite/.git
-
-对应的git命令是：
+在本地git仓库对应的远程仓库中指定一个“生产仓库”，比如`prod`，对应的git命令是：
 
 	$ git remote add prod your-ssh-username@your-host:/var/www/yoursite/.git
 
