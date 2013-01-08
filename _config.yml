@@ -1,4 +1,4 @@
 baseurl: /
-url: http://yuguo.us
+url: http://yuguo.us/
 permalink: weblog/:title/ 
 markdown: kramdown
