@@ -1,4 +1,8 @@
 baseurl: /
 url: http://yuguo.us/
+destination: Yuguo's Blog
+title: Yuguo's Blog
+author: Yuguo
+email: me@yuguo.us
 permalink: weblog/:title/ 
 markdown: kramdown
