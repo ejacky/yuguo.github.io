@@ -1,6 +1,6 @@
 ﻿---
 layout: post
-title: Clash-of-Clans
+title: Clash of Clans
 date: 2013-01-13 12:05
 comments: true
 categories: [产品]
