@@ -16,15 +16,15 @@ categories: [开源]
 
 > 我们有一个makefile文件，以方便开发Bootstrap库。
 >
-> *dependencies* 我们的makefile依赖这几个库： recess, connect, uglify.js, 和 jshint 。要安装，只需要运行以下命令:
+> *dependencies*： 我们的makefile依赖这几个库： recess, connect, uglify.js, 和 jshint 。要安装，只需要运行以下命令:
 >
 > 	$ npm install recess connect uglify-js jshint -g
 >
-> *build* - `make` Runs the recess compiler to rebuild the /less files and compiles the docs pages. Requires recess and uglify-js. Read more in our docs »
+> *build* - `make` 命令会运行recess编译器来把/less文件编译成css文件，然后生成docs页面。 需要recess和uglify.js。
 >
-> *test* - `make test` Runs jshint and qunit tests headlessly in phantomjs (used for ci). Depends on having phantomjs installed.
+> *test* - `make test` 命令会运行jslint和qunit。
 >
-> *watch* - `make watch` This is a convenience method for watching just Less files and automatically building them whenever you save. Requires the Watchr gem.
+> *watch* - `make watch` 命令会启动watch来监视Less文件的变动，然后自动的编译成css。需要Watchr（是一个Ruby程序）。
 
 关于Makefile
 ---
@@ -78,22 +78,20 @@ Shell命令，或者SSH命令，常用的可以参考大猫这篇文章[SSH 入�
 
 会把hello world!输出到屏幕命令行中，但如果用
 
-	echo 'hello world! > hello.txt'
+	echo 'hello world!' > hello.txt
 
 那么就不会显示在命令行中，而是输出到hello.txt中，因为Linux哲学就是一切皆文件，显示器这样的硬件也是文件，硬盘里的文件也是文件，只有输入和输出的概念，而不关心命令和文件从哪里来，到哪里去。
 
 关于nodejs
 ---
 
-Nodejs开发圈有大量工具来方便我们的工作，在bootstrap中它主要起到了编译doc（也就是gh-pages分支）的作用。
+Nodejs社区有大量工具来方便我们的工作，在bootstrap中它主要起到了编译doc（也就是gh-pages分支）的作用。
 
 	node docs/build production
 
-这时候node会去找[docs/build](https://github.com/twitter/bootstrap/tree/master/docs/build)文件夹下的[index.js](https://github.com/twitter/bootstrap/blob/master/docs/build/index.js)
+这时候node会去找[docs/build](https://github.com/twitter/bootstrap/tree/master/docs/build)文件夹下的[index.js](https://github.com/twitter/bootstrap/blob/master/docs/build/index.js)，参数为“production”。
 
-nodejs的原理跟make是很像的。
-
-npm（Node Package Manager）是管理nodejs包的公共平台。对于服务器，只要服务器能连接外网，就可以通过SSH来安装nodejs程序；对于Linux或者Mac本机，就更方便了。
+nodejs的理念跟make是很像的。npm（Node Package Manager）是管理nodejs包的公共平台。对于服务器，只要服务器能连接外网，就可以通过SSH来安装nodejs程序；对于Linux或者Mac本机，就更方便了。
 
 上面的例子中提到的uglifyjs就是Bootstrap的编译所依赖的一个js压缩库，通过NPM安装非常简单：
 
@@ -147,7 +145,7 @@ Watchr是一个用Ruby编写的工具，如果安装了RubyGems，那安只需�
 		echo "Watching less files..."; \
 		watchr -e "watch('less/.*\.less') { system 'make' }"
 
-结论
+尾声
 ---
 
 Linux/Mac开发环境是web开发者的好朋友，安装好nodejs、rubyGem之后，熟悉makefile、shell命令，然后就多多了解、调用第三方库，来共同完成自己的需求。
