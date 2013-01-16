@@ -3,7 +3,7 @@ layout: post
 title: 实现纯CSS3幻灯片的一种思路
 date: 2012-04-11 01:59
 comments: true
-categories: [CSS3]
+categories: [CSS]
 
 ---
 

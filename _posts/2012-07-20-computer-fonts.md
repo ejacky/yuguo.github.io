@@ -3,7 +3,7 @@ layout: post
 title: 字体是个深坑
 date: 2012-07-20 17:27
 comments: true
-categories: [CSS3]
+categories: [CSS]
 
 ---
 <a href="http://yuguo.us/files/2012/07/2.png"><img class="aligncenter size-full wp-image-1282" title="2" src="http://yuguo.us/files/2012/07/2.png" alt=""   /></a>
