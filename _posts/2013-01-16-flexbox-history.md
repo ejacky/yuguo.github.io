@@ -8,7 +8,7 @@ categories: [CSS]
 
 其实现在很多前端同学都知道flexbox这个CSS3布局属性了，它可以方便地让我们做出水平和垂直的布局，而不是依赖于浮动。
 
-我最近在翻译《众妙之门3》的时候，关于Flexbox的代码就已经过时了，这里是[他们的demo](http://www.smashing-links.com/smashing-book-3/demos/flexbox/flexsizeposition.html)，但在我的Chrome和FF下均无效。但是如果Google一下Flexbox关键词，会发现很多过时的信息。
+我最近在翻译《众妙之门3》的时候，原书关于Flexbox的代码就已经过时了，这里是[他们的demo](http://www.smashing-links.com/smashing-book-3/demos/flexbox/flexsizeposition.html)，但在我的Chrome和FF下均无效。但是如果Google一下Flexbox关键词，会发现很多过时的信息。
 
 调研一下就发现这个属性的历史非常奇怪，也不怪Smashing Book的信息过时：
 
@@ -16,7 +16,7 @@ categories: [CSS]
 * 如果你看的博客/书中关于Flexbox的代码是： `display:flexbox;` 或者 `flex()` 函数，那你看到的是2011年的青涩少年；
 * 如果你看的博客/书中关于Flexbox的代码是： `display:flex;` 并且属性是 `flex-{*}` 那你看到的是现在（2012-2013年）的版本。
 
-这些语法的兼容性个不一致，短期来看可能老版本的兼容性还好一点，但常用看来用老式语法是不明智的。至少新语法更简单易懂。还不支持新语法的浏览器以后会逐渐支持。
+这些语法的兼容性各不一致，短期来看可能老版本的兼容性还好一点，但长远看来用老式语法是不明智的。至少新语法更简单易懂。还不支持新语法的浏览器以后会逐渐支持。
 
 <a href="http://codepen.io/chriscoyier/pen/DLikE">Example of OLD syntax</a>
 
