@@ -13,6 +13,6 @@ title: Yuguo Blog
         <h2>{{ post.date | date: '%Y' }}</h2>
       {% endif %}
     {% endunless %}
-		<p><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a><span class='date'>{{post.date | date: "%m月 %d日"}}</span></p>
+		<p><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> <span class='category-tag'>[{{ post.categories }}]</span><span class='date'>{{post.date | date: "%m月 %d日"}}</span></p>
 	{% endfor %}
  </div> 

@@ -3,7 +3,7 @@ layout: post
 title: 再见大学
 date: 2010-07-05 05:47
 comments: true
-categories: [水]
+categories: [周记]
 
 ---
 <p style="text-align: center;"><a href="http://yuguo.us/files/2010/07/IMG_3389.jpg"><img class="aligncenter size-full wp-image-29" title="毕业照" src="http://yuguo.us/files/2010/07/IMG_3389.jpg" alt=""   /></a>右下是我</p>

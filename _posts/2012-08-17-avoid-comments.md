@@ -3,7 +3,7 @@ layout: post
 title: 避免注释
 date: 2012-08-17 21:29
 comments: true
-categories: [项目架构]
+categories: [编程]
 
 ---
 

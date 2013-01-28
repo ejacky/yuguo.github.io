@@ -3,7 +3,7 @@ layout: post
 title: 博客移民，启用yuguo.us
 date: 2010-06-06 23:37
 comments: true
-categories: [水]
+categories: [服务器]
 
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: 为什么要推崇科技进步？
 date: 2011-04-14 19:31
 comments: true
-categories: [水]
+categories: [哲学]
 
 ---
 

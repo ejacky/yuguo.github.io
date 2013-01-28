@@ -3,7 +3,7 @@ layout: post
 title: 慢慢来比较快
 date: 2011-01-19 12:41
 comments: true
-categories: [水]
+categories: [哲学]
 
 ---
 

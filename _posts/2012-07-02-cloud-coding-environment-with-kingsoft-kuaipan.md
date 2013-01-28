@@ -3,7 +3,7 @@ layout: post
 title: 使用金山快盘部署云编码环境
 date: 2012-07-02 10:00
 comments: true
-categories: [水]
+categories: [编程]
 
 ---
 

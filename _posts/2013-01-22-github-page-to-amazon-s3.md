@@ -3,7 +3,7 @@ layout: post
 title: 从Github Pages搬家到Amazon S3
 date: 2013-01-22 10:35
 comments: true
-categories: [折腾]
+categories: [服务器]
 ---
 
 Github的被墙经历了这样几个阶段，首先是pages被墙（也就是`.github.com`字符串进黑名单），这个时候自定义域名的pages还是可以访问的，经历了两天的各地区抽风，后来https主站无法访问，最后DNS污染攻击全站，自定义域名的pages也无法访问了。

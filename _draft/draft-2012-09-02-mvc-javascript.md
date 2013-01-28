@@ -4,7 +4,7 @@ title: JavaScript和MVC
 date: 2012-09-02 16:58
 comments: true
 published: false
-categories: [水]
+categories: [JavaScript]
 
 ---
 <h2>什么是MVC架构的JavaScript？</h2><a href="http://www.alistapart.com/articles/javascript-mvc/">A List Apart: JavaScript MVC</a>

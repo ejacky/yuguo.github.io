@@ -3,7 +3,7 @@ layout: post
 title: 挖墙脚的理论基础和解救人妻的道德讨论
 date: 2010-12-30 12:58
 comments: true
-categories: [水]
+categories: [哲学]
 
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: 说话之道就是把你放在心上
 date: 2010-12-22 12:37
 comments: true
-categories: [水]
+categories: [书]
 
 ---
 

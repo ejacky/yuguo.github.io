@@ -3,7 +3,7 @@ layout: post
 title: MVC架构导致的词汇表分裂
 date: 2012-09-11 07:50
 comments: true
-categories: [项目架构]
+categories: [编程]
 
 ---
 

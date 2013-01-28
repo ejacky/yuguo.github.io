@@ -3,7 +3,7 @@ layout: post
 title: 要帅到什么程度才能找到女朋友？
 date: 2011-05-27 18:05
 comments: true
-categories: [水]
+categories: [哲学]
 
 ---
 
