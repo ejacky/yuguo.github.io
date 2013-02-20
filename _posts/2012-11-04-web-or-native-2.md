@@ -35,8 +35,13 @@ categories: [书]
 
 不幸的是，由于设计团队成员的分工更加细化，Web设计师和Web开发师的角色被人为地分开。虽然这种分工在团队合作中可能是必要的，但是，这些标签应用来定义团队成员当前的工作，而不是来决定他们所需掌握的知识。或许你应该关注某个领域更多一点（尤其是在特殊项目中），但是你必须明白我们构建产品的首要目标是满足用户的需求，开发团队中的每一个角色都将会影响用户体验。这就是为什么小型跨学科的团队构成才是当务之急，团队的每一个成员都应该总是首先为用户着想。
 <h3>首先为用户设计</h3>
-当构建一款产品时，设计主导开发，开发形成设计。这是一个周期循环交替的过程，在这个过程中，目标是不断优化产品来满足用户需求。<a title="" href="file:///E:/Dropbox/%E7%BF%BB%E8%AF%91%E9%A1%B9%E7%9B%AE/%E5%AE%8C%E6%95%B4%E7%BF%BB%E8%AF%91/%E7%AC%AC9%E7%AB%A0%20%E7%A7%BB%E5%8A%A8%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C%E8%AE%BE%E8%AE%A1%E8%80%83%E8%99%91%E7%9A%84%E5%9B%A0%E7%B4%A0%EF%BC%9A%E2%80%9CWeb%E8%BF%98%E6%98%AF%E5%8E%9F%E7%94%9F%EF%BC%9F%E2%80%9D%EF%BC%88lyndiduan%EF%BC%89.doc#_ftn1">[1]</a><div><hr align="left" size="1" width="33%" /><div><a title="" href="file:///E:/Dropbox/%E7%BF%BB%E8%AF%91%E9%A1%B9%E7%9B%AE/%E5%AE%8C%E6%95%B4%E7%BF%BB%E8%AF%91/%E7%AC%AC9%E7%AB%A0%20%E7%A7%BB%E5%8A%A8%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C%E8%AE%BE%E8%AE%A1%E8%80%83%E8%99%91%E7%9A%84%E5%9B%A0%E7%B4%A0%EF%BC%9A%E2%80%9CWeb%E8%BF%98%E6%98%AF%E5%8E%9F%E7%94%9F%EF%BC%9F%E2%80%9D%EF%BC%88lyndiduan%EF%BC%89.doc#_ftnref1">[1]</a> 学习这种工作方式，建议阅读敏捷开发方法和以用户为中心的产品开发方法。2003年，敏捷开发过程中，在迭代中增加集成化设计和用户测试被称为以用户为中心的产品开发方法。Smashed.by/cfe
-</div></div>
+当构建一款产品时，设计主导开发，开发形成设计。这是一个周期循环交替的过程，在这个过程中，目标是不断优化产品来满足用户需求。[1]
+
+<hr align="left" size="1" width="33%" />
+
+[1] 学习这种工作方式，建议阅读敏捷开发方法和以用户为中心的产品开发方法。2003年，敏捷开发过程中，在迭代中增加集成化设计和用户测试被称为以用户为中心的产品开发方法。Smashed.by/cfe
+
+
 你做的每一个关于产品的决定都应该是源自用户的。你必须首先考虑用户的需求，而不是你自己的需求。换句话说，试着所谓的“由外而内设计”。思考用户的需求和他们的使用情景，设计用户将看到的和可能互动的内容，然后再决定如何解决你提出的问题。
 
 “由外而内”是好的方法，“由内而外”是不好的。
@@ -46,7 +51,9 @@ categories: [书]
 在设计过程中，你需要做出的两个重要决定是，是否要设计跨平台的产品，是否应该采用原生技术。
 
 本章节的目的是，鼓励你（作为一名用户体验设计师）去理解你的领域，以便你能正确地回答这些问题，我们先来看下什么是所谓的原生应用程序。
-<p style="text-align: center;"><img class="aligncenter size-full wp-image-1495" title="" src="http://yuguo.us/files/2012/11/web-or-native-3.png" alt="" /></p>
+
+<img class="aligncenter size-full wp-image-1495" title="" src="http://yuguo.us/files/2012/11/web-or-native-3.png" alt="" />
+
 图9-1 是的，这里有很多设备。但是，你的应用程序不必支持所有这些设备。关注用户的设备并确定你的目标用户，使你的应用程序完美支持他们使用的平台和设备。如果你主要创建的是内容型的网站，而不是交互型的应用程序，那么通过渐进增强技术支持大量的平台是很容易的。
 <h2>“原生（native）”是什么？</h2>
 你是否看到过一些人不了解“原生”的真正含义却随意使用“原生”这个短语？让我们来改变这一切吧，从了解人们对“原生”的误解开始。
@@ -56,48 +63,75 @@ categories: [书]
 虽然计算机曾经是以二进制的形式被编码的，但我们现在已不再使用这种冷冰冰的编码方式了。然而，我们重新设计的每一种编程语言（像C语言、Python、JavaScript等等）最终都被翻译为机器语言“0”和“1”，这些机器语言又被编译为晶体管中是否存在电流这些技术都是建立在抽象层面的。例如，Python是由C语言写的。每个从高层级（包括现代计算机系统技术）抽象出来的层级都是为了使开发者更容易地开发应用程序，因此，虽然从技术角度来说，将“原生”解释为二进制编码是正确的，但在今天却是一个毫无意义的定义。
 
 那么，现在我们了解“原生”不是“0”和“1”之后，我们再来搞清楚“原生”到底是什么吧。
-<p style="text-align: center;"><img class="aligncenter size-full wp-image-1495" title="" src="http://yuguo.us/files/2012/11/web-or-native-4.png" alt="" /></p>
+
+<img class="aligncenter size-full wp-image-1495" title="" src="http://yuguo.us/files/2012/11/web-or-native-4.png" alt="" />
+
 图9-2 对于某种操作系统来说，Web技术可能是原生技术。这里是一台三星笔记本，它运行着Chrome操作系统，其中，HTML，CSS和JavaScript（Web 应用程序）是原生技术。（图片来源：Google的促销图片）
 <h2>原生文化</h2>
-“原生”是指形成平台文化、语言、惯例和规范的技术（即语言和框架）。它是一个底层抽象的概念，包括特定平台的主要符号、手势，以及用户与平台软件互动时的交互行为。这些元素是最重要的元素，因为它们构成了平台的文化和规范。<a title="" href="file:///E:/Dropbox/%E7%BF%BB%E8%AF%91%E9%A1%B9%E7%9B%AE/%E5%AE%8C%E6%95%B4%E7%BF%BB%E8%AF%91/%E7%AC%AC9%E7%AB%A0%20%E7%A7%BB%E5%8A%A8%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C%E8%AE%BE%E8%AE%A1%E8%80%83%E8%99%91%E7%9A%84%E5%9B%A0%E7%B4%A0%EF%BC%9A%E2%80%9CWeb%E8%BF%98%E6%98%AF%E5%8E%9F%E7%94%9F%EF%BC%9F%E2%80%9D%EF%BC%88lyndiduan%EF%BC%89.doc#_ftn1">[2]</a>它们也是语言（视觉和行为上的），是用户使用平台时，为了和平台软件进行交流互动而需要学习的语言。反过来说，它们也是平台软件和用户交流时使用的文字、短语和理念。在特定平台中，这些元素越有用，越一致，那么为此平台创建原生软件的优势就越大。
-<div><hr align="left" size="1" width="33%" /><div><a title="" href="file:///E:/Dropbox/%E7%BF%BB%E8%AF%91%E9%A1%B9%E7%9B%AE/%E5%AE%8C%E6%95%B4%E7%BF%BB%E8%AF%91/%E7%AC%AC9%E7%AB%A0%20%E7%A7%BB%E5%8A%A8%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C%E8%AE%BE%E8%AE%A1%E8%80%83%E8%99%91%E7%9A%84%E5%9B%A0%E7%B4%A0%EF%BC%9A%E2%80%9CWeb%E8%BF%98%E6%98%AF%E5%8E%9F%E7%94%9F%EF%BC%9F%E2%80%9D%EF%BC%88lyndiduan%EF%BC%89.doc#_ftnref1">[2]</a> 这些规范通常体现在平台的交互规则中，比如Mac，iPhone，iPad和Android系统平台的人机交互准则。（这里，Android系统不是一个好的平台，因为它不是一个真正的单一平台，它有很多风格，设备生产商和移动运营商都可以定义风格。这也就是Google很难统一控制Android平台用户体验的真正原因。好的用户体验需要掌控，Google却很少能够掌控Android系统手机的用户体验。
+“原生”是指形成平台文化、语言、惯例和规范的技术（即语言和框架）。它是一个底层抽象的概念，包括特定平台的主要符号、手势，以及用户与平台软件互动时的交互行为。这些元素是最重要的元素，因为它们构成了平台的文化和规范。[2]它们也是语言（视觉和行为上的），是用户使用平台时，为了和平台软件进行交流互动而需要学习的语言。反过来说，它们也是平台软件和用户交流时使用的文字、短语和理念。在特定平台中，这些元素越有用，越一致，那么为此平台创建原生软件的优势就越大。
 
-一方面我们有Apple的iOS平台，它拥有详细的人机交互准则<a title="" href="file:///E:/Dropbox/%E7%BF%BB%E8%AF%91%E9%A1%B9%E7%9B%AE/%E5%AE%8C%E6%95%B4%E7%BF%BB%E8%AF%91/%E7%AC%AC9%E7%AB%A0%20%E7%A7%BB%E5%8A%A8%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C%E8%AE%BE%E8%AE%A1%E8%80%83%E8%99%91%E7%9A%84%E5%9B%A0%E7%B4%A0%EF%BC%9A%E2%80%9CWeb%E8%BF%98%E6%98%AF%E5%8E%9F%E7%94%9F%EF%BC%9F%E2%80%9D%EF%BC%88lyndiduan%EF%BC%89.doc#_ftn1">[3]</a>和优雅一致的Cocoa Touch框架。遵守这个交互规则的原生应用将会在其主要框架中继承平台的可用性，并且和平台其他用户所熟悉的软件保持一致性，进而看起来是用户熟悉的软件。
-<div><hr align="left" size="1" width="33%" /><div><a title="" href="file:///E:/Dropbox/%E7%BF%BB%E8%AF%91%E9%A1%B9%E7%9B%AE/%E5%AE%8C%E6%95%B4%E7%BF%BB%E8%AF%91/%E7%AC%AC9%E7%AB%A0%20%E7%A7%BB%E5%8A%A8%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C%E8%AE%BE%E8%AE%A1%E8%80%83%E8%99%91%E7%9A%84%E5%9B%A0%E7%B4%A0%EF%BC%9A%E2%80%9CWeb%E8%BF%98%E6%98%AF%E5%8E%9F%E7%94%9F%EF%BC%9F%E2%80%9D%EF%BC%88lyndiduan%EF%BC%89.doc#_ftnref1">[3]</a> smashed.by/apple
-</div></div></div></div><p style="text-align: center;"><img class="aligncenter size-full wp-image-1495" title="" src="http://yuguo.us/files/2012/11/web-or-native-5.png" alt="" /></p>
+<hr align="left" size="1" width="33%" />
+
+[2] 这些规范通常体现在平台的交互规则中，比如Mac，iPhone，iPad和Android系统平台的人机交互准则。（这里，Android系统不是一个好的平台，因为它不是一个真正的单一平台，它有很多风格，设备生产商和移动运营商都可以定义风格。这也就是Google很难统一控制Android平台用户体验的真正原因。好的用户体验需要掌控，Google却很少能够掌控Android系统手机的用户体验。
+
+一方面我们有Apple的iOS平台，它拥有详细的人机交互准则[3]和优雅一致的Cocoa Touch框架。遵守这个交互规则的原生应用将会在其主要框架中继承平台的可用性，并且和平台其他用户所熟悉的软件保持一致性，进而看起来是用户熟悉的软件。
+
+<hr align="left" size="1" width="33%" />
+
+[3] smashed.by/apple
+
+<img class="aligncenter size-full wp-image-1495" title="" src="http://yuguo.us/files/2012/11/web-or-native-5.png" alt="" />
+
 图9-3 Apple的人机交互规则清晰地表明，iOS平台的原生软件在视觉和操作上是怎样设计的。这些交互规则有利于定义平台文化。
 
 另外，还存在一些像Android那样的原生平台，它们的风格大多由制造商、运营商和用户来深度定制，因此Android系统的手机和软件之间有很少的（甚至没有）一致性。这些平台的原生软件设计师很难提供一致的用户体验。
 
-&nbsp;
-<p style="text-align: center;"><img class="aligncenter size-full wp-image-1495" title="" src="http://yuguo.us/files/2012/11/web-or-native-6.png" alt="" /></p><p style="text-align: center;">图9-4 Swype键盘确实很酷。仅仅点击几个字母，它便可以自动猜出你想要的单词。</p>
+<img class="aligncenter size-full wp-image-1495" title="" src="http://yuguo.us/files/2012/11/web-or-native-6.png" alt="" />
+
+图9-4 Swype键盘确实很酷。仅仅点击几个字母，它便可以自动猜出你想要的单词。
+
 不幸的是，它不支持所有的Android平台设备，只支持一些；在其他设备上，有的采用和iPhone键盘相似的键盘，有的采用不同的第三方键盘。虽然，最初看起来这些选择很不错，但是这意味着Android平台没有一个一致的用户体验。因为制造商、运营商和用户定义了很多的Android风格，所以Android平台的用户体验也有很多种。这就造成设计师创建应用软件时很难使用一个共同的设计语言。
 
-例如，我的一个iPhone软件，Feathers<a title="" href="file:///E:/Dropbox/%E7%BF%BB%E8%AF%91%E9%A1%B9%E7%9B%AE/%E5%AE%8C%E6%95%B4%E7%BF%BB%E8%AF%91/%E7%AC%AC9%E7%AB%A0%20%E7%A7%BB%E5%8A%A8%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C%E8%AE%BE%E8%AE%A1%E8%80%83%E8%99%91%E7%9A%84%E5%9B%A0%E7%B4%A0%EF%BC%9A%E2%80%9CWeb%E8%BF%98%E6%98%AF%E5%8E%9F%E7%94%9F%EF%BC%9F%E2%80%9D%EF%BC%88lyndiduan%EF%BC%89.doc#_ftn1">[4]</a>，它拥有一个定制的键盘，使用户能够输入扩展的Unicode符号。在iPhone中，这个软件看起来很像iPhone的内置键盘软件。实现这些，我虽然需要作出一些努力，但还是能够做到的。然而，我如果要将这个软件引进Android平台，就不得不了解用户安装的是哪一种Android键盘，然后才能定制与之匹配的交互行为。不用说，这将涉及很大的工作量，甚至是不可行的。例如，一些Android手机上的Swype键盘<a title="" href="file:///E:/Dropbox/%E7%BF%BB%E8%AF%91%E9%A1%B9%E7%9B%AE/%E5%AE%8C%E6%95%B4%E7%BF%BB%E8%AF%91/%E7%AC%AC9%E7%AB%A0%20%E7%A7%BB%E5%8A%A8%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C%E8%AE%BE%E8%AE%A1%E8%80%83%E8%99%91%E7%9A%84%E5%9B%A0%E7%B4%A0%EF%BC%9A%E2%80%9CWeb%E8%BF%98%E6%98%AF%E5%8E%9F%E7%94%9F%EF%BC%9F%E2%80%9D%EF%BC%88lyndiduan%EF%BC%89.doc#_ftn2">[5]</a>是一项申请过的专利，因此，对于拥有Swype键盘的Android设备，我不能使我键盘的交互行为和系统键盘保持一致。
+例如，我的一个iPhone软件，Feathers[4]，它拥有一个定制的键盘，使用户能够输入扩展的Unicode符号。在iPhone中，这个软件看起来很像iPhone的内置键盘软件。实现这些，我虽然需要作出一些努力，但还是能够做到的。然而，我如果要将这个软件引进Android平台，就不得不了解用户安装的是哪一种Android键盘，然后才能定制与之匹配的交互行为。不用说，这将涉及很大的工作量，甚至是不可行的。例如，一些Android手机上的Swype键盘[5]是一项申请过的专利，因此，对于拥有Swype键盘的Android设备，我不能使我键盘的交互行为和系统键盘保持一致。
 
 妥善的方案是，不管用户的系统键盘是什么样的，我设计一个单独的定制键盘。当然，它看起来不像是主键盘，这样也不会像iOS平台上的Feathers那样能够提供无缝的用户体验。相反，在一个软件中，用户将不得不学习使用两种类型键盘，不得不努力学会如何切换这两种键盘。
-<div><hr align="left" size="1" width="33%" /><div><a title="" href="file:///E:/Dropbox/%E7%BF%BB%E8%AF%91%E9%A1%B9%E7%9B%AE/%E5%AE%8C%E6%95%B4%E7%BF%BB%E8%AF%91/%E7%AC%AC9%E7%AB%A0%20%E7%A7%BB%E5%8A%A8%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C%E8%AE%BE%E8%AE%A1%E8%80%83%E8%99%91%E7%9A%84%E5%9B%A0%E7%B4%A0%EF%BC%9A%E2%80%9CWeb%E8%BF%98%E6%98%AF%E5%8E%9F%E7%94%9F%EF%BC%9F%E2%80%9D%EF%BC%88lyndiduan%EF%BC%89.doc#_ftnref1">[4]</a> smashed.by/apple
-</div><div><a title="" href="file:///E:/Dropbox/%E7%BF%BB%E8%AF%91%E9%A1%B9%E7%9B%AE/%E5%AE%8C%E6%95%B4%E7%BF%BB%E8%AF%91/%E7%AC%AC9%E7%AB%A0%20%E7%A7%BB%E5%8A%A8%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C%E8%AE%BE%E8%AE%A1%E8%80%83%E8%99%91%E7%9A%84%E5%9B%A0%E7%B4%A0%EF%BC%9A%E2%80%9CWeb%E8%BF%98%E6%98%AF%E5%8E%9F%E7%94%9F%EF%BC%9F%E2%80%9D%EF%BC%88lyndiduan%EF%BC%89.doc#_ftnref2">[5]</a> swype.com
-</div></div><p style="text-align: center;"><img class="aligncenter size-full wp-image-1495" title="" src="http://yuguo.us/files/2012/11/web-or-native-7.png" alt="" /></p>
+
+<hr align="left" size="1" width="33%" />
+
+[4] smashed.by/apple
+
+[5] swype.com
+
+<img class="aligncenter size-full wp-image-1495" title="" src="http://yuguo.us/files/2012/11/web-or-native-7.png" alt="" />
+
 图9-5 将Feathers软件引进Android平台，需要设计不同的软件版本以支持Android平台不同类型的键盘。
 
 相似地，在像Web这样没有一致的视觉语言和文化的平台上，非原生的应用反而会有较少的障碍，在一些情况下甚至可能会提供更好的可用性和用户体验。
 
 非原生软件提升用户体验的一个很好的例子便是Gmail。在Windows这样的操作系统中，使用邮件客户端时，你需要寻找和安装客户端软件，保持更新，保证你的邮件能够在不同设备上同步，并确保你的消息经过病毒和恶意插件扫描。Gmail却很简单，你在任何一个设备的浏览器中输入一个URL地址，便可以打开你的邮件。非常完美！
-<p style="text-align: center;"><img class="aligncenter size-full wp-image-1495" title="" src="http://yuguo.us/files/2012/11/web-or-native-8.png" alt="" /></p>
+
+<img class="aligncenter size-full wp-image-1495" title="" src="http://yuguo.us/files/2012/11/web-or-native-8.png" alt="" />
+
 图9-6 Gmail这个Web软件提供了不同平台之间的一致性体验。用户不必安装任何程序，也不必担心他们的邮件在不同设备中是否同步。
 
 Gmail也说明了，创建优秀的跨平台用户体验需要优化许多特定平台。Gmail软件虽然可以同时支持台式电脑和移动平台，但确实还是有几个高质量的版本。
 
-然而，Web作为一个平台，它自己没有一个一致性的用户体验。虽然，Web应用程序拥有共同的特点，但是它们没有一个有关Web人机交互准则方面的文档（或许应该有一个）。<a title="" href="file:///E:/Dropbox/%E7%BF%BB%E8%AF%91%E9%A1%B9%E7%9B%AE/%E5%AE%8C%E6%95%B4%E7%BF%BB%E8%AF%91/%E7%AC%AC9%E7%AB%A0%20%E7%A7%BB%E5%8A%A8%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C%E8%AE%BE%E8%AE%A1%E8%80%83%E8%99%91%E7%9A%84%E5%9B%A0%E7%B4%A0%EF%BC%9A%E2%80%9CWeb%E8%BF%98%E6%98%AF%E5%8E%9F%E7%94%9F%EF%BC%9F%E2%80%9D%EF%BC%88lyndiduan%EF%BC%89.doc#_ftn1">[6]</a>相反，我们致力于编写和维护良好的代码和设计实践，如渐进增强。不同的浏览器（也就是，运行原生Web软件的应用）使用不同的工具来实现软件的主要控制形式。这也就是为什么在不同的浏览器中Web软件的交互行为是不同的，即使软件拥有相同的内容和相同的代码。
-<div><br clear="all" /><hr align="left" size="1" width="33%" /><div><a title="" href="file:///E:/Dropbox/%E7%BF%BB%E8%AF%91%E9%A1%B9%E7%9B%AE/%E5%AE%8C%E6%95%B4%E7%BF%BB%E8%AF%91/%E7%AC%AC9%E7%AB%A0%20%E7%A7%BB%E5%8A%A8%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C%E8%AE%BE%E8%AE%A1%E8%80%83%E8%99%91%E7%9A%84%E5%9B%A0%E7%B4%A0%EF%BC%9A%E2%80%9CWeb%E8%BF%98%E6%98%AF%E5%8E%9F%E7%94%9F%EF%BC%9F%E2%80%9D%EF%BC%88lyndiduan%EF%BC%89.doc#_ftnref1">[6]</a> 看一下Tantek Celik的“需要Web人机交互规则"一文（smashed.by/wehuin）和Joe Hewitt的需要对Web技术有更多关注和愿景的帖子。（smashed.by/owned).
-</div></div><p style="text-align: center;"><img class="aligncenter size-full wp-image-1495" title="" src="http://yuguo.us/files/2012/11/web-or-native-9.png" alt="" /></p>
+然而，Web作为一个平台，它自己没有一个一致性的用户体验。虽然，Web应用程序拥有共同的特点，但是它们没有一个有关Web人机交互准则方面的文档（或许应该有一个）。[6]相反，我们致力于编写和维护良好的代码和设计实践，如渐进增强。不同的浏览器（也就是，运行原生Web软件的应用）使用不同的工具来实现软件的主要控制形式。这也就是为什么在不同的浏览器中Web软件的交互行为是不同的，即使软件拥有相同的内容和相同的代码。
+
+<hr align="left" size="1" width="33%" />
+
+[6] 看一下Tantek Celik的“需要Web人机交互规则"一文（smashed.by/wehuin）和Joe Hewitt的需要对Web技术有更多关注和愿景的帖子。（smashed.by/owned).
+
+<img class="aligncenter size-full wp-image-1495" title="" src="http://yuguo.us/files/2012/11/web-or-native-9.png" alt="" />
+
 图9-7 浏览器是一个运行在操作系统环境下的原生操作系统软件。Web软件是一个运行在浏览器环境下的原生Web软件。然而，Web软件不是一个原生的操作系统软件。Web软件和操作系统之间有一个分隔带（浏览器）。相似地，一个Flash软件运行在浏览器的一个虚拟机器中，它也不是一个原生的浏览器软件。（图片：Rosmarie Voegtli，smashed.by/voegtli）
 <h2>混合的应用程序</h2>
 原生应用程序包涵了其运行平台的文化，Web软件包涵了其运行的浏览器的文化。但是，我们忽略了第三种应用程序（现在有许多应用程序都属于这种）：混合应用程序。
 
 我们需要理解各种技术并恰当地运用它们。Web编写技术（尤其是HTWL和CSS）有利于创建复杂的文档和漂亮的样式。这样，在需要展现丰富内容的时候，许多原生应用程序的设计师会选择使用HTML和CSS技术。这些应用程序被称为混合应用程序，因为它们是原生和Web技术的结合。
-<p style="text-align: center;"><img class="aligncenter size-full wp-image-1495" title="" src="http://yuguo.us/files/2012/11/web-or-native-10.png" alt="" /></p>
+
+<img class="aligncenter size-full wp-image-1495" title="" src="http://yuguo.us/files/2012/11/web-or-native-10.png" alt="" />
+
 图9-8 iPhone上的Facebook是一个混合型应用程序。
 
 iPhone上的Facebook是一个混合型应用程序，它的某些部分设计（比如那些新闻消息）使用了Web技术。
@@ -110,7 +144,8 @@ iPhone上的Facebook是一个混合型应用程序，它的某些部分设计（
 
 一些Web标准的拥护者设想，Web平台和Web编写技术本身就是好的。一个不争的事实是，像古登堡印刷术（Gutenberg Press）一样，互联网和Web（扩展点说）对世界确实产生了激进的民主化的影响。然而，Web平台和编写技术本身既不好也不坏，它们能够被好好地运用，也很容易被误用。
 
-对于Web平台来说，最普遍的假设就是它本身就是好的，因为在Web平台上运行的任何一个文档或应用通常都是所有人可以获得的。这对于开放的文档收集（Web早期时内容展现的一般形式）来说，这或许是对的；如果对于今天流行的Web应用来说，这通常是不对的。以Facebook为例，它是一个Web应用，但它不是开放的。它是自由的，但这意味着你和用户都不是Facebook的顾客，你是Facebook的产品。<a title="" href="file:///E:/Dropbox/%E7%BF%BB%E8%AF%91%E9%A1%B9%E7%9B%AE/%E5%AE%8C%E6%95%B4%E7%BF%BB%E8%AF%91/%E7%AC%AC9%E7%AB%A0%20%E7%A7%BB%E5%8A%A8%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C%E8%AE%BE%E8%AE%A1%E8%80%83%E8%99%91%E7%9A%84%E5%9B%A0%E7%B4%A0%EF%BC%9A%E2%80%9CWeb%E8%BF%98%E6%98%AF%E5%8E%9F%E7%94%9F%EF%BC%9F%E2%80%9D%EF%BC%88lyndiduan%EF%BC%89.doc#_ftn1">[7]</a>
+对于Web平台来说，最普遍的假设就是它本身就是好的，因为在Web平台上运行的任何一个文档或应用通常都是所有人可以获得的。这对于开放的文档收集（Web早期时内容展现的一般形式）来说，这或许是对的；如果对于今天流行的Web应用来说，这通常是不对的。以Facebook为例，它是一个Web应用，但它不是开放的。它是自由的，但这意味着你和用户都不是Facebook的顾客，你是Facebook的产品。[7]
+
 Facebook将你的个人信息和行为特征卖给它的真正顾客——广告商。难道这就能称得上比从苹果的App Store购买一个商业软件要更好，更开放？
 
 真的不是。
@@ -118,7 +153,10 @@ Facebook将你的个人信息和行为特征卖给它的真正顾客——广告
 事实上，你可以很容易得出结论：购买商业的iPhone应用是一个更尊重用户的透明的交易。你为它买单，然后便可以拥有使用许可。你变成了公司或应用制作者的顾客，公司赚钱的方式是透明的。在很多方面，这是一个更传统的商业关系。
 
 当然，商业应用程序甚至能够以多种方式来利用你的数据，因此现在注意保护自己的隐私是很重要的。但问题是，仅仅是一个Web应用并不能神奇地使这种情况变好。
-<div><hr align="left" size="1" width="33%" /><div><a title="" href="file:///E:/Dropbox/%E7%BF%BB%E8%AF%91%E9%A1%B9%E7%9B%AE/%E5%AE%8C%E6%95%B4%E7%BF%BB%E8%AF%91/%E7%AC%AC9%E7%AB%A0%20%E7%A7%BB%E5%8A%A8%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C%E8%AE%BE%E8%AE%A1%E8%80%83%E8%99%91%E7%9A%84%E5%9B%A0%E7%B4%A0%EF%BC%9A%E2%80%9CWeb%E8%BF%98%E6%98%AF%E5%8E%9F%E7%94%9F%EF%BC%9F%E2%80%9D%EF%BC%88lyndiduan%EF%BC%89.doc#_ftnref1">[7]</a> 正如Andrew Lewis所说的那样，“如果你不为产品买单，你便不是顾客。你是被出售的产品。”samshed.by/discont
+
+<hr align="left" size="1" width="33%" />
+
+[7] 正如Andrew Lewis所说的那样，“如果你不为产品买单，你便不是顾客。你是被出售的产品。”samshed.by/discont
 <h2>原生应用程序和平台正遭遇灭绝吗？</h2>
 Jeremy Keith在Update会议上提出一个著名的观点，“编写一个原生的应用像是编码激光视盘。”这里暗含的意义是，像只读硬盘和激光视盘一样，原生平台因为Web的出现将会过时被淘汰。
 
@@ -136,34 +174,59 @@ Jeremy Keith在Update会议上提出一个著名的观点，“编写一个原�
 
 原生应用正在追赶Web应用的三个主要领域是，易于部署和访问，自动更新和无缝访问数据。
 <h3>易于部署和访问</h3>
-Web应用在用户体验上超越原生应用的主要优势是，易于部署和访问。在你的FTP应用选择<a title="" href="file:///E:/Dropbox/%E7%BF%BB%E8%AF%91%E9%A1%B9%E7%9B%AE/%E5%AE%8C%E6%95%B4%E7%BF%BB%E8%AF%91/%E7%AC%AC9%E7%AB%A0%20%E7%A7%BB%E5%8A%A8%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C%E8%AE%BE%E8%AE%A1%E8%80%83%E8%99%91%E7%9A%84%E5%9B%A0%E7%B4%A0%EF%BC%9A%E2%80%9CWeb%E8%BF%98%E6%98%AF%E5%8E%9F%E7%94%9F%EF%BC%9F%E2%80%9D%EF%BC%88lyndiduan%EF%BC%89.doc#_ftn1">[8]</a>中点击“上传”按钮，世界上任何地方拥有URL地址的任何人都可以访问你的应用。<a title="" href="file:///E:/Dropbox/%E7%BF%BB%E8%AF%91%E9%A1%B9%E7%9B%AE/%E5%AE%8C%E6%95%B4%E7%BF%BB%E8%AF%91/%E7%AC%AC9%E7%AB%A0%20%E7%A7%BB%E5%8A%A8%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C%E8%AE%BE%E8%AE%A1%E8%80%83%E8%99%91%E7%9A%84%E5%9B%A0%E7%B4%A0%EF%BC%9A%E2%80%9CWeb%E8%BF%98%E6%98%AF%E5%8E%9F%E7%94%9F%EF%BC%9F%E2%80%9D%EF%BC%88lyndiduan%EF%BC%89.doc#_ftn2">[9]</a>很简单。
+Web应用在用户体验上超越原生应用的主要优势是，易于部署和访问。在你的FTP应用选择[8]中点击“上传”按钮，世界上任何地方拥有URL地址的任何人都可以访问你的应用。[9]很简单。
 
 无需下载一个压缩文件，然后寻找一个解压软件，找到存放文档的地方，解压它，然后安装它，运行它，最后发现它不支持你的显卡。那么，Web应用取得惊人的成功，这还有什么奇怪的吗？特别是像Gmail和Google Docs这样运行在可用性差的原生平台上的应用。
-<div><hr align="left" size="1" width="33%" /><div><a title="" href="file:///E:/Dropbox/%E7%BF%BB%E8%AF%91%E9%A1%B9%E7%9B%AE/%E5%AE%8C%E6%95%B4%E7%BF%BB%E8%AF%91/%E7%AC%AC9%E7%AB%A0%20%E7%A7%BB%E5%8A%A8%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C%E8%AE%BE%E8%AE%A1%E8%80%83%E8%99%91%E7%9A%84%E5%9B%A0%E7%B4%A0%EF%BC%9A%E2%80%9CWeb%E8%BF%98%E6%98%AF%E5%8E%9F%E7%94%9F%EF%BC%9F%E2%80%9D%EF%BC%88lyndiduan%EF%BC%89.doc#_ftnref1">[8]</a> 或者，如果你是真的行家，使用一个Git版本控制的话，你可以使用一个post-commit钩子来自动部署你最新代码给服务器。
-</div><div><a title="" href="file:///E:/Dropbox/%E7%BF%BB%E8%AF%91%E9%A1%B9%E7%9B%AE/%E5%AE%8C%E6%95%B4%E7%BF%BB%E8%AF%91/%E7%AC%AC9%E7%AB%A0%20%E7%A7%BB%E5%8A%A8%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C%E8%AE%BE%E8%AE%A1%E8%80%83%E8%99%91%E7%9A%84%E5%9B%A0%E7%B4%A0%EF%BC%9A%E2%80%9CWeb%E8%BF%98%E6%98%AF%E5%8E%9F%E7%94%9F%EF%BC%9F%E2%80%9D%EF%BC%88lyndiduan%EF%BC%89.doc#_ftnref2">[9]</a>至少是在URL不被禁止的地方。
-</div></div></div></div><p style="text-align: center;"><img class="aligncenter size-full wp-image-1495" title="" src="http://yuguo.us/files/2012/11/web-or-native-11.png" alt="" /></p>
+
+<hr align="left" size="1" width="33%" />
+
+[8] 或者，如果你是真的行家，使用一个Git版本控制的话，你可以使用一个post-commit钩子来自动部署你最新代码给服务器。
+
+[9]至少是在URL不被禁止的地方。
+
+<img class="aligncenter size-full wp-image-1495" title="" src="http://yuguo.us/files/2012/11/web-or-native-11.png" alt="" />
+
 图9-9 原生Web应用和原生操作系统应用的用户流之间的界线很模糊。事实上，在基于Web技术的操作系统中，原生Web应用就是原生操作系统应用。
 
 然而，由于app stores的发展，原生应用正在追赶Web应用的易于部署和访问。像苹果的app store，发现应用的过程和在浏览器输入URL一样简单。事实上，你可以输入URL进入App Store中的一个应用，然后在那里简单点击一个按钮就可以下载并安装它。
-<h3 style="text-align: start;">自动更新</h3><p style="text-align: start;">Web应用本身可以总是提供自动更新的版本。事实上，我们甚至不考虑Web应用的版本，因为Web应用本身是没有版本这个概念的。</p><p style="text-align: start;">你一直使用Gmail的最新版本，你从不关注它是什么版本。</p><p style="text-align: start;">它不是Gmail7，它只是Gmail。<a title="" href="file:///E:/Dropbox/%E7%BF%BB%E8%AF%91%E9%A1%B9%E7%9B%AE/%E5%AE%8C%E6%95%B4%E7%BF%BB%E8%AF%91/%E7%AC%AC9%E7%AB%A0%20%E7%A7%BB%E5%8A%A8%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C%E8%AE%BE%E8%AE%A1%E8%80%83%E8%99%91%E7%9A%84%E5%9B%A0%E7%B4%A0%EF%BC%9A%E2%80%9CWeb%E8%BF%98%E6%98%AF%E5%8E%9F%E7%94%9F%EF%BC%9F%E2%80%9D%EF%BC%88lyndiduan%EF%BC%89.doc#_ftn1">[10]</a></p><p style="text-align: start;">相反，原生软件通常有个打扰用户操作流程的更新机制。不过越来越多的原生应用采用无缝的更新，这种情况正在发生改变。例如，你上次注意到Google Chrome更新是什么时候？从来没注意到过，它总是安静地更新。</p><h3>无缝访问数据</h3>
+
+<h3>自动更新</h3>
+
+Web应用本身可以总是提供自动更新的版本。事实上，我们甚至不考虑Web应用的版本，因为Web应用本身是没有版本这个概念的。
+
+你一直使用Gmail的最新版本，你从不关注它是什么版本。
+
+它不是Gmail7，它只是Gmail。[10]
+
+相反，原生软件通常有个打扰用户操作流程的更新机制。不过越来越多的原生应用采用无缝的更新，这种情况正在发生改变。例如，你上次注意到Google Chrome更新是什么时候？从来没注意到过，它总是安静地更新。
+
+<h3>无缝访问数据</h3>
 Web应用拥有的另一个优势是，其用户可以从任何一个设备上访问他们的数据。当使用Gmail时，你从来不必担心如何将你的邮件从台式电脑上同步到手机上。它一直在那里。与之鲜明对比的是，原生平台上数据同步的噩梦。
 
 然而，原生应用又在追赶。例如，Apple的iCloud的出现，使手动同步变成了过去式。在你的所有Apple设备上，你的数据一直被自动同步，你可以随时简单地使用它，不必担心同步的问题。虽然iCloud只是主要解决了Apple用户的同步问题，但其他跨平台技术（像Dropbox）也为其他平台解决了相似的问题。
 <h2>只是又一个客户端</h2>
 你仔细阅读前几节内容了吗？好的，你或许已经注意到了这三个方面（原生应用追赶Web应用的那三个方面）的发展趋势。这些方面中用户体验方面的优势取决于因特网的特征，而不是Web。Web只是基于因特网的一堆技术（HTTP和URLs）。因此，像Web一样，原生应用也在利用因特网的一些特征，进而追赶Web。
 
-此外，一种新的用户体验形式出现了，那就是连续性客户端（coutinuous client）。连续性客户端体验（这个概念最初是由Joshua Topolsky<a title="" href="file:///E:/Dropbox/%E7%BF%BB%E8%AF%91%E9%A1%B9%E7%9B%AE/%E5%AE%8C%E6%95%B4%E7%BF%BB%E8%AF%91/%E7%AC%AC9%E7%AB%A0%20%E7%A7%BB%E5%8A%A8%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C%E8%AE%BE%E8%AE%A1%E8%80%83%E8%99%91%E7%9A%84%E5%9B%A0%E7%B4%A0%EF%BC%9A%E2%80%9CWeb%E8%BF%98%E6%98%AF%E5%8E%9F%E7%94%9F%EF%BC%9F%E2%80%9D%EF%BC%88lyndiduan%EF%BC%89.doc#_ftn1">[11]</a>提出的），是指用户在一种设备上使用某个应用，在切换另一种设备使用该应用时，仍能享有无缝的持续性体验。
+此外，一种新的用户体验形式出现了，那就是连续性客户端（coutinuous client）。连续性客户端体验（这个概念最初是由Joshua Topolsky[11]提出的），是指用户在一种设备上使用某个应用，在切换另一种设备使用该应用时，仍能享有无缝的持续性体验。
 
 例如，你如果正在台式电脑上浏览你的Twitter，然后你又抓起你的手机，那么你就应该能够从相同的地方继续浏览。而且，当你到家的时候，你也应该能够在电视上从相同的地方继续浏览。
 
 关于连续性客户端，一个很好的例子是Trillian即时消息应用。它能够在云端存储聊天信息，也能够实时地在你的所有设备之间共享你的信息，而且也能涵盖和同步你读过的和未读的信息，甚至能够利用“存在技术”（presence）知道你当前是在哪个设备上进行操作的，从而可以将最新信息只发到那个设备上。
-<div><hr align="left" size="1" width="33%" /><div><a title="" href="file:///E:/Dropbox/%E7%BF%BB%E8%AF%91%E9%A1%B9%E7%9B%AE/%E5%AE%8C%E6%95%B4%E7%BF%BB%E8%AF%91/%E7%AC%AC9%E7%AB%A0%20%E7%A7%BB%E5%8A%A8%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C%E8%AE%BE%E8%AE%A1%E8%80%83%E8%99%91%E7%9A%84%E5%9B%A0%E7%B4%A0%EF%BC%9A%E2%80%9CWeb%E8%BF%98%E6%98%AF%E5%8E%9F%E7%94%9F%EF%BC%9F%E2%80%9D%EF%BC%88lyndiduan%EF%BC%89.doc#_ftnref1">[10]</a> Topolsky , Joshua.“一个温和的建议：连续性客户端，”smashed.by/client.
-</div></div><hr style="text-align: start;" align="left" size="1" width="33%" /><div style="text-align: start;"><a title="" href="file:///E:/Dropbox/%E7%BF%BB%E8%AF%91%E9%A1%B9%E7%9B%AE/%E5%AE%8C%E6%95%B4%E7%BF%BB%E8%AF%91/%E7%AC%AC9%E7%AB%A0%20%E7%A7%BB%E5%8A%A8%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C%E8%AE%BE%E8%AE%A1%E8%80%83%E8%99%91%E7%9A%84%E5%9B%A0%E7%B4%A0%EF%BC%9A%E2%80%9CWeb%E8%BF%98%E6%98%AF%E5%8E%9F%E7%94%9F%EF%BC%9F%E2%80%9D%EF%BC%88lyndiduan%EF%BC%89.doc#_ftnref1">[11]</a> 在“我的网站将只支持最新版本的浏览器”的网站杂志上，阅读“一个版本的宣言”：smashed.by/netsu
-</div><img class="aligncenter size-full wp-image-1495" title="" src="http://yuguo.us/files/2012/11/web-or-native-12.png" alt="" />
+
+<hr align="left" size="1" width="33%" />
+
+[10] Topolsky , Joshua.“一个温和的建议：连续性客户端，”smashed.by/client.
+
+[11] 在“我的网站将只支持最新版本的浏览器”的网站杂志上，阅读“一个版本的宣言”：smashed.by/netsu
+
+<img class="aligncenter size-full wp-image-1495" title="" src="http://yuguo.us/files/2012/11/web-or-native-12.png" alt="" />
+
 图9-10 Kelly Sommers有一个很好的示例应用程序，它体现了连续性客户端的体验：smashed.by/multi.用户能够在他们的Windows Phone7上观看视频，也可以在Web客户端继续观看，当然也可以在他们的手机上继续观看。
 
 如果你设想下，你就会知道在连续性客户端体验时代，Web变成了JAC（just another client仅仅是另一个客户端）。在某种情境下，或许Web是最好的客户端，但用户还是应该能够切换到一些原生客户端的，而且不必担心同步数据的问题。随着高科技的发展，连续性客户端将很快成为主流，而不是一个新奇的期望。例如，iCloud的出现，使开发者能较容易地实现它们。
-<div></div><p style="text-align: center;"><img class="aligncenter size-full wp-image-1495" title="" src="http://yuguo.us/files/2012/11/web-or-native-13.png" alt="" /></p>
+
+<img class="aligncenter size-full wp-image-1495" title="" src="http://yuguo.us/files/2012/11/web-or-native-13.png" alt="" />
+
 图9-11 关于连续性客户端体验，即时消息应用程序Trillian便是一个很好的例子。（Image: Trillian Blog, smashed.by/trillian.)
 <h2>原生是未来的趋势</h2>
 今天，Web仅仅是另外一个原生平台，展望未来，它不得不凭借自身的独特优势与原生平台进行竞争，而不是凭借Internet赋予它的优势，因为其他原生平台也正在实现并拥有这些相同的优势。
@@ -185,7 +248,9 @@ Web产品一般会被分为内容型和行为型两种。我们通常将内容�
 图9-12 文档和应用之间
 
 然而，当产品从文档型向应用型转变时，实现渐进增强将变得更加困难。事实上，这也可能会变得完全没有意义或不可能。例如，你将怎么优雅降级一个图片在线编辑器？在一个不能显示图形的功能型手机上，一个图形编辑器应如何工作？你将会使其显示什么内容？
-<p style="text-align: center;"><img class="aligncenter size-full wp-image-1495" title="" src="http://yuguo.us/files/2012/11/web-or-native-15.png" alt="" /></p>
+
+<img class="aligncenter size-full wp-image-1495" title="" src="http://yuguo.us/files/2012/11/web-or-native-15.png" alt="" />
+
 图9-13 当Web还只是用来收集文档的时候，Web的创建者Tim Berners-Lee提出了Web的通用原则。这不太适用于应用程序的设计，因为应用程序有着不同的设计限制和要求。在.Net magazine(smashed.by/netmag)上可以看到Lea Verou对John Allsopp反驳的评论。
 
 应用不是内容型的，而是行为型的。无论应用程序是什么内容，我们对其进行优雅降级将不总是有意义。应用通常是完全由行为构成的，这些行为促使用户去创建内容。再来看图片编辑器的例子：图片编辑器本身没有任何内容，但它能够使用户创建内容。
@@ -252,14 +317,16 @@ Web产品一般会被分为内容型和行为型两种。我们通常将内容�
 
 然而，最重要的原生测试是判断应用是否利用了原生框架。这些框架体现了平台的文化、语言、姿态、风格和规范。
 <h2>包裹着自然二进制的外来应用（披着羊皮的狼）</h2>
-不使用iOS中Cocoa Touch框架的本地组件，而使用像Adobe的PhoneGap这样的技术来创建一个iPhone的自然二进制是可能的（也是很容易的）。PhoneGap包裹了一个现有的Web应用（该应用使用了本地Web组件），创建了一个原生操作系统应用（在上述的例子中，创建的是一个本地iOS应用）。虽然你的应用在iPhone的主屏幕上看起来像一个原生应用，运行起来也像原生应用，但应用的用户界面使用的是Web组件<a title="" href="file:///E:/Dropbox/%E7%BF%BB%E8%AF%91%E9%A1%B9%E7%9B%AE/%E5%AE%8C%E6%95%B4%E7%BF%BB%E8%AF%91/%E7%AC%AC9%E7%AB%A0%20%E7%A7%BB%E5%8A%A8%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C%E8%AE%BE%E8%AE%A1%E8%80%83%E8%99%91%E7%9A%84%E5%9B%A0%E7%B4%A0%EF%BC%9A%E2%80%9CWeb%E8%BF%98%E6%98%AF%E5%8E%9F%E7%94%9F%EF%BC%9F%E2%80%9D%EF%BC%88lyndiduan%EF%BC%89.doc#_ftn1"><sup><sup>[12]</sup></sup></a>。
+不使用iOS中Cocoa Touch框架的本地组件，而使用像Adobe的PhoneGap这样的技术来创建一个iPhone的自然二进制是可能的（也是很容易的）。PhoneGap包裹了一个现有的Web应用（该应用使用了本地Web组件），创建了一个原生操作系统应用（在上述的例子中，创建的是一个本地iOS应用）。虽然你的应用在iPhone的主屏幕上看起来像一个原生应用，运行起来也像原生应用，但应用的用户界面使用的是Web组件[12]。
 
-你的二进制应用只是一个包括WebKit组件的外壳，这个WebKit组件使你的Web应用使用了Web组件。因为Web组件不能满足原生预期，所以我将不会推荐使用PhoneGap来创建像productivity这样的非沉浸式应用。<a title="" href="file:///E:/Dropbox/%E7%BF%BB%E8%AF%91%E9%A1%B9%E7%9B%AE/%E5%AE%8C%E6%95%B4%E7%BF%BB%E8%AF%91/%E7%AC%AC9%E7%AB%A0%20%E7%A7%BB%E5%8A%A8%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C%E8%AE%BE%E8%AE%A1%E8%80%83%E8%99%91%E7%9A%84%E5%9B%A0%E7%B4%A0%EF%BC%9A%E2%80%9CWeb%E8%BF%98%E6%98%AF%E5%8E%9F%E7%94%9F%EF%BC%9F%E2%80%9D%EF%BC%88lyndiduan%EF%BC%89.doc#_ftn2"><sup><sup>[13]</sup></sup></a>
+你的二进制应用只是一个包括WebKit组件的外壳，这个WebKit组件使你的Web应用使用了Web组件。因为Web组件不能满足原生预期，所以我将不会推荐使用PhoneGap来创建像productivity这样的非沉浸式应用。[13]
+
 然而，当创建像电子书和游戏这些沉浸式应用时，使用缺乏原生框架的相似技术将不会是一个大问题。Adobe Flash、ActionScript、Unity和Ansca的Corona都是原生游戏和电子书应用制作商喜欢使用的，即使它们不使用原生框架或组件。这是因为沉浸式应用很少（如果有的话）使用原生组件。相反，它们的设计师致力于创建一个拥有自己的规则、交互动作和文化的完全不同的世界（或许看起来和操作起来更像是真实世界的一本书）。
 
 就像我不推荐使用PhoneGap创建非沉浸式原生应用一样，我不推荐使用Adobe Flex（或使用Flash框架的一些应用）：它们不遵守原生平台的文化，操作方式也不同于其他原生应用。
 
-总之，当创建一些不使用原生组件的自然二进制应用时，你要额外小心。这些应用虽然看起来像是原生应用，但它们的操作方式与原生应用截然不同，因为它们没有使用原生框架中的原生组件。使用jQTouch框架的PhoneGap应用运行在iPhone上时，可能看起来像是一个iOS的table view，但这只是巧妙利用CSS和JavaScript来达到相似的视觉效果。它看起来是一个iOS table view，但它不能实现真正的从Cocao Touch框架组件中iOS table view应有的交互行为，最终创建了一个原生应用的预期但却不完整。<a title="" href="file:///E:/Dropbox/%E7%BF%BB%E8%AF%91%E9%A1%B9%E7%9B%AE/%E5%AE%8C%E6%95%B4%E7%BF%BB%E8%AF%91/%E7%AC%AC9%E7%AB%A0%20%E7%A7%BB%E5%8A%A8%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C%E8%AE%BE%E8%AE%A1%E8%80%83%E8%99%91%E7%9A%84%E5%9B%A0%E7%B4%A0%EF%BC%9A%E2%80%9CWeb%E8%BF%98%E6%98%AF%E5%8E%9F%E7%94%9F%EF%BC%9F%E2%80%9D%EF%BC%88lyndiduan%EF%BC%89.doc#_ftn3">[14]</a>
+总之，当创建一些不使用原生组件的自然二进制应用时，你要额外小心。这些应用虽然看起来像是原生应用，但它们的操作方式与原生应用截然不同，因为它们没有使用原生框架中的原生组件。使用jQTouch框架的PhoneGap应用运行在iPhone上时，可能看起来像是一个iOS的table view，但这只是巧妙利用CSS和JavaScript来达到相似的视觉效果。它看起来是一个iOS table view，但它不能实现真正的从Cocao Touch框架组件中iOS table view应有的交互行为，最终创建了一个原生应用的预期但却不完整。[14]
+
 创建一个不能满足的预期严重影响了应用的可用性，我们要避免这么做。
 <h3>沉浸式VS非沉浸式应用</h3>
 理解沉浸式和非沉浸式应用之间的区别是很重要的，因为对于沉浸式应用来说，应用的原生性不是问题。
@@ -274,24 +341,34 @@ Web产品一般会被分为内容型和行为型两种。我们通常将内容�
 <h2>由非原生语言转化而来的原生应用</h2>
 如果你的目标是提供一个优秀的用户体验，当创建非沉浸式原生应用时，一个好的跨平台方法是使用原生框架和组成。但这不意味着你必须使用相应平台的原生编程语言来撰写你的应用。
 
-例如，使用Appcelerator的Titanium Mobile SDK时，你可以编写JavaScript来实例化和引入原生组件。<a title="" href="file:///E:/Dropbox/%E7%BF%BB%E8%AF%91%E9%A1%B9%E7%9B%AE/%E5%AE%8C%E6%95%B4%E7%BF%BB%E8%AF%91/%E7%AC%AC9%E7%AB%A0%20%E7%A7%BB%E5%8A%A8%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C%E8%AE%BE%E8%AE%A1%E8%80%83%E8%99%91%E7%9A%84%E5%9B%A0%E7%B4%A0%EF%BC%9A%E2%80%9CWeb%E8%BF%98%E6%98%AF%E5%8E%9F%E7%94%9F%EF%BC%9F%E2%80%9D%EF%BC%88lyndiduan%EF%BC%89.doc#_ftn4">[15]</a>这样，在iOS平台上，当你在Titanium Mobile中创建一个table view时，一个原生的Cocoa Touch table view组件将被创建在你的用户界面中。这不仅看起来像是原生table view，而且确实也是一个原生table view。更重要的是，它能像原生table view一样运行。
+例如，使用Appcelerator的Titanium Mobile SDK时，你可以编写JavaScript来实例化和引入原生组件。[15]这样，在iOS平台上，当你在Titanium Mobile中创建一个table view时，一个原生的Cocoa Touch table view组件将被创建在你的用户界面中。这不仅看起来像是原生table view，而且确实也是一个原生table view。更重要的是，它能像原生table view一样运行。
 
 你使用像JavaScript这样的脚本语言时，程序编写会更容易，而且使用团队现有开发技术的同时，你仍能享有在原生应用中使用原生组件那样的优势。
 
 同样，Tianium Mobile是一个跨平台技术，因此它可以为你的原生iOS应用实例化原生iOS组件，同时也可以为你的原生Android应用实例化原生Android组件。优势很明显：你使用一种脚本语言（JavaScript），只需维护一个代码库，而不必学习和使用iOS的Objective-C和Android的Java，维护两个代码库。
 
 缺点是，你要处理一个抽象层。最终，你应用的质量将取决于Appcelerator在它的抽象框架中编写的代码的质量。你将要考虑Appcelerator对原生框架和SDK新特性的发行速度。虽然Appcelerator在Titanium中尽可能使平台之间的差异透明化，但仍然还有一些差异（不是所有的文化）需要我们去强调和优化（记得编写一次程序，优化每一个细节）。
-<div><hr align="left" size="1" width="33%" /><div><a title="" href="file:///E:/Dropbox/%E7%BF%BB%E8%AF%91%E9%A1%B9%E7%9B%AE/%E5%AE%8C%E6%95%B4%E7%BF%BB%E8%AF%91/%E7%AC%AC9%E7%AB%A0%20%E7%A7%BB%E5%8A%A8%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C%E8%AE%BE%E8%AE%A1%E8%80%83%E8%99%91%E7%9A%84%E5%9B%A0%E7%B4%A0%EF%BC%9A%E2%80%9CWeb%E8%BF%98%E6%98%AF%E5%8E%9F%E7%94%9F%EF%BC%9F%E2%80%9D%EF%BC%88lyndiduan%EF%BC%89.doc#_ftnref1">[12]</a> PhoneGap 没有使用任何一个Web UI框架（例如，JQuery Mobile）。它只是让你在原生应用中包裹了一个Web应用。然而，无论你使用哪种UI框架（或者甚至你决定不使用任何一个Web UI框架），使用的组件也将是Web UI的组件，不是应用运行平台的原生UI组件。
-</div><div><a title="" href="file:///E:/Dropbox/%E7%BF%BB%E8%AF%91%E9%A1%B9%E7%9B%AE/%E5%AE%8C%E6%95%B4%E7%BF%BB%E8%AF%91/%E7%AC%AC9%E7%AB%A0%20%E7%A7%BB%E5%8A%A8%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C%E8%AE%BE%E8%AE%A1%E8%80%83%E8%99%91%E7%9A%84%E5%9B%A0%E7%B4%A0%EF%BC%9A%E2%80%9CWeb%E8%BF%98%E6%98%AF%E5%8E%9F%E7%94%9F%EF%BC%9F%E2%80%9D%EF%BC%88lyndiduan%EF%BC%89.doc#_ftnref2">[13]</a> 相同的说法是，Web应用被加进了手机的主屏幕。问题是，Web应用看起来像是原生应用，运行起来也像原生应用，但是操作起来就和原生应用截然不同。运行中浏览器中的Web应用不会有这些缺点，首先因为它不创建原生应用这个预期。运行在浏览器中的Web应用是一个原生的Web应用，原生Web应用（就像是其他平台上的原生应用）有着自己的文化、传统、语言、规范和预期（即使在一些其他原生平台上这些可能不被明确地定义）。
-</div><div><a title="" href="file:///E:/Dropbox/%E7%BF%BB%E8%AF%91%E9%A1%B9%E7%9B%AE/%E5%AE%8C%E6%95%B4%E7%BF%BB%E8%AF%91/%E7%AC%AC9%E7%AB%A0%20%E7%A7%BB%E5%8A%A8%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C%E8%AE%BE%E8%AE%A1%E8%80%83%E8%99%91%E7%9A%84%E5%9B%A0%E7%B4%A0%EF%BC%9A%E2%80%9CWeb%E8%BF%98%E6%98%AF%E5%8E%9F%E7%94%9F%EF%BC%9F%E2%80%9D%EF%BC%88lyndiduan%EF%BC%89.doc#_ftnref3">[14]</a> 你犯的最大的可用性方面的错误是，使一些非本地组件看起来像本地组件（就像JQTouch框架那样）。看起来不像本体组件的组件至少提供了不可能像本地组件那样操作的视觉线索，但非本地组件佯装成本地组件，视觉上一样，但操作上却截然不同，这迷惑了用户。所以你不要创建一种行为预期却不能实现它。
-</div><div><a title="" href="file:///E:/Dropbox/%E7%BF%BB%E8%AF%91%E9%A1%B9%E7%9B%AE/%E5%AE%8C%E6%95%B4%E7%BF%BB%E8%AF%91/%E7%AC%AC9%E7%AB%A0%20%E7%A7%BB%E5%8A%A8%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C%E8%AE%BE%E8%AE%A1%E8%80%83%E8%99%91%E7%9A%84%E5%9B%A0%E7%B4%A0%EF%BC%9A%E2%80%9CWeb%E8%BF%98%E6%98%AF%E5%8E%9F%E7%94%9F%EF%BC%9F%E2%80%9D%EF%BC%88lyndiduan%EF%BC%89.doc#_ftnref4">[15]</a> 不要混淆Titanium Mobile和Titanium桌面这两者的概念。Titanium桌面的工作方式和PhoneGap一样。Appcelerator最近开发了一个开源的Titanium桌面（现在被称为桌面），同时也在集中精力提升Titanium Mobile：smashed.by/tita。
-</div></div><p style="text-align: center;"><img class="aligncenter size-full wp-image-1495" title="" src="http://yuguo.us/files/2012/11/web-or-native-17.png" alt="" /></p>
+
+<hr align="left" size="1" width="33%" />
+
+[12] PhoneGap 没有使用任何一个Web UI框架（例如，JQuery Mobile）。它只是让你在原生应用中包裹了一个Web应用。然而，无论你使用哪种UI框架（或者甚至你决定不使用任何一个Web UI框架），使用的组件也将是Web UI的组件，不是应用运行平台的原生UI组件。
+
+[13] 相同的说法是，Web应用被加进了手机的主屏幕。问题是，Web应用看起来像是原生应用，运行起来也像原生应用，但是操作起来就和原生应用截然不同。运行中浏览器中的Web应用不会有这些缺点，首先因为它不创建原生应用这个预期。运行在浏览器中的Web应用是一个原生的Web应用，原生Web应用（就像是其他平台上的原生应用）有着自己的文化、传统、语言、规范和预期（即使在一些其他原生平台上这些可能不被明确地定义）。
+
+[14] 你犯的最大的可用性方面的错误是，使一些非本地组件看起来像本地组件（就像JQTouch框架那样）。看起来不像本体组件的组件至少提供了不可能像本地组件那样操作的视觉线索，但非本地组件佯装成本地组件，视觉上一样，但操作上却截然不同，这迷惑了用户。所以你不要创建一种行为预期却不能实现它。
+
+[15] 不要混淆Titanium Mobile和Titanium桌面这两者的概念。Titanium桌面的工作方式和PhoneGap一样。Appcelerator最近开发了一个开源的Titanium桌面（现在被称为桌面），同时也在集中精力提升Titanium Mobile：smashed.by/tita。
+
+<img class="aligncenter size-full wp-image-1495" title="" src="http://yuguo.us/files/2012/11/web-or-native-17.png" alt="" />
+
 图9-15 一些常见的原生技术和跨平台技术之间的对比
 
 原生并不一定更好，但它是原生的。
 
 如果你要创建一个遵守既定平台规范（也就是文化和语言）的应用，那么唯一方法是使用原生技术。例如，在Web平台上，被创建的Flash应用将看起来和感觉起来都不像是使用原生Web编写技术（像HTML、CSS和JavaScript这样的）编写的原生Web应用。相似地，在iPhone这样的平台上，使用Cocoa Touch框架中的组件创建的应用，将看起来和感觉起来不像是原生iPhone应用。这并不说明，Flash应用没有HTML应用好。在某种情况下，特别是像游戏这样的沉浸式应用，Flash应用可能会提供更好的用户体验。举个例子，Machinarium是iPad上基于Flash技术的一款既可爱又漂亮的游戏。特别是对于像游戏和电子书这样的沉浸式应用，一个像Unity或Corona这样的跨平台技术可以减少开发时间，更容易地实现那些对于原生技术来说较难实现的功能。（比如一个3D环境或物理引擎）。
-<p style="text-align: center;"><img class="aligncenter size-full wp-image-1495" title="" src="http://yuguo.us/files/2012/11/web-or-native-18.png" alt="" /></p>
+
+<img class="aligncenter size-full wp-image-1495" title="" src="http://yuguo.us/files/2012/11/web-or-native-18.png" alt="" />
+
 图9-16 iPad上的Machinarium，由Flash技术创建的一款沉浸式原生应用。
 
 这不是说，你应该害怕跨平台技术，但你需要仔细思考，权衡利弊，最后做出一个明智的决定，是否要在开发过程中添加另一个抽象层。每一个跨平台技术都有不同的优势和劣势，各自适合某种类型的应用。Corona可能是2D图形化游戏的完美选择，Titanium Mobile则适合创建一个跨平台应用。
@@ -302,7 +379,7 @@ Web产品一般会被分为内容型和行为型两种。我们通常将内容�
 
 当设计你的产品时，你拥有一系列工具可以选择。根据你用户的需求，你可能会选择像HTML、CSS和JavaScript这样的原生Web编写技术来创建原生Web应用；相应地，你也可能会使用像Adobe Flash或Unity这样的非原生跨平台技术来创建非原生Web应用。第三种选择是，你可能会使用原生和非原生相结合的编写技术来创建混合型Web应用。例如，最初由HTML、CSS和JavaScript创建的一个网站，最后使用Flash技术展现了一个丰富的游戏体验。
 
-无论你是选择原生Web技术，还是选择非原生Web技术，被部署到世界范围Web平台上的应用就是Web应用。简单来说，这意味着你的网站或应用会拥有一个URL<a title="" href="file:///E:/Dropbox/%E7%BF%BB%E8%AF%91%E9%A1%B9%E7%9B%AE/%E5%AE%8C%E6%95%B4%E7%BF%BB%E8%AF%91/%E7%AC%AC9%E7%AB%A0%20%E7%A7%BB%E5%8A%A8%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C%E8%AE%BE%E8%AE%A1%E8%80%83%E8%99%91%E7%9A%84%E5%9B%A0%E7%B4%A0%EF%BC%9A%E2%80%9CWeb%E8%BF%98%E6%98%AF%E5%8E%9F%E7%94%9F%EF%BC%9F%E2%80%9D%EF%BC%88lyndiduan%EF%BC%89.doc#_ftn1">[16]</a>，能够通过HTTP服务器被访问。
+无论你是选择原生Web技术，还是选择非原生Web技术，被部署到世界范围Web平台上的应用就是Web应用。简单来说，这意味着你的网站或应用会拥有一个URL[16]，能够通过HTTP服务器被访问。
 <h2>单平台原生应用</h2>
 通过以上的学习，你可能会决定为单个平台或设备设计你的应用，投入你有限的时间和预算来优化那个平台的用户体验，从而最好地满足用户的需求。
 
@@ -321,9 +398,13 @@ Web产品一般会被分为内容型和行为型两种。我们通常将内容�
 如果你关于平台和技术的决定仅仅是因为你先前短期的商业目标或你团队当前的能力，那么你正在作的决定解决的是你自己的问题，不是用户的。这可能会为你带来短期的利益，但你将不能解决用户的问题，不会走得很远。你应当基于用户的需求，作出关于平台和技术的决定，不带有任何思想偏见，不因短期利益而放弃长期目标。
 
 记得，我们已经有很多这样失败的例子了，我们不再需要更多，我们需要一些成功的例子。做一些明智的、合理的、娱乐的和愉悦的事情，使用正确的工具和技术。
-<div><hr align="left" size="1" width="33%" /><div><a title="" href="file:///E:/Dropbox/%E7%BF%BB%E8%AF%91%E9%A1%B9%E7%9B%AE/%E5%AE%8C%E6%95%B4%E7%BF%BB%E8%AF%91/%E7%AC%AC9%E7%AB%A0%20%E7%A7%BB%E5%8A%A8%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C%E8%AE%BE%E8%AE%A1%E8%80%83%E8%99%91%E7%9A%84%E5%9B%A0%E7%B4%A0%EF%BC%9A%E2%80%9CWeb%E8%BF%98%E6%98%AF%E5%8E%9F%E7%94%9F%EF%BC%9F%E2%80%9D%EF%BC%88lyndiduan%EF%BC%89.doc#_ftnref1">[16]</a> 更精确来说是URI，URL和URE之间存在一些技术上的差异，如果一个W3C标准偏执者粗略区分它们之间的差异，那么他将会口吐白沫的。
+
+<hr align="left" size="1" width="33%" />
+
+[16 更精确来说是URI，URL和URE之间存在一些技术上的差异，如果一个W3C标准偏执者粗略区分它们之间的差异，那么他将会口吐白沫的。
+
 <h2><strong>关于译者</strong></h2><a href="http://www.coroflot.com/Yedan_Qian">钱叶丹</a> 就读于浙江大学工业设计系，曾经是一名工科学生，却与设计偶遇。曾获得德国红点设计大奖等多项国际奖项，目前在腾讯ISUX团队实习。擅长整合设计和创新设计，在设计过程中重视与客户之间的合作方式和沟通方式。
 
 爱行走，也爱坐过山车，想从山顶乘滑翔伞而下，让自由包围自己。爱音乐，也爱小动物，爱这些生活中的美好瞬间。有设计师的职业病叫固执，也有一种情怀叫热情。总之，想活的丰富真实一些。
 <h2>关于校对</h2><a href="http://yuguo.us/weblog">余果</a> 曾经在西安电子科技大学学习软件工程，却热爱前端开发，因为前端做出人人都能直接体验的产品。目前在腾讯ISUX做前端开发。比起文字，我更喜欢图像；比起技术，我更喜欢设计；比起坐而空想，我更喜欢动手完成一个产品。空闲的时间喜欢读书和开发软件，以及享受美食。
-</div></div>
+
