@@ -1,29 +1,50 @@
 ---
 layout: post
-title: 开启Chrome的持续绘制模式
+title: 使用Chrome的持续绘制模式侦测页面绘制时间
 date: 2013-02-21 21:15
 comments: true
-categories: [搞需求]
+categories: [做需求]
 ---
 
-页面的**绘制**时间（paint time）是每一个前端开发都需要关注的。
+页面的**绘制**时间（paint time）是每一个前端开发都需要关注的的重要指标，它决定了你的页面流畅程度。
 
-当你的页面滚动不平滑的时候，就是绘制时间的问题。
+Chrome开发工具的Timeline标签页中有一个Frame工具，可以用来检测页面渲染中的瓶颈所在。详情查看这篇文章：
 
-So you noticed that your page doesn't scroll smoothly. This is how you would start tackling the problem. For our example, we'll use the demo page Things We Left On The Moon by Dan Cederholm as our example.
+[Improving Web App Performance With the Chrome DevTools Timeline and Profiles](http://addyosmani.com/blog/performance-optimisation-with-timeline-profiles/)
 
-You open the Web Inspector, start a Timeline recording and scroll your page up and down. Then you look at the vertical timelines, that show you what happened in each frame.
+大意是说如果希望创建流畅的体验和交互，页面渲染应该在每秒60帧以上（即60FPS以上），根据FPS的定义：1000 ms / 60 Hz = 16.6 ms。记住这一指标：**每一帧的渲染时间应该保持在16ms以下**。
 
-There are different reasons for Chrome to repaint areas of the page:
+本文介绍的[Chrome Canery](https://www.google.com/intl/en/chrome/browser/canary.html)的新功能——持续绘制模式——可以非常方便地测试你的页面在webkit浏览器中的渲染时间。开启持续绘制模式之后，不必像刚才的文章中介绍的那样，很麻烦地在Timeline标签页中查看绘制状态，而是可以安心在Elements标签页调试DOM和样式，同时随时查看绘制状态，因为浏览器会持续不断地重绘页面的可见部分。
 
-DOM nodes get changed in JavaScript, which causes Chrome to recalculate the layout of the page.
-Animations are playing that get updated in a frame-based cycle.
-User interaction, like hovering, causes style changes on certain elements.
-Any other operation that causes the page layout to change.
-As a developer you need to be aware of the repaints happening on your page. Looking at the paint rectangles is a great way of doing that. In the example screenshot above you can see that the whole screen is covered in a big paint rectangle. This means the whole screen is repainted as you scroll, which is not good. In this specific case this is caused by the CSS style background-attachment:fixed which causes the background image of the page to stay at the same position while the content of the page moves on top of it as you scroll.
+引用HTML5ROCK的一张图：
 
-If you identify that the repaints cover a big area and/or take a long time, you have two options:
+![持续绘制模式](/files/2013/02/fps-2.png)
 
-You can try to change the page layout to reduce the amount of painting. If possible Chrome paints the visible page only once and adds parts that have not been visible as you scroll down. However, there are cases when Chrome needs to repaint certain areas. For example the CSS rule position:fixed, which is often used for navigation elements that stay in the same position, can cause these repaints.
+嗯，很像玩游戏的时候即时显示的帧数一样，还记得我们之前计算的时间么，要想页面流畅滚动，需要保持每一帧的平均渲染时间在16.6ms以下。
 
-If you want to keep your page layout, you can try to reduce the painting cost of the areas that get repainted. Not every CSS style has the same painting cost, some have little impact, others a lot. Figuring out the painting costs of certain styles can be a lot of work. You can do this by toggling styles in the Elements panel and looking at the difference in the Timeline recording, which means switching between panels and doing lots of recordings. This is where continuous painting mode comes into play.
+开启方法：
+
+1. 下载[Chrome Canery](https://www.google.com/intl/en/chrome/browser/canary.html)，这是Chrome的开发者版本，有一些最新的强大功能，图标是漂亮的黄色。
+2. Mac系统和Linux系统需要在Chrome中开启混合模式，方法是地址栏输入`about:flags`，然后“对所有网页执行 GPU 合成 Mac, Windows, Linux”设置为“已启用”。
+3. 打开开发工具，在Rendering中勾选“Enable continuous page repainting”这一项。
+4. 成功了，现在打开任意页面，打开开发者工具，都能看见右上角的持续绘制模式状态表。
+
+调试方法：
+
+当发现页面FPS很高的时候，打开Elements面板，使用上下左右来切换选择DOM，然后按下快捷键`H`来hide或者显示元素，同时观察FPS情况，定位到某个DOM的绘制成本很高时，可以依次取消面板中的CSS样式再观察FPS情况。
+
+在我的MBP上，Qzone的FPS是达标的：
+
+![qzone fps](/files/2013/02/fps.png)
+
+当然需要注意的是，FPS跟很多因素有关：
+
+* 硬件性能
+* 浏览器内核（IE会更慢）
+* 窗口可见区域大小（你可以试试缩小窗口，观察FPS会变小）
+
+所以不要觉得FPS在我们的开发机上时间达标就OK，要考虑更多用户的机器性能是远远不如我们的。
+
+最后补充一点，持续绘制模式的绘制方法跟浏览器的默认绘制方式是不一样的，浏览器默认不会不停地重绘页面，只会在有需要的时候才重绘一次（产生一帧），关于这一点可以使用Timeline标签页中的Frame条目详细查看每一帧的计算量。
+
+最后的最后留给大家一个作业，请使用持续绘制模式观察这个页面：[http://css3exp.com/moon/](http://css3exp.com/moon/)的渲染速度，在我的MPB上是50FPS+，找出CSS成本最高的两个元素上的CSS属性，在Elements面板中去掉它，使FPS降到10以下。
