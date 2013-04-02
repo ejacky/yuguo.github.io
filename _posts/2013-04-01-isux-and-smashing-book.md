@@ -6,7 +6,7 @@ comments: true
 categories: [书]
 ---
 
-《众妙之门3》是《Smashing Book #3 Redesign The Web》的中文译本，这本书是前端设计界非常非常有名的[Smashingmagazine](http://smashingmagazine.com)的文章精粹集合，然后还有一些独家的投稿。前两本《Smashing Book》出了之后反响非常好，都进行了再印刷，所以出版社对这次的《众妙之门3》也是抱有很大期望。第三本的内容是非常与时俱进的，话题通括了HTML5、CSS3、新JS API、Retina屏、Web App、基于Responsive Design的工作流等。
+[《众妙之门3》](http://book.douban.com/subject/23008807/)是《Smashing Book #3 Redesign The Web》的中文译本，这本书是前端设计界非常非常有名的[Smashingmagazine](http://smashingmagazine.com)的文章精粹集合，然后还有一些独家的投稿。前两本《Smashing Book》出了之后反响非常好，都进行了再印刷，所以出版社对这次的《众妙之门3》也是抱有很大期望。第三本的内容是非常与时俱进的，话题通括了HTML5、CSS3、新JS API、Retina屏、Web App、基于Responsive Design的工作流等。
 
 当然，我说这么多的原因是这是我们ISUX的同学们合作翻译的一本书，也是ISUX出品的第一本书。
 
