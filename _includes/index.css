@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5, h6 { font-weight:normal; }
   /* ----------------------------------------------------------------------------------------------------------
   04 Basic Layout ---------------------------------------------------------------------------------------------
   ---------------------------------------------------------------------------------------------------------- */
-
+  div.container {overflow: hidden;*zoom:1;}
   div.primary                 { background:#f6f6f6; padding:10%; position: relative; /*outline:1px solid red;*/ }
   div.content                 { padding:10%; position: relative;/*outline:1px solid blue;*/ }
   div.ads                     { display:none; }
