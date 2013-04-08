@@ -61,20 +61,51 @@ h4                          { font-size:1.125em; }
 p + h3,
 li + h3                     { padding-top:1.5em; } /* Only an h3 that follows a p or an li */
 
- 
+   /* ----------------------------------------------------------------------------------------------------------
+  08 Blog Archive ---------------------------------------------------------------------------------------------
+  ---------------------------------------------------------------------------------------------------------- */
+  .archive-page p,
+  .archive-page li                          { padding:0.5em 0; }
+  .archive-page {margin-top: -35px;}
+  .archive-page h2 {color:rgba(0,0,0,0.3);font-size: 4em;margin:0 0 10px;}
+  .archive-page h3 {color:rgba(0,0,0,0.3);font-size: 2em;margin: 10px 0;}
+  .archive-page a {color:#333;}
+  .archive-page span.date                    { color:rgba(0,0,0,0.3); display:block; }
+  .archive-page span.category-tag {color:rgba(0,0,0,0.3);}
 
 
   /* ----------------------------------------------------------------------------------------------------------
   04 Basic Layout ---------------------------------------------------------------------------------------------
   ---------------------------------------------------------------------------------------------------------- */
-  div.container {overflow: hidden;*zoom:1;}
-  div.primary                 { background:#f6f6f6; padding:10%; position: relative; /*outline:1px solid red;*/ }
-  div.content                 { padding:10%; position: relative;/*outline:1px solid blue;*/ }
-  div.ads                     { display:none; }
-  div.blog {line-height: 1.5;} 
+  div.container {display: table;line-height: 1.5;}
+  div.primary                 { background:#f6f6f6; padding:100px 5%; display: table-cell; width:30%;}
+  div.content                 { padding:100px 10%; display: table-cell; }
+
   .primary h1                          { color:rgba(0,0,0,0.3);font-size: 16px; }
   .primary h1 a                        { color:#333; }
   .primary h1 a:hover                  { color:#9c6; }
+
+    div.primary div div         { border-top:1px solid rgba(0,0,0,0.05); padding:3em 0; }
+    div.ads                     { display:block; }
+    .primary h1,
+    .primary p                   { width:85%; }
+    div.ads span                { display:block; /* Purely for the sake of the span */ width:90%; }
+
+    header nav ul               { padding:2em 0 3em 0; }
+    header nav ul li            { display:block; padding:0; }
+
+    div.content-inner                { margin:0 auto;width:90%;}
+    form input,
+    form textarea               { margin-left:5%; }
+    div.content blockquote p    { padding-left:1em; }
+
+    article figure figcaption   { padding-left:5%; }
+
+    div#comments ol li article header div.gravatar-container { left:5%; }
+    div#comments ol li article header h3,
+    div#comments ol li article header h3 + p { padding:0 0 0 20%; }
+
+
     /* 02f - Paragraphs, Lists, and More */
   figcaption,
   p.copyright,
@@ -132,75 +163,3 @@ li + h3                     { padding-top:1.5em; } /* Only an h3 that follows a 
     padding: 2px 7px;position: relative;}
   .tag-box li span {position: absolute;color: #fff;background: #FE6600;display: block;padding: 0 5px;font-size: 12px;
     border-radius: 10px;right: -13px;top: -5px;}
-
-
-
-  /* ----------------------------------------------------------------------------------------------------------
-  11 Media Queries (using a mobile-first approach) ------------------------------------------------------------
-  ---------------------------------------------------------------------------------------------------------- */
-
-  /* 11a - 720 up */
-  @media screen and (min-width:720px) {
-
-    html                        { padding:0 6%; }
-    body                        { margin:0 auto; }
-    div.fauxcolumn              { bottom:0; left:0; position:fixed; top:0; width:34.755%; background:#f6f6f6; }
-
-    div.primary                 { background:none; float:left; padding:100px 0; width:32%; }
-    div.primary div div         { border-top:1px solid rgba(0,0,0,0.05); padding:3em 0; }
-    div.content                 { float:left; padding:100px 0 ; width:68%; }
-    div.ads                     { display:block; }
-    .primary h1,
-    .primary p                   { width:85%; }
-    div.ads span                { display:block; /* Purely for the sake of the span */ width:90%; }
-
-    header nav ul               { padding:2em 0 3em 0; }
-    header nav ul li            { display:block; padding:0; }
-
-    div.content-inner                { margin:0 auto;width:90%;}
-    form input,
-    form textarea               { margin-left:5%; }
-    div.content blockquote p    { padding-left:1em; }
-
-    article figure figcaption   { padding-left:5%; }
-
-    div#comments ol li article header div.gravatar-container { left:5%; }
-    div#comments ol li article header h3,
-    div#comments ol li article header h3 + p { padding:0 0 0 20%; }
-
-  }
-
-  /* 11b - 880 up */
-  @media screen and (min-width:880px) {
-
-    h2#art-direction            { padding-left:15%; }
-
-    div.content-inner { width:80%; /* 190 / 660 = 0.28787 */ }
-    form input,
-    form textarea               { margin-left:28.787%; /* 190 / 660 = 0.28787 */ width:71%; }
-
-    article figure figcaption   { left:0; padding:0.825em 0 0 5%; position:absolute; width:25%; }
-
-    div#comments ol li article header div.gravatar-container { left:15%; }
-    div#comments ol li article header h3,
-    div#comments ol li article header h3 + p { padding:0 0 0 28.787%; }
-
-  }
-
-  /* 11c - 1350 up */
-  @media screen and (min-width:1350px) {
-    html                        { padding:0 16%; }
-    div.fauxcolumn              { width:37.75%; }
-  }
-
-  /* 11d - 1700 up */
-  @media screen and (min-width:1700px) {
-    html                        { padding:0 23%; }
-    div.fauxcolumn              { width:40.25%; }
-  }
-
-  /* 11e - 2000 up */
-  @media screen and (min-width:2000px) {
-    html                        { padding:0 30%; }
-    div.fauxcolumn              { width:42.85%; }
-  }
