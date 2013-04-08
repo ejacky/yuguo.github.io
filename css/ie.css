@@ -1,0 +1,3 @@
+div.container {overflow:hidden; *zoom:1;}
+div.primary                 { background:#f6f6f6; padding:100px 5%;float:left; width:30%;}
+div.content                 { padding:100px 5%;float:left; }
