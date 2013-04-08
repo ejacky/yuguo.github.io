@@ -29,17 +29,6 @@ body                           { margin: 0; font-size: 1.4em;}
 
 h1, h2, h3, h4, h5, h6 { font-weight:normal; }
 
-pre,
-code,
-kbd,
-samp                            { font-family: monospace, monospace; _font-family: 'courier new', monospace; }
-
-pre                            { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
-
-img                            { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
-
-label                            { cursor: pointer; }
-
 input,
 select,
 textarea                          { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
@@ -53,37 +42,27 @@ table                            { border-collapse: collapse; border-spacing: 0;
 
 td                            { vertical-align: top; }
 /* 02e - Links */
-a                           { color:#9c6; text-decoration:none; -webkit-transition:color 0.2s ease-in-out; -moz-transition:color 0.2s ease-in-out; -o-transition:color 0.2s ease-in-out; transition:color 0.2s ease-in-out; }
+a                           { color:#333; text-decoration:none; -webkit-transition:color 0.2s ease-in-out; -moz-transition:color 0.2s ease-in-out;transition:color 0.2s ease-in-out; }
+a:hover {color:#9c6}
 
-h2                          { font-size:1.575em; letter-spacing:-0.025em; line-height:1.3125em; }
-h3 {font-size: 1.3em;}
-h4                          { font-size:1.125em; }
-p + h3,
-li + h3                     { padding-top:1.5em; } /* Only an h3 that follows a p or an li */
 
    /* ----------------------------------------------------------------------------------------------------------
   08 Blog Archive ---------------------------------------------------------------------------------------------
   ---------------------------------------------------------------------------------------------------------- */
   .archive-page p,
-  .archive-page li                          { padding:0.5em 0; }
+  .archive-page li                          { padding:0.5em 0;}
+  .archive-page li {list-style:none;}
   .archive-page {margin-top: -35px;}
   .archive-page h2 {color:rgba(0,0,0,0.3);font-size: 4em;margin:0 0 10px;}
   .archive-page h3 {color:rgba(0,0,0,0.3);font-size: 2em;margin: 10px 0;}
-  .archive-page a {color:#333;}
   .archive-page span.date                    { color:rgba(0,0,0,0.3); display:block; }
   .archive-page span.category-tag {color:rgba(0,0,0,0.3);}
 
 
-  /* ----------------------------------------------------------------------------------------------------------
-  04 Basic Layout ---------------------------------------------------------------------------------------------
-  ---------------------------------------------------------------------------------------------------------- */
-  div.container {display: table;line-height: 1.5;}
-  div.primary                 { background:#f6f6f6; padding:100px 5%; display: table-cell; width:30%;}
-  div.content                 { padding:100px 10%; display: table-cell; }
+  /* 04 Basic Layout --------------------------------------------------------------------------------------------- */
+  div.container {line-height: 1.5;}
 
   .primary h1                          { color:rgba(0,0,0,0.3);font-size: 16px; }
-  .primary h1 a                        { color:#333; }
-  .primary h1 a:hover                  { color:#9c6; }
 
     div.primary div div         { border-top:1px solid rgba(0,0,0,0.05); padding:3em 0; }
     div.ads                     { display:block; }
@@ -93,73 +72,73 @@ li + h3                     { padding-top:1.5em; } /* Only an h3 that follows a 
 
     header nav ul               { padding:2em 0 3em 0; }
     header nav ul li            { display:block; padding:0; }
-
-    div.content-inner                { margin:0 auto;width:90%;}
     form input,
     form textarea               { margin-left:5%; }
-    div.content blockquote p    { padding-left:1em; }
-
     article figure figcaption   { padding-left:5%; }
 
     div#comments ol li article header div.gravatar-container { left:5%; }
     div#comments ol li article header h3,
     div#comments ol li article header h3 + p { padding:0 0 0 20%; }
-
-
-    /* 02f - Paragraphs, Lists, and More */
-  figcaption,
+    
   p.copyright,
   div.primary h2,
   div.primary p,
-  div.primary span.fusionentire { color:rgba(0,0,0,0.3); line-height:1.5em; padding:0; }
+  div.primary span.fusionentire { color:rgba(0,0,0,0.3);}
   p.note                      { padding-bottom:1em; }
   p.continue                  { padding-top:2em; }
   p.copyright               { padding:8em 0 1em 0; text-align: center;position: relative;}
   cite                        { font-style:normal; }
 
-  /* Most layout declared in media queries, below */
 
-
-  /* ----------------------------------------------------------------------------------------------------------
-  06 Ads ------------------------------------------------------------------------------------------------------
-  ---------------------------------------------------------------------------------------------------------- */
+  /* 06 Ads ------------------------------------------------------------------------------------------------------ */
 
   div.fusionads a,
-  div.authenticjobs p a       { border:none; color:rgba(0,0,0,0.3); }
+  div.authenticjobs p a       { border:none; }
   div.fusionads p             { padding-top:1em; }
   div.fusionads img           { margin:1em 0; max-width:100%;}
   div.authenticjobs img       { float:left; margin:0.5em 1em 1em 0; }
   div.authenticjobs p.job-listings + p { clear:both; }
 
-  /* ----------------------------------------------------------------------------------------------------------
-  07 Blog Posts -----------------------------------------------------------------------------------------------
-  ---------------------------------------------------------------------------------------------------------- */
-  .single-post {color:rgba(0,0,0,0.7);margin-top: -10px;}
+  /* 07 Blog Posts ----------------------------------------------------------------------------------------------- */
+  .single-post {color:rgba(0,0,0,0.7);margin-top: -10px;word-wrap: break-word;}
+  .single-post img {max-width:100%;display:block; margin:1em 0;}
   .single-post p,
   .single-post pre {margin:1em 0;}
-  .single-post h1 {font-size:2.5em;}
-  .single-post h2                          {margin: 20px 0 10px; font-size:1.575em; letter-spacing:-0.025em; line-height:1.3125em; }
-  .single-post h3 {font-size: 1.3em;}
-  .single-post h4                          { font-size:1.125em; }
+  .single-post h1 {font-size:2.5em;-webkit-margin-before: 0;}
+  .single-post h2                          {margin: 20px 0 10px; }
   .single-post p + h3,
   .single-post li + h3                     { padding-top:1.5em; } /* Only an h3 that follows a p or an li */
   .single-post .post-date {color:rgba(0,0,0,0.4);display: block;margin-bottom: 1em;}
   .single-post .previous-next-nav {overflow: hidden;*zoom:1;}
   .single-post .previous {float:left;}
   .single-post .next {float:right;}
+  .single-post blockquote p    { padding-left:1em; }
   .single-post ul,
   .single-post ol {margin:0.5em 0;}
   .single-post ul li {list-style: disc inside none;}
   .single-post ol li{list-style-type: decimal;}
   .single-post li {color: rgba(0,0,0,0.4);margin-left: 2em;}
-  .single-post pre {background-color: #f8f8f8;border: 1px solid #ccc;font-size: 13px;line-height: 19px;overflow: auto;padding: 6px 10px;border-radius: 3px;}
-  .single-post code {margin: 0 2px;padding: 0px 5px;border: 1px solid #EAEAEA;background-color: #F8F8F8;border-radius: 3px;white-space: pre-wrap;}
+  .single-post pre {background-color: #f8f8f8;border: 1px solid #ccc;overflow: auto;padding: 6px 10px;border-radius: 3px;white-space:pre-wrap;}
+  .single-post code {margin: 0 2px;padding: 0px 5px;border: 1px solid #EAEAEA;background-color: #F8F8F8;border-radius: 3px;white-space: pre-wrap;font-family: monospace; }
   .single-post pre code {margin:0;padding:0;background-color: transparent;border:none;white-space:pre-wrap;}
 
 
-  .tag-box {overflow: hidden;*zoom:1;margin-bottom: 20px;}
+  .tag-box {overflow: hidden;*zoom:1;margin-bottom: 20px;list-style:none;}
   .tag-box li {float:left;margin-right: 15px;}
   .tag-box li a {display: block;background: #fefefe;border: 1px solid #ddd;border-radius: 5px;
     padding: 2px 7px;position: relative;}
-  .tag-box li span {position: absolute;color: #fff;background: #FE6600;display: block;padding: 0 5px;font-size: 12px;
+  .tag-box li span {position: absolute;color: #fff;background: #FE6600;display: block;padding: 0 5px;
     border-radius: 10px;right: -13px;top: -5px;}
+    
+@media all and (max-width:639px) {
+  div.ads {display: none;}
+  div.primary nav li {float:left;border-right:1px solid #333;margin-right:10px;padding-right:10px;}
+  div.primary nav li:last-child {border-right:0 none;}
+  div.container {width:90%;margin:20px auto;}
+}
+    
+@media all and (min-width:640px) {
+  div.container {display: table;}
+  div.primary                 { background:#f6f6f6; padding:100px 5%; display: table-cell; width:30%;}
+  div.content                 { padding:100px 5%; display: table-cell; }
+}
