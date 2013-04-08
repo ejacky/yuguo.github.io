@@ -153,8 +153,8 @@ li + h3                     { padding-top:1.5em; } /* Only an h3 that follows a 
   .single-post ol li{list-style-type: decimal;}
   .single-post li {color: rgba(0,0,0,0.4);margin-left: 2em;}
   .single-post pre {background-color: #f8f8f8;border: 1px solid #ccc;font-size: 13px;line-height: 19px;overflow: auto;padding: 6px 10px;border-radius: 3px;}
-  .single-post code {margin: 0 2px;padding: 0px 5px;border: 1px solid #EAEAEA;background-color: #F8F8F8;border-radius: 3px;white-space: nowrap;}
-  .single-post pre code {margin:0;padding:0;background-color: transparent;border:none;white-space:pre;}
+  .single-post code {margin: 0 2px;padding: 0px 5px;border: 1px solid #EAEAEA;background-color: #F8F8F8;border-radius: 3px;white-space: pre-wrap;}
+  .single-post pre code {margin:0;padding:0;background-color: transparent;border:none;white-space:pre-wrap;}
 
 
   .tag-box {overflow: hidden;*zoom:1;margin-bottom: 20px;}
