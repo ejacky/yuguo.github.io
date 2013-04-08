@@ -102,18 +102,15 @@ a:hover {color:#9c6}
   /* 07 Blog Posts ----------------------------------------------------------------------------------------------- */
   .single-post {word-wrap: break-word;}
   .single-post a {text-decoration:underline;}
-  .single-post img {max-width:100%;display:block; margin:1em 0;}
+  .single-post img {max-width:100%;display:block;}
   .single-post p,
-  .single-post pre {margin:1em 0;}
+  .single-post pre,
+  .single-post img {margin:1em 0;}
   .single-post h1 {font-size:2.5em;-webkit-margin-before: 0;}
   .single-post h2                          {margin: 20px 0 10px; }
   .single-post p + h3,
   .single-post li + h3                     { padding-top:1.5em; } /* Only an h3 that follows a p or an li */
   .single-post .post-date {color:rgba(0,0,0,0.4);display: block;margin-bottom: 1em;}
-  .single-post .previous-next-nav {overflow: hidden;*zoom:1;}
-  .single-post .previous {float:left;}
-  .single-post .next {float:right;}
-  .single-post blockquote p    { padding-left:1em; }
   .single-post ul,
   .single-post ol {margin:0.5em 0;}
   .single-post ul li {list-style: disc inside none;}
@@ -122,6 +119,11 @@ a:hover {color:#9c6}
   .single-post pre {background-color: #f8f8f8;border: 1px solid #ccc;overflow: auto;padding: 6px 10px;border-radius: 3px;white-space:pre-wrap;}
   .single-post code {margin: 0 2px;padding: 0px 5px;border: 1px solid #EAEAEA;background-color: #F8F8F8;border-radius: 3px;white-space: pre-wrap;font-family: monospace; }
   .single-post pre code {margin:0;padding:0;background-color: transparent;border:none;white-space:pre-wrap;}
+  
+  .single-post .previous-next-nav {overflow: hidden;*zoom:1;}
+  .single-post .previous {float:left;}
+  .single-post .next {float:right;}
+  .single-post blockquote p    { padding-left:1em; }
 
 
   .tag-box {overflow: hidden;*zoom:1;margin-bottom: 20px;list-style:none;}
