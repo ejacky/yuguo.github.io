@@ -21,9 +21,20 @@ categories: [iOS]
 
 	- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation {
 	    	NSLog(@"I have finished rotating");
-		self.webView.frame = CGRectMake(.0f, 0.f, self.view.bounds.size.width, self.view.bounds.size.height -44));
+		self.webView.frame = CGRectMake(.0f, 0.f, self.view.bounds.size.width, self.view.bounds.size.height));
 	}
 
 就可以了，然后在webView中做好宽度自适应：
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scable=0, minimun-scale=1.0, maximum-scale=1.0">
+
+备注
+---
+
+介绍一下view的三种坐标属性：
+
+Frame A view's frame (CGRect) is the position of its rectangle in the superview's coordinate system. By default it starts at the top left.
+
+Bounds A view's bounds (CGRect) expresses a view rectangle in its own coordinate system.
+
+Center A center is a CGPoint expressed in terms of the superview's coordinate system and it determines the position of the exact center point of the view.
