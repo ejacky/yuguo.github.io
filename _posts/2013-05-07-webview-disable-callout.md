@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 使用HTML5构建iOS原生APP（5）——禁止链接呼出菜单
+title: 使用HTML5构建iOS原生APP（6）——禁止链接呼出菜单
 date: 2013-05-07 13:01
 comments: true
 categories: [iOS]
