@@ -1,10 +1,9 @@
 ---
 layout: post
-title: @font-face实战
+title: font-face实战
 date: 2012-06-27 17:29
 comments: true
 categories: [CSS]
-
 ---
 
 以前都只是理论，最近我在Qzone真正开始使用字体来实现图标。
