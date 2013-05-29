@@ -6,6 +6,86 @@
 		<atom:link href="http://yuguo.us//feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>《布道之道》</title>
+				<description>&lt;p&gt;最近看完了《布道之道》这本书，深有感触。本书讲的是如何在技术团队中推动一项新的技术或者流程或者工具，非常适合我们现在的状况。英文名是Driving Technical Change，非常质朴。&lt;/p&gt;
+
+&lt;p&gt;本书非常短小，分为四部分。&lt;/p&gt;
+
+&lt;p&gt;第一部分的前提是，我们要推广的是解决问题，而不是某一个特定的解决方案。所以如果我们容易走入误区：闷头思考自己的解决方案，而忽略了这其实是很多解决方案中的一种。就像我们说服别人的时候不希望别人固执己见一样，我们也要持开放的态度。为此，就必须保证自己的解决方案真的合适，再也找不到更好的方案了。&lt;/p&gt;
+
+&lt;p&gt;在推广自己的“道”的时候，往往会有一些人提出反对意见，本书中我们称他们“怀疑者”。&lt;/p&gt;
+
+&lt;p&gt;第二部分介绍了团队中的“怀疑者”大概都可以分为哪几种：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;孤陋寡闻型&lt;/li&gt;
+&lt;li&gt;随波逐流型（这种类型其实很难说是怀疑者）&lt;/li&gt;
+&lt;li&gt;般般挑剔型&lt;/li&gt;
+&lt;li&gt;激情燃尽型&lt;/li&gt;
+&lt;li&gt;时间紧迫型&lt;/li&gt;
+&lt;li&gt;发号施令型&lt;/li&gt;
+&lt;li&gt;不可理喻型&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;不是身边的每个人都可以很明确的归类到哪一类型，某人很有可能是轻微的激情燃尽型加上时间紧迫型。可以参考一下提示：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;孤陋寡闻型的人不可能同时是激情燃尽型的人；&lt;/li&gt;
+&lt;li&gt;大多数人多少都有一点时间紧迫症；&lt;/li&gt;
+&lt;li&gt;很难把随波逐流的人定性为怀疑者；&lt;/li&gt;
+&lt;li&gt;不可理喻的人经常会伪装成其他怀疑者。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;第三部分是最重要的部分，介绍了一些具体的方法。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;取得经验&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;也就是尽可能地了解自己需要推广的“道”，要做到无懈可击。要做到“专家”就要不断学习和更新，并且在实际中使用，不能纸上谈兵。&lt;/p&gt;
+
+&lt;p&gt;但要注意的是，从和蔼可亲的“专家”到高高在上的“万事通”，这中间只有一步之遥，区别就是看你能否倾听别人的意见。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;传达理念&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;有激情，但不激进；提建议，而不是中伤；多听，而不是多说。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;展示技术&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;百闻不如一见，说的多不如展示出来。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;适当妥协&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;其实没看懂这一章。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;建立信任&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;这是一个长期的工作。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;公之于众&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;开源到外部，然后反向推广到部门内部。因为人们倾向于认为“身边那个家伙不比自己强多少”，就像圣经里说的：“在自己的家乡永远成不了先知”。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;注重合力&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;把技术驱动改成商业驱动，找到商业上的进步点，然后让管理层来推动。&lt;/p&gt;
+
+&lt;p&gt;“搭一座桥”&lt;/p&gt;
+
+&lt;p&gt;在现状和想要推广的“道”之间如果有一道鸿沟或者太大的差距，可以先推广一些“中间技术”。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;来点刺激&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;找到同事们身边的“痛点”，然后吸引他们。&lt;/p&gt;
+
+&lt;p&gt;第四部分是一些技巧策略，其实就是第三部分的操作遇到困难的时候的一些策略。&lt;/p&gt;
+
+&lt;p&gt;本身非常值得一看，特别是希望在自己的组内推广自己的想法的同学。&lt;/p&gt;
+</description>
+				<pubDate>Mon, 20 May 2013 11:01:00 +0800</pubDate>
+				<link>http://yuguo.us//weblog/driving-technical-change/</link>
+				<guid isPermaLink="true">http://yuguo.us//weblog/driving-technical-change/</guid>
+			</item>
+		
+			<item>
 				<title>重拾kindle</title>
 				<description>&lt;p&gt;我发现一个现象，人在“碎片时间”干的事跟在“整块时间”干的事是一样的。&lt;/p&gt;
 
@@ -424,41 +504,6 @@
 				<pubDate>Thu, 28 Mar 2013 14:20:00 +0800</pubDate>
 				<link>http://yuguo.us//weblog/fast-company/</link>
 				<guid isPermaLink="true">http://yuguo.us//weblog/fast-company/</guid>
-			</item>
-		
-			<item>
-				<title>数据库注入漏洞和XSS漏洞</title>
-				<description>&lt;p&gt;v2ex上的一个热心网友使用我的开源程序“&lt;a href=&quot;https://github.com/yuguo/33pu&quot;&gt;33号铺&lt;/a&gt;”的时候发现程序存在SQL注入漏洞，然后邮件告知了我。&lt;/p&gt;
-
-&lt;p&gt;我之前没有考虑过这方面的问题，搜索了解了一下，确实比较严重，然后修复了这个问题。&lt;/p&gt;
-
-&lt;p&gt;简单的说，程序员在编写代码的时候，没有对用户输入数据的合法性进行判断，使应用程序存在安全隐患。用户可以提交一段数据库查询代码，根据程序返回的结果，获得某些他想得知的数据，这就是所谓的SQL Injection，即SQL注入。&lt;/p&gt;
-
-&lt;h2&gt;SQL Injection&lt;/h2&gt;
-
-&lt;p&gt;简单的判断漏洞的方法就是在查询url后面加上一个引号&amp;#39;。比如http://33pu.net/home/search?keyword=%E6%AF%9B%E8%A1%A3后面加一个引号&amp;#39;&lt;/p&gt;
-
-&lt;p&gt;这时候会出现服务器报错：&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/files/2013/03/sql-injection.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-
-&lt;p&gt;根据错误详情我们可以看出对于用户输入（url）没有进行过滤和检测，而直接丢到sql查询里面去运行，这时候就会暴露出一些重要的信息，比如用户名和密码。&lt;/p&gt;
-
-&lt;p&gt;详情可以看看&lt;a href=&quot;http://www.blueidea.com/tech/program/2004/1810.asp&quot;&gt;这篇文章&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;然后我的解决办法也很简单，使用CI的&lt;a href=&quot;http://codeigniter.org.cn/user_guide/database/active_record.html&quot;&gt;Active Record类&lt;/a&gt;来操作数据库，而不用拼接的SQL语法，原因是系统会自动对素有输入值进行转义。&lt;/p&gt;
-
-&lt;h2&gt;XSS漏洞&lt;/h2&gt;
-
-&lt;p&gt;我在检查的时候发现的33号铺存在另一个漏洞是XSS漏洞，这个跟数据库注入的方法很像，但原理不同。SQL注入漏洞是请求时生效，会直接让服务器返回数据库相关的重要信息。XSS是输入时没有问题，黑客输入的JavaScript代码会储存在数据库中，但是正常用户访问时，会运行这个JavaScript代码，然后把自己的cookie等信息暴露给黑客。&lt;/p&gt;
-
-&lt;p&gt;解决办法更简单，使用CI的&lt;a href=&quot;http://codeigniter.org.cn/user_guide/libraries/input.html&quot;&gt;输入类&lt;/a&gt;来接收POST和GET的数据，系统会进行JS的转义。&lt;/p&gt;
-
-&lt;p&gt;现在我已经修复了这两个漏洞，所以请大家下载&lt;a href=&quot;https://github.com/yuguo/33pu&quot;&gt;最新的33pu代码&lt;/a&gt;。&lt;/p&gt;
-</description>
-				<pubDate>Wed, 27 Mar 2013 14:20:00 +0800</pubDate>
-				<link>http://yuguo.us//weblog/sql-injection/</link>
-				<guid isPermaLink="true">http://yuguo.us//weblog/sql-injection/</guid>
 			</item>
 		
 	</channel>
