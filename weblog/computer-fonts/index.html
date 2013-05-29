@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="all" />
+<title>字体是个深坑</title>
+<link rel="stylesheet" type="text/css" href="/css/style.css" />
+<!--[if (lt IE 9) & (!IEMobile)]>
+<link rel="stylesheet" type="text/css" href="/css/ie.css" />
+<![endif]-->
+</head>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-741276-12']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+})();
+</script>
+<body>
+	<div class="container group">
+		
+  <div class="primary">
+    <header>
+      <h1><a href="/">余果</a>，腾讯社交平台设计中心（<a href="http://isux.tencent.com/">ISUX</a>）前端开发设计师。平时喜欢读书，研究网站开发，iOS开发，数据可视化等。
+      </h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="/">首页</a>
+          </li>
+          <li>
+            <a href="http://yuguo.us/categories.html">分类</a>
+          </li>
+          <li>
+            <a href="http://yuguo.us/about.html">关于我</a>
+          </li>
+        </ul>
+      </nav>
+
+    </header>
+
+	<div class="ads">
+
+      <div class="fusionads">
+        <h2>项目</h2>
+
+        <span class="fusionentire">
+          <a href="http://33pu.net/" title="33号铺">
+            <img src="http://yuguo.us/files/2013/01/33pu-github.png" alt="33号铺" />
+          </a>
+          <span class="fusiontext">
+                33号铺是一个简单好用的淘宝客瀑布流发布、管理系统。
+          </span>
+        </span>
+        <p><a href="http://33pu.net/" title="访问33号铺">Demo</a> | <a href="http://github.com/yuguo/33pu" title="下载33号铺">下载</a></p>
+      </div><!-- .fusionads -->
+      
+      <div class="fusionads">
+        <h2>书</h2>
+
+        <span class="fusionentire">
+          <a href="http://yuguo.us/weblog/isux-and-smashing-book/" title="众妙之门3">
+            <img src="http://yuguo.us/files/2013/04/sm3-cover.jpg" alt="众妙之门3" style="width:300px;"/>
+          </a>
+          <span class="fusiontext">
+                《众妙之门3》是一本关于HTML5、CSS3、新JS API、Retina屏、Web App、基于Responsive Design的工作流……的设计书，是《Smashing Book #3 Redesign The Web》的中文译本。
+          </span>
+        </span>
+        <p><a href="http://yuguo.us/weblog/isux-and-smashing-book/" title="众妙之门3">介绍</a> | <a href="http://product.dangdang.com/product.aspx?product_id=23212058">当当购买</a></p>
+      </div><!-- .fusionads -->
+
+        <div class="fusionads">
+        <h2>广告</h2>
+
+        <span class="fusionentire">
+          <a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">
+            <img src="http://yuguo.us/files/2013/01/1.jpg" alt="Home&More淘宝店" />
+          </a>
+          <span class="fusiontext">
+            <a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">
+              Home&More淘宝店是一个还不错的家居淘宝店。
+
+            </a>
+          </span>
+        </span>
+        <p><a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">homemore.taobao.com</a></p>
+      </div><!-- .fusionads -->
+
+    </div><!-- .ads -->
+
+  </div><!-- .primary -->
+
+        <div class="content single-post">
+	      	<h1>字体是个深坑</h1>
+	      	<span class="post-date">2012年 07月 20日</span>
+
+	      	<p><a href="http://yuguo.us/files/2012/07/2.png"><img class="aligncenter size-full wp-image-1282" title="2" src="http://yuguo.us/files/2012/07/2.png" alt=""   /></a>
+如图，左边是12号的Arial字体，右边是12号的宋体，为啥他们一个有边缘半透明一个没有呢？
+<a href="http://yuguo.us/files/2012/07/3.png"><img class="aligncenter size-full wp-image-1283" title="3" src="http://yuguo.us/files/2012/07/3.png" alt=""   /></a>
+如图，上面的是Chrome下的48号图标字体，下图是49号，为啥下面的明显比上面平滑呢？
+<a href="http://yuguo.us/files/2012/07/4.png"><img class="aligncenter size-full wp-image-1284" title="4" src="http://yuguo.us/files/2012/07/4.png" alt=""   /></a>
+如图，IE渲染图标的时候为什么垂直方向比水平方向更平滑呢？</p>
+
+<p>有什么CSS属性可以让字体变得平滑呢？</p>
+
+<p>当我脑中浮现出这些问题的时候，辣就是一个深坑啊有木有！两个小时查了80+个英文站，结论如下：
+<h2>outline和bitmap</h2>
+简单的说，字体格式分三类其中两大类分别是outline的和bitmap的，就是矢量和点位图。点位图字体是常用语Linux系统的一种老式字体，对于每个固定的font-size都会储存每一个文字的点位图片。矢量字体就是常用的opentype和truetype之类了，字体储存的是矢量信息，所以字体设置不同的font-size的时候都可以缩放。
+<h2>outline字体可以内嵌bitmap</h2>
+The <code>&#39;EBSC&#39;</code> table provides a mechanism for forcing the TrueType scaler to use a particular size of embedded bitmap when generating glyphs for a different point size.</p>
+
+<p>这样一个truetype的字体.ttf也能包含bitmap，宋体就是这么干的，宋体中包含了12、13、14、15、16、17等字号的点位图，而其他字号的时候，会使用宋体的outline来渲染。
+<h2>Chrome</h2>
+字体的具体渲染还是由浏览器来实现，Chrome跟IE在这一点上是不同的，Chrome在渲染小于48px的字体的时候有明显锯齿，大于等于49px的时候就变平滑了。而IE在渲染的时候垂直方向比水平方向更平滑。
+<h2>Font-smooth/text-shadow</h2>
+stackoverflow上有人问了能不能用CSS属性让字体变得平滑，结论有两个，一个是font-smooth（现在只有-webkit-font-smoothing在mac下实现了这一效果，Windows下能识别这一属性，但并不影响渲染），另一个是text-shadow，用在某些文字font下还有效果，但在图标应用上，效果不大。
+<h2>结论</h2>
+图标字体很模糊，没啥解决办法。</p>
+
+<p>好，下面是参考资料：
+<a href="http://en.wikipedia.org/wiki/Computer_font">Computer font</a> （告诉你outline字体和bitmap字体的区别）
+<a href="http://www.differencebetween.net/technology/difference-between-opentype-and-truetype/">Difference Between Opentype and Truetype</a> （这个可以跳过）
+<a href="https://developer.apple.com/fonts/ttrefman/rm06/Chap6EBSC.html">The <code>&#39;EBSC&#39;</code> table</a> （原来outline是可以内嵌bitmap——embeded bitmap）
+<a href="http://fontforge.sourceforge.net/editexample8.html">Opening &amp; Importing Bitmap strikes</a> （可以使用fontforge制作内嵌bitmap的opentype和truetype）
+<a title="Permanent Link to Font anti-aliasing technique in Chrome changes after 48px size" href="http://inodetelic.com/random/font-anti-aliasing-technique-in-chrome-changes-after-48px-size/" rel="bookmark">Font anti-aliasing technique in Chrome changes after 48px size</a> （坑爹，Chrome的字号大于48的时候突然变得平滑了，好吧经过我的测试，大于393px的时候也是会突然变模糊）
+<a href="http://stackoverflow.com/questions/3451541/css-font-face-anti-aliasing">CSS: @font-face anti aliasing</a> （对于icon字体 ，都没效果）
+<p id="post-13178"><a title="Permanent Link: mac下网页中文字体优化" href="http://www.qianduan.net/mac-the-next-pages-of-chinese-fonts-optimized.html" rel="bookmark">mac下网页中文字体优化</a> （font-smooth只有mac下才有效果……）</p></p>
+
+	      	<p class='previous-next-nav'><a href="http://yuguo.us//weblog/git-base/" class="next">git基础 &rarr;</a>
+	      	<a href="http://yuguo.us//weblog/so-do-you-want-to-make-a-css3-font/" class="previous">&larr; 那么你想制作CSS3字体吗？</a>
+	      	</p>
+	      	
+	      	
+			    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'yuguo'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+        </div>
+
+	</div>
+
+	<p class="copyright">&copy; 2009&#8201;&ndash;&#8201;2012 Yuguo. Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a> and host by <a href="https://github.com/yuguo">Github</a>。 如果喜欢本站，您可以 <a href="http://feeds.feedburner.com/yuguo">订阅我的 RSS feed</a>。
+</p>
+
+</body>
+</html>

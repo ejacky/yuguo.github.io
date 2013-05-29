@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="all" />
+<title>JavaScript快速检测浏览器对CSS3特性的支持</title>
+<link rel="stylesheet" type="text/css" href="/css/style.css" />
+<!--[if (lt IE 9) & (!IEMobile)]>
+<link rel="stylesheet" type="text/css" href="/css/ie.css" />
+<![endif]-->
+</head>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-741276-12']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+})();
+</script>
+<body>
+	<div class="container group">
+		
+  <div class="primary">
+    <header>
+      <h1><a href="/">余果</a>，腾讯社交平台设计中心（<a href="http://isux.tencent.com/">ISUX</a>）前端开发设计师。平时喜欢读书，研究网站开发，iOS开发，数据可视化等。
+      </h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="/">首页</a>
+          </li>
+          <li>
+            <a href="http://yuguo.us/categories.html">分类</a>
+          </li>
+          <li>
+            <a href="http://yuguo.us/about.html">关于我</a>
+          </li>
+        </ul>
+      </nav>
+
+    </header>
+
+	<div class="ads">
+
+      <div class="fusionads">
+        <h2>项目</h2>
+
+        <span class="fusionentire">
+          <a href="http://33pu.net/" title="33号铺">
+            <img src="http://yuguo.us/files/2013/01/33pu-github.png" alt="33号铺" />
+          </a>
+          <span class="fusiontext">
+                33号铺是一个简单好用的淘宝客瀑布流发布、管理系统。
+          </span>
+        </span>
+        <p><a href="http://33pu.net/" title="访问33号铺">Demo</a> | <a href="http://github.com/yuguo/33pu" title="下载33号铺">下载</a></p>
+      </div><!-- .fusionads -->
+      
+      <div class="fusionads">
+        <h2>书</h2>
+
+        <span class="fusionentire">
+          <a href="http://yuguo.us/weblog/isux-and-smashing-book/" title="众妙之门3">
+            <img src="http://yuguo.us/files/2013/04/sm3-cover.jpg" alt="众妙之门3" style="width:300px;"/>
+          </a>
+          <span class="fusiontext">
+                《众妙之门3》是一本关于HTML5、CSS3、新JS API、Retina屏、Web App、基于Responsive Design的工作流……的设计书，是《Smashing Book #3 Redesign The Web》的中文译本。
+          </span>
+        </span>
+        <p><a href="http://yuguo.us/weblog/isux-and-smashing-book/" title="众妙之门3">介绍</a> | <a href="http://product.dangdang.com/product.aspx?product_id=23212058">当当购买</a></p>
+      </div><!-- .fusionads -->
+
+        <div class="fusionads">
+        <h2>广告</h2>
+
+        <span class="fusionentire">
+          <a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">
+            <img src="http://yuguo.us/files/2013/01/1.jpg" alt="Home&More淘宝店" />
+          </a>
+          <span class="fusiontext">
+            <a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">
+              Home&More淘宝店是一个还不错的家居淘宝店。
+
+            </a>
+          </span>
+        </span>
+        <p><a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">homemore.taobao.com</a></p>
+      </div><!-- .fusionads -->
+
+    </div><!-- .ads -->
+
+  </div><!-- .primary -->
+
+        <div class="content single-post">
+	      	<h1>JavaScript快速检测浏览器对CSS3特性的支持</h1>
+	      	<span class="post-date">2012年 09月 24日</span>
+
+	      	<p>在项目中需要快速检测浏览器是否支持某CSS3特性，比如检测是否支持“transform”，然后我的布局会有两种完全不同的版式。</p>
+
+<p>当然除开本文介绍的这种快速方法，还有一种更有名和更通用的方法，那就是<a href="http://modernizr.com/">modernizr</a>，运行脚本之后它会在html的class上加上浏览器支持的所有特性的列表。</p>
+
+<p>优点：
+<ul>
+    <li>js是可配置的，不需要的特性检测可以在配置脚本中去掉</li>
+    <li>基于特性检测</li>
+    <li>js库简单好用</li></ul><p style="text-align: center;"><img class="aligncenter size-full wp-image-1407" title="modernizr" src="http://yuguo.us/files/2012/09/1.png" alt="modernizr"   /></p>
+除此之外还有一种不太好的方法，那就是判断浏览器的UA，不好的原因是UA可能会伪造，而且版本判断繁琐，还有不稳定。</p>
+
+<p>优点：性能可能是最优的</p>
+
+<p>最后就是本文介绍的这个方法，我写了一个函数快速检测是否浏览器支持某CSS特性，适合的场景是快速需要知道浏览器是否支持某一个CSS特性（而不是好几个）。</p>
+
+<p>优点：
+<ul>
+    <li>性能不错</li>
+    <li>通用性强</li>
+    <li>适合检测单个CSS特性</li></ul><pre>var supports = (function() {</p>
+
+<p>var div = document.createElement(&#39;div&#39;),</p>
+
+<p>vendors = &#39;Khtml O Moz Webkit&#39;.split(&#39; &#39;),</p>
+
+<p>len = vendors.length;</p>
+
+<p>return function(prop) {</p>
+
+<p>if ( prop in div.style ) return true;</p>
+
+<p>if (&#39;-ms-&#39; + prop in div.style) return true;</p>
+
+<p>prop = prop.replace(/^[a-z]/, function(val) {</p>
+
+<p>return val.toUpperCase();</p>
+
+<p>});</p>
+
+<p>while(len--) {</p>
+
+<p>if ( vendors[len] + prop in div.style ) {</p>
+
+<p>return true;</p>
+
+<p>}</p>
+
+<p>}</p>
+
+<p>return false;</p>
+
+<p>};</p>
+
+<p>})();</p>
+
+<p>if ( supports(&#39;textShadow&#39;) ) {</p>
+
+<p>document.documentElement.className += &#39; textShadow&#39;;</p>
+
+<p>}</pre>
+这就是最终代码，原理是：</p>
+
+<p>1.创建一个div，然后可以获得div.style，这是它所支持的属性的数组列表。
+<p style="text-align: center;"><img class="aligncenter size-full wp-image-1408" title="div.style" src="http://yuguo.us/files/2012/09/2.png" alt="div.style"   /></p>
+2.检查text是否包含在数组中，如果是，直接返回true。</p>
+
+<p>3.检查各种前缀，比如Webkit加上text，即webkitTransition，如果包含在style中，返回true。</p>
+
+<p>4.值得注意的是在CSS中属性名为：-webkit-transition，但是在DOM的style中 ，却是对应webkitTransition。我也不知道为什么会这样。</p>
+
+<p>参考资料：<a href="http://net.tutsplus.com/tutorials/html-css-techniques/quick-tip-detect-css-support-in-browsers-with-javascript/">http://net.tutsplus.com/tutorials/html-css-techniques/quick-tip-detect-css-support-in-browsers-with-javascript/</a></p>
+
+	      	<p class='previous-next-nav'><a href="http://yuguo.us//weblog/sae-and-cron/" class="next">SAE与Cron &rarr;</a>
+	      	<a href="http://yuguo.us//weblog/my-opinion-about-diaoyudao/" class="previous">&larr; 你就是那个被利用的</a>
+	      	</p>
+	      	
+	      	
+			    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'yuguo'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+        </div>
+
+	</div>
+
+	<p class="copyright">&copy; 2009&#8201;&ndash;&#8201;2012 Yuguo. Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a> and host by <a href="https://github.com/yuguo">Github</a>。 如果喜欢本站，您可以 <a href="http://feeds.feedburner.com/yuguo">订阅我的 RSS feed</a>。
+</p>
+
+</body>
+</html>

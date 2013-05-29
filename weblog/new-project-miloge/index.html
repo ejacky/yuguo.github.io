@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="all" />
+<title>新项目预研</title>
+<link rel="stylesheet" type="text/css" href="/css/style.css" />
+<!--[if (lt IE 9) & (!IEMobile)]>
+<link rel="stylesheet" type="text/css" href="/css/ie.css" />
+<![endif]-->
+</head>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-741276-12']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+})();
+</script>
+<body>
+	<div class="container group">
+		
+  <div class="primary">
+    <header>
+      <h1><a href="/">余果</a>，腾讯社交平台设计中心（<a href="http://isux.tencent.com/">ISUX</a>）前端开发设计师。平时喜欢读书，研究网站开发，iOS开发，数据可视化等。
+      </h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="/">首页</a>
+          </li>
+          <li>
+            <a href="http://yuguo.us/categories.html">分类</a>
+          </li>
+          <li>
+            <a href="http://yuguo.us/about.html">关于我</a>
+          </li>
+        </ul>
+      </nav>
+
+    </header>
+
+	<div class="ads">
+
+      <div class="fusionads">
+        <h2>项目</h2>
+
+        <span class="fusionentire">
+          <a href="http://33pu.net/" title="33号铺">
+            <img src="http://yuguo.us/files/2013/01/33pu-github.png" alt="33号铺" />
+          </a>
+          <span class="fusiontext">
+                33号铺是一个简单好用的淘宝客瀑布流发布、管理系统。
+          </span>
+        </span>
+        <p><a href="http://33pu.net/" title="访问33号铺">Demo</a> | <a href="http://github.com/yuguo/33pu" title="下载33号铺">下载</a></p>
+      </div><!-- .fusionads -->
+      
+      <div class="fusionads">
+        <h2>书</h2>
+
+        <span class="fusionentire">
+          <a href="http://yuguo.us/weblog/isux-and-smashing-book/" title="众妙之门3">
+            <img src="http://yuguo.us/files/2013/04/sm3-cover.jpg" alt="众妙之门3" style="width:300px;"/>
+          </a>
+          <span class="fusiontext">
+                《众妙之门3》是一本关于HTML5、CSS3、新JS API、Retina屏、Web App、基于Responsive Design的工作流……的设计书，是《Smashing Book #3 Redesign The Web》的中文译本。
+          </span>
+        </span>
+        <p><a href="http://yuguo.us/weblog/isux-and-smashing-book/" title="众妙之门3">介绍</a> | <a href="http://product.dangdang.com/product.aspx?product_id=23212058">当当购买</a></p>
+      </div><!-- .fusionads -->
+
+        <div class="fusionads">
+        <h2>广告</h2>
+
+        <span class="fusionentire">
+          <a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">
+            <img src="http://yuguo.us/files/2013/01/1.jpg" alt="Home&More淘宝店" />
+          </a>
+          <span class="fusiontext">
+            <a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">
+              Home&More淘宝店是一个还不错的家居淘宝店。
+
+            </a>
+          </span>
+        </span>
+        <p><a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">homemore.taobao.com</a></p>
+      </div><!-- .fusionads -->
+
+    </div><!-- .ads -->
+
+  </div><!-- .primary -->
+
+        <div class="content single-post">
+	      	<h1>新项目预研</h1>
+	      	<span class="post-date">2013年 05月 03日</span>
+
+	      	<p>因为hex大人在<a href="http://codeigniter.org.cn">codeigniter官网</a>推荐了33号铺，加上有一些用户在其他群里推荐33号铺，所以最近33号铺突然有一股热潮，导致我异常繁忙地处理各种安装问题。</p>
+
+<p>事实上这些问题非常难处理：</p>
+
+<ol>
+<li>所有用户的服务器环境都非常非常不同，也有一些安装没按顺序来的，所以出现奇怪的bug</li>
+<li>用户一定要有编程基础，懂得如何创建数据库</li>
+<li>如果是Apache服务器的话，用户需要理解.htaccess来优化url</li>
+<li>代码如果有更新的话，用户非常难应用到自己的项目中，虽然可以用git来修改，但门槛也很高</li>
+<li>即使用户费尽千辛万苦总算在本地安装成功了，还需要去open.taobao.com创建并配置网站，以得到自己的appkey和appsecret</li>
+<li>最后如果要上线的话，用户需要购买域名和主机</li>
+<li>当代码出现bug我想要更新的时候，非常难通知所有的用户去更新</li>
+</ol>
+
+<p>所以我想做一个新的更简单的项目，适合毫无编程基础的用户，可以免去上面所有的步骤：</p>
+
+<p>这个项目是一个类似格子铺的网站，访客会看到很多格主的格子，里面有反映格主风格的各种商品，点击过去就可以购买。</p>
+
+<p>那么这个格主是谁呢，她可能仅仅是一个喜欢漂亮裙子的女孩，需要做的非常简单</p>
+
+<ol>
+<li>她需要注册登录格子铺网站，可以用QQ登录，或者支付宝登录</li>
+<li>她创建一个格子，开始搜索并添加商品</li>
+<li>随后就会有收入了，她可以输入自己的支付宝账户，钱会自动打过去</li>
+</ol>
+
+<p>一些技术细节：站点所有的淘宝客id都是我自己的淘宝客id，但是会带上所有用户自己的id，以让我分清楚哪些用户带来了哪些收入，随后会把收入转给你，我从中收取非常少量的手续费。这样是为了避免所有用户都要注册自己的开发者帐号（现阶段可以传入自己的pid，但10月以后淘宝会不再支持这个参数）。</p>
+
+<p>当然33号铺项目还是继续维护，为了一些喜欢折腾的朋友。但对于不希望折腾的，希望总是用新的代码的朋友，你们有什么意见和建议呢？</p>
+
+	      	<p class='previous-next-nav'><a href="http://yuguo.us//weblog/make-it-better/" class="next">第三次的时候把事情做好 &rarr;</a>
+	      	<a href="http://yuguo.us//weblog/responsive-web-design/" class="previous">&larr; 《响应式Web设计实践》：前端+后台=响应式</a>
+	      	</p>
+	      	
+	      	
+			    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'yuguo'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+        </div>
+
+	</div>
+
+	<p class="copyright">&copy; 2009&#8201;&ndash;&#8201;2012 Yuguo. Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a> and host by <a href="https://github.com/yuguo">Github</a>。 如果喜欢本站，您可以 <a href="http://feeds.feedburner.com/yuguo">订阅我的 RSS feed</a>。
+</p>
+
+</body>
+</html>

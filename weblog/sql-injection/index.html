@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="all" />
+<title>数据库注入漏洞和XSS漏洞</title>
+<link rel="stylesheet" type="text/css" href="/css/style.css" />
+<!--[if (lt IE 9) & (!IEMobile)]>
+<link rel="stylesheet" type="text/css" href="/css/ie.css" />
+<![endif]-->
+</head>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-741276-12']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+})();
+</script>
+<body>
+	<div class="container group">
+		
+  <div class="primary">
+    <header>
+      <h1><a href="/">余果</a>，腾讯社交平台设计中心（<a href="http://isux.tencent.com/">ISUX</a>）前端开发设计师。平时喜欢读书，研究网站开发，iOS开发，数据可视化等。
+      </h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="/">首页</a>
+          </li>
+          <li>
+            <a href="http://yuguo.us/categories.html">分类</a>
+          </li>
+          <li>
+            <a href="http://yuguo.us/about.html">关于我</a>
+          </li>
+        </ul>
+      </nav>
+
+    </header>
+
+	<div class="ads">
+
+      <div class="fusionads">
+        <h2>项目</h2>
+
+        <span class="fusionentire">
+          <a href="http://33pu.net/" title="33号铺">
+            <img src="http://yuguo.us/files/2013/01/33pu-github.png" alt="33号铺" />
+          </a>
+          <span class="fusiontext">
+                33号铺是一个简单好用的淘宝客瀑布流发布、管理系统。
+          </span>
+        </span>
+        <p><a href="http://33pu.net/" title="访问33号铺">Demo</a> | <a href="http://github.com/yuguo/33pu" title="下载33号铺">下载</a></p>
+      </div><!-- .fusionads -->
+      
+      <div class="fusionads">
+        <h2>书</h2>
+
+        <span class="fusionentire">
+          <a href="http://yuguo.us/weblog/isux-and-smashing-book/" title="众妙之门3">
+            <img src="http://yuguo.us/files/2013/04/sm3-cover.jpg" alt="众妙之门3" style="width:300px;"/>
+          </a>
+          <span class="fusiontext">
+                《众妙之门3》是一本关于HTML5、CSS3、新JS API、Retina屏、Web App、基于Responsive Design的工作流……的设计书，是《Smashing Book #3 Redesign The Web》的中文译本。
+          </span>
+        </span>
+        <p><a href="http://yuguo.us/weblog/isux-and-smashing-book/" title="众妙之门3">介绍</a> | <a href="http://product.dangdang.com/product.aspx?product_id=23212058">当当购买</a></p>
+      </div><!-- .fusionads -->
+
+        <div class="fusionads">
+        <h2>广告</h2>
+
+        <span class="fusionentire">
+          <a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">
+            <img src="http://yuguo.us/files/2013/01/1.jpg" alt="Home&More淘宝店" />
+          </a>
+          <span class="fusiontext">
+            <a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">
+              Home&More淘宝店是一个还不错的家居淘宝店。
+
+            </a>
+          </span>
+        </span>
+        <p><a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">homemore.taobao.com</a></p>
+      </div><!-- .fusionads -->
+
+    </div><!-- .ads -->
+
+  </div><!-- .primary -->
+
+        <div class="content single-post">
+	      	<h1>数据库注入漏洞和XSS漏洞</h1>
+	      	<span class="post-date">2013年 03月 27日</span>
+
+	      	<p>v2ex上的一个热心网友使用我的开源程序“<a href="https://github.com/yuguo/33pu">33号铺</a>”的时候发现程序存在SQL注入漏洞，然后邮件告知了我。</p>
+
+<p>我之前没有考虑过这方面的问题，搜索了解了一下，确实比较严重，然后修复了这个问题。</p>
+
+<p>简单的说，程序员在编写代码的时候，没有对用户输入数据的合法性进行判断，使应用程序存在安全隐患。用户可以提交一段数据库查询代码，根据程序返回的结果，获得某些他想得知的数据，这就是所谓的SQL Injection，即SQL注入。</p>
+
+<h2>SQL Injection</h2>
+
+<p>简单的判断漏洞的方法就是在查询url后面加上一个引号&#39;。比如http://33pu.net/home/search?keyword=%E6%AF%9B%E8%A1%A3后面加一个引号&#39;</p>
+
+<p>这时候会出现服务器报错：</p>
+
+<p><img src="/files/2013/03/sql-injection.png" alt=""></p>
+
+<p>根据错误详情我们可以看出对于用户输入（url）没有进行过滤和检测，而直接丢到sql查询里面去运行，这时候就会暴露出一些重要的信息，比如用户名和密码。</p>
+
+<p>详情可以看看<a href="http://www.blueidea.com/tech/program/2004/1810.asp">这篇文章</a></p>
+
+<p>然后我的解决办法也很简单，使用CI的<a href="http://codeigniter.org.cn/user_guide/database/active_record.html">Active Record类</a>来操作数据库，而不用拼接的SQL语法，原因是系统会自动对素有输入值进行转义。</p>
+
+<h2>XSS漏洞</h2>
+
+<p>我在检查的时候发现的33号铺存在另一个漏洞是XSS漏洞，这个跟数据库注入的方法很像，但原理不同。SQL注入漏洞是请求时生效，会直接让服务器返回数据库相关的重要信息。XSS是输入时没有问题，黑客输入的JavaScript代码会储存在数据库中，但是正常用户访问时，会运行这个JavaScript代码，然后把自己的cookie等信息暴露给黑客。</p>
+
+<p>解决办法更简单，使用CI的<a href="http://codeigniter.org.cn/user_guide/libraries/input.html">输入类</a>来接收POST和GET的数据，系统会进行JS的转义。</p>
+
+<p>现在我已经修复了这两个漏洞，所以请大家下载<a href="https://github.com/yuguo/33pu">最新的33pu代码</a>。</p>
+
+	      	<p class='previous-next-nav'><a href="http://yuguo.us//weblog/fast-company/" class="next">《轻公司》 &rarr;</a>
+	      	<a href="http://yuguo.us//weblog/scroll-speed-in-uiview/" class="previous">&larr; 使用HTML5构建iOS原生APP（4）</a>
+	      	</p>
+	      	
+	      	
+			    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'yuguo'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+        </div>
+
+	</div>
+
+	<p class="copyright">&copy; 2009&#8201;&ndash;&#8201;2012 Yuguo. Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a> and host by <a href="https://github.com/yuguo">Github</a>。 如果喜欢本站，您可以 <a href="http://feeds.feedburner.com/yuguo">订阅我的 RSS feed</a>。
+</p>
+
+</body>
+</html>

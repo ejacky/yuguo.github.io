@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="all" />
+<title>用HTML5构建移动APP，时机到了</title>
+<link rel="stylesheet" type="text/css" href="/css/style.css" />
+<!--[if (lt IE 9) & (!IEMobile)]>
+<link rel="stylesheet" type="text/css" href="/css/ie.css" />
+<![endif]-->
+</head>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-741276-12']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+})();
+</script>
+<body>
+	<div class="container group">
+		
+  <div class="primary">
+    <header>
+      <h1><a href="/">余果</a>，腾讯社交平台设计中心（<a href="http://isux.tencent.com/">ISUX</a>）前端开发设计师。平时喜欢读书，研究网站开发，iOS开发，数据可视化等。
+      </h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="/">首页</a>
+          </li>
+          <li>
+            <a href="http://yuguo.us/categories.html">分类</a>
+          </li>
+          <li>
+            <a href="http://yuguo.us/about.html">关于我</a>
+          </li>
+        </ul>
+      </nav>
+
+    </header>
+
+	<div class="ads">
+
+      <div class="fusionads">
+        <h2>项目</h2>
+
+        <span class="fusionentire">
+          <a href="http://33pu.net/" title="33号铺">
+            <img src="http://yuguo.us/files/2013/01/33pu-github.png" alt="33号铺" />
+          </a>
+          <span class="fusiontext">
+                33号铺是一个简单好用的淘宝客瀑布流发布、管理系统。
+          </span>
+        </span>
+        <p><a href="http://33pu.net/" title="访问33号铺">Demo</a> | <a href="http://github.com/yuguo/33pu" title="下载33号铺">下载</a></p>
+      </div><!-- .fusionads -->
+      
+      <div class="fusionads">
+        <h2>书</h2>
+
+        <span class="fusionentire">
+          <a href="http://yuguo.us/weblog/isux-and-smashing-book/" title="众妙之门3">
+            <img src="http://yuguo.us/files/2013/04/sm3-cover.jpg" alt="众妙之门3" style="width:300px;"/>
+          </a>
+          <span class="fusiontext">
+                《众妙之门3》是一本关于HTML5、CSS3、新JS API、Retina屏、Web App、基于Responsive Design的工作流……的设计书，是《Smashing Book #3 Redesign The Web》的中文译本。
+          </span>
+        </span>
+        <p><a href="http://yuguo.us/weblog/isux-and-smashing-book/" title="众妙之门3">介绍</a> | <a href="http://product.dangdang.com/product.aspx?product_id=23212058">当当购买</a></p>
+      </div><!-- .fusionads -->
+
+        <div class="fusionads">
+        <h2>广告</h2>
+
+        <span class="fusionentire">
+          <a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">
+            <img src="http://yuguo.us/files/2013/01/1.jpg" alt="Home&More淘宝店" />
+          </a>
+          <span class="fusiontext">
+            <a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">
+              Home&More淘宝店是一个还不错的家居淘宝店。
+
+            </a>
+          </span>
+        </span>
+        <p><a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">homemore.taobao.com</a></p>
+      </div><!-- .fusionads -->
+
+    </div><!-- .ads -->
+
+  </div><!-- .primary -->
+
+        <div class="content single-post">
+	      	<h1>用HTML5构建移动APP，时机到了</h1>
+	      	<span class="post-date">2013年 02月 07日</span>
+
+	      	<p>之前我在翻译<a href="http://yuguo.us/weblog/web-or-native-2/">《移动用户体验设计考虑的因素：“是Web，还是原生？”》</a>时，学习到的一个观点是：</p>
+
+<blockquote>
+<p>当我们提一个应用是原生的还是Web的时候，我们更多地是从开发者的角度在考虑问题，是一种“由内而外”的思考方法，这种思考方向是错误的。正确的方向是“由外而内”，由用户需求来判定技术方案。</p>
+
+<p>“原生”或者“Web”的选择更多的是平台和文化的选择。</p>
+</blockquote>
+
+<p>看到一些框架或者demo可以用html/css/js来非常逼真地模拟iOS的各种光影、按钮、动画，这种方向就是错误的，当我们使用Web来编写iOS app的时候，我们的目标不应该是可以多么逼真地模拟iOS组件。因为既然想要模拟iOS组件，为什么不干脆用原生objective-c来写呢？</p>
+
+<p>用原生代码的好处更多：</p>
+
+<ul>
+<li>系统级的性能优化</li>
+<li>用户操作习惯，比如毫秒级的动画，Web可能很难模仿得100%一样，那么就会出现跟原生不一致的情况</li>
+<li>设计的对比原则：如果两个元素看上去不一样，那就要设计得完全不一样，而不是有一点相似但又不太一样，这会让用户觉得是设计错误</li>
+</ul>
+
+<h2>未来趋势</h2>
+
+<p>我相信未来趋势是混合应用（原生和Web相结合），并且Web在其中所占的比例可能越来越大。</p>
+
+<p>因为之前看到一篇文章<a href="http://game.donews.com/news/201301/1717996.html">应用开发者不再遵循苹果iOS设计惯例</a>：</p>
+
+<blockquote>
+<p>在苹果自己的平台上，有些最受欢迎的和最美观的应用最近都放弃了iOS的纹理、阴影和3D特效，转向更加平面、干净和简洁的设计风格。但这种设计新主张并不是一种离经叛道，反而有望成为iOS设计的未来。奇怪的是，苹果自己却还没赶上这股潮流。</p>
+</blockquote>
+
+<p>也就是说，在平台文化上这一点上，未来的App是会呈现一种百花齐放的状态，所以原生SDK不再满足开发者和设计师的需求。</p>
+
+<p>而Web方便定制的特性更容易满足这一需求。</p>
+
+<h2>性能？</h2>
+
+<p>大家对Web App一个很大的担忧就是会有严重的性能问题，比如操作不流畅，频繁崩溃等。</p>
+
+<p>这是因为移动设备机的性能相对PC还有一定差距，而Web开发者不了解这一局限，只是把移动设备当做PC一样在设计和编程，从而导致一些性能问题。但是最近，已经有一些Web App的最佳实践产生。</p>
+
+<p>比如：</p>
+
+<ul>
+<li>不要使用CSS3圆角，渐变，盒阴影</li>
+<li>尽量减少DOM数量</li>
+<li>减少图片数量</li>
+<li>使用visibility:hidden;甚至删除节点来清除内存</li>
+</ul>
+
+<p>参考资料：</p>
+
+<p><a href="http://blog.csdn.net/hfahe/article/details/7535914">用HTML5实现iPad应用无限平滑滚动</a></p>
+
+<p><a href="http://www.w3cplus.com/blog/605.html">那些耗费比较的的CSS属性</a></p>
+
+<p><a href="http://venturebeat.com/2012/05/02/linkedin-ipad-app-engineering/#s:profile_ipad_frame">You’ll never believe how LinkedIn built its new iPad app (exclusive)</a></p>
+
+<p>结论是：通过最佳实践，以及Web开发者技艺的提高，对这个平台的熟悉，以及对设计的折中，最终Web应用的性能不是问题。</p>
+
+	      	<p class='previous-next-nav'><a href="http://yuguo.us//weblog/mongodb-and-mongoose-and-mongohq/" class="next">MongoDB、Mongoose和MongoHQ &rarr;</a>
+	      	<a href="http://yuguo.us//weblog/m-society/" class="previous">&larr; M型社会和低智商社会</a>
+	      	</p>
+	      	
+	      	
+			    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'yuguo'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+        </div>
+
+	</div>
+
+	<p class="copyright">&copy; 2009&#8201;&ndash;&#8201;2012 Yuguo. Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a> and host by <a href="https://github.com/yuguo">Github</a>。 如果喜欢本站，您可以 <a href="http://feeds.feedburner.com/yuguo">订阅我的 RSS feed</a>。
+</p>
+
+</body>
+</html>

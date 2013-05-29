@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="all" />
+<title>git子模块</title>
+<link rel="stylesheet" type="text/css" href="/css/style.css" />
+<!--[if (lt IE 9) & (!IEMobile)]>
+<link rel="stylesheet" type="text/css" href="/css/ie.css" />
+<![endif]-->
+</head>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-741276-12']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+})();
+</script>
+<body>
+	<div class="container group">
+		
+  <div class="primary">
+    <header>
+      <h1><a href="/">余果</a>，腾讯社交平台设计中心（<a href="http://isux.tencent.com/">ISUX</a>）前端开发设计师。平时喜欢读书，研究网站开发，iOS开发，数据可视化等。
+      </h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="/">首页</a>
+          </li>
+          <li>
+            <a href="http://yuguo.us/categories.html">分类</a>
+          </li>
+          <li>
+            <a href="http://yuguo.us/about.html">关于我</a>
+          </li>
+        </ul>
+      </nav>
+
+    </header>
+
+	<div class="ads">
+
+      <div class="fusionads">
+        <h2>项目</h2>
+
+        <span class="fusionentire">
+          <a href="http://33pu.net/" title="33号铺">
+            <img src="http://yuguo.us/files/2013/01/33pu-github.png" alt="33号铺" />
+          </a>
+          <span class="fusiontext">
+                33号铺是一个简单好用的淘宝客瀑布流发布、管理系统。
+          </span>
+        </span>
+        <p><a href="http://33pu.net/" title="访问33号铺">Demo</a> | <a href="http://github.com/yuguo/33pu" title="下载33号铺">下载</a></p>
+      </div><!-- .fusionads -->
+      
+      <div class="fusionads">
+        <h2>书</h2>
+
+        <span class="fusionentire">
+          <a href="http://yuguo.us/weblog/isux-and-smashing-book/" title="众妙之门3">
+            <img src="http://yuguo.us/files/2013/04/sm3-cover.jpg" alt="众妙之门3" style="width:300px;"/>
+          </a>
+          <span class="fusiontext">
+                《众妙之门3》是一本关于HTML5、CSS3、新JS API、Retina屏、Web App、基于Responsive Design的工作流……的设计书，是《Smashing Book #3 Redesign The Web》的中文译本。
+          </span>
+        </span>
+        <p><a href="http://yuguo.us/weblog/isux-and-smashing-book/" title="众妙之门3">介绍</a> | <a href="http://product.dangdang.com/product.aspx?product_id=23212058">当当购买</a></p>
+      </div><!-- .fusionads -->
+
+        <div class="fusionads">
+        <h2>广告</h2>
+
+        <span class="fusionentire">
+          <a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">
+            <img src="http://yuguo.us/files/2013/01/1.jpg" alt="Home&More淘宝店" />
+          </a>
+          <span class="fusiontext">
+            <a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">
+              Home&More淘宝店是一个还不错的家居淘宝店。
+
+            </a>
+          </span>
+        </span>
+        <p><a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">homemore.taobao.com</a></p>
+      </div><!-- .fusionads -->
+
+    </div><!-- .ads -->
+
+  </div><!-- .primary -->
+
+        <div class="content single-post">
+	      	<h1>git子模块</h1>
+	      	<span class="post-date">2013年 01月 28日</span>
+
+	      	<p>经常有这样的事情，当你在一个项目上工作时，<em>你需要在其中使用另外一个项目</em>。也许它是一个第三方开发的库或者是你独立开发和并在多个父项目中使用的。这个场景下一个常见的问题产生了：你想将两个项目单独处理但是又需要在其中一个中使用另外一个。</p>
+
+<p>这里有一个例子。我在做http://font.isux.us的时候，需要用到第三方地字体，还有可能其他人维护的会更新的字体。这些字体属于单独的库，如果我只是简单地把代码拷贝到自己的项目，带来的问题是，当上游被修改时，任何你进行的定制化的修改都很难归并。</p>
+
+<p>Git 通过子模块处理这个问题。子模块允许你将一个 Git仓库当作另外一个Git仓库的子目录。这允许你克隆另外一个仓库到你的项目中并且保持你的提交相对独立。</p>
+
+<h2>子模块相关操作：</h2>
+
+<p><strong>添加子模块</strong>：<code>$ git submodule add [url] [path]</code></p>
+
+<p>如：</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">$ git submodule add git://github.com/soberh/ui-libs.git src/main/webapp/ui-libs
+</code></pre></div>
+<p>新增之后，查看了当前的状态发现添加了一个新文件(<code>.gitmodules</code>)和一个文件夹(<code>src/main/webapp/ui-libs</code>；那么新增的<code>.gitmodules</code>文件是做什么用的呢？<code>.gitmodules</code>记录了每个submodule的引用信息，知道在当前项目的位置以及仓库的所在。</p>
+
+<p><strong>查看子模块</strong>：<code>$ git submodule</code>  ----查看当前项目用到的子模块</p>
+
+<p><img src="http://yuguo.us/files/2013/01/submodule.png" alt="image"></p>
+
+<p>可以看到图中子模块前面有一个<code>-</code>，说明子模块文件还未检入（空文件夹）</p>
+
+<p><strong>初始化子模块</strong>：<code>$ git submodule init</code>  ----只在首次检出仓库时运行一次就行</p>
+
+<p><img src="http://yuguo.us/files/2013/01/submodule-init.png" alt="image"></p>
+
+<p><strong>更新子模块</strong>：<code>$ git submodule update</code> ----每次更新或切换分支后都需要运行一下</p>
+
+<p><img src="http://yuguo.us/files/2013/01/submodule-update.png" alt="image"></p>
+
+<p>现在子模块文件夹是检入OK的状态了。</p>
+
+<p><strong>删除子模块</strong>：（这一步比较麻烦，只是简单rm的话，可能会出现难以定位的bug）</p>
+
+<ol>
+<li><code>$ git rm --cached [path]</code></li>
+<li>编辑<code>.gitmodules</code>文件，将子模块的相关配置节点删除掉</li>
+<li>编辑<code>.git/config</code>文件，将子模块的相关配置节点删除掉[这一步好像很不科学，为什么信息要保存两份？]</li>
+<li>手动删除子模块残留的目录</li>
+</ol>
+
+	      	<p class='previous-next-nav'><a href="http://yuguo.us//weblog/favicon/" class="next">关于favicon的思考 &rarr;</a>
+	      	<a href="http://yuguo.us//weblog/coc-and-life/" class="previous">&larr; 残忍的COC哲学</a>
+	      	</p>
+	      	
+	      	
+			    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'yuguo'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+        </div>
+
+	</div>
+
+	<p class="copyright">&copy; 2009&#8201;&ndash;&#8201;2012 Yuguo. Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a> and host by <a href="https://github.com/yuguo">Github</a>。 如果喜欢本站，您可以 <a href="http://feeds.feedburner.com/yuguo">订阅我的 RSS feed</a>。
+</p>
+
+</body>
+</html>

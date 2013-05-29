@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="all" />
+<title>关于JPEG压缩优化的一点趣事</title>
+<link rel="stylesheet" type="text/css" href="/css/style.css" />
+<!--[if (lt IE 9) & (!IEMobile)]>
+<link rel="stylesheet" type="text/css" href="/css/ie.css" />
+<![endif]-->
+</head>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-741276-12']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+})();
+</script>
+<body>
+	<div class="container group">
+		
+  <div class="primary">
+    <header>
+      <h1><a href="/">余果</a>，腾讯社交平台设计中心（<a href="http://isux.tencent.com/">ISUX</a>）前端开发设计师。平时喜欢读书，研究网站开发，iOS开发，数据可视化等。
+      </h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="/">首页</a>
+          </li>
+          <li>
+            <a href="http://yuguo.us/categories.html">分类</a>
+          </li>
+          <li>
+            <a href="http://yuguo.us/about.html">关于我</a>
+          </li>
+        </ul>
+      </nav>
+
+    </header>
+
+	<div class="ads">
+
+      <div class="fusionads">
+        <h2>项目</h2>
+
+        <span class="fusionentire">
+          <a href="http://33pu.net/" title="33号铺">
+            <img src="http://yuguo.us/files/2013/01/33pu-github.png" alt="33号铺" />
+          </a>
+          <span class="fusiontext">
+                33号铺是一个简单好用的淘宝客瀑布流发布、管理系统。
+          </span>
+        </span>
+        <p><a href="http://33pu.net/" title="访问33号铺">Demo</a> | <a href="http://github.com/yuguo/33pu" title="下载33号铺">下载</a></p>
+      </div><!-- .fusionads -->
+      
+      <div class="fusionads">
+        <h2>书</h2>
+
+        <span class="fusionentire">
+          <a href="http://yuguo.us/weblog/isux-and-smashing-book/" title="众妙之门3">
+            <img src="http://yuguo.us/files/2013/04/sm3-cover.jpg" alt="众妙之门3" style="width:300px;"/>
+          </a>
+          <span class="fusiontext">
+                《众妙之门3》是一本关于HTML5、CSS3、新JS API、Retina屏、Web App、基于Responsive Design的工作流……的设计书，是《Smashing Book #3 Redesign The Web》的中文译本。
+          </span>
+        </span>
+        <p><a href="http://yuguo.us/weblog/isux-and-smashing-book/" title="众妙之门3">介绍</a> | <a href="http://product.dangdang.com/product.aspx?product_id=23212058">当当购买</a></p>
+      </div><!-- .fusionads -->
+
+        <div class="fusionads">
+        <h2>广告</h2>
+
+        <span class="fusionentire">
+          <a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">
+            <img src="http://yuguo.us/files/2013/01/1.jpg" alt="Home&More淘宝店" />
+          </a>
+          <span class="fusiontext">
+            <a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">
+              Home&More淘宝店是一个还不错的家居淘宝店。
+
+            </a>
+          </span>
+        </span>
+        <p><a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">homemore.taobao.com</a></p>
+      </div><!-- .fusionads -->
+
+    </div><!-- .ads -->
+
+  </div><!-- .primary -->
+
+        <div class="content single-post">
+	      	<h1>关于JPEG压缩优化的一点趣事</h1>
+	      	<span class="post-date">2012年 03月 30日</span>
+
+	      	<p>今天看了一篇老文，对JPEG的压缩优化有了更深刻的理解，对JPEG存储数据的方法也更加了解。</p>
+
+<p>原文地址：<a href="http://www.smashingmagazine.com/2009/07/01/clever-jpeg-optimization-techniques/">http://www.smashingmagazine.com/2009/07/01/clever-jpeg-optimization-techniques/</a><h2>8x8像素格</h2><a href="http://yuguo.us/files/2012/03/grid-block1.png"><img class="aligncenter size-full wp-image-1151" title="grid-block" src="http://yuguo.us/files/2012/03/grid-block1.png" alt=""   data-pinit="registered" /></a>
+这是一个黑白格的图片，在保存为JPEG的时候选择“质量”很低的话，就会出现模糊的锯齿。这种锯齿我们经常见到，但神奇的是左上角的那个正方形的边缘非常完美，这是因为JPEG储存图片的时候会把图片存为一系列8x8像素的块。</p>
+
+<p>左上角的图片正好压在8x8的边缘，所以显示很完美，右下角的图片没有压在8x8上，所以会会模糊的多。</p>
+
+<p>所以优化技巧就是，<strong>如果图片包含轮廓清晰的元素，那么就把元素挪到8x8的参考线上</strong>。</p>
+
+<p>在PS里设置网格的尺寸的方法是编辑&gt;首选项&gt;参考线、网格和切片&gt;网格&gt;网格线间隔设置为8的倍数比如32，然后子网格设置为4（32/8=4）即可。</p>
+
+<p>显示网格的方法是视图&gt;显示&gt;网格。
+<h2>颜色优化</h2>
+颜色优化的具体处理方法有点复杂，建议阅读原文，按原文步骤操作一遍就大概明白了。</p>
+
+<p>核心思想就是把图片模式设置为<strong>lab颜色</strong>的话，会在通道中看见图片被分成明度、a、b三个通道。跟RGB模式有3个通道分别储存红色绿色蓝色不一样的是，lab颜色模式中明度通道储存某一点的明亮程度，a通道储存某一点的红色和绿色有多少，b通道储存蓝色和黄色有多少。
+<a href="http://yuguo.us/files/2012/03/2.jpg"><img class="aligncenter size-full wp-image-1152" title="2" src="http://yuguo.us/files/2012/03/2.jpg" alt=""   data-pinit="registered" /></a>
+那么图片中有一些黑色的部分的话，那么就会在明度通道中有暗度信息表明这一点非常之暗，同时又会在红绿通道中储存信息表明这一点很红。这从人眼可视的角度来看就是冗余信息，因为<strong>很暗的黑色和很暗的红色对于人眼都是黑色</strong>。</p>
+
+<p>知道了这一点以后，我们来操作a通道（或者b通道，看具体的图中黑色周围是什么色调了），选取了a通道之后把黑色部分的红绿信息抹掉，抹掉的方法就很多了，比如滤镜&gt;杂色&gt;中间值，会把红黑混杂的颜色改成中间色。这样就能减少一些文件体积。</p>
+
+<p>如果你是变态的对色温极端追求的设计师，而且显示器有非常之好的话，那么你会发现颜色可能会偏暗了，这时候对于原图调一下色阶就好了。Ctrl+L，照片处理中常用的快捷键。
+<h2>通用规则</h2>
+1.程序是死的，人是活的。程序无法判断压缩jpeg多少是一个合适的比例，但人可以。</p>
+
+<p>2.永远不要把jpeg保存为100%质量，95%是你的上限，如果你需要很高的质量的话。</p>
+
+<p>3.如果你的图片中有一些尖锐的元素或者边缘，那么不要设置低于51%的质量。</p>
+
+<p>4.还有一种格式叫png，合理使用它（png的优化规则同样非常复杂）。</p>
+
+	      	<p class='previous-next-nav'><a href="http://yuguo.us//weblog/responsive-css3-slider-without-javascript/" class="next">实现纯CSS3幻灯片的一种思路 &rarr;</a>
+	      	<a href="http://yuguo.us//weblog/young/" class="previous">&larr; 彷徨少年时</a>
+	      	</p>
+	      	
+	      	
+			    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'yuguo'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+        </div>
+
+	</div>
+
+	<p class="copyright">&copy; 2009&#8201;&ndash;&#8201;2012 Yuguo. Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a> and host by <a href="https://github.com/yuguo">Github</a>。 如果喜欢本站，您可以 <a href="http://feeds.feedburner.com/yuguo">订阅我的 RSS feed</a>。
+</p>
+
+</body>
+</html>

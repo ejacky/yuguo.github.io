@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="all" />
+<title>iOS开发随笔</title>
+<link rel="stylesheet" type="text/css" href="/css/style.css" />
+<!--[if (lt IE 9) & (!IEMobile)]>
+<link rel="stylesheet" type="text/css" href="/css/ie.css" />
+<![endif]-->
+</head>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-741276-12']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+})();
+</script>
+<body>
+	<div class="container group">
+		
+  <div class="primary">
+    <header>
+      <h1><a href="/">余果</a>，腾讯社交平台设计中心（<a href="http://isux.tencent.com/">ISUX</a>）前端开发设计师。平时喜欢读书，研究网站开发，iOS开发，数据可视化等。
+      </h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="/">首页</a>
+          </li>
+          <li>
+            <a href="http://yuguo.us/categories.html">分类</a>
+          </li>
+          <li>
+            <a href="http://yuguo.us/about.html">关于我</a>
+          </li>
+        </ul>
+      </nav>
+
+    </header>
+
+	<div class="ads">
+
+      <div class="fusionads">
+        <h2>项目</h2>
+
+        <span class="fusionentire">
+          <a href="http://33pu.net/" title="33号铺">
+            <img src="http://yuguo.us/files/2013/01/33pu-github.png" alt="33号铺" />
+          </a>
+          <span class="fusiontext">
+                33号铺是一个简单好用的淘宝客瀑布流发布、管理系统。
+          </span>
+        </span>
+        <p><a href="http://33pu.net/" title="访问33号铺">Demo</a> | <a href="http://github.com/yuguo/33pu" title="下载33号铺">下载</a></p>
+      </div><!-- .fusionads -->
+      
+      <div class="fusionads">
+        <h2>书</h2>
+
+        <span class="fusionentire">
+          <a href="http://yuguo.us/weblog/isux-and-smashing-book/" title="众妙之门3">
+            <img src="http://yuguo.us/files/2013/04/sm3-cover.jpg" alt="众妙之门3" style="width:300px;"/>
+          </a>
+          <span class="fusiontext">
+                《众妙之门3》是一本关于HTML5、CSS3、新JS API、Retina屏、Web App、基于Responsive Design的工作流……的设计书，是《Smashing Book #3 Redesign The Web》的中文译本。
+          </span>
+        </span>
+        <p><a href="http://yuguo.us/weblog/isux-and-smashing-book/" title="众妙之门3">介绍</a> | <a href="http://product.dangdang.com/product.aspx?product_id=23212058">当当购买</a></p>
+      </div><!-- .fusionads -->
+
+        <div class="fusionads">
+        <h2>广告</h2>
+
+        <span class="fusionentire">
+          <a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">
+            <img src="http://yuguo.us/files/2013/01/1.jpg" alt="Home&More淘宝店" />
+          </a>
+          <span class="fusiontext">
+            <a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">
+              Home&More淘宝店是一个还不错的家居淘宝店。
+
+            </a>
+          </span>
+        </span>
+        <p><a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">homemore.taobao.com</a></p>
+      </div><!-- .fusionads -->
+
+    </div><!-- .ads -->
+
+  </div><!-- .primary -->
+
+        <div class="content single-post">
+	      	<h1>iOS开发随笔</h1>
+	      	<span class="post-date">2012年 12月 14日</span>
+
+	      	<p>随意记录一下一些经验，对新手可能有帮助。
+<h2>数组NSArray</h2>
+操作数组的时候计算数组包含的对象个数是：
+<pre><code>[dataArray count]</code></pre>
+获取索引处的对象
+<pre><code>[dataArray objectAtIndex:2]</code></pre>
+删除指定索引处对象
+<pre><code>[dataArray removeObjectAtIndex:1];</code></pre><h2>词典NSDictionary</h2>
+获取对应key的object：
+<pre><code>- (id)objectForKey:(id)aKey</code></pre><h2>类方法和实例方法</h2>
+在类方法中调用类方法
+<pre><code>+ (void)classMethodB { </code></pre><pre><code>// ... </code></pre><pre><code>[self classMethodA]; </code></pre><pre><code>// ... </code></pre><pre><code>}</code></pre>
+在实例方法中调用类方法
+<pre><code>- (void)instanceMethodB { </code></pre><pre><code>// ...</code></pre><pre><code> [[self class] classMethodA];</code></pre><pre><code>// ...</code></pre><pre><code>}</code></pre><h2>NSLog</h2>
+用NSLog记录debug数据，是一个很常用的方法。
+<pre><code>NSLog(@&quot;String&quot;); NSLog(@&quot;%@&quot;,someString); NSLog(@&quot;%d&quot;,someInteger); NSLog(@&quot;my float is %f&quot;,someFloat);</code></pre><h2>tag</h2>
+在运行时获取某些视图可以用方法
+<pre><code>- (UIView *)viewWithTag:(NSInteger)</code>tag</pre>
+在storyboard中可以看到所有视图的默认tag都是0，可以改成特定的值，比如1。</p>
+
+<p>如果要获得某个视图里的tag为某值的子视图，可以用这个自定义类方法
+<pre><code>+(UIView<em>) getSubViewInViewWithTag:(UIView</em>)view withTag:(NSInteger)tag { for (UIView *subview in view.subviews) { if(subview.tag==tag) return subview; } return nil; }</code></pre><h2> indexPath转成整数？</h2>
+在委托tableView或者collectionView的时候，需要实现的方法比如：
+<pre><code>- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath</code></pre>
+有一个参数是NSIndexPath，用来表示绘制第几个表格或者collectionCell，我需要得到它的整数值以便跟我自己的数据数组对应，方法很简单
+<pre><code>indexPath.row</code></pre><h2>自己释放内存的图片</h2>
+以下代码不会产生内存泄漏，因为这个newImage是一个自释放内存的图片。
+<pre><code>UIImage *newImage = [UIImage imageNamed:@&quot;sampleImage&quot;]; [yourImageView setImage:newImage];</code></pre>
+-imageNamed: returns an autoreleased image, which, as deanWombourne says, will be autoreleased at some time in the future (the exact time is undefined).</p>
+
+<p>但是如果图片在其他地方生成，在这里使用，那么可能需要手动释放内存。</p>
+
+	      	<p class='previous-next-nav'><a href="http://yuguo.us//weblog/ios-develop-2/" class="next">iOS开发随笔-2 &rarr;</a>
+	      	<a href="http://yuguo.us//weblog/bodw-2012/" class="previous">&larr; 香港设计营商周论坛</a>
+	      	</p>
+	      	
+	      	
+			    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'yuguo'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+        </div>
+
+	</div>
+
+	<p class="copyright">&copy; 2009&#8201;&ndash;&#8201;2012 Yuguo. Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a> and host by <a href="https://github.com/yuguo">Github</a>。 如果喜欢本站，您可以 <a href="http://feeds.feedburner.com/yuguo">订阅我的 RSS feed</a>。
+</p>
+
+</body>
+</html>

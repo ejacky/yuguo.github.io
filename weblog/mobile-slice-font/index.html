@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="all" />
+<title>webview页面制作经验</title>
+<link rel="stylesheet" type="text/css" href="/css/style.css" />
+<!--[if (lt IE 9) & (!IEMobile)]>
+<link rel="stylesheet" type="text/css" href="/css/ie.css" />
+<![endif]-->
+</head>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-741276-12']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+})();
+</script>
+<body>
+	<div class="container group">
+		
+  <div class="primary">
+    <header>
+      <h1><a href="/">余果</a>，腾讯社交平台设计中心（<a href="http://isux.tencent.com/">ISUX</a>）前端开发设计师。平时喜欢读书，研究网站开发，iOS开发，数据可视化等。
+      </h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="/">首页</a>
+          </li>
+          <li>
+            <a href="http://yuguo.us/categories.html">分类</a>
+          </li>
+          <li>
+            <a href="http://yuguo.us/about.html">关于我</a>
+          </li>
+        </ul>
+      </nav>
+
+    </header>
+
+	<div class="ads">
+
+      <div class="fusionads">
+        <h2>项目</h2>
+
+        <span class="fusionentire">
+          <a href="http://33pu.net/" title="33号铺">
+            <img src="http://yuguo.us/files/2013/01/33pu-github.png" alt="33号铺" />
+          </a>
+          <span class="fusiontext">
+                33号铺是一个简单好用的淘宝客瀑布流发布、管理系统。
+          </span>
+        </span>
+        <p><a href="http://33pu.net/" title="访问33号铺">Demo</a> | <a href="http://github.com/yuguo/33pu" title="下载33号铺">下载</a></p>
+      </div><!-- .fusionads -->
+      
+      <div class="fusionads">
+        <h2>书</h2>
+
+        <span class="fusionentire">
+          <a href="http://yuguo.us/weblog/isux-and-smashing-book/" title="众妙之门3">
+            <img src="http://yuguo.us/files/2013/04/sm3-cover.jpg" alt="众妙之门3" style="width:300px;"/>
+          </a>
+          <span class="fusiontext">
+                《众妙之门3》是一本关于HTML5、CSS3、新JS API、Retina屏、Web App、基于Responsive Design的工作流……的设计书，是《Smashing Book #3 Redesign The Web》的中文译本。
+          </span>
+        </span>
+        <p><a href="http://yuguo.us/weblog/isux-and-smashing-book/" title="众妙之门3">介绍</a> | <a href="http://product.dangdang.com/product.aspx?product_id=23212058">当当购买</a></p>
+      </div><!-- .fusionads -->
+
+        <div class="fusionads">
+        <h2>广告</h2>
+
+        <span class="fusionentire">
+          <a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">
+            <img src="http://yuguo.us/files/2013/01/1.jpg" alt="Home&More淘宝店" />
+          </a>
+          <span class="fusiontext">
+            <a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">
+              Home&More淘宝店是一个还不错的家居淘宝店。
+
+            </a>
+          </span>
+        </span>
+        <p><a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">homemore.taobao.com</a></p>
+      </div><!-- .fusionads -->
+
+    </div><!-- .ads -->
+
+  </div><!-- .primary -->
+
+        <div class="content single-post">
+	      	<h1>webview页面制作经验</h1>
+	      	<span class="post-date">2013年 02月 02日</span>
+
+	      	<p>因为工作中做到iOS内嵌页面，以后也会越来越多地遇到，所以打算总结一下这方面的经验。</p>
+
+<h2>切图的时候，不要把文字切到图中</h2>
+
+<p>我看到有的同事切图的时候把文字也切到图里，包括普通图和@2x的图。这样做其实很不好，因为：</p>
+
+<ol>
+<li>设计搞中的字体可能跟iOS实际的字体不一样，二者在同一个屏幕出现的时候就会很违和。比如文字用了iOS字体，后面的一个按钮中的文字是微软雅黑，囧。。。</li>
+<li>更重要的是，99%的情况下，文字一定会模糊。系统对文字的渲染比对图片的渲染圆滑而智能很多，而且性能也好很多，尽量使用字体。</li>
+<li>可以公用图片，少图，app尺寸更小，下载更快。</li>
+<li>能用CSS3的就CSS3，整个按钮CSS3。</li>
+</ol>
+
+<h2>不要CSS3和图片拼接</h2>
+
+<p>也是看别人的代码里出现的，一个三角+圆角的仿iOS按钮，使用了图片+CSS3，这时候在retina屏上很容易看出模糊+清晰的一个边缘差别，加之图片里的RGB颜色与CSS写定的RGB颜色也有误差。就会感觉三角是补丁。</p>
+
+<h2>以@2x为基准开始设计稿</h2>
+
+<p>以@2x也就是640px宽创建设计稿时，要注意各种线条要偶数，也就是说，一条1px的线应该改为2px。</p>
+
+<h2>cssgaga</h2>
+
+<p>使用cssgaga的@2x-&gt;1倍图功能，PS导出的@2X图自动生成1倍图，然后代码中写定对1倍图的引用，最后cssgaga自动生成对@2x图的媒体查询css代码，非常方便。1 css file for 2 screen.</p>
+
+<h2>使用移动端专有reset</h2>
+
+<p>对于会在远程服务器端维护的页面，应尽可能减少css代码体积，和dom节点的复杂度。</p>
+
+<h2>少使用有性能问题的css属性</h2>
+
+<p><a href="http://www.w3cplus.com/blog/605.html">那些耗费比较大的CSS属性</a></p>
+
+	      	<p class='previous-next-nav'><a href="http://yuguo.us//weblog/m-society/" class="next">M型社会和低智商社会 &rarr;</a>
+	      	<a href="http://yuguo.us//weblog/favicon/" class="previous">&larr; 关于favicon的思考</a>
+	      	</p>
+	      	
+	      	
+			    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'yuguo'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+        </div>
+
+	</div>
+
+	<p class="copyright">&copy; 2009&#8201;&ndash;&#8201;2012 Yuguo. Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a> and host by <a href="https://github.com/yuguo">Github</a>。 如果喜欢本站，您可以 <a href="http://feeds.feedburner.com/yuguo">订阅我的 RSS feed</a>。
+</p>
+
+</body>
+</html>

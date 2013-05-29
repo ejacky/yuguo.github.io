@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="all" />
+<title>折腾开发环境</title>
+<link rel="stylesheet" type="text/css" href="/css/style.css" />
+<!--[if (lt IE 9) & (!IEMobile)]>
+<link rel="stylesheet" type="text/css" href="/css/ie.css" />
+<![endif]-->
+</head>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-741276-12']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+})();
+</script>
+<body>
+	<div class="container group">
+		
+  <div class="primary">
+    <header>
+      <h1><a href="/">余果</a>，腾讯社交平台设计中心（<a href="http://isux.tencent.com/">ISUX</a>）前端开发设计师。平时喜欢读书，研究网站开发，iOS开发，数据可视化等。
+      </h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="/">首页</a>
+          </li>
+          <li>
+            <a href="http://yuguo.us/categories.html">分类</a>
+          </li>
+          <li>
+            <a href="http://yuguo.us/about.html">关于我</a>
+          </li>
+        </ul>
+      </nav>
+
+    </header>
+
+	<div class="ads">
+
+      <div class="fusionads">
+        <h2>项目</h2>
+
+        <span class="fusionentire">
+          <a href="http://33pu.net/" title="33号铺">
+            <img src="http://yuguo.us/files/2013/01/33pu-github.png" alt="33号铺" />
+          </a>
+          <span class="fusiontext">
+                33号铺是一个简单好用的淘宝客瀑布流发布、管理系统。
+          </span>
+        </span>
+        <p><a href="http://33pu.net/" title="访问33号铺">Demo</a> | <a href="http://github.com/yuguo/33pu" title="下载33号铺">下载</a></p>
+      </div><!-- .fusionads -->
+      
+      <div class="fusionads">
+        <h2>书</h2>
+
+        <span class="fusionentire">
+          <a href="http://yuguo.us/weblog/isux-and-smashing-book/" title="众妙之门3">
+            <img src="http://yuguo.us/files/2013/04/sm3-cover.jpg" alt="众妙之门3" style="width:300px;"/>
+          </a>
+          <span class="fusiontext">
+                《众妙之门3》是一本关于HTML5、CSS3、新JS API、Retina屏、Web App、基于Responsive Design的工作流……的设计书，是《Smashing Book #3 Redesign The Web》的中文译本。
+          </span>
+        </span>
+        <p><a href="http://yuguo.us/weblog/isux-and-smashing-book/" title="众妙之门3">介绍</a> | <a href="http://product.dangdang.com/product.aspx?product_id=23212058">当当购买</a></p>
+      </div><!-- .fusionads -->
+
+        <div class="fusionads">
+        <h2>广告</h2>
+
+        <span class="fusionentire">
+          <a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">
+            <img src="http://yuguo.us/files/2013/01/1.jpg" alt="Home&More淘宝店" />
+          </a>
+          <span class="fusiontext">
+            <a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">
+              Home&More淘宝店是一个还不错的家居淘宝店。
+
+            </a>
+          </span>
+        </span>
+        <p><a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">homemore.taobao.com</a></p>
+      </div><!-- .fusionads -->
+
+    </div><!-- .ads -->
+
+  </div><!-- .primary -->
+
+        <div class="content single-post">
+	      	<h1>折腾开发环境</h1>
+	      	<span class="post-date">2011年 03月 30日</span>
+
+	      	<p>今天终于被搞爆发了，与代码无关，纯折腾。
+<ol>
+    <li>公司的安全部门会给IE浏览器加上自动代理，此代理会让IETester崩溃，会让新版Opera无法被Fiddler抓包。</li>
+    <li>Fiddler无限抽风，抓的了一部分抓不了另一部分，而且反应奇慢，完全不可控。</li></ol>
+然后问<a href="http://code.sh/">大猫</a>他是怎么代理服务器和本地的。总结如下：</p>
+
+<p>服务器简单，直接修改hosts文件。</p>
+
+<p>本地的话，要用到Apache。</p>
+
+<p>1.先给hosts加本地host和其他所有需要调试的服务器的host，全部注释，到时候希望用哪个IP就取消哪个的注释：
+<pre>#127.0.0.1 ctc.imgcache.qq.com等等要转的CDN</p>
+
+<h1>172.25.32.141 ctc.imgcache.qq.com等等要转的CDN</pre></h1>
+
+<p>2.然后，开启Apache的一些代理模块，修改httpd.conf：
+<pre>LoadModule negotiation<em>module modules/mod</em>negotiation.so</p>
+
+<p>LoadModule proxy<em>module modules/mod</em>proxy.so</p>
+
+<p>LoadModule proxy<em>ajp</em>module modules/mod<em>proxy</em>ajp.so</p>
+
+<p>LoadModule proxy<em>balancer</em>module modules/mod<em>proxy</em>balancer.so</p>
+
+<p>LoadModule proxy<em>connect</em>module modules/mod<em>proxy</em>connect.so</p>
+
+<p>LoadModule proxy<em>ftp</em>module modules/mod<em>proxy</em>ftp.so</p>
+
+<p>LoadModule proxy<em>http</em>module modules/mod<em>proxy</em>http.so</p>
+
+<p>LoadModule negotiation<em>module modules/mod</em>negotiation.soLoadModule proxy<em>module modules/mod</em>proxy.soLoadModule proxy<em>ajp</em>module modules/mod<em>proxy</em>ajp.soLoadModule proxy<em>balancer</em>module modules/mod<em>proxy</em>balancer.soLoadModule proxy<em>connect</em>module modules/mod<em>proxy</em>connect.soLoadModule proxy<em>ftp</em>module modules/mod<em>proxy</em>ftp.soLoadModule proxy<em>http</em>module modules/mod<em>proxy</em>http.so</pre>
+前面的#（默认有）全部去掉。</p>
+
+<p>3.最后，在文件最后加上
+<pre>&lt;virtualhost *&gt;</p>
+
+<p>ServerName imgcache.qq.com</p>
+
+<p>ProxyPreserveHost On</p>
+
+<p>ErrorLog &quot;E:\error_log&quot;</p>
+
+<h2>qzone_v5</h2>
+
+<p>DocumentRoot &quot;E:\Qzone SVN\branch&quot;</p>
+
+<p>ProxyPass /qzonestyle !</p>
+
+<p>ProxyPass / http://172.25.32.141/</p>
+
+<p>&lt;/virtualhost&gt;</pre>
+这样，当要本地调试文件的时候就用host转到本地，然后Apache接管，然后Apache侦测到qzonestyle这样的关键词的时候，就转向到本地目录E:\Qzone之类的。</p>
+
+<p>注意：DocumentRoot和Directory要改成你的本地文件夹盘，而不是Apache所在盘。</p>
+
+<p>DocumentRoot &quot;E:\Qzone SVN\branch&quot;</p>
+
+<p>&lt;Directory &quot;E:\Qzone SVN\branch&quot;&gt;</p>
+
+<p>速度很快~</p>
+
+<p>另外SVN无限拉分支我疯了快，怎么那么多版本！</p>
+
+	      	<p class='previous-next-nav'><a href="http://yuguo.us//weblog/badminton-1/" class="next">第一节羽毛球课 &rarr;</a>
+	      	<a href="http://yuguo.us//weblog/best-practice/" class="previous">&larr; Best Practice</a>
+	      	</p>
+	      	
+	      	
+			    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'yuguo'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+        </div>
+
+	</div>
+
+	<p class="copyright">&copy; 2009&#8201;&ndash;&#8201;2012 Yuguo. Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a> and host by <a href="https://github.com/yuguo">Github</a>。 如果喜欢本站，您可以 <a href="http://feeds.feedburner.com/yuguo">订阅我的 RSS feed</a>。
+</p>
+
+</body>
+</html>

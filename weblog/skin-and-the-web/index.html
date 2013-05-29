@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="all" />
+<title>跟肤那些事儿</title>
+<link rel="stylesheet" type="text/css" href="/css/style.css" />
+<!--[if (lt IE 9) & (!IEMobile)]>
+<link rel="stylesheet" type="text/css" href="/css/ie.css" />
+<![endif]-->
+</head>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-741276-12']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+})();
+</script>
+<body>
+	<div class="container group">
+		
+  <div class="primary">
+    <header>
+      <h1><a href="/">余果</a>，腾讯社交平台设计中心（<a href="http://isux.tencent.com/">ISUX</a>）前端开发设计师。平时喜欢读书，研究网站开发，iOS开发，数据可视化等。
+      </h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="/">首页</a>
+          </li>
+          <li>
+            <a href="http://yuguo.us/categories.html">分类</a>
+          </li>
+          <li>
+            <a href="http://yuguo.us/about.html">关于我</a>
+          </li>
+        </ul>
+      </nav>
+
+    </header>
+
+	<div class="ads">
+
+      <div class="fusionads">
+        <h2>项目</h2>
+
+        <span class="fusionentire">
+          <a href="http://33pu.net/" title="33号铺">
+            <img src="http://yuguo.us/files/2013/01/33pu-github.png" alt="33号铺" />
+          </a>
+          <span class="fusiontext">
+                33号铺是一个简单好用的淘宝客瀑布流发布、管理系统。
+          </span>
+        </span>
+        <p><a href="http://33pu.net/" title="访问33号铺">Demo</a> | <a href="http://github.com/yuguo/33pu" title="下载33号铺">下载</a></p>
+      </div><!-- .fusionads -->
+      
+      <div class="fusionads">
+        <h2>书</h2>
+
+        <span class="fusionentire">
+          <a href="http://yuguo.us/weblog/isux-and-smashing-book/" title="众妙之门3">
+            <img src="http://yuguo.us/files/2013/04/sm3-cover.jpg" alt="众妙之门3" style="width:300px;"/>
+          </a>
+          <span class="fusiontext">
+                《众妙之门3》是一本关于HTML5、CSS3、新JS API、Retina屏、Web App、基于Responsive Design的工作流……的设计书，是《Smashing Book #3 Redesign The Web》的中文译本。
+          </span>
+        </span>
+        <p><a href="http://yuguo.us/weblog/isux-and-smashing-book/" title="众妙之门3">介绍</a> | <a href="http://product.dangdang.com/product.aspx?product_id=23212058">当当购买</a></p>
+      </div><!-- .fusionads -->
+
+        <div class="fusionads">
+        <h2>广告</h2>
+
+        <span class="fusionentire">
+          <a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">
+            <img src="http://yuguo.us/files/2013/01/1.jpg" alt="Home&More淘宝店" />
+          </a>
+          <span class="fusiontext">
+            <a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">
+              Home&More淘宝店是一个还不错的家居淘宝店。
+
+            </a>
+          </span>
+        </span>
+        <p><a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">homemore.taobao.com</a></p>
+      </div><!-- .fusionads -->
+
+    </div><!-- .ads -->
+
+  </div><!-- .primary -->
+
+        <div class="content single-post">
+	      	<h1>跟肤那些事儿</h1>
+	      	<span class="post-date">2012年 05月 29日</span>
+
+	      	<p>Qzone是跟肤的，用户选择不同的皮肤的时候会看到不同的颜色。每一套“颜色”包括几种背景色、几种线条色、几种文字色、几种渐变色等。</p>
+
+<p>互联网上还在跟肤的完整已经非常少了，但在Qzone这是一个很大的赢利点，因为跟肤配合各种付费皮肤和付费帽子、付费名片等各种自定义，极大地提高了Qzone用户中付费的比例。而Qzone<a title="腾讯2012第一季度财报" href="http://tech.qq.com/zt2012/tencent12q1/index.htm" target="_blank">用户数量又是惊人的</a>。
+<a href="http://yuguo.us/files/2012/05/图片1.jpg"><img class="aligncenter size-full wp-image-1205" title="图片1" src="http://yuguo.us/files/2012/05/图片1.jpg" alt=""   data-pinit="registered" /></a>
+之前朋友网的前身校友网也是跟肤的，后来去掉了。所以也许未来不跟肤会是趋势，但无论如何现在的架构需要我们跟肤，那么我略微整理一下相关的知识，也许对于其他人都没帮助，但可以帮助大家看清我们做这些事的大背景，也促使大家有所思考，如何在某些“限制”下完成设计。
+<h2>方法</h2>
+关于皮肤文件的实现方法有很多种：</p>
+
+<p>1.调用某个颜色.css，在颜色.css中专门写颜色，而这个颜色.css跟日常工作是分开的。工程师只需要使用class定义某个文字是采用“强色”还是“淡色”就好了，而在 不同的颜色.css中会定义各种强色比如红色或者蓝色。Qzone采用的这种方法。好处是简单、可以很好的利用缓存等等，坏处是多一个http请求。</p>
+
+<p>2.利用LESS之类的工具，在CSS中写变量，然后服务器端生成一个icenter.css。好处是少个请求，坏处是多了人力成本，不能很好地利用缓存，变更成本略大等。
+<h2>生成&amp;维护</h2>
+设计师按规范设计出一套皮肤的设计稿之后输出png，png图的特定地方需要有特定的色块。我们给设计师提供了一个canvas工具，能抓取到这些色值，然后把色值填充到一个CSV文件中，然后利用cssgaga的皮肤<a href="http://www.99css.com/archives/708" target="_blank">1toN</a>来生成对应的颜色.css。</p>
+
+<p>如果某套配色需要修改，只要改对应的设计稿png，然后再走一遍流程：png-&gt;csv-&gt;cssgaga-&gt;颜色.css，再发布颜色.css即可。
+<h2>规范</h2>
+十几个工程师还有同样多的设计师都要统一利用class来定义强色和弱色，这个需要很好的培训和文档。培训的话腾讯使用导师制度，一般都能很快学习如何使用这种class，比如c<em>tx,c</em>tx2,c<em>tx3,c</em>bg,bg2等等等等……文档则是日常查阅用法的地方。文档规定了各种色值的用法，并且提供了工具面板直接在当前页切换配色，同时指明了规范责任人，如果在工作中与任何人有冲突了，就拉责任人进来沟通。
+<a href="http://yuguo.us/files/2012/05/11.jpg"><img class="aligncenter size-full wp-image-1206" title="1" src="http://yuguo.us/files/2012/05/11.jpg" alt=""   data-pinit="registered" /></a>
+我们能够使用的颜色性的class包括几大类：</p>
+
+<p>1.文字颜色类：全部用c_开头</p>
+
+<p>2.背景颜色类：bg/bg2/bg3等等……</p>
+
+<p>3.边框色，bor/bor2等等，也可以使用某种背景色作为边框色（模拟三角的时候有用）</p>
+
+<p>4.表单色，包括input或者button之类的，但是很尴尬的是select不能做自定义颜色。</p>
+
+<p>5.惊叹色，强烈的橙色，这个颜色不用变，所以直接写在reset之类的全局文件中就好。
+<h2>技巧</h2>
+在长久的与跟肤的斗争过程中我总结了一些经验：</p>
+
+<p>1.模拟三角</p>
+
+<p>用border来模拟三角，kaiye做了一个<a title="CSS三角图形生成工具" href="http://yekai.net/demo/css-angle-generator.html" target="_blank">三角生成工具</a>。</p>
+
+<p>如果考虑跟肤的话，那么边框色值不能直接写在代码中，要使用class标签。浏览器渲染边框的时候，如果定义了边框色border-color，那么优先使用边框色，如果没有定义，那么使用文本色，如果没有定义文本色，那么使用继承下来的文本色。所以我们会有c_bg这样的接口。</p>
+
+<p>多个三角以及三角和其他图形，圆角图像等组合的时候又能形成新的形状，这是很有意思的。大多数时候这 又是乏味的，所以我们有跟肤的三角组件，在需要的页面中可以直接引入样式，html中只用修改颜色就好了。</p>
+
+<p>2.RGBA</p>
+
+<p>在跟肤页面中，工程师的样式比如icenter.css里是不应该有颜色值的定义的，但是有例外，RGBA就是一种。</p>
+
+<p>因为RGBA包含了透明度，所以叠加在我们的背景色上，实际上也是跟肤的效果。</p>
+
+<p>我们在某些地方使用过自定义的webkit滚动条（渐进增强，IE不用拥有这个特性，但是仍然具有可用性）：
+<pre>::-webkit-scrollbar-thumb:rgba(256, 256, 256, 0.15)</pre>
+事实证明效果非常好。</p>
+
+<p>3.半透明图</p>
+
+<p>除了RGBA以外还有一个类似的方法就是带alpha透明度的png（8或者32都可以），叠加在我们的背景色上也有跟肤的效果。IE6用一个下划线hack干掉背景，不要用滤镜。</p>
+
+<p>更多技巧大家从Qzone的代码中去发掘吧~</p>
+
+	      	<p class='previous-next-nav'><a href="http://yuguo.us//weblog/kiseki-no-ringo/" class="next">农业的未来？——读《这一生，至少当一次傻瓜》 &rarr;</a>
+	      	<a href="http://yuguo.us//weblog/request-cache-image-developer/" class="previous">&larr; 请求、缓存、图片利用率和人力成本</a>
+	      	</p>
+	      	
+	      	
+			    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'yuguo'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+        </div>
+
+	</div>
+
+	<p class="copyright">&copy; 2009&#8201;&ndash;&#8201;2012 Yuguo. Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a> and host by <a href="https://github.com/yuguo">Github</a>。 如果喜欢本站，您可以 <a href="http://feeds.feedburner.com/yuguo">订阅我的 RSS feed</a>。
+</p>
+
+</body>
+</html>

@@ -1,20 +1,465 @@
----
-layout: none
----
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title>{{ site.title }}</title>
-		<link>{{ site.url }}</link>
-		<atom:link href="{{ site.url }}/feed.xml" rel="self" type="application/rss+xml" />
-		{% for post in site.posts limit:10 %}
+		<title>Yuguo's Blog</title>
+		<link>http://yuguo.us/</link>
+		<atom:link href="http://yuguo.us//feed.xml" rel="self" type="application/rss+xml" />
+		
 			<item>
-				<title>{{ post.title }}</title>
-				<description>{{ post.content | xml_escape }}</description>
-				<pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
-				<link>{{ site.url }}{{ post.url }}</link>
-				<guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
+				<title>重拾kindle</title>
+				<description>&lt;p&gt;我发现一个现象，人在“碎片时间”干的事跟在“整块时间”干的事是一样的。&lt;/p&gt;
+
+&lt;p&gt;碎片时间我花5分钟刷30条微博，那么在整块的50分钟我就会不自觉地刷300条微博；碎片时间我花2分钟打一盘手游，那么整块的1个小时我就歪在床上打手游……我以为用来填补我的碎片时间的那些小事渐渐成为一种习惯，填满我的生活。&lt;/p&gt;
+
+&lt;p&gt;所以我拿出放了快一年的kindle 3，吹一次上面的灰尘，提示文字说电池电量低了，然后充一下电竟然启动了，之前放在里面的书都还在呢。因为之前更新了多看系统的，所以我试试能不能直接更新到最新，到系统设置里检查了一下最新版本，竟然可以直接升级到2013版。&lt;/p&gt;
+
+&lt;p&gt;然后我就一键升级到了2013版的系统，多看做的很好，可以直接登陆多看账号，然后购买图书和下载。&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;现在的中文阅读环境已经比一两年前好很多了，两年前多看商城就一些名著精选和玄幻小说什么的，现在品种比较丰富，IT类的也不少。&lt;/li&gt;
+&lt;li&gt;kindle 3看电子书效果还是不错的，当然没有背光没有226的ppi，但是看中文书够用了&lt;/li&gt;
+&lt;li&gt;kindle paperwhite也不能看英文pdf（特点是尺寸固定，文字小，在ipad2上看都嫌字体不清晰），所以暂时不入手了&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+				<pubDate>Sun, 12 May 2013 13:01:00 +0800</pubDate>
+				<link>http://yuguo.us//weblog/repick-kindle/</link>
+				<guid isPermaLink="true">http://yuguo.us//weblog/repick-kindle/</guid>
 			</item>
-		{% endfor %}
+		
+			<item>
+				<title>使用HTML5构建iOS原生APP（6）——禁止链接呼出菜单</title>
+				<description>&lt;p&gt;一行css足矣：&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;html,body{-webkit-touch-callout: none;}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;对于web页面和webView均适用。&lt;/p&gt;
+</description>
+				<pubDate>Tue, 07 May 2013 13:01:00 +0800</pubDate>
+				<link>http://yuguo.us//weblog/webview-disable-callout/</link>
+				<guid isPermaLink="true">http://yuguo.us//weblog/webview-disable-callout/</guid>
+			</item>
+		
+			<item>
+				<title>第三次的时候把事情做好</title>
+				<description>&lt;p&gt;我的经验是，如果刚开始做一件事情，只有在第三次的时候才有机会把事情做的很完美。而第一次和第二次的时候，仅仅能抱着“不出错”的目标去进行罢了。&lt;/p&gt;
+
+&lt;p&gt;这里的事情包括很多，比如第一次用nodejs写一个程序，比如第一次带团队，第一次谈判等等……&lt;/p&gt;
+
+&lt;p&gt;我在做33号铺的时候（去年中），完全不了解codeigniter，PHP也非常粗浅地知道一些基本语法，还需要查书，对于MVC也是一知半解。但是最终还是靠各种“试错”来把程序做出来了。由于在商业上它算一个不错的点子，所以也获得了一些知名度和成功，但是就代码本身来看，它是非常粗浅和糟糕的：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;比如在view层还直接调用了model模块来进行查询和计算，这是MVC的禁忌；&lt;/li&gt;
+&lt;li&gt;比如在判断用户输入上太过相信用户，没有考虑SQL注入和xss注入；&lt;/li&gt;
+&lt;li&gt;比如函数的返回值没有考虑各种异常，导致在大家下载到自己环境下运行的时候，偶尔会出线未知的问题，而没有足够的报错信息……&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;当然现在进行了一些优化，已经好一些了。&lt;/p&gt;
+
+&lt;p&gt;为什么当时没有能力写好代码，而现在有一些能力进行优化呢，因为之后又用codeigniter做了一些系统，而且学习ios开发的时候，斯坦福老头也让我对MVC有了进一步的了解。&lt;/p&gt;
+
+&lt;p&gt;其实人学习知识是基于正确的、能运行的系统来学习，我不知道这句代码会运行什么结果，我先echo出来，保证它的结果之后，再删掉这句，进行一些处理，再判断……所以我相信只有在反复练习之后才有机会把事情做的很完美。&lt;/p&gt;
+
+&lt;p&gt;当然也不是所有的事情做3次都能完美，因为只是重复地做一件事的话，“并不是有3年的经验，而是有把一件事情重复做了3年的经验”，所以有一些方法来让自己真的可以在第3次的时候把事情做好：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;把自己的代码和作品，或者做的事情给别人看，虚心接收批评（比如开源）&lt;/li&gt;
+&lt;li&gt;方法论和实践并行，如果没有时间的基础上就一天到晚看best practice，就不会有深刻的理解，也是过目即忘。这里的方法论或者是一本书，或者网站，或者一些培训&lt;/li&gt;
+&lt;li&gt;review自己以前的作品，然后改进&lt;/li&gt;
+&lt;li&gt;分享&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+				<pubDate>Sun, 05 May 2013 13:20:00 +0800</pubDate>
+				<link>http://yuguo.us//weblog/make-it-better/</link>
+				<guid isPermaLink="true">http://yuguo.us//weblog/make-it-better/</guid>
+			</item>
+		
+			<item>
+				<title>新项目预研</title>
+				<description>&lt;p&gt;因为hex大人在&lt;a href=&quot;http://codeigniter.org.cn&quot;&gt;codeigniter官网&lt;/a&gt;推荐了33号铺，加上有一些用户在其他群里推荐33号铺，所以最近33号铺突然有一股热潮，导致我异常繁忙地处理各种安装问题。&lt;/p&gt;
+
+&lt;p&gt;事实上这些问题非常难处理：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;所有用户的服务器环境都非常非常不同，也有一些安装没按顺序来的，所以出现奇怪的bug&lt;/li&gt;
+&lt;li&gt;用户一定要有编程基础，懂得如何创建数据库&lt;/li&gt;
+&lt;li&gt;如果是Apache服务器的话，用户需要理解.htaccess来优化url&lt;/li&gt;
+&lt;li&gt;代码如果有更新的话，用户非常难应用到自己的项目中，虽然可以用git来修改，但门槛也很高&lt;/li&gt;
+&lt;li&gt;即使用户费尽千辛万苦总算在本地安装成功了，还需要去open.taobao.com创建并配置网站，以得到自己的appkey和appsecret&lt;/li&gt;
+&lt;li&gt;最后如果要上线的话，用户需要购买域名和主机&lt;/li&gt;
+&lt;li&gt;当代码出现bug我想要更新的时候，非常难通知所有的用户去更新&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;所以我想做一个新的更简单的项目，适合毫无编程基础的用户，可以免去上面所有的步骤：&lt;/p&gt;
+
+&lt;p&gt;这个项目是一个类似格子铺的网站，访客会看到很多格主的格子，里面有反映格主风格的各种商品，点击过去就可以购买。&lt;/p&gt;
+
+&lt;p&gt;那么这个格主是谁呢，她可能仅仅是一个喜欢漂亮裙子的女孩，需要做的非常简单&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;她需要注册登录格子铺网站，可以用QQ登录，或者支付宝登录&lt;/li&gt;
+&lt;li&gt;她创建一个格子，开始搜索并添加商品&lt;/li&gt;
+&lt;li&gt;随后就会有收入了，她可以输入自己的支付宝账户，钱会自动打过去&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;一些技术细节：站点所有的淘宝客id都是我自己的淘宝客id，但是会带上所有用户自己的id，以让我分清楚哪些用户带来了哪些收入，随后会把收入转给你，我从中收取非常少量的手续费。这样是为了避免所有用户都要注册自己的开发者帐号（现阶段可以传入自己的pid，但10月以后淘宝会不再支持这个参数）。&lt;/p&gt;
+
+&lt;p&gt;当然33号铺项目还是继续维护，为了一些喜欢折腾的朋友。但对于不希望折腾的，希望总是用新的代码的朋友，你们有什么意见和建议呢？&lt;/p&gt;
+</description>
+				<pubDate>Fri, 03 May 2013 16:20:00 +0800</pubDate>
+				<link>http://yuguo.us//weblog/new-project-miloge/</link>
+				<guid isPermaLink="true">http://yuguo.us//weblog/new-project-miloge/</guid>
+			</item>
+		
+			<item>
+				<title>《响应式Web设计实践》：前端+后台=响应式</title>
+				<description>&lt;p&gt;&lt;a href=&quot;http://book.douban.com/subject/21263576/&quot;&gt;《响应式Web设计实践》&lt;/a&gt;是一本关于响应式Web设计的书，虽然之前也有构建响应式站点的经验（比如&lt;a href=&quot;http://z.qzone.com&quot;&gt;http://z.qzone.com&lt;/a&gt;）仔细读完全书，才知道响应式不只是media query这么简单。&lt;/p&gt;
+
+&lt;p&gt;本书内容非常丰富，下面介绍一些对我有所帮助的章节：&lt;/p&gt;
+
+&lt;h2&gt;3.4 媒介查询顺序&lt;/h2&gt;
+
+&lt;p&gt;我之前的制作经验是“优雅降级”型的，先制作一个完整的站点，在Chrome、IE中都能完整查看了，然后再往下增加一些断点，比如640px、320px等，在这些断点中新增样式来覆盖之前的完整样式，或者隐藏一些元素，但这样的缺点是不支持媒体查询的手机浏览器就只能读取完整站点样式了。而且因为做了restyle，整体代码量会偏大。&lt;/p&gt;
+
+&lt;p&gt;所以本书的经验“渐进增强”，先制作一个核心站点样式，这个样式中没有负责布局的样式，没有左右栏，就是简单的核心样式。然后在媒体查询中往上增加一些断点，比如320px、640px等，在这些断点中新增样式来增加布局样式，这样就免掉了之前的缺点。&lt;/p&gt;
+
+&lt;p&gt;最后桌面端的IE678不认识media query，所以需要用IE条件注释加载一个单独的样式：&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;&amp;lt;!--[if (lt IE 9) &amp;amp; (!IEMobile)]&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot; href=&amp;quot;/css/ie.css&amp;quot; /&amp;gt;
+&amp;lt;![endif]--&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;我根据这一原则和方法修改了我的&lt;a href=&quot;http://yuguo.us&quot;&gt;博客&lt;/a&gt;的响应式实现方法，大家可以看看源码。&lt;/p&gt;
+
+&lt;h2&gt;3.6 确定断点&lt;/h2&gt;
+
+&lt;p&gt;这一节的观点是，新增的断点不应该由主流设备宽度来决定，应该由内容来决定，也就是说新增一个480的站点不应该是因为手机屏幕宽度很多都是480px，而应该是在481px的时候就能够有所调整了。&lt;/p&gt;
+
+&lt;p&gt;这个观点很好，让我们从被动地设置断点，到拥有主动权。&lt;/p&gt;
+
+&lt;h2&gt;P102 响应式设计对性能的影响&lt;/h2&gt;
+
+&lt;p&gt;Guy介绍了一下“前端的响应式设计”的弊端，大多数简单的前端处理的响应式有以下弊端：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;下载并隐藏&lt;/li&gt;
+&lt;li&gt;下载并缩小&lt;/li&gt;
+&lt;li&gt;额外的DOM&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;这3个问题在比如&lt;a href=&quot;http://z.qzone.com&quot;&gt;http://z.qzone.com&lt;/a&gt;中几乎都存在，手机端下载了跟桌面端一样的HTML代码【问题3】，然后隐藏了一些下载功能【问题2】，最后把幻灯图缩小到手机屏幕大小【问题1】。&lt;/p&gt;
+
+&lt;p&gt;但是这样也是有原因的，因为首页图经常需要运营来修改，设计师也没有资源出一系列大图的时候，再专门针对手机做一系列小图，所以当时的方案是简单缩小。&lt;/p&gt;
+
+&lt;p&gt;当然以后有机会一定会去优化，做出更好的体验。&lt;/p&gt;
+
+&lt;h2&gt;4.5 背景图片&lt;/h2&gt;
+
+&lt;p&gt;利用媒体查询，在屏幕大于一定宽度的浏览器中才加载自定义字体。&lt;/p&gt;
+
+&lt;h2&gt;4.7.2 广告&lt;/h2&gt;
+
+&lt;p&gt;广告真的是一个很大的阻力，空间改版的时候想修改边栏宽度，就遇到广告位的阻力……也许以后可以跟商户签订更灵活的协议。&lt;/p&gt;
+
+&lt;h2&gt;7.5.1 代码汤&lt;/h2&gt;
+
+&lt;p&gt;不知道原文是什么，这里翻译成代码汤，有点奇怪，但意思大概是懂了，就是页面上的富文本CMS生成了很多冗余标签，冗余标签储存在数据库中，然后在移动端生成内容的时候就有诸多困难。&lt;/p&gt;
+
+&lt;p&gt;解决办法是简化CMS，同时在编辑器中做一个简单内容拷贝，或者过滤器过滤标签。&lt;/p&gt;
+
+&lt;h2&gt;8.2.2 服务器端Modernizr&lt;/h2&gt;
+
+&lt;p&gt;浏览器段的Modernizr我们都了解，是通过在浏览器里运行JavaScript来判断浏览器的能力，然后在html标签上附加一些标记class。&lt;/p&gt;
+
+&lt;p&gt;服务器端Modernizr的原理有所不同，访问者第一次访问页面时（不带cookie），JavaScript会立刻执行并取得测试的结果，然后这些结果被添加到cookie，页面立刻刷新。当下一次加载页面时，服务器端会读取cookie值，然后直接输出html。&lt;/p&gt;
+
+&lt;p&gt;缺点是JavaScript可能禁用，或者浏览器压根就不支持JavaScript，而且要加载两次（虽然第一次数据量很少，也是一次请求）。&lt;/p&gt;
+
+&lt;p&gt;优点是不必依赖UA字符串，更稳定。&lt;/p&gt;
+
+&lt;h2&gt;9.2 网络&lt;/h2&gt;
+
+&lt;p&gt;测试网络的方法之一是发起某个图片的请求，然后测试下载时间，根据这个来考虑是否需要加载更高分辨率的图片，&lt;/p&gt;
+
+&lt;p&gt;方法之2是网速API，但其实并不太稳定，一方面不是所有设备都有这个API，另一方面不一定3G就更快。&lt;/p&gt;
+
+&lt;h2&gt;最后&lt;/h2&gt;
+
+&lt;p&gt;响应式不简单是前端的责任（media query），也不简单是后台的责任（单独的m.站点），而是二者统一，后端来输出不同的内容，前台来按需加载图片，来做断点。&lt;/p&gt;
+
+&lt;p&gt;设计师也需要了解前端知识，因为未来的主流趋势是设计师在浏览器中设计。&lt;/p&gt;
+
+&lt;p&gt;本书有一些小问题，比如：&lt;/p&gt;
+
+&lt;p&gt;P38边栏的链接中有空格，其实url中不能有空格的吧。&lt;/p&gt;
+
+&lt;p&gt;第8章原章节名字可能确实是RESS，但中文书里这样写太奇怪了，这并不算约定通俗的缩写，让人云里雾里，简单的“服务器端检测”就非常好了。&lt;/p&gt;
+
+&lt;p&gt;另外不喜欢（译注：）这样的文字插入到正文中，应该用脚注或者边栏注可能更好。&lt;/p&gt;
+
+&lt;p&gt;整体来说翻译的不赖，译者的自我评价（原文5星，翻译3星）过谦了，我打5星。&lt;/p&gt;
+</description>
+				<pubDate>Fri, 12 Apr 2013 16:20:00 +0800</pubDate>
+				<link>http://yuguo.us//weblog/responsive-web-design/</link>
+				<guid isPermaLink="true">http://yuguo.us//weblog/responsive-web-design/</guid>
+			</item>
+		
+			<item>
+				<title>使用HTML5构建iOS原生APP（5）</title>
+				<description>&lt;p&gt;我的app基本上是由一个原生的navigation controller贯穿全局，然后在每一个scene中都有一个主要的&lt;code&gt;UIWebView&lt;/code&gt;作为主要逻辑：&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;- (void)viewDidLoad{
+    ...
+    self.webView = [[UIWebView alloc] initWithFrame:CGRectMake(.0f, 0.f, self.view.bounds.size.width, self.view.bounds.size.height -44)];//-44是减去标题栏高度
+    self.webView.delegate = self;
+    ...
+    [self.view addSubview:self.webView];
+
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;现在的问题是，当手机翻转的时候，webView的大小不会重绘，就会出现bug，解决办法很简单，就是实现翻转委托：&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation {
+        NSLog(@&amp;quot;I have finished rotating&amp;quot;);
+    self.webView.frame = CGRectMake(.0f, 0.f, self.view.bounds.size.width, self.view.bounds.size.height));
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;就可以了，然后在webView中做好宽度自适应：&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;&amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1.0, user-scable=0, minimun-scale=1.0, maximum-scale=1.0&amp;quot;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;备注&lt;/h2&gt;
+
+&lt;p&gt;介绍一下view的三种坐标属性：&lt;/p&gt;
+
+&lt;p&gt;Frame A view&amp;#39;s frame (CGRect) is the position of its rectangle in the superview&amp;#39;s coordinate system. By default it starts at the top left.&lt;/p&gt;
+
+&lt;p&gt;Bounds A view&amp;#39;s bounds (CGRect) expresses a view rectangle in its own coordinate system.&lt;/p&gt;
+
+&lt;p&gt;Center A center is a CGPoint expressed in terms of the superview&amp;#39;s coordinate system and it determines the position of the exact center point of the view.&lt;/p&gt;
+</description>
+				<pubDate>Wed, 10 Apr 2013 19:20:00 +0800</pubDate>
+				<link>http://yuguo.us//weblog/iphone-rotation-webview/</link>
+				<guid isPermaLink="true">http://yuguo.us//weblog/iphone-rotation-webview/</guid>
+			</item>
+		
+			<item>
+				<title>《编写可维护的JavaScript》——野生JavaScript程序员必读</title>
+				<description>&lt;p&gt;我是一个野生JavaScript程序员，我相信大多数JavaScript程序员都是野蛮生长，靠的是自身的好奇和勤勉。&lt;/p&gt;
+
+&lt;p&gt;什么是野生JavaScript程序员？我是这样定义的：基本靠自学；通过不停的&lt;code&gt;console.log&lt;/code&gt;和对比来写出凑合能运行的页面；页面上充斥着全局变量；命名风格随心所欲，受到自学的其他语言的影响；调试异常困难；只能写出耦合度低的小型页面；配置数据和代码耦合紧密，修改数据困难；随处定义变量；随意注释或者不注释；有大量从stackoverflow拷贝的代码……&lt;/p&gt;
+
+&lt;p&gt;对于野生JavaScript程序员，也许可以很开心地做自己的小项目，但当需要多人合作的时候，就会让团队陷入噩梦。因为“程序是给人读的，只是偶尔让计算机执行一下”，所以勉强能运行的程序不是我们的目标，我们的目标是写出可维护的JavaScript。之前也读过《代码整洁之道》，是针对所有语言的通用手册，比较泛泛而谈，但本书针对性很强，没有散弹枪，每一颗子弹都狙击到目标上：糟糕的JavaScript代码。&lt;/p&gt;
+
+&lt;p&gt;本书适合跟jslint配合使用，因为jslint能检查出很多人可能漏掉的细节：比如没有在&lt;code&gt;function&lt;/code&gt;顶部就声明所有的变量，比如缩进，比如没有声明“strict mode”。&lt;/p&gt;
+
+&lt;p&gt;下面说说印象比较深的几章：&lt;/p&gt;
+
+&lt;p&gt;第6章 避免使用全局变量&lt;/p&gt;
+
+&lt;p&gt;我之前知道JavaScript变量如果没有用&lt;code&gt;var&lt;/code&gt;来声明的话（而且全局没有同名变量），会隐式地创建全局变量，所以我就知道随处使用&lt;code&gt;var&lt;/code&gt;，本身告诉我，“所有的var语句都会提前到包含这段逻辑的函数的顶部执行”，所以应该在函数的顶部定义所有的局部变量。&lt;/p&gt;
+
+&lt;p&gt;而且，由于JavaScript没有块作用域，所以在&lt;code&gt;for&lt;/code&gt;循环和&lt;code&gt;if&lt;/code&gt;中创建变量是没有意义的，都应该提前到函数的顶部去定义。&lt;/p&gt;
+
+&lt;p&gt;那么如何避免全局变量呢？本章提出了几种解决方案：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;避免意外的全局变量——声明“strict mode”&lt;/li&gt;
+&lt;li&gt;单全局变量方式——把所有的功能都封装到一个对象中&lt;/li&gt;
+&lt;li&gt;零全局变量——创建一个即时执行的匿名函数&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;第11章 不是你的对象不要动&lt;/p&gt;
+
+&lt;p&gt;说实话，我犯过这样的错误，我在创建一个iOS项目的时候，其中的webview的JavaScript代码需要在xcode的控制台输出信息，我就重写了&lt;code&gt;console.log&lt;/code&gt;这个函数，当时觉得这个小聪明很方便，后来却给我带来了无尽的麻烦，总之我后来又创建了一个新的对象ios来专门做这件事。&lt;/p&gt;
+
+&lt;p&gt;第9章 将配置数据从代码中分离出来&lt;/p&gt;
+
+&lt;p&gt;也是血泪教训，数据（比如颜色，宽度等）耦合到代码中，修改的时候异常困难，所以本章建议单独创建一个配置对象来修改数据，并且还提供了一些工具来把java配置文件转化成json数据。&lt;/p&gt;
+
+&lt;p&gt;本书值得经常翻一翻，而且篇幅短小，是非常不错的床头技术书。&lt;/p&gt;
+</description>
+				<pubDate>Sun, 07 Apr 2013 19:20:00 +0800</pubDate>
+				<link>http://yuguo.us//weblog/maintainable-javascript/</link>
+				<guid isPermaLink="true">http://yuguo.us//weblog/maintainable-javascript/</guid>
+			</item>
+		
+			<item>
+				<title>ISUX和《众妙之门》的故事</title>
+				<description>&lt;p&gt;&lt;a href=&quot;http://book.douban.com/subject/23008807/&quot;&gt;《众妙之门3》&lt;/a&gt;是《Smashing Book #3 Redesign The Web》的中文译本，这本书是前端设计界非常非常有名的&lt;a href=&quot;http://smashingmagazine.com&quot;&gt;Smashingmagazine&lt;/a&gt;的文章精粹集合，然后还有一些独家的投稿。前两本《Smashing Book》出了之后反响非常好，都进行了再印刷，所以出版社对这次的《众妙之门3》也是抱有很大期望。第三本的内容是非常与时俱进的，话题通括了HTML5、CSS3、新JS API、Retina屏、Web App、基于Responsive Design的工作流等。&lt;/p&gt;
+
+&lt;p&gt;当然，我说这么多的原因是这是我们ISUX的同学们合作翻译的一本书，也是ISUX出品的第一本书。&lt;/p&gt;
+
+&lt;p&gt;我在这次翻译过程中的左右就是牵头、沟通、谈判、进度把控、校对、宣传，而主要的翻译工作都是ISUX的各位同学了，大家都非常专业，让这本书可以尽快地出版。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/files/2013/04/sm3.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;h2&gt;牵头&lt;/h2&gt;
+
+&lt;p&gt;我认识人民邮电出版社的编辑赵轩完全是出于巧合，因为我在豆瓣上写了《众妙之门2》的书评，其实评价不是很好，3分，主要是翻译的问题了，然后该书的编辑赵轩找到我问了我一些意见，我就以我工作的经验跟他沟通，一来二去就熟悉了，后来他也经常免费送一些书过来给我读。去年中的时候他很高兴地告诉我他们出版社谈到了Smashingmagazine的很多书（十几本）的国内版权，我一直是smashingmagazine的粉丝，所以也为中文界能引入这么优秀的外文书籍而高兴。&lt;/p&gt;
+
+&lt;p&gt;但是我也提到两个问题，一个是前面的书都是单一译者来翻译，翻译周期长，校对周期也长，二是非专业译者不能理解计算机词汇。&lt;/p&gt;
+
+&lt;p&gt;就像我当时在《众妙之门2》的书评里写的：&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;本书作者是来自全世界的作者，十几个人共同完成本书，而中文翻译却只有一人。所以某些章节的翻译质量就相对有点差了，比如第五章——web开发中的红旗。一方面是知识广度的原因，一方面也有精力的原因吧。 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;　　 
+    希望以后这种类型的书籍翻译也可以采用众包的模式，交给多个人来翻译。我会很乐意翻译前端方便的内容~ &lt;/p&gt;
+
+&lt;p&gt;所以我就跟赵轩说，也许我们的同事很乐意众包翻译一下这本书，前端同事翻译前端内容，设计同事翻译设计内容。赵轩自然很乐意，质量和进度都能有保证。接下来的事就是找同事来谈，当时我还没想到能拉很多人，想着可能一人要好几章，但是幸运的是碰巧跟当时的leader布林（sithsun）谈了之后，他觉得很好，然后就拉了个大群，直接十几个人分配完了。这事就谈成了。&lt;/p&gt;
+
+&lt;h2&gt;谈判&lt;/h2&gt;
+
+&lt;p&gt;需要谈判的事情有这样几点：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;稿费&lt;/li&gt;
+&lt;li&gt;时间&lt;/li&gt;
+&lt;li&gt;品牌宣传&lt;/li&gt;
+&lt;li&gt;质量把控&lt;/li&gt;
+&lt;li&gt;部分开源&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;稿费倒没有特别去争取，因为这毕竟不是做这件事的主要动力，而且问了下其它做翻译的，也差不多，还略高一点。&lt;/p&gt;
+
+&lt;p&gt;时间方面我们跟出版社的目标是一致的，都是保证质量的前提下能尽快地出版，因为web技术发展的太快了，尽早出版更好，而且我们有团队来翻译应该更快。&lt;/p&gt;
+
+&lt;p&gt;品牌宣传是我很看重的一个方面，我希望对于我们每一个译者都有很好的介绍，然后大家才会有动力去做好这件事。所以我的要求是：每一章后面的作者介绍后面加上译者介绍，包括照片、姓名、简介、博客地址微博地址。在书的后面有团队的介绍，在封面有团队的名字和logo。&lt;/p&gt;
+
+&lt;p&gt;质量把控是出版社的硬性要求，所以我给他们翻译了一个样节之后，他们做了一些版式和规范上的修改，然后跟我在合同里写明了以后的所有章节都要达到这个质量。。。&lt;/p&gt;
+
+&lt;p&gt;部分开源是我的要求，我希望全书14章可以由我们选2章出来在互联网上开源免费发布，一方面可以扩大整个书的影响力，一方面这也是很好的一件事。&lt;/p&gt;
+
+&lt;p&gt;这是我们最终开源的部分：&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://yuguo.us/weblog/the-business-side-of-redesign/&quot;&gt;《众妙之门3》——第一章：重新设计的商业思考&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://yuguo.us/weblog/web-or-native-2/&quot;&gt;《众妙之门3》——第九章：移动用户体验设计考虑的因素：“是Web，还是原生？”&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;最后争取的译者权益是每个译者得到一本赠书，然后加上领导的一些，一共20本。&lt;/p&gt;
+
+&lt;h2&gt;进度把控&lt;/h2&gt;
+
+&lt;p&gt;我在google docs里新建了一个sheet来跟进每一章的进度，由于我是唯一的审核，所以我不希望他们同一时间完成然后一起给我。我给他们列出了不同的“交货时间”，然后我就每天校对一章的一部分。事实证明这样挺有效。&lt;/p&gt;
+
+&lt;p&gt;最终最严重的瓶颈还是在审核这里，因为40天需要交稿，整本书的内容又非常多，所以那段时间确实有点睡眠不足，我用dropbox把翻译稿同步到iPad上，班车上也看，早起校对，双休也全部用来校对，睡眠严重不足……最终还是如期交付了。虽然这里可以一笔带过，但最忙的部分就是这里了，也是最大的挑战。&lt;/p&gt;
+
+&lt;p&gt;这里给我的经验就是：明确的要求比笼统的要求更好，然后要跟团队的每一个人单独沟通，有些时候只在群里通知得不到很好的效果。&lt;/p&gt;
+
+&lt;h2&gt;校对&lt;/h2&gt;
+
+&lt;p&gt;两个月内，电子档就按时交付了，然后我就把docs打包交给出版社，接下来出版社会把所有文档经过排版整理之后打印出来，然后分批交给评审错别字的评审去拿笔画圈圈（有些评审是不会打字的大妈级）。&lt;/p&gt;
+
+&lt;p&gt;画圈圈完了之后出版社又把纸质打印稿寄回给我确认校对，我分给了其它译者每人校对一点，主要是统一措辞和语气，还有一些技术错误的地方。&lt;/p&gt;
+
+&lt;p&gt;后来我又寄回去，然后他们又重新输入+打印，再寄过来校对。现在快递还挺发达，两天就能寄到。&lt;/p&gt;
+
+&lt;h2&gt;宣传&lt;/h2&gt;
+
+&lt;p&gt;前期的宣传工作就是在微博上和博客上发表免费章节，等到快发货的时候，就涉及到微博大号的宣传。&lt;/p&gt;
+
+&lt;p&gt;一方面出版社会主动去跟微博大号谈合作，另一方面我们虽然一开始是非官方的翻译行为，但后期也希望为本书多做一些官方的宣传，提高团队影响力。&lt;/p&gt;
+
+&lt;h2&gt;如果你也希望和我一样&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;利用好开放的渠道：github，豆瓣，知乎等&lt;/li&gt;
+&lt;li&gt;影响力是点滴的积累&lt;/li&gt;
+&lt;li&gt;多关注国外相关领域的网站： smashingmagazine等&lt;/li&gt;
+&lt;li&gt;利用好零碎时间：dropbox，mindjet，google doc等&lt;/li&gt;
+&lt;li&gt;分解任务，凡事先做一半，再做剩下的事情中的一半&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+				<pubDate>Mon, 01 Apr 2013 23:20:00 +0800</pubDate>
+				<link>http://yuguo.us//weblog/isux-and-smashing-book/</link>
+				<guid isPermaLink="true">http://yuguo.us//weblog/isux-and-smashing-book/</guid>
+			</item>
+		
+			<item>
+				<title>《轻公司》</title>
+				<description>&lt;p&gt;《轻公司》是最近我读的一本蛮不错的关于企业管理和创业的书，作者调研了这几年比较火的一些“轻公司”，并且做了很详细的分析。&lt;/p&gt;
+
+&lt;p&gt;轻公司的简单定义：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;以轻资本进入，首先获得市场，再反向获取生产资源的公司&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;轻公司的兴起：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;由网络而起，因为网络给了轻公司快速获得市场的可能性&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;中国（比起其他国家更加）是轻公司的天堂：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;中国有过剩的生产力，和庞大的产业集群，这使得工商博弈中商人更有话语权&lt;/li&gt;
+&lt;li&gt;快递行业的兴起，主要代表是中通、顺丰等&lt;/li&gt;
+&lt;li&gt;互联网销售孵化器，淘宝为培育市场做出了巨大的努力&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;轻公司的特点：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;信息透明共享——工商之间出现新的商务关系，商人提供给工厂的即时信息能够让二者达到共赢，而不是传统的“我给你货，你负责卖完”的关系&lt;/li&gt;
+&lt;li&gt;开放中成长——传统重公司的竞争力是“垂直”，从工厂到门店都自己做，轻公司则做自己的核心业务（市场），把其余的（生产、运输、库存）都交给别人&lt;/li&gt;
+&lt;li&gt;成为强有力的资源组织者——轻公司必须深刻了解市场和供应商，通过自己的市场能力使价值网络成员获益&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;轻公司的痛点：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;组织容易失控——如果出现组织失控，市场会瞬间崩溃&lt;/li&gt;
+&lt;li&gt;必须是市场领导者——轻公司必须是市场领导者才能是实现，如果被超越，组织会离你而去&lt;/li&gt;
+&lt;li&gt;对重资产推广的依赖——轻公司对广告极端依赖，如果停止投放，则市场能力马上下降&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;轻公司不是公司的最终形态，轻公司最终会变重，以下是原因：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;为了保持竞争优势，争取更高的市场份额&lt;/li&gt;
+&lt;li&gt;加强对外部资源的控制力&lt;/li&gt;
+&lt;li&gt;加强品牌感&lt;/li&gt;
+&lt;li&gt;切入到新的市场&lt;/li&gt;
+&lt;li&gt;提升供应链速度&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;我感受最深的地方：轻公司的核心竞争力就是市场，网络的发展让轻公司可以有机会用小成本获得大市场，所以本书的封面文字很能说明轻公司的宗旨：“把公司做小，把客户做大”。轻公司获得市场之后，可以去组织生产商，组织供应链的上下游，因为中国的生产过剩，大家会很愿意和你做生意。但是潜在的危机是，如果轻公司的市场能力出现下滑，或者被别人夺去，那么你的供应链会离你而去；如果轻公司的组织能力不过关，出现质量事故，那么口口相传会让公司陷入危机。而最终，轻公司最终都会变成重公司，所以轻公司是一种随着网络技术发展而兴起的一种趋势和方法，而不是一个常态。&lt;/p&gt;
+</description>
+				<pubDate>Thu, 28 Mar 2013 14:20:00 +0800</pubDate>
+				<link>http://yuguo.us//weblog/fast-company/</link>
+				<guid isPermaLink="true">http://yuguo.us//weblog/fast-company/</guid>
+			</item>
+		
+			<item>
+				<title>数据库注入漏洞和XSS漏洞</title>
+				<description>&lt;p&gt;v2ex上的一个热心网友使用我的开源程序“&lt;a href=&quot;https://github.com/yuguo/33pu&quot;&gt;33号铺&lt;/a&gt;”的时候发现程序存在SQL注入漏洞，然后邮件告知了我。&lt;/p&gt;
+
+&lt;p&gt;我之前没有考虑过这方面的问题，搜索了解了一下，确实比较严重，然后修复了这个问题。&lt;/p&gt;
+
+&lt;p&gt;简单的说，程序员在编写代码的时候，没有对用户输入数据的合法性进行判断，使应用程序存在安全隐患。用户可以提交一段数据库查询代码，根据程序返回的结果，获得某些他想得知的数据，这就是所谓的SQL Injection，即SQL注入。&lt;/p&gt;
+
+&lt;h2&gt;SQL Injection&lt;/h2&gt;
+
+&lt;p&gt;简单的判断漏洞的方法就是在查询url后面加上一个引号&amp;#39;。比如http://33pu.net/home/search?keyword=%E6%AF%9B%E8%A1%A3后面加一个引号&amp;#39;&lt;/p&gt;
+
+&lt;p&gt;这时候会出现服务器报错：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/files/2013/03/sql-injection.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;根据错误详情我们可以看出对于用户输入（url）没有进行过滤和检测，而直接丢到sql查询里面去运行，这时候就会暴露出一些重要的信息，比如用户名和密码。&lt;/p&gt;
+
+&lt;p&gt;详情可以看看&lt;a href=&quot;http://www.blueidea.com/tech/program/2004/1810.asp&quot;&gt;这篇文章&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;然后我的解决办法也很简单，使用CI的&lt;a href=&quot;http://codeigniter.org.cn/user_guide/database/active_record.html&quot;&gt;Active Record类&lt;/a&gt;来操作数据库，而不用拼接的SQL语法，原因是系统会自动对素有输入值进行转义。&lt;/p&gt;
+
+&lt;h2&gt;XSS漏洞&lt;/h2&gt;
+
+&lt;p&gt;我在检查的时候发现的33号铺存在另一个漏洞是XSS漏洞，这个跟数据库注入的方法很像，但原理不同。SQL注入漏洞是请求时生效，会直接让服务器返回数据库相关的重要信息。XSS是输入时没有问题，黑客输入的JavaScript代码会储存在数据库中，但是正常用户访问时，会运行这个JavaScript代码，然后把自己的cookie等信息暴露给黑客。&lt;/p&gt;
+
+&lt;p&gt;解决办法更简单，使用CI的&lt;a href=&quot;http://codeigniter.org.cn/user_guide/libraries/input.html&quot;&gt;输入类&lt;/a&gt;来接收POST和GET的数据，系统会进行JS的转义。&lt;/p&gt;
+
+&lt;p&gt;现在我已经修复了这两个漏洞，所以请大家下载&lt;a href=&quot;https://github.com/yuguo/33pu&quot;&gt;最新的33pu代码&lt;/a&gt;。&lt;/p&gt;
+</description>
+				<pubDate>Wed, 27 Mar 2013 14:20:00 +0800</pubDate>
+				<link>http://yuguo.us//weblog/sql-injection/</link>
+				<guid isPermaLink="true">http://yuguo.us//weblog/sql-injection/</guid>
+			</item>
+		
 	</channel>
 </rss>
