@@ -4,7 +4,4 @@ title: Yuguo's Blog
 author: Yuguo
 email: me@yuguo.us
 permalink: weblog/:title/ 
-markdown: kramdown
-safe: true
-lsi: false
-pygments: true
+markdown: rdiscount
