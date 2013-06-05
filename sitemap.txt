@@ -6,6 +6,7 @@
 /index.html
 /sitemap.txt
 
+/weblog/my-first-ios-app/
 /weblog/driving-technical-change/
 /weblog/repick-kindle/
 /weblog/webview-disable-callout/
