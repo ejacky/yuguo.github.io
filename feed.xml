@@ -6,6 +6,35 @@
 		<atom:link href="http://yuguo.us//feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>33号铺停止更新</title>
+				<description>&lt;p&gt;我遗憾地决定停止更新&lt;a href=&quot;https://github.com/yuguo/33pu&quot;&gt;33号铺&lt;/a&gt;，最主要的原因是根据&lt;a href=&quot;http://club.alimama.com/read-htm-tid-4369390.html&quot;&gt;淘宝新规&lt;/a&gt;，对于API权限有大幅度的削减，对于&lt;a href=&quot;http://open.taobao.com/doc/detail.htm?id=139&quot;&gt;API接口开发应用的准入条件&lt;/a&gt;修改为以下：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;（一）申请调用淘宝客API接口的淘宝账户（以下简称为“开发者账户”）对应的阿里妈妈账户的淘宝客会员等级为金冠级别及以上；&lt;/li&gt;
+&lt;li&gt;（二）申请验证的网站（以下简称为“网站”）应在工业和信息化部信息备案管理系统进行网站备案；&lt;/li&gt;
+&lt;li&gt;（四）网站ALEXA排名在10万名及以内；&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;这几条严格的限制导致包括我本人在内的广大appkey都失去了淘宝客的权限，相信大多数中小网站的appkey也是如此。所以现在很多用33pu做后台的网站都会出现搜索不出任何结果的情况。&lt;/p&gt;
+
+&lt;p&gt;33号铺的原理是在后台通过API搜索淘宝的所有商品的佣金，然后一键添加到前台。现在失去了API权限，后台自然无法搜索出任何结果。小淘宝客玩家仍然可以在阿里妈妈的后台手动搜索，然后添加到自己的CMS中去。&lt;/p&gt;
+
+&lt;p&gt;我做33号铺的初衷就是希望可以帮助做出更多高质量的长尾淘宝客，所以不做自动抓取，专注体验和分类……但现在淘宝的策略是已经完全抛弃中小淘宝客了。这违背了我的初衷，所以我不再更新了。&lt;/p&gt;
+
+&lt;p&gt;做33号铺的过程也是非常有意思的，33号铺也冲上过github的PHP排行榜，在github榜上看见中国人的程序还是很开心的。33号铺还上了&lt;a href=&quot;http://codeigniter.org.cn/news/project_33pu&quot;&gt;Codeigniter中国&lt;/a&gt;的首页推荐，也非常开心。&lt;/p&gt;
+
+&lt;p&gt;最终我没有从33pu中获得任何金钱的奖励，但对我而言，我已经获得了极大的奖励。过程即奖励。&lt;/p&gt;
+
+&lt;p&gt;最后，33号铺仍然保持开源，有权限的apikey仍然可以免费使用和修改我的代码，但我本人不再更新了。&lt;/p&gt;
+
+&lt;p&gt;对了，33号铺的群还是保持讨论，可以聊聊其它程序，或者营销类、编程类的话题，群号码：230831981，敲门砖”33号铺“。&lt;/p&gt;
+</description>
+				<pubDate>Thu, 13 Jun 2013 16:01:00 +0800</pubDate>
+				<link>http://yuguo.us//weblog/33pu-stop-update/</link>
+				<guid isPermaLink="true">http://yuguo.us//weblog/33pu-stop-update/</guid>
+			</item>
+		
+			<item>
 				<title>我的第一个app上架了【限免3天】</title>
 				<description>&lt;p&gt;我的进度大概是这样的，去年11月开始学习做iOS开发，并且在本地调试。今年2月份注册开发者账号，开始真机调试，在5月初的时候程序1.0版完工准备上线了，然后打包提交。我等待了7天的时间之后，被苹果告知app的名字侵权。&lt;/p&gt;
 
@@ -385,97 +414,6 @@
 				<pubDate>Sun, 07 Apr 2013 19:20:00 +0800</pubDate>
 				<link>http://yuguo.us//weblog/maintainable-javascript/</link>
 				<guid isPermaLink="true">http://yuguo.us//weblog/maintainable-javascript/</guid>
-			</item>
-		
-			<item>
-				<title>ISUX和《众妙之门》的故事</title>
-				<description>&lt;p&gt;&lt;a href=&quot;http://book.douban.com/subject/23008807/&quot;&gt;《众妙之门3》&lt;/a&gt;是《Smashing Book #3 Redesign The Web》的中文译本，这本书是前端设计界非常非常有名的&lt;a href=&quot;http://smashingmagazine.com&quot;&gt;Smashingmagazine&lt;/a&gt;的文章精粹集合，然后还有一些独家的投稿。前两本《Smashing Book》出了之后反响非常好，都进行了再印刷，所以出版社对这次的《众妙之门3》也是抱有很大期望。第三本的内容是非常与时俱进的，话题通括了HTML5、CSS3、新JS API、Retina屏、Web App、基于Responsive Design的工作流等。&lt;/p&gt;
-
-&lt;p&gt;当然，我说这么多的原因是这是我们ISUX的同学们合作翻译的一本书，也是ISUX出品的第一本书。&lt;/p&gt;
-
-&lt;p&gt;我在这次翻译过程中的左右就是牵头、沟通、谈判、进度把控、校对、宣传，而主要的翻译工作都是ISUX的各位同学了，大家都非常专业，让这本书可以尽快地出版。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/files/2013/04/sm3.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-
-&lt;h2&gt;牵头&lt;/h2&gt;
-
-&lt;p&gt;我认识人民邮电出版社的编辑赵轩完全是出于巧合，因为我在豆瓣上写了《众妙之门2》的书评，其实评价不是很好，3分，主要是翻译的问题了，然后该书的编辑赵轩找到我问了我一些意见，我就以我工作的经验跟他沟通，一来二去就熟悉了，后来他也经常免费送一些书过来给我读。去年中的时候他很高兴地告诉我他们出版社谈到了Smashingmagazine的很多书（十几本）的国内版权，我一直是smashingmagazine的粉丝，所以也为中文界能引入这么优秀的外文书籍而高兴。&lt;/p&gt;
-
-&lt;p&gt;但是我也提到两个问题，一个是前面的书都是单一译者来翻译，翻译周期长，校对周期也长，二是非专业译者不能理解计算机词汇。&lt;/p&gt;
-
-&lt;p&gt;就像我当时在《众妙之门2》的书评里写的：&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;本书作者是来自全世界的作者，十几个人共同完成本书，而中文翻译却只有一人。所以某些章节的翻译质量就相对有点差了，比如第五章——web开发中的红旗。一方面是知识广度的原因，一方面也有精力的原因吧。 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;　　 
-    希望以后这种类型的书籍翻译也可以采用众包的模式，交给多个人来翻译。我会很乐意翻译前端方便的内容~ &lt;/p&gt;
-
-&lt;p&gt;所以我就跟赵轩说，也许我们的同事很乐意众包翻译一下这本书，前端同事翻译前端内容，设计同事翻译设计内容。赵轩自然很乐意，质量和进度都能有保证。接下来的事就是找同事来谈，当时我还没想到能拉很多人，想着可能一人要好几章，但是幸运的是碰巧跟当时的leader布林（sithsun）谈了之后，他觉得很好，然后就拉了个大群，直接十几个人分配完了。这事就谈成了。&lt;/p&gt;
-
-&lt;h2&gt;谈判&lt;/h2&gt;
-
-&lt;p&gt;需要谈判的事情有这样几点：&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;稿费&lt;/li&gt;
-&lt;li&gt;时间&lt;/li&gt;
-&lt;li&gt;品牌宣传&lt;/li&gt;
-&lt;li&gt;质量把控&lt;/li&gt;
-&lt;li&gt;部分开源&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;稿费倒没有特别去争取，因为这毕竟不是做这件事的主要动力，而且问了下其它做翻译的，也差不多，还略高一点。&lt;/p&gt;
-
-&lt;p&gt;时间方面我们跟出版社的目标是一致的，都是保证质量的前提下能尽快地出版，因为web技术发展的太快了，尽早出版更好，而且我们有团队来翻译应该更快。&lt;/p&gt;
-
-&lt;p&gt;品牌宣传是我很看重的一个方面，我希望对于我们每一个译者都有很好的介绍，然后大家才会有动力去做好这件事。所以我的要求是：每一章后面的作者介绍后面加上译者介绍，包括照片、姓名、简介、博客地址微博地址。在书的后面有团队的介绍，在封面有团队的名字和logo。&lt;/p&gt;
-
-&lt;p&gt;质量把控是出版社的硬性要求，所以我给他们翻译了一个样节之后，他们做了一些版式和规范上的修改，然后跟我在合同里写明了以后的所有章节都要达到这个质量。。。&lt;/p&gt;
-
-&lt;p&gt;部分开源是我的要求，我希望全书14章可以由我们选2章出来在互联网上开源免费发布，一方面可以扩大整个书的影响力，一方面这也是很好的一件事。&lt;/p&gt;
-
-&lt;p&gt;这是我们最终开源的部分：&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://yuguo.us/weblog/the-business-side-of-redesign/&quot;&gt;《众妙之门3》——第一章：重新设计的商业思考&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://yuguo.us/weblog/web-or-native-2/&quot;&gt;《众妙之门3》——第九章：移动用户体验设计考虑的因素：“是Web，还是原生？”&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;最后争取的译者权益是每个译者得到一本赠书，然后加上领导的一些，一共20本。&lt;/p&gt;
-
-&lt;h2&gt;进度把控&lt;/h2&gt;
-
-&lt;p&gt;我在google docs里新建了一个sheet来跟进每一章的进度，由于我是唯一的审核，所以我不希望他们同一时间完成然后一起给我。我给他们列出了不同的“交货时间”，然后我就每天校对一章的一部分。事实证明这样挺有效。&lt;/p&gt;
-
-&lt;p&gt;最终最严重的瓶颈还是在审核这里，因为40天需要交稿，整本书的内容又非常多，所以那段时间确实有点睡眠不足，我用dropbox把翻译稿同步到iPad上，班车上也看，早起校对，双休也全部用来校对，睡眠严重不足……最终还是如期交付了。虽然这里可以一笔带过，但最忙的部分就是这里了，也是最大的挑战。&lt;/p&gt;
-
-&lt;p&gt;这里给我的经验就是：明确的要求比笼统的要求更好，然后要跟团队的每一个人单独沟通，有些时候只在群里通知得不到很好的效果。&lt;/p&gt;
-
-&lt;h2&gt;校对&lt;/h2&gt;
-
-&lt;p&gt;两个月内，电子档就按时交付了，然后我就把docs打包交给出版社，接下来出版社会把所有文档经过排版整理之后打印出来，然后分批交给评审错别字的评审去拿笔画圈圈（有些评审是不会打字的大妈级）。&lt;/p&gt;
-
-&lt;p&gt;画圈圈完了之后出版社又把纸质打印稿寄回给我确认校对，我分给了其它译者每人校对一点，主要是统一措辞和语气，还有一些技术错误的地方。&lt;/p&gt;
-
-&lt;p&gt;后来我又寄回去，然后他们又重新输入+打印，再寄过来校对。现在快递还挺发达，两天就能寄到。&lt;/p&gt;
-
-&lt;h2&gt;宣传&lt;/h2&gt;
-
-&lt;p&gt;前期的宣传工作就是在微博上和博客上发表免费章节，等到快发货的时候，就涉及到微博大号的宣传。&lt;/p&gt;
-
-&lt;p&gt;一方面出版社会主动去跟微博大号谈合作，另一方面我们虽然一开始是非官方的翻译行为，但后期也希望为本书多做一些官方的宣传，提高团队影响力。&lt;/p&gt;
-
-&lt;h2&gt;如果你也希望和我一样&lt;/h2&gt;
-
-&lt;ol&gt;
-&lt;li&gt;利用好开放的渠道：github，豆瓣，知乎等&lt;/li&gt;
-&lt;li&gt;影响力是点滴的积累&lt;/li&gt;
-&lt;li&gt;多关注国外相关领域的网站： smashingmagazine等&lt;/li&gt;
-&lt;li&gt;利用好零碎时间：dropbox，mindjet，google doc等&lt;/li&gt;
-&lt;li&gt;分解任务，凡事先做一半，再做剩下的事情中的一半&lt;/li&gt;
-&lt;/ol&gt;
-</description>
-				<pubDate>Mon, 01 Apr 2013 23:20:00 +0800</pubDate>
-				<link>http://yuguo.us//weblog/isux-and-smashing-book/</link>
-				<guid isPermaLink="true">http://yuguo.us//weblog/isux-and-smashing-book/</guid>
 			</item>
 		
 	</channel>
