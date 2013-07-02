@@ -6,6 +6,7 @@
 /index.html
 /sitemap.txt
 
+/weblog/june-reading-list/
 /weblog/cdc-2013/
 /weblog/kindle-paperwhite/
 /weblog/33pu-stop-update/

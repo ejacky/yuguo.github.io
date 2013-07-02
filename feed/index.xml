@@ -6,6 +6,31 @@
 		<atom:link href="http://yuguo.us//feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>6月荐书单</title>
+				<description>&lt;p&gt;6月读的这几本书很值得推荐。&lt;/p&gt;
+
+&lt;h2&gt;清醒思考的艺术&lt;/h2&gt;
+
+&lt;p&gt;是一本关于思维误区的书，大概是今年读到的最好的书了，本书分为几十个小章节，每章讲了一个“思维误区”。有一些思维误区众所周知，比如《影响力》里面的从众心理、赠与-回馈心理。还有一些不是那么众所周知，但是更加重要的思维误区，比如团队里的会议，为什么大家倾向于不说出自己的意见，这是因为一方面没有人想做一个（永远的）捣蛋鬼，另一方面人们会认为如果大家都达成一致的意见，而自己有所异议的话，一定是自己错了。这个思维误区的解决办法是如果自己有异议，一定要说出来，而作为领导，则总是要指定一个人表达他的否定观点。&lt;/p&gt;
+
+&lt;p&gt;还有一章印象很深，叫“干掉你的宠儿”，意思是说我们每个人都有自己很喜欢、很确认的观点，比如对于之前的我，就有一个观点是html5的app很好，可以跟原生代码做一样的事情。拥有这样的“宠儿”会妨碍我真正地去做调查和学习，我会自动忽略那些说html5不好的信息，而增强那些说html5好的信息。这样就无法很客观地思考，觉得所有的信息都在说html5很好。避免思维误区的办法就是“干掉你的宠儿”，查找资料的时候总是试图证明自己是错误的，而不是证明自己是正确的。&lt;/p&gt;
+
+&lt;h2&gt;盛夏的方程式&lt;/h2&gt;
+
+&lt;p&gt;东野圭吾的最新推理小说，四星推荐，在诡计上不如《嫌疑人X的献身》，但东野的脑残粉不可错过。&lt;/p&gt;
+
+&lt;h2&gt;为什么中国人勤劳而不富有&lt;/h2&gt;
+
+&lt;p&gt;非常非常不错的一本书，五星推荐，作者的观点和表达方法都绝佳，堪称最好的经济学书之一，跟之前的《王二的经济学》很像。&lt;/p&gt;
+
+&lt;p&gt;本书最主要的观点是中国的制度没有保护私有财产，在资金流动上没有鼓励资源有效的配置……而信息时代的财富主要是由制度决定的，所以中国现在真的进入很危险的阶段。中国目前还可以凭借廉价的人力成本、丰沛的出口需求（逐年下降了）、制造业来拉动经济增长，但未来更大的增长点在于内需、更高的人力成本、服务业等……&lt;/p&gt;
+</description>
+				<pubDate>Tue, 02 Jul 2013 11:01:00 +0800</pubDate>
+				<link>http://yuguo.us//weblog/june-reading-list/</link>
+				<guid isPermaLink="true">http://yuguo.us//weblog/june-reading-list/</guid>
+			</item>
+		
+			<item>
 				<title>2013年中国开发者大会</title>
 				<description>&lt;p&gt;昨天有幸参加了在广州举办的&lt;a href=&quot;http://cdc.9ria.com/2013gz/index.html&quot;&gt;2013年中国开发者大会&lt;/a&gt;，因为早上要从深圳出发，两小时的车程后才到达广州白云国际会议中心，所以上午的话题只能听到两个了，但是都非常有感悟。下午的话题分为6个主题在6个场馆分别举行，6个话题分别是HTML5、iOS、Android、Unity、Cocos2d-x、Flash，我比较感兴趣的是iOS和HTML5，所以下午听了3个iOS的话题之后去了HTML5会场，我就说说我的所见所闻吧。&lt;/p&gt;
 
@@ -407,98 +432,6 @@
 				<pubDate>Fri, 03 May 2013 16:20:00 +0800</pubDate>
 				<link>http://yuguo.us//weblog/new-project-miloge/</link>
 				<guid isPermaLink="true">http://yuguo.us//weblog/new-project-miloge/</guid>
-			</item>
-		
-			<item>
-				<title>《响应式Web设计实践》：前端+后台=响应式</title>
-				<description>&lt;p&gt;&lt;a href=&quot;http://book.douban.com/subject/21263576/&quot;&gt;《响应式Web设计实践》&lt;/a&gt;是一本关于响应式Web设计的书，虽然之前也有构建响应式站点的经验（比如&lt;a href=&quot;http://z.qzone.com&quot;&gt;http://z.qzone.com&lt;/a&gt;）仔细读完全书，才知道响应式不只是media query这么简单。&lt;/p&gt;
-
-&lt;p&gt;本书内容非常丰富，下面介绍一些对我有所帮助的章节：&lt;/p&gt;
-
-&lt;h2&gt;3.4 媒介查询顺序&lt;/h2&gt;
-
-&lt;p&gt;我之前的制作经验是“优雅降级”型的，先制作一个完整的站点，在Chrome、IE中都能完整查看了，然后再往下增加一些断点，比如640px、320px等，在这些断点中新增样式来覆盖之前的完整样式，或者隐藏一些元素，但这样的缺点是不支持媒体查询的手机浏览器就只能读取完整站点样式了。而且因为做了restyle，整体代码量会偏大。&lt;/p&gt;
-
-&lt;p&gt;所以本书的经验“渐进增强”，先制作一个核心站点样式，这个样式中没有负责布局的样式，没有左右栏，就是简单的核心样式。然后在媒体查询中往上增加一些断点，比如320px、640px等，在这些断点中新增样式来增加布局样式，这样就免掉了之前的缺点。&lt;/p&gt;
-
-&lt;p&gt;最后桌面端的IE678不认识media query，所以需要用IE条件注释加载一个单独的样式：&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;&amp;lt;!--[if (lt IE 9) &amp;amp; (!IEMobile)]&amp;gt;
-&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot; href=&amp;quot;/css/ie.css&amp;quot; /&amp;gt;
-&amp;lt;![endif]--&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;我根据这一原则和方法修改了我的&lt;a href=&quot;http://yuguo.us&quot;&gt;博客&lt;/a&gt;的响应式实现方法，大家可以看看源码。&lt;/p&gt;
-
-&lt;h2&gt;3.6 确定断点&lt;/h2&gt;
-
-&lt;p&gt;这一节的观点是，新增的断点不应该由主流设备宽度来决定，应该由内容来决定，也就是说新增一个480的站点不应该是因为手机屏幕宽度很多都是480px，而应该是在481px的时候就能够有所调整了。&lt;/p&gt;
-
-&lt;p&gt;这个观点很好，让我们从被动地设置断点，到拥有主动权。&lt;/p&gt;
-
-&lt;h2&gt;P102 响应式设计对性能的影响&lt;/h2&gt;
-
-&lt;p&gt;Guy介绍了一下“前端的响应式设计”的弊端，大多数简单的前端处理的响应式有以下弊端：&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;下载并隐藏&lt;/li&gt;
-&lt;li&gt;下载并缩小&lt;/li&gt;
-&lt;li&gt;额外的DOM&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;这3个问题在比如&lt;a href=&quot;http://z.qzone.com&quot;&gt;http://z.qzone.com&lt;/a&gt;中几乎都存在，手机端下载了跟桌面端一样的HTML代码【问题3】，然后隐藏了一些下载功能【问题2】，最后把幻灯图缩小到手机屏幕大小【问题1】。&lt;/p&gt;
-
-&lt;p&gt;但是这样也是有原因的，因为首页图经常需要运营来修改，设计师也没有资源出一系列大图的时候，再专门针对手机做一系列小图，所以当时的方案是简单缩小。&lt;/p&gt;
-
-&lt;p&gt;当然以后有机会一定会去优化，做出更好的体验。&lt;/p&gt;
-
-&lt;h2&gt;4.5 背景图片&lt;/h2&gt;
-
-&lt;p&gt;利用媒体查询，在屏幕大于一定宽度的浏览器中才加载自定义字体。&lt;/p&gt;
-
-&lt;h2&gt;4.7.2 广告&lt;/h2&gt;
-
-&lt;p&gt;广告真的是一个很大的阻力，空间改版的时候想修改边栏宽度，就遇到广告位的阻力……也许以后可以跟商户签订更灵活的协议。&lt;/p&gt;
-
-&lt;h2&gt;7.5.1 代码汤&lt;/h2&gt;
-
-&lt;p&gt;不知道原文是什么，这里翻译成代码汤，有点奇怪，但意思大概是懂了，就是页面上的富文本CMS生成了很多冗余标签，冗余标签储存在数据库中，然后在移动端生成内容的时候就有诸多困难。&lt;/p&gt;
-
-&lt;p&gt;解决办法是简化CMS，同时在编辑器中做一个简单内容拷贝，或者过滤器过滤标签。&lt;/p&gt;
-
-&lt;h2&gt;8.2.2 服务器端Modernizr&lt;/h2&gt;
-
-&lt;p&gt;浏览器段的Modernizr我们都了解，是通过在浏览器里运行JavaScript来判断浏览器的能力，然后在html标签上附加一些标记class。&lt;/p&gt;
-
-&lt;p&gt;服务器端Modernizr的原理有所不同，访问者第一次访问页面时（不带cookie），JavaScript会立刻执行并取得测试的结果，然后这些结果被添加到cookie，页面立刻刷新。当下一次加载页面时，服务器端会读取cookie值，然后直接输出html。&lt;/p&gt;
-
-&lt;p&gt;缺点是JavaScript可能禁用，或者浏览器压根就不支持JavaScript，而且要加载两次（虽然第一次数据量很少，也是一次请求）。&lt;/p&gt;
-
-&lt;p&gt;优点是不必依赖UA字符串，更稳定。&lt;/p&gt;
-
-&lt;h2&gt;9.2 网络&lt;/h2&gt;
-
-&lt;p&gt;测试网络的方法之一是发起某个图片的请求，然后测试下载时间，根据这个来考虑是否需要加载更高分辨率的图片，&lt;/p&gt;
-
-&lt;p&gt;方法之2是网速API，但其实并不太稳定，一方面不是所有设备都有这个API，另一方面不一定3G就更快。&lt;/p&gt;
-
-&lt;h2&gt;最后&lt;/h2&gt;
-
-&lt;p&gt;响应式不简单是前端的责任（media query），也不简单是后台的责任（单独的m.站点），而是二者统一，后端来输出不同的内容，前台来按需加载图片，来做断点。&lt;/p&gt;
-
-&lt;p&gt;设计师也需要了解前端知识，因为未来的主流趋势是设计师在浏览器中设计。&lt;/p&gt;
-
-&lt;p&gt;本书有一些小问题，比如：&lt;/p&gt;
-
-&lt;p&gt;P38边栏的链接中有空格，其实url中不能有空格的吧。&lt;/p&gt;
-
-&lt;p&gt;第8章原章节名字可能确实是RESS，但中文书里这样写太奇怪了，这并不算约定通俗的缩写，让人云里雾里，简单的“服务器端检测”就非常好了。&lt;/p&gt;
-
-&lt;p&gt;另外不喜欢（译注：）这样的文字插入到正文中，应该用脚注或者边栏注可能更好。&lt;/p&gt;
-
-&lt;p&gt;整体来说翻译的不赖，译者的自我评价（原文5星，翻译3星）过谦了，我打5星。&lt;/p&gt;
-</description>
-				<pubDate>Fri, 12 Apr 2013 16:20:00 +0800</pubDate>
-				<link>http://yuguo.us//weblog/responsive-web-design/</link>
-				<guid isPermaLink="true">http://yuguo.us//weblog/responsive-web-design/</guid>
 			</item>
 		
 	</channel>
