@@ -46,21 +46,20 @@ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www')
 	<div class="ads">
 
       <div class="fusionads">
-        <h2>项目</h2>
+        <h2>我的APP</h2>
 
         <span class="fusionentire">
-          <a href="http://33pu.net/" title="33号铺">
-            <img src="http://yuguo.us/files/2013/01/33pu-github.png" alt="33号铺" />
+          <a href="https://itunes.apple.com/cn/app/lu-da-shi-for-ying-xiong-lian/id646299086?mt=8" title="撸大师">
+            <img src="/files/2013/07/appstore.png" alt="撸大师" style="width:200px;"/>
           </a>
           <span class="fusiontext">
-                33号铺是一个简单好用的淘宝客瀑布流发布、管理系统。
+              撸大师是一款快速查看英雄联盟攻略的iPhone APP。
           </span>
         </span>
-        <p><a href="http://33pu.net/" title="访问33号铺">Demo</a> | <a href="http://github.com/yuguo/33pu" title="下载33号铺">下载</a></p>
-      </div><!-- .fusionads -->
+        </div><!-- .fusionads -->
       
       <div class="fusionads">
-        <h2>书</h2>
+        <h2>我的书</h2>
 
         <span class="fusionentire">
           <a href="http://yuguo.us/weblog/isux-and-smashing-book/" title="众妙之门3">
@@ -78,16 +77,16 @@ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www')
 
         <span class="fusionentire">
           <a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">
-            <img src="http://yuguo.us/files/2013/01/1.jpg" alt="Home&More淘宝店" />
+            <img src="/files/2013/07/kpw.jpg" alt="Home&More淘宝店" style="width:200px" />
           </a>
           <span class="fusiontext">
             <a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">
-              Home&More淘宝店是一个还不错的家居淘宝店。
+              Home&More淘宝店是一个靠谱的海外代购店。
 
             </a>
           </span>
         </span>
-        <p><a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">homemore.taobao.com</a></p>
+        <p><a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">http://homemore.taobao.com</a></p>
       </div><!-- .fusionads -->
 
     </div><!-- .ads -->
@@ -100,26 +99,77 @@ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www')
 
 	      	<p>说到网站适配iPad，感觉挺时髦的，无论是对客户说、对上司说、对前端界来说都会觉得很上流，很国际化。但根据我的体验，有些“优化”真的是为了KPI而优化（不是产品KPI，而是前端组需要有iPad优化项目的经验而制定的KPI）。说实话，我也做过对iPad，对iPhone的网站优化，但有的时候真仔细体验，却有很多值得商榷的地方，并不是吃力就可以让用户觉得“爽”。</p>
 
-<p>多<em>体验</em>才是正道。</p>
+<p>多*体验*才是正道。</p>
 
 <p>根据我的iPad上网经验，我大概列了这样一个打分表，不知道有没有漏：</p>
 
-<p>| 页面        | 评分 |
-|:------------------|------------:|
-| 页面是多列布局，我可以通过双击一列来放大这一列。              |        +20 |
-| 面是单列布局，并且没有使用<code>width=device-width</code>，那么iPad会默认把宽度设置为1024宽来缩小，这样文字和可点击区域都会变小。            |      -30 |
-| 有<code>position:fixed</code>的元素，并且缩小页面的时候挡住屏幕。              |        -50 |
-| 弹出框绝对定位超出屏幕尺寸（看不见，无法继续操作，只能刷新）。 | -50 |
-| 使用Flash做内容。                |          -30 |
-| 对retina屏有更清晰的图片和图标。              |      +10 |
-| 轻页面，没有太多互动元素和异步内容。           |     +10 |
-| 重页面，滚动页面卡，操作需要点击多次。           |     -10 |
-| 可点击区域清晰，尺寸合适。           |     +10 |
-| 可点击区域小。           |     -10 |
-| 使用原生控件，html5表单，select等。|+10|
-| 使用模拟控件，模拟滚动条，div模拟的select等。           |     -20 |
-| 做一个iPad单独版，优化事件和体验。           |     +10 |
-| 单独做的iPad版缺少PC web端上的某个重要功能。           |     -30 |</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left;"> 页面        </th>
+<th style="text-align:right;"> 评分 </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;"> 页面是多列布局，我可以通过双击一列来放大这一列。              </td>
+<td style="text-align:right;">        +20 </td>
+</tr>
+<tr>
+<td style="text-align:left;"> 面是单列布局，并且没有使用<code>width=device-width</code>，那么iPad会默认把宽度设置为1024宽来缩小，这样文字和可点击区域都会变小。            </td>
+<td style="text-align:right;">      -30 </td>
+</tr>
+<tr>
+<td style="text-align:left;"> 有<code>position:fixed</code>的元素，并且缩小页面的时候挡住屏幕。              </td>
+<td style="text-align:right;">        -50 </td>
+</tr>
+<tr>
+<td style="text-align:left;"> 弹出框绝对定位超出屏幕尺寸（看不见，无法继续操作，只能刷新）。 </td>
+<td style="text-align:right;"> -50 </td>
+</tr>
+<tr>
+<td style="text-align:left;"> 使用Flash做内容。                </td>
+<td style="text-align:right;">          -30 </td>
+</tr>
+<tr>
+<td style="text-align:left;"> 对retina屏有更清晰的图片和图标。              </td>
+<td style="text-align:right;">      +10 </td>
+</tr>
+<tr>
+<td style="text-align:left;"> 轻页面，没有太多互动元素和异步内容。           </td>
+<td style="text-align:right;">     +10 </td>
+</tr>
+<tr>
+<td style="text-align:left;"> 重页面，滚动页面卡，操作需要点击多次。           </td>
+<td style="text-align:right;">     -10 </td>
+</tr>
+<tr>
+<td style="text-align:left;"> 可点击区域清晰，尺寸合适。           </td>
+<td style="text-align:right;">     +10 </td>
+</tr>
+<tr>
+<td style="text-align:left;"> 可点击区域小。           </td>
+<td style="text-align:right;">     -10 </td>
+</tr>
+<tr>
+<td style="text-align:left;"> 使用原生控件，html5表单，select等。</td>
+<td style="text-align:right;">+10</td>
+</tr>
+<tr>
+<td style="text-align:left;"> 使用模拟控件，模拟滚动条，div模拟的select等。           </td>
+<td style="text-align:right;">     -20 </td>
+</tr>
+<tr>
+<td style="text-align:left;"> 做一个iPad单独版，优化事件和体验。           </td>
+<td style="text-align:right;">     +10 </td>
+</tr>
+<tr>
+<td style="text-align:left;"> 单独做的iPad版缺少PC web端上的某个重要功能。           </td>
+<td style="text-align:right;">     -30 </td>
+</tr>
+</tbody>
+</table>
+
 
 <p>得分为正就不错了，使用起来毫无障碍。</p>
 

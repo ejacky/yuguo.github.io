@@ -46,21 +46,20 @@ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www')
 	<div class="ads">
 
       <div class="fusionads">
-        <h2>项目</h2>
+        <h2>我的APP</h2>
 
         <span class="fusionentire">
-          <a href="http://33pu.net/" title="33号铺">
-            <img src="http://yuguo.us/files/2013/01/33pu-github.png" alt="33号铺" />
+          <a href="https://itunes.apple.com/cn/app/lu-da-shi-for-ying-xiong-lian/id646299086?mt=8" title="撸大师">
+            <img src="/files/2013/07/appstore.png" alt="撸大师" style="width:200px;"/>
           </a>
           <span class="fusiontext">
-                33号铺是一个简单好用的淘宝客瀑布流发布、管理系统。
+              撸大师是一款快速查看英雄联盟攻略的iPhone APP。
           </span>
         </span>
-        <p><a href="http://33pu.net/" title="访问33号铺">Demo</a> | <a href="http://github.com/yuguo/33pu" title="下载33号铺">下载</a></p>
-      </div><!-- .fusionads -->
+        </div><!-- .fusionads -->
       
       <div class="fusionads">
-        <h2>书</h2>
+        <h2>我的书</h2>
 
         <span class="fusionentire">
           <a href="http://yuguo.us/weblog/isux-and-smashing-book/" title="众妙之门3">
@@ -78,16 +77,16 @@ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www')
 
         <span class="fusionentire">
           <a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">
-            <img src="http://yuguo.us/files/2013/01/1.jpg" alt="Home&More淘宝店" />
+            <img src="/files/2013/07/kpw.jpg" alt="Home&More淘宝店" style="width:200px" />
           </a>
           <span class="fusiontext">
             <a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">
-              Home&More淘宝店是一个还不错的家居淘宝店。
+              Home&More淘宝店是一个靠谱的海外代购店。
 
             </a>
           </span>
         </span>
-        <p><a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">homemore.taobao.com</a></p>
+        <p><a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">http://homemore.taobao.com</a></p>
       </div><!-- .fusionads -->
 
     </div><!-- .ads -->
@@ -99,22 +98,30 @@ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www')
 	      	<span class="post-date">2013年 01月 07日</span>
 
 	      	<p>在终端中连接SSH挺烦躁的：</p>
-<div class="highlight"><pre><code class="text language-text" data-lang="text">ssh -p 6851 user@servername.domain.com
-</code></pre></div>
+
+<pre><code>ssh -p 6851 user@servername.domain.com
+</code></pre>
+
 <p>所以我们可以创建一个快捷方式，打开终端，输入：</p>
-<div class="highlight"><pre><code class="text language-text" data-lang="text">nano ~/.ssh/config
-</code></pre></div>
+
+<pre><code>nano ~/.ssh/config
+</code></pre>
+
 <p>第一次打开的话应该是一个空文件，输入以下内容：</p>
-<div class="highlight"><pre><code class="text language-text" data-lang="text">Host shortcutname
+
+<pre><code>Host shortcutname
 HostName server.domain.com
 Port 5555
 User username
-</code></pre></div>
+</code></pre>
+
 <p>shortcutname就是快捷方式，HostName填域或者IP，最后是端口跟用户名。</p>
 
 <p>重启终端，然后可以使用快捷命令连接服务器：</p>
-<div class="highlight"><pre><code class="text language-text" data-lang="text">ssh shortcutname
-</code></pre></div>
+
+<pre><code>ssh shortcutname
+</code></pre>
+
 <p>然后输入密码即可。</p>
 
 <p>最后我搜索了下如何可以把密码也存在配置文件中，答案是这样会很有安全问题，如果别人侵入你的电脑，也会得到你的ssh密码，但是方法还是有的，比较麻烦。</p>

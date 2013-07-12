@@ -46,21 +46,20 @@ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www')
 	<div class="ads">
 
       <div class="fusionads">
-        <h2>项目</h2>
+        <h2>我的APP</h2>
 
         <span class="fusionentire">
-          <a href="http://33pu.net/" title="33号铺">
-            <img src="http://yuguo.us/files/2013/01/33pu-github.png" alt="33号铺" />
+          <a href="https://itunes.apple.com/cn/app/lu-da-shi-for-ying-xiong-lian/id646299086?mt=8" title="撸大师">
+            <img src="/files/2013/07/appstore.png" alt="撸大师" style="width:200px;"/>
           </a>
           <span class="fusiontext">
-                33号铺是一个简单好用的淘宝客瀑布流发布、管理系统。
+              撸大师是一款快速查看英雄联盟攻略的iPhone APP。
           </span>
         </span>
-        <p><a href="http://33pu.net/" title="访问33号铺">Demo</a> | <a href="http://github.com/yuguo/33pu" title="下载33号铺">下载</a></p>
-      </div><!-- .fusionads -->
+        </div><!-- .fusionads -->
       
       <div class="fusionads">
-        <h2>书</h2>
+        <h2>我的书</h2>
 
         <span class="fusionentire">
           <a href="http://yuguo.us/weblog/isux-and-smashing-book/" title="众妙之门3">
@@ -78,16 +77,16 @@ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www')
 
         <span class="fusionentire">
           <a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">
-            <img src="http://yuguo.us/files/2013/01/1.jpg" alt="Home&More淘宝店" />
+            <img src="/files/2013/07/kpw.jpg" alt="Home&More淘宝店" style="width:200px" />
           </a>
           <span class="fusiontext">
             <a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">
-              Home&More淘宝店是一个还不错的家居淘宝店。
+              Home&More淘宝店是一个靠谱的海外代购店。
 
             </a>
           </span>
         </span>
-        <p><a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">homemore.taobao.com</a></p>
+        <p><a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">http://homemore.taobao.com</a></p>
       </div><!-- .fusionads -->
 
     </div><!-- .ads -->
@@ -100,9 +99,12 @@ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www')
 
 	      	<p>重构工程师是掌控天平的人。</p>
 
-<p>在制作雪碧图这件事上，要考虑自己行为造成的如下影响：<em>服务器流量</em>、<em>HTTP请求数</em>、<em>可扩展性</em>。理解了使用它的优势和劣势，才能写出更好的代码。
+<p>在制作雪碧图这件事上，要考虑自己行为造成的如下影响：<em>服务器流量</em>、<em>HTTP请求数</em>、<em>可扩展性</em>。理解了使用它的优势和劣势，才能写出更好的代码。</p>
+
 <h2>服务器流量</h2>
-滥用雪碧图可能导致服务器流量的浪费，体现在以下4个方面：</p>
+
+
+<p>滥用雪碧图可能导致服务器流量的浪费，体现在以下4个方面：</p>
 
 <p>单独来看，不同类型的图片适合使用不同类型的格式，各自使用各自适合的图片的话，并且经过额外压缩（非PS里的压缩，而是去掉文件附带信息的压缩），就能达到流量最优。当做成雪碧图时，也就是用一种类型来匹配多种图片。在这种情况之下，可能一个并不适合制作成jpg的按钮被放在一个大的jpg雪碧图中。由此造成的服务器流量增多是一个无法忽视的漏洞。更严重的是，一些需要平铺repeat的图放在雪碧图中可能会影响整个雪碧图尺寸大小的变更。</p>
 
@@ -110,25 +112,34 @@ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www')
 
 <p>第三个因素是雪碧图中的一个小地方修改时，整个大图都需要由用户重新读取，无法长缓存。</p>
 
-<p>第四个因素是：模块之间是耦合较低的，这是理想的、我们希望看到的情况。但通过雪碧图我们把几个模块连接在一起了：当一个模块弃用或者修改之后，模块的图片还在雪碧图之中，而雪碧图仍然在线上通过其他模块被用户读取。这就造成了流量浪费。
+<p>第四个因素是：模块之间是耦合较低的，这是理想的、我们希望看到的情况。但通过雪碧图我们把几个模块连接在一起了：当一个模块弃用或者修改之后，模块的图片还在雪碧图之中，而雪碧图仍然在线上通过其他模块被用户读取。这就造成了流量浪费。</p>
+
 <h2>HTTP请求数</h2>
-雪碧图能减少HTTP请求数，以此获得的利益被高估了：</p>
+
+
+<p>雪碧图能减少HTTP请求数，以此获得的利益被高估了：</p>
 
 <p>HTTP请求数不是一个重要得不得了的优化因素，因为HTTP请求数不是越少越好，而是少到一定程度就足够好了。</p>
 
 <p>就好像通过CDN增加域名数来提高并行下载数量，但CDN的数量也不是越多越好，因为增加一个域名就会增加一个域名的DNS解析时间。达到4个域名的时候，增加的额外DNS解析时间可能会完全抵消掉并行下载带来的好处。</p>
 
-<p>足够好就够了。
+<p>足够好就够了。</p>
+
 <h2>可扩展性</h2>
-雪碧图对扩展性造成的干扰体现在下面几点：</p>
+
+
+<p>雪碧图对扩展性造成的干扰体现在下面几点：</p>
 
 <p>首先，降低了了组件独立性。如果希望在一个子页中调用首页的一个vip按钮，那么就必须做一个担心：担心子页中引用改模块的html或者css会导致请求一整张不需要的大图片。</p>
 
 <p>其次，增加了图片，那么是在已有雪碧图中进行修改增加还是另外增加一个图片？后者会导致不一致和服务器布局混乱；前者会导致雪碧图尺寸增加，或者由于找不到PSD源码导致图片质量降低的问题，而且几个同样按钮的不同布局摆放也可能会输出大小不一的图片，后期变更往往在开始摆放的时候是无法预料到的。</p>
 
-<p>再次，雪碧图尺寸变更也可能导致原有雪碧图支持的模块错乱。因为一些小icon必须处于雪碧图的中间的，如果改变宽度，那么icon就不在50%处了，会导致模块错位。
+<p>再次，雪碧图尺寸变更也可能导致原有雪碧图支持的模块错乱。因为一些小icon必须处于雪碧图的中间的，如果改变宽度，那么icon就不在50%处了，会导致模块错位。</p>
+
 <h2>那么</h2>
-使用的时候多思考，不要不加思考地使用雪碧图，不要让自己的天平太过于偏向HTTP请求数，而忽略了流量和可扩展性。</p>
+
+
+<p>使用的时候多思考，不要不加思考地使用雪碧图，不要让自己的天平太过于偏向HTTP请求数，而忽略了流量和可扩展性。</p>
 
 	      	<p class='previous-next-nav'><a href="http://yuguo.us//weblog/custom-grid-syste/" class="next">匹配项目的栅格化系统 &rarr;</a>
 	      	<a href="http://yuguo.us//weblog/thank-old-codes/" class="previous">&larr; 感谢老代码</a>

@@ -46,21 +46,20 @@ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www')
 	<div class="ads">
 
       <div class="fusionads">
-        <h2>项目</h2>
+        <h2>我的APP</h2>
 
         <span class="fusionentire">
-          <a href="http://33pu.net/" title="33号铺">
-            <img src="http://yuguo.us/files/2013/01/33pu-github.png" alt="33号铺" />
+          <a href="https://itunes.apple.com/cn/app/lu-da-shi-for-ying-xiong-lian/id646299086?mt=8" title="撸大师">
+            <img src="/files/2013/07/appstore.png" alt="撸大师" style="width:200px;"/>
           </a>
           <span class="fusiontext">
-                33号铺是一个简单好用的淘宝客瀑布流发布、管理系统。
+              撸大师是一款快速查看英雄联盟攻略的iPhone APP。
           </span>
         </span>
-        <p><a href="http://33pu.net/" title="访问33号铺">Demo</a> | <a href="http://github.com/yuguo/33pu" title="下载33号铺">下载</a></p>
-      </div><!-- .fusionads -->
+        </div><!-- .fusionads -->
       
       <div class="fusionads">
-        <h2>书</h2>
+        <h2>我的书</h2>
 
         <span class="fusionentire">
           <a href="http://yuguo.us/weblog/isux-and-smashing-book/" title="众妙之门3">
@@ -78,16 +77,16 @@ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www')
 
         <span class="fusionentire">
           <a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">
-            <img src="http://yuguo.us/files/2013/01/1.jpg" alt="Home&More淘宝店" />
+            <img src="/files/2013/07/kpw.jpg" alt="Home&More淘宝店" style="width:200px" />
           </a>
           <span class="fusiontext">
             <a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">
-              Home&More淘宝店是一个还不错的家居淘宝店。
+              Home&More淘宝店是一个靠谱的海外代购店。
 
             </a>
           </span>
         </span>
-        <p><a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">homemore.taobao.com</a></p>
+        <p><a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">http://homemore.taobao.com</a></p>
       </div><!-- .fusionads -->
 
     </div><!-- .ads -->
@@ -100,7 +99,7 @@ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www')
 
 	      	<p>我在我最新的App中使用了nodejs+MongoDB来作为服务器端，同时把代码部署在<a href="http://heroku.com">Heroku</a>上面。好处就是方便扩展，在app发布初期可能没什么用户（也许一直都不会有啊囧），这时候我可以免费使用云平台（PaaS）的资源，而不必花钱购买昂贵的VPS，同时浪费VPS的CPU和内存，以及带宽。而幸运地话，如果用户增加，我也可以方便地在云平台上扩容。</p>
 
-<p><img src="/files/2013/02/heroku.png" alt="image"></p>
+<p><img src="/files/2013/02/heroku.png" alt="image" /></p>
 
 <p>我尝试了在AppFog上搭建我的nodejs应用，但因为我依赖了jQuery，而jQuery总是报错（http://lol.ap01.aws.af.cm/）。现在部署在Heroku上，没有任何问题。应用还需要完善，所以我就不贴出地址了，大概还需要两周时间完成。</p>
 
@@ -134,13 +133,14 @@ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www')
 <li><a href="http://mongoosejs.com/">Mongoose官网</a></li>
 </ul>
 
+
 <h2>MongoHQ</h2>
 
 <p><a href="https://www.mongohq.com/home">MongoHQ</a>是一个托管MongoDB的第三方平台，它的客户包括appfog和heroku这种PaaS提供商。它的最大优点就是能提供稳定、可扩展的MongoDB数据库服务。更细的分工应该是未来的一个趋势，就好像这种PaaS提供商很多都会用Amazon S3作为静态文件托管商。大家通过API来低耦合地合作在一起。</p>
 
 <p>在heroku中使用MongoHQ非常方便，只需要在Add on中选择MongoHQ，然后就会自动创建一个数据库url，提供了host、url、端口、用户名、密码。这些数据可以直接在我的App中使用，配合Mongoose，只需要一句代码就可以连接数据库。</p>
 
-<p><img src="/files/2013/02/mongohq.png" alt="image"></p>
+<p><img src="/files/2013/02/mongohq.png" alt="image" /></p>
 
 <p>虽然我一直在说各种云服务的无缝连接是多么简单，但实际上我第一次走通整个流程还是费了不少劲。我相信云服务是未来主流，所以多花一点时间去学习，以后会一直受益。</p>
 

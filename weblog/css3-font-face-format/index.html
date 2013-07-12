@@ -46,21 +46,20 @@ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www')
 	<div class="ads">
 
       <div class="fusionads">
-        <h2>项目</h2>
+        <h2>我的APP</h2>
 
         <span class="fusionentire">
-          <a href="http://33pu.net/" title="33号铺">
-            <img src="http://yuguo.us/files/2013/01/33pu-github.png" alt="33号铺" />
+          <a href="https://itunes.apple.com/cn/app/lu-da-shi-for-ying-xiong-lian/id646299086?mt=8" title="撸大师">
+            <img src="/files/2013/07/appstore.png" alt="撸大师" style="width:200px;"/>
           </a>
           <span class="fusiontext">
-                33号铺是一个简单好用的淘宝客瀑布流发布、管理系统。
+              撸大师是一款快速查看英雄联盟攻略的iPhone APP。
           </span>
         </span>
-        <p><a href="http://33pu.net/" title="访问33号铺">Demo</a> | <a href="http://github.com/yuguo/33pu" title="下载33号铺">下载</a></p>
-      </div><!-- .fusionads -->
+        </div><!-- .fusionads -->
       
       <div class="fusionads">
-        <h2>书</h2>
+        <h2>我的书</h2>
 
         <span class="fusionentire">
           <a href="http://yuguo.us/weblog/isux-and-smashing-book/" title="众妙之门3">
@@ -78,16 +77,16 @@ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www')
 
         <span class="fusionentire">
           <a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">
-            <img src="http://yuguo.us/files/2013/01/1.jpg" alt="Home&More淘宝店" />
+            <img src="/files/2013/07/kpw.jpg" alt="Home&More淘宝店" style="width:200px" />
           </a>
           <span class="fusiontext">
             <a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">
-              Home&More淘宝店是一个还不错的家居淘宝店。
+              Home&More淘宝店是一个靠谱的海外代购店。
 
             </a>
           </span>
         </span>
-        <p><a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">homemore.taobao.com</a></p>
+        <p><a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">http://homemore.taobao.com</a></p>
       </div><!-- .fusionads -->
 
     </div><!-- .ads -->
@@ -101,17 +100,19 @@ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www')
 	      	<p>使用CSS3自定义字体的时候，为了兼容所有浏览器，服务器需要输出4种格式的字体，分别是eot、svg、ttf和woff。</p>
 
 <p>CSS代码：</p>
-<div class="highlight"><pre><code class="text language-text" data-lang="text">@font-face {
- font-family: &#39;qzficon&#39;;
- src: url(&#39;font/qzficon-regular.eot&#39;); /* IE9兼容模式 */
- src: url(&#39;font/qzficon-regular.eot?#iefix&#39;) format(&#39;embedded-opentype&#39;), /* IE6-IE8 */
- url(&#39;font/qzficon-regular.woff&#39;) format(&#39;woff&#39;),
- url(&#39;font/qzficon-regular.ttf&#39;) format(&#39;truetype&#39;), /* Chrome,Firefox 3.5 and Safari */
- url(&#39;font/qzficon-regular.svg#qzficon&#39;) format(&#39;svg&#39;); /* Google Chrome, Opera 9, and the iPhone. */
+
+<pre><code>@font-face {
+ font-family: 'qzficon';
+ src: url('font/qzficon-regular.eot'); /* IE9兼容模式 */
+ src: url('font/qzficon-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+ url('font/qzficon-regular.woff') format('woff'),
+ url('font/qzficon-regular.ttf') format('truetype'), /* Chrome,Firefox 3.5 and Safari */
+ url('font/qzficon-regular.svg#qzficon') format('svg'); /* Google Chrome, Opera 9, and the iPhone. */
  font-weight: normal;
  font-style: normal;
 }
-</code></pre></div>
+</code></pre>
+
 <p>.qzficon{font-family:qzficon;}</p>
 
 <p>那么这几种格式分别支持哪些浏览器，顺序为什么是这样的？</p>
@@ -119,17 +120,20 @@ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www')
 <p>这个@font-face里实际上有两条src属性定义，按照CSS的层叠覆盖规则，后面的属性会把前面的覆盖（todo 除非浏览器不支持后面的值，会认为该值非法而完全忽视它）。</p>
 
 <p>而且按照CSS3的@font-face属性定义，一条属性可以支持多个值，用逗号分隔，多个属性同时生效。W3C标准是这样的：</p>
-<div class="highlight"><pre><code class="text language-text" data-lang="text">[ &amp;lt;uri&amp;gt; [format(&amp;lt;string&amp;gt; [, &amp;lt;string&amp;gt;]*)] | &amp;lt;font-face-name&amp;gt; ] [, &amp;lt;uri&amp;gt; [format(&amp;lt;string&amp;gt; [, &amp;lt;string&amp;gt;]*)] | &amp;lt;font-face-name&amp;gt; ]*
-</code></pre></div>
+
+<pre><code>[ &amp;lt;uri&amp;gt; [format(&amp;lt;string&amp;gt; [, &amp;lt;string&amp;gt;]*)] | &amp;lt;font-face-name&amp;gt; ] [, &amp;lt;uri&amp;gt; [format(&amp;lt;string&amp;gt; [, &amp;lt;string&amp;gt;]*)] | &amp;lt;font-face-name&amp;gt; ]*
+</code></pre>
+
 <p>此描述指定了资源中包含的字体数据。无论字体是下载的或者是本地安装的，这个描述都是必需的，以逗号作为分隔的外部引用或本地安装的字体名称的列表中各值的优先级依次递减。当遇到不合理的数据则被当作未找到字体处理。</p>
 
 <h2>造成的影响</h2>
 
-<p>若在使用 &#39;@font-face&#39; 规则时仅仅考虑一种字体格式，则可能在某些浏览器中无法应用规则所引入的字体。</p>
+<p>若在使用 '@font-face' 规则时仅仅考虑一种字体格式，则可能在某些浏览器中无法应用规则所引入的字体。</p>
 
 <h2>受影响的浏览器</h2>
 
 <table><tbody><tr><th>IE6</th><td>仅支持 Embedded OpenType(.eot) 格式。</td></tr><tr><th>IE7</th><td>仅支持 Embedded OpenType(.eot) 格式。</td></tr><tr><th>IE8</th><td>仅支持 Embedded OpenType(.eot) 格式。</td></tr><tr><th>Firefox 3.5</th><td>支持 TrueType、OpenType(.ttf, .otf) 格式。</td></tr><tr><th>Firefox 3.6</th><td>支持 TrueType、OpenType(.ttf, .otf) 及 WOFF 格式。</td></tr><tr><th>Chrome</th><td>支持 TrueType、OpenType(.ttf, .otf) 及 SVG Font(.svg) 格式。</td></tr><tr><th>Safari</th><td>支持 TrueType、OpenType(.ttf, .otf) 及 SVG Font(.svg) 格式。</td></tr><tr><th>Opera</th><td>支持 TrueType、OpenType(.ttf, .otf) 及 SVG Font(.svg) 格式。</td></tr></tbody></table>
+
 
 <h2>两个EOT</h2>
 

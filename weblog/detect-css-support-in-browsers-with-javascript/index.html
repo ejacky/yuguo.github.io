@@ -46,21 +46,20 @@ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www')
 	<div class="ads">
 
       <div class="fusionads">
-        <h2>项目</h2>
+        <h2>我的APP</h2>
 
         <span class="fusionentire">
-          <a href="http://33pu.net/" title="33号铺">
-            <img src="http://yuguo.us/files/2013/01/33pu-github.png" alt="33号铺" />
+          <a href="https://itunes.apple.com/cn/app/lu-da-shi-for-ying-xiong-lian/id646299086?mt=8" title="撸大师">
+            <img src="/files/2013/07/appstore.png" alt="撸大师" style="width:200px;"/>
           </a>
           <span class="fusiontext">
-                33号铺是一个简单好用的淘宝客瀑布流发布、管理系统。
+              撸大师是一款快速查看英雄联盟攻略的iPhone APP。
           </span>
         </span>
-        <p><a href="http://33pu.net/" title="访问33号铺">Demo</a> | <a href="http://github.com/yuguo/33pu" title="下载33号铺">下载</a></p>
-      </div><!-- .fusionads -->
+        </div><!-- .fusionads -->
       
       <div class="fusionads">
-        <h2>书</h2>
+        <h2>我的书</h2>
 
         <span class="fusionentire">
           <a href="http://yuguo.us/weblog/isux-and-smashing-book/" title="众妙之门3">
@@ -78,16 +77,16 @@ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www')
 
         <span class="fusionentire">
           <a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">
-            <img src="http://yuguo.us/files/2013/01/1.jpg" alt="Home&More淘宝店" />
+            <img src="/files/2013/07/kpw.jpg" alt="Home&More淘宝店" style="width:200px" />
           </a>
           <span class="fusiontext">
             <a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">
-              Home&More淘宝店是一个还不错的家居淘宝店。
+              Home&More淘宝店是一个靠谱的海外代购店。
 
             </a>
           </span>
         </span>
-        <p><a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">homemore.taobao.com</a></p>
+        <p><a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">http://homemore.taobao.com</a></p>
       </div><!-- .fusionads -->
 
     </div><!-- .ads -->
@@ -102,67 +101,82 @@ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www')
 
 <p>当然除开本文介绍的这种快速方法，还有一种更有名和更通用的方法，那就是<a href="http://modernizr.com/">modernizr</a>，运行脚本之后它会在html的class上加上浏览器支持的所有特性的列表。</p>
 
-<p>优点：
+<p>优点：</p>
+
 <ul>
     <li>js是可配置的，不需要的特性检测可以在配置脚本中去掉</li>
     <li>基于特性检测</li>
-    <li>js库简单好用</li></ul><p style="text-align: center;"><img class="aligncenter size-full wp-image-1407" title="modernizr" src="http://yuguo.us/files/2012/09/1.png" alt="modernizr"   /></p>
-除此之外还有一种不太好的方法，那就是判断浏览器的UA，不好的原因是UA可能会伪造，而且版本判断繁琐，还有不稳定。</p>
+    <li>js库简单好用</li></ul>
+
+
+<p style="text-align: center;"><img class="aligncenter size-full wp-image-1407" title="modernizr" src="http://yuguo.us/files/2012/09/1.png" alt="modernizr"   /></p>
+
+
+<p>除此之外还有一种不太好的方法，那就是判断浏览器的UA，不好的原因是UA可能会伪造，而且版本判断繁琐，还有不稳定。</p>
 
 <p>优点：性能可能是最优的</p>
 
 <p>最后就是本文介绍的这个方法，我写了一个函数快速检测是否浏览器支持某CSS特性，适合的场景是快速需要知道浏览器是否支持某一个CSS特性（而不是好几个）。</p>
 
-<p>优点：
+<p>优点：</p>
+
 <ul>
     <li>性能不错</li>
     <li>通用性强</li>
-    <li>适合检测单个CSS特性</li></ul><pre>var supports = (function() {</p>
+    <li>适合检测单个CSS特性</li></ul>
 
-<p>var div = document.createElement(&#39;div&#39;),</p>
 
-<p>vendors = &#39;Khtml O Moz Webkit&#39;.split(&#39; &#39;),</p>
+<pre>var supports = (function() {
 
-<p>len = vendors.length;</p>
+ var div = document.createElement('div'),
 
-<p>return function(prop) {</p>
+ vendors = 'Khtml O Moz Webkit'.split(' '),
 
-<p>if ( prop in div.style ) return true;</p>
+ len = vendors.length;
 
-<p>if (&#39;-ms-&#39; + prop in div.style) return true;</p>
+ return function(prop) {
 
-<p>prop = prop.replace(/^[a-z]/, function(val) {</p>
+ if ( prop in div.style ) return true;
 
-<p>return val.toUpperCase();</p>
+ if ('-ms-' + prop in div.style) return true;
 
-<p>});</p>
+ prop = prop.replace(/^[a-z]/, function(val) {
 
-<p>while(len--) {</p>
+ return val.toUpperCase();
 
-<p>if ( vendors[len] + prop in div.style ) {</p>
+ });
 
-<p>return true;</p>
+ while(len--) {
 
-<p>}</p>
+ if ( vendors[len] + prop in div.style ) {
 
-<p>}</p>
+ return true;
 
-<p>return false;</p>
+ }
 
-<p>};</p>
+ }
 
-<p>})();</p>
+ return false;
 
-<p>if ( supports(&#39;textShadow&#39;) ) {</p>
+ };
 
-<p>document.documentElement.className += &#39; textShadow&#39;;</p>
+ })();
 
-<p>}</pre>
-这就是最终代码，原理是：</p>
+if ( supports('textShadow') ) {
 
-<p>1.创建一个div，然后可以获得div.style，这是它所支持的属性的数组列表。
+ document.documentElement.className += ' textShadow';
+
+}</pre>
+
+
+<p>这就是最终代码，原理是：</p>
+
+<p>1.创建一个div，然后可以获得div.style，这是它所支持的属性的数组列表。</p>
+
 <p style="text-align: center;"><img class="aligncenter size-full wp-image-1408" title="div.style" src="http://yuguo.us/files/2012/09/2.png" alt="div.style"   /></p>
-2.检查text是否包含在数组中，如果是，直接返回true。</p>
+
+
+<p>2.检查text是否包含在数组中，如果是，直接返回true。</p>
 
 <p>3.检查各种前缀，比如Webkit加上text，即webkitTransition，如果包含在style中，返回true。</p>
 

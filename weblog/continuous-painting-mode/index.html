@@ -46,21 +46,20 @@ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www')
 	<div class="ads">
 
       <div class="fusionads">
-        <h2>项目</h2>
+        <h2>我的APP</h2>
 
         <span class="fusionentire">
-          <a href="http://33pu.net/" title="33号铺">
-            <img src="http://yuguo.us/files/2013/01/33pu-github.png" alt="33号铺" />
+          <a href="https://itunes.apple.com/cn/app/lu-da-shi-for-ying-xiong-lian/id646299086?mt=8" title="撸大师">
+            <img src="/files/2013/07/appstore.png" alt="撸大师" style="width:200px;"/>
           </a>
           <span class="fusiontext">
-                33号铺是一个简单好用的淘宝客瀑布流发布、管理系统。
+              撸大师是一款快速查看英雄联盟攻略的iPhone APP。
           </span>
         </span>
-        <p><a href="http://33pu.net/" title="访问33号铺">Demo</a> | <a href="http://github.com/yuguo/33pu" title="下载33号铺">下载</a></p>
-      </div><!-- .fusionads -->
+        </div><!-- .fusionads -->
       
       <div class="fusionads">
-        <h2>书</h2>
+        <h2>我的书</h2>
 
         <span class="fusionentire">
           <a href="http://yuguo.us/weblog/isux-and-smashing-book/" title="众妙之门3">
@@ -78,16 +77,16 @@ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www')
 
         <span class="fusionentire">
           <a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">
-            <img src="http://yuguo.us/files/2013/01/1.jpg" alt="Home&More淘宝店" />
+            <img src="/files/2013/07/kpw.jpg" alt="Home&More淘宝店" style="width:200px" />
           </a>
           <span class="fusiontext">
             <a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">
-              Home&More淘宝店是一个还不错的家居淘宝店。
+              Home&More淘宝店是一个靠谱的海外代购店。
 
             </a>
           </span>
         </span>
-        <p><a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">homemore.taobao.com</a></p>
+        <p><a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">http://homemore.taobao.com</a></p>
       </div><!-- .fusionads -->
 
     </div><!-- .ads -->
@@ -110,7 +109,7 @@ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www')
 
 <p>引用HTML5ROCK的一张图：</p>
 
-<p><img src="/files/2013/02/fps-2.png" alt="持续绘制模式"></p>
+<p><img src="/files/2013/02/fps-2.png" alt="持续绘制模式" /></p>
 
 <p>嗯，很像玩游戏的时候即时显示的帧数一样，还记得我们之前计算的时间么，要想页面流畅滚动，需要保持每一帧的平均渲染时间在16.6ms以下。</p>
 
@@ -123,13 +122,14 @@ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www')
 <li>成功了，现在打开任意页面，打开开发者工具，都能看见右上角的持续绘制模式状态表。</li>
 </ol>
 
+
 <p>调试方法：</p>
 
 <p>当发现页面每帧渲染时间很高的时候，打开Elements面板，使用上下左右来切换选择DOM，然后按下快捷键<code>H</code>来hide或者显示元素，同时观察每帧渲染时间，定位到某个DOM的绘制成本很高时，可以依次取消面板中的CSS样式再观察每帧渲染时间。</p>
 
 <p>在我的MBP上，Qzone的每帧渲染时间是达标的：</p>
 
-<p><img src="/files/2013/02/fps.png" alt="qzone fps"></p>
+<p><img src="/files/2013/02/fps.png" alt="qzone fps" /></p>
 
 <p>当然需要注意的是，每帧渲染时间跟很多因素有关：</p>
 
@@ -138,6 +138,7 @@ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www')
 <li>浏览器内核（IE会更慢）</li>
 <li>窗口可见区域大小（你可以试试缩小窗口，观察每帧渲染时间会变小）</li>
 </ul>
+
 
 <p>所以不要觉得FPS在我们的开发机上时间达标就OK，要考虑更多用户的机器性能是远远不如我们的。</p>
 

@@ -49,6 +49,7 @@
 &lt;li&gt;……&lt;/li&gt;
 &lt;/ul&gt;
 
+
 &lt;p&gt;其实针对中国app store榜清一色的游戏排名，我们开发者都会希望在其他分类多出一些优秀的app，能改变游戏一枝独秀的情况吧。想想v2ex上有开发者晒自己的开发者账户的时候，如果不是游戏开发，下面总会有人说：“赞不是游戏开发”。不是说做游戏不好，而是如果在中国区如果不做游戏而还是能有不错的收入的话，是非常受高端用户欢迎的。当然如果能做出非常独特好玩的游戏，我觉得也是非常赞的，只是优秀游戏的比例太少了，无脑跟风的太多了。&lt;/p&gt;
 
 &lt;p&gt;题外话，推荐看部电源&lt;a href=&quot;http://movie.douban.com/subject/7015793/&quot;&gt;《独立游戏大电影》&lt;/a&gt;。&lt;/p&gt;
@@ -65,6 +66,7 @@
 &lt;li&gt;应用耗流量&lt;/li&gt;
 &lt;/ul&gt;
 
+
 &lt;p&gt;这是他推荐的最佳实践：&lt;/p&gt;
 
 &lt;ul&gt;
@@ -72,6 +74,7 @@
 &lt;li&gt;不要申请不需要的权限，避免不必要的耗电量，净化android软件环境&lt;/li&gt;
 &lt;li&gt;不要使用不必要的网络连接，少使用网络通信（除非是做即时通信app）&lt;/li&gt;
 &lt;/ul&gt;
+
 
 &lt;h2&gt;iOS分层架构设计&lt;/h2&gt;
 
@@ -109,17 +112,18 @@
 &lt;li&gt;华丽的纹理细节和光影对于硬件的消耗比较大，不值得&lt;/li&gt;
 &lt;/ul&gt;
 
+
 &lt;p&gt;所以iOS6变为更加简约和工业的设计风格，但是在细节处也有一些包豪斯解构主义的思路在里面。&lt;/p&gt;
 
 &lt;h2&gt;小节&lt;/h2&gt;
 
 &lt;p&gt;参加一次这样的会议也许不是性价比最高的学习方法，但偶尔去一下的话也能感受一下行业的脉搏，特别是参会者中还有一些广州本地的年轻学生。比较遗憾这次没有印名片就去了，也许下次考虑印一盒名片过去，哈哈。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/files/2013/06/cdc-1.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/files/2013/06/cdc-1.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/files/2013/06/cdc-2.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/files/2013/06/cdc-2.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/files/2013/06/cdc-3.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/files/2013/06/cdc-3.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 </description>
 				<pubDate>Sun, 30 Jun 2013 18:01:00 +0800</pubDate>
 				<link>http://yuguo.us//weblog/cdc-2013/</link>
@@ -162,6 +166,7 @@
 &lt;li&gt;响应速度更快，翻页更快。&lt;/li&gt;
 &lt;/ul&gt;
 
+
 &lt;p&gt;kpw不适合以下用户：&lt;/p&gt;
 
 &lt;ul&gt;
@@ -169,9 +174,10 @@
 &lt;li&gt;希望阅读和处理移动文档（word、pdf等）。&lt;/li&gt;
 &lt;/ul&gt;
 
+
 &lt;p&gt;这是我的多看阅历统计图：&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/large/79b328c9jw1e5t9q7ci0dj20l20rewfn.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/large/79b328c9jw1e5t9q7ci0dj20l20rewfn.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;早上平均6点半起床后看书，然后班车上是8点20到9点，中午有一个高峰期是吃完饭12：30到1：30，下午的高峰期是7点的班车上，晚上的高峰期是10点入睡前了。不过最近忙于几个app的制作，看的少了一点。&lt;/p&gt;
 
@@ -179,9 +185,7 @@
 
 &lt;p&gt;如果觉得海淘麻烦，或者不懂日文，可以来我本人的淘宝店下单，640直接寄到你家里。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://item.taobao.com/item.htm?spm=a1z10.1.w137644-274570537.2.3C4jrE&amp;amp;id=20986547732&quot;&gt;http://item.taobao.com/item.htm?spm=a1z10.1.w137644-274570537.2.3C4jrE&amp;amp;id=20986547732&lt;/a&gt;&lt;/p&gt;
-
-&lt;hr&gt;
+&lt;h2&gt;&lt;a href=&quot;http://item.taobao.com/item.htm?spm=a1z10.1.w137644-274570537.2.3C4jrE&amp;amp;id=20986547732&quot;&gt;http://item.taobao.com/item.htm?spm=a1z10.1.w137644-274570537.2.3C4jrE&amp;amp;id=20986547732&lt;/a&gt;&lt;/h2&gt;
 
 &lt;p&gt;因为亚马逊限购，也不能合单转运，所以要提价了。&lt;/p&gt;
 
@@ -201,6 +205,7 @@
 &lt;li&gt;（二）申请验证的网站（以下简称为“网站”）应在工业和信息化部信息备案管理系统进行网站备案；&lt;/li&gt;
 &lt;li&gt;（四）网站ALEXA排名在10万名及以内；&lt;/li&gt;
 &lt;/ul&gt;
+
 
 &lt;p&gt;这几条严格的限制导致包括我本人在内的广大appkey都失去了淘宝客的权限，相信大多数中小网站的appkey也是如此。所以现在很多用33pu做后台的网站都会出现搜索不出任何结果的情况。&lt;/p&gt;
 
@@ -243,7 +248,7 @@
 
 &lt;p&gt;&lt;a href=&quot;https://itunes.apple.com/cn/app/lu-da-shi-for-ying-xiong-lian/id646299086?mt=8&quot;&gt;https://itunes.apple.com/cn/app/lu-da-shi-for-ying-xiong-lian/id646299086?mt=8&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/files/2013/06/lol-app.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/files/2013/06/lol-app.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 </description>
 				<pubDate>Wed, 05 Jun 2013 18:01:00 +0800</pubDate>
 				<link>http://yuguo.us//weblog/my-first-ios-app/</link>
@@ -272,6 +277,7 @@
 &lt;li&gt;不可理喻型&lt;/li&gt;
 &lt;/ul&gt;
 
+
 &lt;p&gt;不是身边的每个人都可以很明确的归类到哪一类型，某人很有可能是轻微的激情燃尽型加上时间紧迫型。可以参考一下提示：&lt;/p&gt;
 
 &lt;ol&gt;
@@ -280,6 +286,7 @@
 &lt;li&gt;很难把随波逐流的人定性为怀疑者；&lt;/li&gt;
 &lt;li&gt;不可理喻的人经常会伪装成其他怀疑者。&lt;/li&gt;
 &lt;/ol&gt;
+
 
 &lt;p&gt;第三部分是最重要的部分，介绍了一些具体的方法。&lt;/p&gt;
 
@@ -345,6 +352,7 @@
 &lt;li&gt;kindle 3看电子书效果还是不错的，当然没有背光没有226的ppi，但是看中文书够用了&lt;/li&gt;
 &lt;li&gt;kindle paperwhite也不能看英文pdf（特点是尺寸固定，文字小，在ipad2上看都嫌字体不清晰），所以暂时不入手了&lt;/li&gt;
 &lt;/ol&gt;
+
 </description>
 				<pubDate>Sun, 12 May 2013 13:01:00 +0800</pubDate>
 				<link>http://yuguo.us//weblog/repick-kindle/</link>
@@ -354,8 +362,10 @@
 			<item>
 				<title>使用HTML5构建iOS原生APP（6）——禁止链接呼出菜单</title>
 				<description>&lt;p&gt;一行css足矣：&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;html,body{-webkit-touch-callout: none;}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;pre&gt;&lt;code&gt;html,body{-webkit-touch-callout: none;}
+&lt;/code&gt;&lt;/pre&gt;
+
 &lt;p&gt;对于web页面和webView均适用。&lt;/p&gt;
 </description>
 				<pubDate>Tue, 07 May 2013 13:01:00 +0800</pubDate>
@@ -377,6 +387,7 @@
 &lt;li&gt;比如函数的返回值没有考虑各种异常，导致在大家下载到自己环境下运行的时候，偶尔会出线未知的问题，而没有足够的报错信息……&lt;/li&gt;
 &lt;/ul&gt;
 
+
 &lt;p&gt;当然现在进行了一些优化，已经好一些了。&lt;/p&gt;
 
 &lt;p&gt;为什么当时没有能力写好代码，而现在有一些能力进行优化呢，因为之后又用codeigniter做了一些系统，而且学习ios开发的时候，斯坦福老头也让我对MVC有了进一步的了解。&lt;/p&gt;
@@ -391,6 +402,7 @@
 &lt;li&gt;review自己以前的作品，然后改进&lt;/li&gt;
 &lt;li&gt;分享&lt;/li&gt;
 &lt;/ol&gt;
+
 </description>
 				<pubDate>Sun, 05 May 2013 13:20:00 +0800</pubDate>
 				<link>http://yuguo.us//weblog/make-it-better/</link>
@@ -413,6 +425,7 @@
 &lt;li&gt;当代码出现bug我想要更新的时候，非常难通知所有的用户去更新&lt;/li&gt;
 &lt;/ol&gt;
 
+
 &lt;p&gt;所以我想做一个新的更简单的项目，适合毫无编程基础的用户，可以免去上面所有的步骤：&lt;/p&gt;
 
 &lt;p&gt;这个项目是一个类似格子铺的网站，访客会看到很多格主的格子，里面有反映格主风格的各种商品，点击过去就可以购买。&lt;/p&gt;
@@ -424,6 +437,7 @@
 &lt;li&gt;她创建一个格子，开始搜索并添加商品&lt;/li&gt;
 &lt;li&gt;随后就会有收入了，她可以输入自己的支付宝账户，钱会自动打过去&lt;/li&gt;
 &lt;/ol&gt;
+
 
 &lt;p&gt;一些技术细节：站点所有的淘宝客id都是我自己的淘宝客id，但是会带上所有用户自己的id，以让我分清楚哪些用户带来了哪些收入，随后会把收入转给你，我从中收取非常少量的手续费。这样是为了避免所有用户都要注册自己的开发者帐号（现阶段可以传入自己的pid，但10月以后淘宝会不再支持这个参数）。&lt;/p&gt;
 

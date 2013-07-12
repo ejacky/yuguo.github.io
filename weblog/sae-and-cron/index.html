@@ -46,21 +46,20 @@ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www')
 	<div class="ads">
 
       <div class="fusionads">
-        <h2>项目</h2>
+        <h2>我的APP</h2>
 
         <span class="fusionentire">
-          <a href="http://33pu.net/" title="33号铺">
-            <img src="http://yuguo.us/files/2013/01/33pu-github.png" alt="33号铺" />
+          <a href="https://itunes.apple.com/cn/app/lu-da-shi-for-ying-xiong-lian/id646299086?mt=8" title="撸大师">
+            <img src="/files/2013/07/appstore.png" alt="撸大师" style="width:200px;"/>
           </a>
           <span class="fusiontext">
-                33号铺是一个简单好用的淘宝客瀑布流发布、管理系统。
+              撸大师是一款快速查看英雄联盟攻略的iPhone APP。
           </span>
         </span>
-        <p><a href="http://33pu.net/" title="访问33号铺">Demo</a> | <a href="http://github.com/yuguo/33pu" title="下载33号铺">下载</a></p>
-      </div><!-- .fusionads -->
+        </div><!-- .fusionads -->
       
       <div class="fusionads">
-        <h2>书</h2>
+        <h2>我的书</h2>
 
         <span class="fusionentire">
           <a href="http://yuguo.us/weblog/isux-and-smashing-book/" title="众妙之门3">
@@ -78,16 +77,16 @@ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www')
 
         <span class="fusionentire">
           <a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">
-            <img src="http://yuguo.us/files/2013/01/1.jpg" alt="Home&More淘宝店" />
+            <img src="/files/2013/07/kpw.jpg" alt="Home&More淘宝店" style="width:200px" />
           </a>
           <span class="fusiontext">
             <a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">
-              Home&More淘宝店是一个还不错的家居淘宝店。
+              Home&More淘宝店是一个靠谱的海外代购店。
 
             </a>
           </span>
         </span>
-        <p><a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">homemore.taobao.com</a></p>
+        <p><a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">http://homemore.taobao.com</a></p>
       </div><!-- .fusionads -->
 
     </div><!-- .ads -->
@@ -98,12 +97,18 @@ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www')
 	      	<h1>SAE与Cron</h1>
 	      	<span class="post-date">2012年 09月 26日</span>
 
-	      	<p><a href="http://sae.sina.com.cn/?m=devcenter&amp;catId=195">Cron</a>服务是SAE为开发者提供的分布式定时服务，用来定时触发开发者的特定动作，满足比如定时计算排行榜等需求。<a href="http://sae.sina.com.cn/?m=devcenter&amp;catId=195">Cron</a>的设置是通过App的config.yaml来实现的，只要用户在App目录下的config.yaml里按照我们的提供的语法格式进行配置，部署后就能生效。<a href="http://sae.sina.com.cn/?m=devcenter&amp;catId=195">Cron</a>的执行是以HTTP方式触发的，触发后真正执行的是用户在App中的PHP代码。<a href="http://sae.sina.com.cn/?m=devcenter&amp;catId=195">Cron</a>服务是分布式环境部署的，具有高可靠性，多点之间相互隔离且同时触发，并且通过分布式锁进行选举并最终由一个健康节点执行。
-<h2>应用场景</h2><a href="http://sae.sina.com.cn/?m=devcenter&amp;catId=195">Cron</a>服务主要提供两类的定时需求：</p>
+	      	<p><a href="http://sae.sina.com.cn/?m=devcenter&amp;catId=195">Cron</a>服务是SAE为开发者提供的分布式定时服务，用来定时触发开发者的特定动作，满足比如定时计算排行榜等需求。<a href="http://sae.sina.com.cn/?m=devcenter&amp;catId=195">Cron</a>的设置是通过App的config.yaml来实现的，只要用户在App目录下的config.yaml里按照我们的提供的语法格式进行配置，部署后就能生效。<a href="http://sae.sina.com.cn/?m=devcenter&amp;catId=195">Cron</a>的执行是以HTTP方式触发的，触发后真正执行的是用户在App中的PHP代码。<a href="http://sae.sina.com.cn/?m=devcenter&amp;catId=195">Cron</a>服务是分布式环境部署的，具有高可靠性，多点之间相互隔离且同时触发，并且通过分布式锁进行选举并最终由一个健康节点执行。</p>
 
-<p>A. 每隔一定时间执行，如每隔2个小时执行1次。</p>
+<h2>应用场景</h2>
 
-<p>B. 在某个特定时间点执行，如每周二晚上9:10执行。</p>
+
+<p><a href="http://sae.sina.com.cn/?m=devcenter&amp;catId=195">Cron</a>服务主要提供两类的定时需求：</p>
+
+<ol type="a">
+<li><p>每隔一定时间执行，如每隔2个小时执行1次。</p></li>
+<li><p>在某个特定时间点执行，如每周二晚上9:10执行。</p></li>
+</ol>
+
 
 <p>针对A应用场景，<a href="http://sae.sina.com.cn/?m=devcenter&amp;catId=195">Cron</a>提供偏移offset功能，也就是用户可以显式指定偏移时间，否则，默认针对间隔时间做随机偏移。
 <a href="http://sae.sina.com.cn/?m=devcenter&amp;catId=195">Cron</a>服务支持http basic auth，用户可以设置用户名和密码来控制访问。</p>

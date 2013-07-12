@@ -46,21 +46,20 @@ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www')
 	<div class="ads">
 
       <div class="fusionads">
-        <h2>项目</h2>
+        <h2>我的APP</h2>
 
         <span class="fusionentire">
-          <a href="http://33pu.net/" title="33号铺">
-            <img src="http://yuguo.us/files/2013/01/33pu-github.png" alt="33号铺" />
+          <a href="https://itunes.apple.com/cn/app/lu-da-shi-for-ying-xiong-lian/id646299086?mt=8" title="撸大师">
+            <img src="/files/2013/07/appstore.png" alt="撸大师" style="width:200px;"/>
           </a>
           <span class="fusiontext">
-                33号铺是一个简单好用的淘宝客瀑布流发布、管理系统。
+              撸大师是一款快速查看英雄联盟攻略的iPhone APP。
           </span>
         </span>
-        <p><a href="http://33pu.net/" title="访问33号铺">Demo</a> | <a href="http://github.com/yuguo/33pu" title="下载33号铺">下载</a></p>
-      </div><!-- .fusionads -->
+        </div><!-- .fusionads -->
       
       <div class="fusionads">
-        <h2>书</h2>
+        <h2>我的书</h2>
 
         <span class="fusionentire">
           <a href="http://yuguo.us/weblog/isux-and-smashing-book/" title="众妙之门3">
@@ -78,16 +77,16 @@ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www')
 
         <span class="fusionentire">
           <a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">
-            <img src="http://yuguo.us/files/2013/01/1.jpg" alt="Home&More淘宝店" />
+            <img src="/files/2013/07/kpw.jpg" alt="Home&More淘宝店" style="width:200px" />
           </a>
           <span class="fusiontext">
             <a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">
-              Home&More淘宝店是一个还不错的家居淘宝店。
+              Home&More淘宝店是一个靠谱的海外代购店。
 
             </a>
           </span>
         </span>
-        <p><a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">homemore.taobao.com</a></p>
+        <p><a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">http://homemore.taobao.com</a></p>
       </div><!-- .fusionads -->
 
     </div><!-- .ads -->
@@ -98,35 +97,116 @@ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www')
 	      	<h1>iOS开发随笔</h1>
 	      	<span class="post-date">2012年 12月 14日</span>
 
-	      	<p>随意记录一下一些经验，对新手可能有帮助。
-<h2>数组NSArray</h2>
-操作数组的时候计算数组包含的对象个数是：
-<pre><code>[dataArray count]</code></pre>
-获取索引处的对象
-<pre><code>[dataArray objectAtIndex:2]</code></pre>
-删除指定索引处对象
-<pre><code>[dataArray removeObjectAtIndex:1];</code></pre><h2>词典NSDictionary</h2>
-获取对应key的object：
-<pre><code>- (id)objectForKey:(id)aKey</code></pre><h2>类方法和实例方法</h2>
-在类方法中调用类方法
-<pre><code>+ (void)classMethodB { </code></pre><pre><code>// ... </code></pre><pre><code>[self classMethodA]; </code></pre><pre><code>// ... </code></pre><pre><code>}</code></pre>
-在实例方法中调用类方法
-<pre><code>- (void)instanceMethodB { </code></pre><pre><code>// ...</code></pre><pre><code> [[self class] classMethodA];</code></pre><pre><code>// ...</code></pre><pre><code>}</code></pre><h2>NSLog</h2>
-用NSLog记录debug数据，是一个很常用的方法。
-<pre><code>NSLog(@&quot;String&quot;); NSLog(@&quot;%@&quot;,someString); NSLog(@&quot;%d&quot;,someInteger); NSLog(@&quot;my float is %f&quot;,someFloat);</code></pre><h2>tag</h2>
-在运行时获取某些视图可以用方法
-<pre><code>- (UIView *)viewWithTag:(NSInteger)</code>tag</pre>
-在storyboard中可以看到所有视图的默认tag都是0，可以改成特定的值，比如1。</p>
+	      	<p>随意记录一下一些经验，对新手可能有帮助。</p>
 
-<p>如果要获得某个视图里的tag为某值的子视图，可以用这个自定义类方法
-<pre><code>+(UIView<em>) getSubViewInViewWithTag:(UIView</em>)view withTag:(NSInteger)tag { for (UIView *subview in view.subviews) { if(subview.tag==tag) return subview; } return nil; }</code></pre><h2> indexPath转成整数？</h2>
-在委托tableView或者collectionView的时候，需要实现的方法比如：
+<h2>数组NSArray</h2>
+
+
+<p>操作数组的时候计算数组包含的对象个数是：</p>
+
+<pre><code>[dataArray count]</code></pre>
+
+
+<p>获取索引处的对象</p>
+
+<pre><code>[dataArray objectAtIndex:2]</code></pre>
+
+
+<p>删除指定索引处对象</p>
+
+<pre><code>[dataArray removeObjectAtIndex:1];</code></pre>
+
+
+<h2>词典NSDictionary</h2>
+
+
+<p>获取对应key的object：</p>
+
+<pre><code>- (id)objectForKey:(id)aKey</code></pre>
+
+
+<h2>类方法和实例方法</h2>
+
+
+<p>在类方法中调用类方法</p>
+
+<pre><code>+ (void)classMethodB { </code></pre>
+
+
+<pre><code>// ... </code></pre>
+
+
+<pre><code>[self classMethodA]; </code></pre>
+
+
+<pre><code>// ... </code></pre>
+
+
+<pre><code>}</code></pre>
+
+
+<p>在实例方法中调用类方法</p>
+
+<pre><code>- (void)instanceMethodB { </code></pre>
+
+
+<pre><code>// ...</code></pre>
+
+
+<pre><code> [[self class] classMethodA];</code></pre>
+
+
+<pre><code>// ...</code></pre>
+
+
+<pre><code>}</code></pre>
+
+
+<h2>NSLog</h2>
+
+
+<p>用NSLog记录debug数据，是一个很常用的方法。</p>
+
+<pre><code>NSLog(@"String"); NSLog(@"%@",someString); NSLog(@"%d",someInteger); NSLog(@"my float is %f",someFloat);</code></pre>
+
+
+<h2>tag</h2>
+
+
+<p>在运行时获取某些视图可以用方法</p>
+
+<pre><code>- (UIView *)viewWithTag:(NSInteger)</code>tag</pre>
+
+
+<p>在storyboard中可以看到所有视图的默认tag都是0，可以改成特定的值，比如1。</p>
+
+<p>如果要获得某个视图里的tag为某值的子视图，可以用这个自定义类方法</p>
+
+<pre><code>+(UIView*) getSubViewInViewWithTag:(UIView*)view withTag:(NSInteger)tag { for (UIView *subview in view.subviews) { if(subview.tag==tag) return subview; } return nil; }</code></pre>
+
+
+<h2> indexPath转成整数？</h2>
+
+
+<p>在委托tableView或者collectionView的时候，需要实现的方法比如：</p>
+
 <pre><code>- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath</code></pre>
-有一个参数是NSIndexPath，用来表示绘制第几个表格或者collectionCell，我需要得到它的整数值以便跟我自己的数据数组对应，方法很简单
-<pre><code>indexPath.row</code></pre><h2>自己释放内存的图片</h2>
-以下代码不会产生内存泄漏，因为这个newImage是一个自释放内存的图片。
-<pre><code>UIImage *newImage = [UIImage imageNamed:@&quot;sampleImage&quot;]; [yourImageView setImage:newImage];</code></pre>
--imageNamed: returns an autoreleased image, which, as deanWombourne says, will be autoreleased at some time in the future (the exact time is undefined).</p>
+
+
+<p>有一个参数是NSIndexPath，用来表示绘制第几个表格或者collectionCell，我需要得到它的整数值以便跟我自己的数据数组对应，方法很简单</p>
+
+<pre><code>indexPath.row</code></pre>
+
+
+<h2>自己释放内存的图片</h2>
+
+
+<p>以下代码不会产生内存泄漏，因为这个newImage是一个自释放内存的图片。</p>
+
+<pre><code>UIImage *newImage = [UIImage imageNamed:@"sampleImage"]; [yourImageView setImage:newImage];</code></pre>
+
+
+<p>-imageNamed: returns an autoreleased image, which, as deanWombourne says, will be autoreleased at some time in the future (the exact time is undefined).</p>
 
 <p>但是如果图片在其他地方生成，在这里使用，那么可能需要手动释放内存。</p>
 

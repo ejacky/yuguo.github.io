@@ -46,21 +46,20 @@ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www')
 	<div class="ads">
 
       <div class="fusionads">
-        <h2>项目</h2>
+        <h2>我的APP</h2>
 
         <span class="fusionentire">
-          <a href="http://33pu.net/" title="33号铺">
-            <img src="http://yuguo.us/files/2013/01/33pu-github.png" alt="33号铺" />
+          <a href="https://itunes.apple.com/cn/app/lu-da-shi-for-ying-xiong-lian/id646299086?mt=8" title="撸大师">
+            <img src="/files/2013/07/appstore.png" alt="撸大师" style="width:200px;"/>
           </a>
           <span class="fusiontext">
-                33号铺是一个简单好用的淘宝客瀑布流发布、管理系统。
+              撸大师是一款快速查看英雄联盟攻略的iPhone APP。
           </span>
         </span>
-        <p><a href="http://33pu.net/" title="访问33号铺">Demo</a> | <a href="http://github.com/yuguo/33pu" title="下载33号铺">下载</a></p>
-      </div><!-- .fusionads -->
+        </div><!-- .fusionads -->
       
       <div class="fusionads">
-        <h2>书</h2>
+        <h2>我的书</h2>
 
         <span class="fusionentire">
           <a href="http://yuguo.us/weblog/isux-and-smashing-book/" title="众妙之门3">
@@ -78,16 +77,16 @@ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www')
 
         <span class="fusionentire">
           <a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">
-            <img src="http://yuguo.us/files/2013/01/1.jpg" alt="Home&More淘宝店" />
+            <img src="/files/2013/07/kpw.jpg" alt="Home&More淘宝店" style="width:200px" />
           </a>
           <span class="fusiontext">
             <a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">
-              Home&More淘宝店是一个还不错的家居淘宝店。
+              Home&More淘宝店是一个靠谱的海外代购店。
 
             </a>
           </span>
         </span>
-        <p><a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">homemore.taobao.com</a></p>
+        <p><a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">http://homemore.taobao.com</a></p>
       </div><!-- .fusionads -->
 
     </div><!-- .ads -->
@@ -98,8 +97,9 @@ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www')
 	      	<h1>扩展jQuery：自定义Live函数</h1>
 	      	<span class="post-date">2011年 04月 27日</span>
 
-	      	<p>平时在使用jQuery进行AJAX操作的时候，新生成的元素事件会失效，有时候不得不重新绑定一下事件，但是这样做很麻烦。jQuery1.3增加了一个live()方法，下面是手册上的说明：
-<blockquote>jQuery 1.3中新增的方法。给<em>所有当前以及将来会匹配的元素</em>绑定一个事件处理函数（比如click事件）。也能绑定<em>自定义事件</em>。</p>
+	      	<p>平时在使用jQuery进行AJAX操作的时候，新生成的元素事件会失效，有时候不得不重新绑定一下事件，但是这样做很麻烦。jQuery1.3增加了一个live()方法，下面是手册上的说明：</p>
+
+<blockquote><p>jQuery 1.3中新增的方法。给所有当前以及将来会匹配的元素绑定一个事件处理函数（比如click事件）。也能绑定自定义事件。</p></blockquote>
 
 <p>目前支持 click, dblclick, mousedown, mouseup, mousemove, mouseover, mouseout, keydown, keypress, keyup。</p>
 
@@ -111,62 +111,79 @@ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www')
 
 <p>eventType 包含JavaScript事件类型的一个字符串，比如“click”和“keydown”。</p>
 
-<p>自从jQuery1.4以后字符串能包含多个由空格隔开的事件类型，<em>也能包含自定义类型的名字</em>。</p>
+<p>自从jQuery1.4以后字符串能包含多个由空格隔开的事件类型，也能包含自定义类型的名字。</p>
 
 <p>handler 回调函数。</pre>
 live的第一个参数是触发live的事件类型，举个例子：</p>
 
-<p>1.对于一个在页面上<em>新增的div元素</em>，希望让它拥有droppable的能力，那么直接写
-<pre>$(&#39;div&#39;).droppable({...})</pre>
-是不会生效的，因为在调用这句代码的时候，这个新增的div还没有被创建，所以被创建之后的它没有droppable的能力。</p>
+<p>1.对于一个在页面上新增的div元素，希望让它拥有droppable的能力，那么直接写</p>
 
-<p>2.如果写
-<pre>$(&#39;div&#39;).live(&#39;mouseover&#39;,function({</p>
+<p><code>$('div').droppable({...})</code></p>
 
-<p>$(this).droppable({...});</p>
+<p>是不会生效的，因为在调用这句代码的时候，这个新增的div还没有被创建，所以被创建之后的它没有droppable的能力。</p>
 
-<p>}));</pre>
-则会在这种情况下生效：创建了这个div之后，鼠标滑过div，那么live事件触发，这个div拥有了droppable能力。</p>
+<p>2.如果写</p>
+
+<pre><code>``$('div').live('mouseover',function({
+
+$(this).droppable({...});
+
+}));``
+</code></pre>
+
+<p>则会在这种情况下生效：创建了这个div之后，鼠标滑过div，那么live事件触发，这个div拥有了droppable能力。</p>
 
 <p>在这种情况下暂时不生效：创建了这个div之后，这个div还不拥有droppable能力，这时候它不会接受拖拽过来的draggable，除非进行（至少）一次上面的操作。</p>
 
-<p>3.如果写
-<pre>$(&#39;div&#39;).live(&#39;myCustomEvent&#39;,function({</p>
+<p>3.如果写</p>
 
-<p>$(this).droppable({...});</p>
+<pre><code>``$('div').live('myCustomEvent',function({
 
-<p>}));</p>
+$(this).droppable({...});
 
-<p>$(&quot;.draggable_object&quot;).mouseover(function () {</p>
+}));
 
-<p>$(&quot;div&quot;).trigger(&quot;myCustomEvent&quot;);</p>
+$(".draggable_object").mouseover(function () {
 
-<p>});</pre>
-这样就会出现在这种情况下生效：创建了这个div之后，鼠标滑过一个含有class：.draggable_object的页面元素之后，所有的div都触发myCustomEvent事件，而这个事件会导致所有的div都会重新具有droppable的能力。</p>
+$("div").trigger("myCustomEvent");
+
+});``
+</code></pre>
+
+<p>这样就会出现在这种情况下生效：创建了这个div之后，鼠标滑过一个含有class：.draggable_object的页面元素之后，所有的div都触发myCustomEvent事件，而这个事件会导致所有的div都会重新具有droppable的能力。</p>
 
 <p>在这种情况下暂时不生效：创建这个div之后，鼠标不滑过.draggable_object的页面元素，这个时候新建的div不具有droppable能力。</p>
 
-<p>4.在某种情况下，我们经常需要做live的操作，让我们更进一步，扩展jQuery的方法。
-<pre>jQuery.fn.liveDroppable = function(opts){</p>
+<p>4.在某种情况下，我们经常需要做live的操作，让我们更进一步，扩展jQuery的方法。</p>
 
-<p>this.live(&quot;myCustomEvent&quot;,function(){</p>
+<pre><code>``jQuery.fn.liveDroppable = function(opts){
 
-<p>if(!$(this).data(&quot;init&quot;)){$(this).data(&quot;init&quot;,true).droppable(opts)};</p>
+this.live("myCustomEvent",function(){
 
-<p>});</p>
+if(!$(this).data("init")){$(this).data("init",true).droppable(opts)};
 
-<p>}</p>
+});
 
-<p>$(&quot;.draggable_object&quot;).mouseover(function () {</p>
+}
 
-<p>$(&quot;div&quot;).trigger(&quot;myCustomEvent&quot;);</p>
+$(".draggable_object").mouseover(function () {
 
-<p>});</pre>
-现在，可以不再使用：
-<pre>$(selector).draggable({opts});</pre>
-用下面的代码代替：
-<pre>$(selector).liveDraggable({opts})</pre>
-在实际项目中需要灵活运用各种方法来实现live。</p>
+$("div").trigger("myCustomEvent");
+
+});``
+</code></pre>
+
+<p>现在，可以不再使用：</p>
+
+<pre><code>``$(selector).draggable({opts});``
+</code></pre>
+
+<p>用下面的代码代替：</p>
+
+<pre><code>``$(selector).liveDraggable({opts})``
+</code></pre>
+
+<p>在实际项目中需要灵活运用各种方法来实现live。</p>
 
 	      	<p class='previous-next-nav'><a href="http://yuguo.us//weblog/air-ticket/" class="next">为什么飞机票越到后面买越贵 &rarr;</a>
 	      	<a href="http://yuguo.us//weblog/badminton-3/" class="previous">&larr; 第三节羽毛球课</a>

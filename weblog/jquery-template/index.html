@@ -46,21 +46,20 @@ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www')
 	<div class="ads">
 
       <div class="fusionads">
-        <h2>项目</h2>
+        <h2>我的APP</h2>
 
         <span class="fusionentire">
-          <a href="http://33pu.net/" title="33号铺">
-            <img src="http://yuguo.us/files/2013/01/33pu-github.png" alt="33号铺" />
+          <a href="https://itunes.apple.com/cn/app/lu-da-shi-for-ying-xiong-lian/id646299086?mt=8" title="撸大师">
+            <img src="/files/2013/07/appstore.png" alt="撸大师" style="width:200px;"/>
           </a>
           <span class="fusiontext">
-                33号铺是一个简单好用的淘宝客瀑布流发布、管理系统。
+              撸大师是一款快速查看英雄联盟攻略的iPhone APP。
           </span>
         </span>
-        <p><a href="http://33pu.net/" title="访问33号铺">Demo</a> | <a href="http://github.com/yuguo/33pu" title="下载33号铺">下载</a></p>
-      </div><!-- .fusionads -->
+        </div><!-- .fusionads -->
       
       <div class="fusionads">
-        <h2>书</h2>
+        <h2>我的书</h2>
 
         <span class="fusionentire">
           <a href="http://yuguo.us/weblog/isux-and-smashing-book/" title="众妙之门3">
@@ -78,16 +77,16 @@ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www')
 
         <span class="fusionentire">
           <a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">
-            <img src="http://yuguo.us/files/2013/01/1.jpg" alt="Home&More淘宝店" />
+            <img src="/files/2013/07/kpw.jpg" alt="Home&More淘宝店" style="width:200px" />
           </a>
           <span class="fusiontext">
             <a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">
-              Home&More淘宝店是一个还不错的家居淘宝店。
+              Home&More淘宝店是一个靠谱的海外代购店。
 
             </a>
           </span>
         </span>
-        <p><a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">homemore.taobao.com</a></p>
+        <p><a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">http://homemore.taobao.com</a></p>
       </div><!-- .fusionads -->
 
     </div><!-- .ads -->
@@ -100,38 +99,70 @@ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www')
 
 	      	<p>之前写过一篇文章<a href="http://yuguo.us/weblog/javascript-template/">JavaScript模板入门</a>，在那篇文章中介绍了handlebar这个模板库，本文介绍另一种，对于熟悉jQuery语法的同学会用起来更方便，那就是jQuery模板，目前还在beta阶段。</p>
 
-<p>在jQuery的官网上可以看到有两种语法，但是其中一种已经不推荐了（<a href="http://api.jquery.com/tmpl/">http://api.jquery.com/tmpl/</a>），而是推荐jQuery.tmpl()（<a href="http://api.jquery.com/jquery.tmpl/">http://api.jquery.com/jquery.tmpl/</a>），本文也只会介绍这种方法。
+<p>在jQuery的官网上可以看到有两种语法，但是其中一种已经不推荐了（<a href="http://api.jquery.com/tmpl/">http://api.jquery.com/tmpl/</a>），而是推荐jQuery.tmpl()（<a href="http://api.jquery.com/jquery.tmpl/">http://api.jquery.com/jquery.tmpl/</a>），本文也只会介绍这种方法。</p>
+
 <h2>$.tmpl()</h2>
-语法很简单，在页面引入了jQuery.js和jQuery.tmpl.js（<a href="http://api.jquery.com/category/plugins/templates/">http://api.jquery.com/category/plugins/templates/</a>）以后，使用代码：
-<pre>$.tmpl( &quot;&lt;li&gt;${Name}&lt;/li&gt;&quot;, { &quot;Name&quot; : &quot;John Doe&quot; }).appendTo( &quot;#target&quot; );</pre>
-$.tmpl第一个参数是html模板，里面可以包含html标签，变量（比如${Name}），逻辑（比如）等；</p>
+
+
+<p>语法很简单，在页面引入了jQuery.js和jQuery.tmpl.js（<a href="http://api.jquery.com/category/plugins/templates/">http://api.jquery.com/category/plugins/templates/</a>）以后，使用代码：</p>
+
+<pre>$.tmpl( "&lt;li&gt;${Name}&lt;/li&gt;", { "Name" : "John Doe" }).appendTo( "#target" );</pre>
+
+
+<p>$.tmpl第一个参数是html模板，里面可以包含html标签，变量（比如${Name}），逻辑（比如）等；</p>
 
 <p>第二个可选参数是数据，可以是JavaScript对象或者数组（其实JavaScript数组就是对象，而不像大多数语言那样，是一种更快的原生数据）。</p>
 
-<p>当然在实际代码中，我们不会直接在一个string中定义html模板，我们更推荐使用一个script标签：
-<pre>&lt;script id=&quot;pageTmpl&quot; type=&quot;text/x-jquery-tmpl&quot;&gt;</p>
+<p>当然在实际代码中，我们不会直接在一个string中定义html模板，我们更推荐使用一个script标签：</p>
 
-<p>&lt;p&gt;${value1},&lt;i&gt;${value2}&lt;/i&gt;&lt;&gt;</p>
+<pre>&lt;script id="pageTmpl" type="text/x-jquery-tmpl"&gt;
 
-<p>&lt;/script&gt;</pre>
-然后获得里面的字符串：
-<pre>var pageTmpl = $(&#39;#pageTmpl&#39;).html();</pre>
-另外我们在实际代码中也不会用一个匿名的对象作为数据，而是会创建一个有名有姓的对象：
-<pre>var pageData;</p>
+&lt;p&gt;${value1},&lt;i&gt;${value2}&lt;/i&gt;&lt;&gt;
 
-<p>pageData.value1 = &#39;string 1&#39;;</p>
+&lt;/script&gt;</pre>
 
-<p>pageData.value2 = &#39;string 2&#39;;</pre>
-最后就可以使用了：</p>
 
-<p>$.tmpl(pageTmpl,pageData).appendTo(&#39;#target&#39;);</p>
+<p>然后获得里面的字符串：</p>
 
-<p>当然我的例子很烂，更好的例子可以直接去看官网：<a href="http://api.jquery.com/jquery.tmpl/">http://api.jquery.com/jquery.tmpl/</a>，里面还有使用ajax数据的例子，可以直接把远程取得的数据解析为jsonp。
+<pre>var pageTmpl = $('#pageTmpl').html();</pre>
+
+
+<p>另外我们在实际代码中也不会用一个匿名的对象作为数据，而是会创建一个有名有姓的对象：</p>
+
+<pre>var pageData;
+
+pageData.value1 = 'string 1';
+
+pageData.value2 = 'string 2';</pre>
+
+
+<p>最后就可以使用了：</p>
+
+<p>$.tmpl(pageTmpl,pageData).appendTo('#target');</p>
+
+<p>当然我的例子很烂，更好的例子可以直接去看官网：<a href="http://api.jquery.com/jquery.tmpl/">http://api.jquery.com/jquery.tmpl/</a>，里面还有使用ajax数据的例子，可以直接把远程取得的数据解析为jsonp。</p>
+
 <h2>$.template()</h2>
-有的时候我们会希望创建一个可以重复使用的模板，而不是每次都从字符串来解析，这时候我们可以用$.template()方法创建一个编译过的模板函数。
-<pre>$.template( &quot;summaryTemplate&quot;, &quot;&lt;li&gt;${Name}&lt;/li&gt;&quot; );</pre>
-用法还是类似：
-<pre>$.tmpl(&quot;summaryTemplate&quot;,pageData).appendTo(&#39;#target&#39;);</pre><pre>$.tmpl(&quot;summaryTemplate&quot;,pageData2).appendTo(&#39;#target&#39;);</pre><pre>创建重复使用的模板函数除了性能上的考虑（编译过程只会发生一次），还有一个功能就是在其他的模板中嵌套使用，语法是：</pre><pre></pre></p>
+
+
+<p>有的时候我们会希望创建一个可以重复使用的模板，而不是每次都从字符串来解析，这时候我们可以用$.template()方法创建一个编译过的模板函数。</p>
+
+<pre>$.template( "summaryTemplate", "&lt;li&gt;${Name}&lt;/li&gt;" );</pre>
+
+
+<p>用法还是类似：</p>
+
+<pre>$.tmpl("summaryTemplate",pageData).appendTo('#target');</pre>
+
+
+<pre>$.tmpl("summaryTemplate",pageData2).appendTo('#target');</pre>
+
+
+<pre>创建重复使用的模板函数除了性能上的考虑（编译过程只会发生一次），还有一个功能就是在其他的模板中嵌套使用，语法是：</pre>
+
+
+<pre></pre>
+
 
 	      	<p class='previous-next-nav'><a href="http://yuguo.us//weblog/web-or-native/" class="next">Web还是Native？ &rarr;</a>
 	      	<a href="http://yuguo.us//weblog/use-showdown-to-convert-markdown-to-html/" class="previous">&larr; 使用Showdown来把markdown语法转化成html</a>

@@ -46,21 +46,20 @@ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www')
 	<div class="ads">
 
       <div class="fusionads">
-        <h2>项目</h2>
+        <h2>我的APP</h2>
 
         <span class="fusionentire">
-          <a href="http://33pu.net/" title="33号铺">
-            <img src="http://yuguo.us/files/2013/01/33pu-github.png" alt="33号铺" />
+          <a href="https://itunes.apple.com/cn/app/lu-da-shi-for-ying-xiong-lian/id646299086?mt=8" title="撸大师">
+            <img src="/files/2013/07/appstore.png" alt="撸大师" style="width:200px;"/>
           </a>
           <span class="fusiontext">
-                33号铺是一个简单好用的淘宝客瀑布流发布、管理系统。
+              撸大师是一款快速查看英雄联盟攻略的iPhone APP。
           </span>
         </span>
-        <p><a href="http://33pu.net/" title="访问33号铺">Demo</a> | <a href="http://github.com/yuguo/33pu" title="下载33号铺">下载</a></p>
-      </div><!-- .fusionads -->
+        </div><!-- .fusionads -->
       
       <div class="fusionads">
-        <h2>书</h2>
+        <h2>我的书</h2>
 
         <span class="fusionentire">
           <a href="http://yuguo.us/weblog/isux-and-smashing-book/" title="众妙之门3">
@@ -78,16 +77,16 @@ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www')
 
         <span class="fusionentire">
           <a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">
-            <img src="http://yuguo.us/files/2013/01/1.jpg" alt="Home&More淘宝店" />
+            <img src="/files/2013/07/kpw.jpg" alt="Home&More淘宝店" style="width:200px" />
           </a>
           <span class="fusiontext">
             <a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">
-              Home&More淘宝店是一个还不错的家居淘宝店。
+              Home&More淘宝店是一个靠谱的海外代购店。
 
             </a>
           </span>
         </span>
-        <p><a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">homemore.taobao.com</a></p>
+        <p><a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">http://homemore.taobao.com</a></p>
       </div><!-- .fusionads -->
 
     </div><!-- .ads -->
@@ -106,86 +105,108 @@ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www')
 
 <p>然而，SOAP作为一种古老的Web服务技术，短期内还不会退出历史舞台。</p>
 
-<p>在我们第三方开发者的PHP应用程序中如果要使用REST API，主要分为两个步骤。一、生成请求。二、处理返回值。
+<p>在我们第三方开发者的PHP应用程序中如果要使用REST API，主要分为两个步骤。一、生成请求。二、处理返回值。</p>
+
 <h2>一、生成请求</h2>
-主要有三种方法来生成一个HTTP请求。第一种方法就是手动生成请求，使用PHP的header方法。这给了你最大的灵活性，但是需要更多的 编码。第二种方法是使用PHP内置的file<em>get</em>contents()方法或者file()/fopen()/fread()/fclose()方法，使用这种方法少了一点灵活性，但是代码量非常少。第三种方法是使用跟API配套的自定义Class，或者叫SDK。如果可以的话，尽量使用第三种方法，它是最方便的。
+
+
+<p>主要有三种方法来生成一个HTTP请求。第一种方法就是手动生成请求，使用PHP的header方法。这给了你最大的灵活性，但是需要更多的 编码。第二种方法是使用PHP内置的file_get_contents()方法或者file()/fopen()/fread()/fclose()方法，使用这种方法少了一点灵活性，但是代码量非常少。第三种方法是使用跟API配套的自定义Class，或者叫SDK。如果可以的话，尽量使用第三种方法，它是最方便的。</p>
+
 <h3>手动生成请求</h3>
-手动生成请求只有在第一次处理的时候才有点棘手，以后的话可以调用方法直接得到结果。此外了解手动生成请求的过程也有助于理解REST和HTTP。
-<pre>function callAPI($endpoint, $devkey, $action, $type, $keyword)</p>
 
-<p>{</p>
 
-<p>$action = urlencode($action);</p>
+<p>手动生成请求只有在第一次处理的时候才有点棘手，以后的话可以调用方法直接得到结果。此外了解手动生成请求的过程也有助于理解REST和HTTP。</p>
 
-<p>$type = urlencode($type);</p>
+<pre>function callAPI($endpoint, $devkey, $action, $type, $keyword)
 
-<p>$keyword = urlencode($keyword);</p>
+{
 
-<p>$url = $endpoint . &quot;?devkey=$devkey&amp;action=$action&amp;type=$type&amp;keyword=$keyword&quot;;</p>
+  $action = urlencode($action);
 
-<p>$url<em>info = parse</em>url($url);</p>
+  $type = urlencode($type);
 
-<p>$host = $url_info[&#39;host&#39;];</p>
+  $keyword = urlencode($keyword);
 
-<p>$path = $url<em>info[&#39;path&#39;] . &quot;?&quot; . $url</em>info[‘query&#39;];</p>
+  $url = $endpoint . "?devkey=$devkey&amp;action=$action&amp;type=$type&amp;keyword=$keyword";
 
-<p>$data = &quot;&quot;;</p>
+  $url_info = parse_url($url);
 
-<p>$fp=fsockopen($host, 80);</p>
+  $host = $url_info['host'];
 
-<p>fputs($fp, &quot;POST &quot;. $path . &quot;HTTP/1.1\r\n&quot;);</p>
+  $path = $url_info['path'] . "?" . $url_info[‘query'];
 
-<p>fputs($fp, &quot;Host: &quot;. $host .&quot;\r\n&quot;);</p>
+  $data = "";
 
-<p>fputs($fp, &quot;Accept: <em>/</em>\r\n&quot;);</p>
+  $fp=fsockopen($host, 80);
 
-<p>fputs($fp, &quot;Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7\r\n&quot;);</p>
+  fputs($fp, "POST ". $path . "HTTP/1.1\r\n");
 
-<p>fputs($fp, &quot;Connection: close\r\n&quot;);</p>
+  fputs($fp, "Host: ". $host ."\r\n");
 
-<p>fputs($fp, &quot;Content-Type: application/x-www-form-urlencoded\r\n&quot;);</p>
+  fputs($fp, "Accept: */*\r\n");
 
-<p>fputs($fp, &quot;Content-Length: &quot;. strlen($data) . &quot;\r\n\r\n&quot;);</p>
+  fputs($fp, "Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7\r\n");
 
-<p>fputs($fp, &quot;$data&quot;);</p>
+  fputs($fp, "Connection: close\r\n");
 
-<p>$response=&quot;&quot;;</p>
+  fputs($fp, "Content-Type: application/x-www-form-urlencoded\r\n");
 
-<p>while(!feof($fp))</p>
+  fputs($fp, "Content-Length: ". strlen($data) . "\r\n\r\n");
 
-<p>{</p>
-<div class="highlight"><pre><code class="text language-text" data-lang="text">$response.=fgets($fp, 128);
-</code></pre></div>
-<p>}</p>
+  fputs($fp, "$data");
 
-<p>fclose($fp);</p>
+  $response="";
 
-<p>list($http<em>headers, $http</em>content)=explode(&quot;\r\n\r\n&quot;, $response);</p>
+  while(!feof($fp))
 
-<p>return $http_content;</p>
+  {
 
-<p>}</pre><h3>快速方法</h3><pre>function callAPIQuick($endpoint, $devkey, $action, $type, $keyword)</p>
+    $response.=fgets($fp, 128);
 
-<p>{</p>
+  }
 
-<p>$action = urlencode($action);</p>
+  fclose($fp);
 
-<p>$type = urlencode($type);</p>
+  list($http_headers, $http_content)=explode("\r\n\r\n", $response);
 
-<p>$keyword = urlencode($keyword);</p>
+  return $http_content;
 
-<p>$url = $endpoint . &quot;?devkey=$devkey&amp;action=$action&amp;type=$type&amp;keyword=$keyword&quot;;</p>
+}</pre>
 
-<p>$response = @file<em>get</em>contents($url);</p>
 
-<p>return $response;</p>
+<h3>快速方法</h3>
 
-<p>}</pre>
-使用PHP的内置方法file<em>get</em>contents会让代码量少很多（也少了一些灵活性）。
+
+<pre>function callAPIQuick($endpoint, $devkey, $action, $type, $keyword)
+
+{
+
+  $action = urlencode($action);
+
+  $type = urlencode($type);
+
+  $keyword = urlencode($keyword);
+
+  $url = $endpoint . "?devkey=$devkey&amp;action=$action&amp;type=$type&amp;keyword=$keyword";
+
+  $response = @file_get_contents($url);
+
+  return $response;
+
+}</pre>
+
+
+<p>使用PHP的内置方法file_get_contents会让代码量少很多（也少了一些灵活性）。</p>
+
 <h3> SDK方法</h3>
-很多开放平台都会提供各语言的SDK下载，比如淘宝开放平台就提供了<a href="http://open.taobao.com/doc/detail.htm?id=34">java、.net、PHP的SDK</a>，并且还能够根据每个应用的API调用权限进行单独打包。
+
+
+<p>很多开放平台都会提供各语言的SDK下载，比如淘宝开放平台就提供了<a href="http://open.taobao.com/doc/detail.htm?id=34">java、.net、PHP的SDK</a>，并且还能够根据每个应用的API调用权限进行单独打包。</p>
+
 <h2>二、处理返回值</h2>
-返回值要么是JSON格式，要么是XML格式。</p>
+
+
+<p>返回值要么是JSON格式，要么是XML格式。</p>
 
 <p>如果是XML的话，可以使用PHP5的<a href="http://www.w3schools.com/php/php_xml_simplexml.asp">simplexml</a>来解析。自从PHP 5.2，也已经默认加入了<a href="http://www.ruanyifeng.com/blog/2011/01/json_in_php.html">JSON格式</a>的支持。</p>
 

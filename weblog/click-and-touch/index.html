@@ -46,21 +46,20 @@ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www')
 	<div class="ads">
 
       <div class="fusionads">
-        <h2>项目</h2>
+        <h2>我的APP</h2>
 
         <span class="fusionentire">
-          <a href="http://33pu.net/" title="33号铺">
-            <img src="http://yuguo.us/files/2013/01/33pu-github.png" alt="33号铺" />
+          <a href="https://itunes.apple.com/cn/app/lu-da-shi-for-ying-xiong-lian/id646299086?mt=8" title="撸大师">
+            <img src="/files/2013/07/appstore.png" alt="撸大师" style="width:200px;"/>
           </a>
           <span class="fusiontext">
-                33号铺是一个简单好用的淘宝客瀑布流发布、管理系统。
+              撸大师是一款快速查看英雄联盟攻略的iPhone APP。
           </span>
         </span>
-        <p><a href="http://33pu.net/" title="访问33号铺">Demo</a> | <a href="http://github.com/yuguo/33pu" title="下载33号铺">下载</a></p>
-      </div><!-- .fusionads -->
+        </div><!-- .fusionads -->
       
       <div class="fusionads">
-        <h2>书</h2>
+        <h2>我的书</h2>
 
         <span class="fusionentire">
           <a href="http://yuguo.us/weblog/isux-and-smashing-book/" title="众妙之门3">
@@ -78,16 +77,16 @@ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www')
 
         <span class="fusionentire">
           <a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">
-            <img src="http://yuguo.us/files/2013/01/1.jpg" alt="Home&More淘宝店" />
+            <img src="/files/2013/07/kpw.jpg" alt="Home&More淘宝店" style="width:200px" />
           </a>
           <span class="fusiontext">
             <a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">
-              Home&More淘宝店是一个还不错的家居淘宝店。
+              Home&More淘宝店是一个靠谱的海外代购店。
 
             </a>
           </span>
         </span>
-        <p><a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">homemore.taobao.com</a></p>
+        <p><a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">http://homemore.taobao.com</a></p>
       </div><!-- .fusionads -->
 
     </div><!-- .ads -->
@@ -103,29 +102,37 @@ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www')
 <p>这次要解决的体验问题是当点击事件发生的时候，<strong>页面会闪烁一下</strong>。</p>
 
 <p>研究之后发现解决办法是把对<code>click</code>事件的绑定替换成<code>touchend</code>：</p>
-<div class="highlight"><pre><code class="text language-text" data-lang="text">tagdom.addEventListener(&#39;click&#39;,function(ev){
+
+<pre><code>tagdom.addEventListener('click',function(ev){
     ...
 }
-</code></pre></div>
+</code></pre>
+
 <p>替换成：</p>
-<div class="highlight"><pre><code class="text language-text" data-lang="text">tagdom.addEventListener(&#39;touchend&#39;,function(ev){
+
+<pre><code>tagdom.addEventListener('touchend',function(ev){
     ...
 }
-</code></pre></div>
+</code></pre>
+
 <p>代码很简单，但是新的问题出现了，当我按住选择器，然后我突然不想点了，我就会滑走手指，然后放开。我的预期当然是事件被取消，但是<code>touchend</code>还是执行了，并且<code>ev.target</code>仍然是之前的元素。</p>
 
 <p>所以我需要检测是否发生了touchmove事件，解决办法应运而生：</p>
-<div class="highlight"><pre><code class="text language-text" data-lang="text">var isScrolling = false;
-window.addEventListener(&#39;touchstart&#39;, function () { isScrolling = false; });
-window.addEventListener(&#39;touchmove&#39;, function () { isScrolling = true; })
-</code></pre></div>
+
+<pre><code>var isScrolling = false;
+window.addEventListener('touchstart', function () { isScrolling = false; });
+window.addEventListener('touchmove', function () { isScrolling = true; })
+</code></pre>
+
 <p>所以我们现在有一个变量<code>isScrolling</code>来标志是否滑动了手指，如果没有发生过滑动，那么<code>touchend</code>才生效：</p>
-<div class="highlight"><pre><code class="text language-text" data-lang="text">tagdom.addEventListener(&#39;touchend&#39;,function(ev){
+
+<pre><code>tagdom.addEventListener('touchend',function(ev){
     if(isScrolling == false){
         ...
     }
 }
-</code></pre></div>
+</code></pre>
+
 <p>现在，页面不会再发生闪烁了。</p>
 
 	      	<p class='previous-next-nav'><a href="http://yuguo.us//weblog/scroll-speed-in-uiview/" class="next">使用HTML5构建iOS原生APP（4） &rarr;</a>

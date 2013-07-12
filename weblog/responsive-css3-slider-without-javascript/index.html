@@ -46,21 +46,20 @@ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www')
 	<div class="ads">
 
       <div class="fusionads">
-        <h2>项目</h2>
+        <h2>我的APP</h2>
 
         <span class="fusionentire">
-          <a href="http://33pu.net/" title="33号铺">
-            <img src="http://yuguo.us/files/2013/01/33pu-github.png" alt="33号铺" />
+          <a href="https://itunes.apple.com/cn/app/lu-da-shi-for-ying-xiong-lian/id646299086?mt=8" title="撸大师">
+            <img src="/files/2013/07/appstore.png" alt="撸大师" style="width:200px;"/>
           </a>
           <span class="fusiontext">
-                33号铺是一个简单好用的淘宝客瀑布流发布、管理系统。
+              撸大师是一款快速查看英雄联盟攻略的iPhone APP。
           </span>
         </span>
-        <p><a href="http://33pu.net/" title="访问33号铺">Demo</a> | <a href="http://github.com/yuguo/33pu" title="下载33号铺">下载</a></p>
-      </div><!-- .fusionads -->
+        </div><!-- .fusionads -->
       
       <div class="fusionads">
-        <h2>书</h2>
+        <h2>我的书</h2>
 
         <span class="fusionentire">
           <a href="http://yuguo.us/weblog/isux-and-smashing-book/" title="众妙之门3">
@@ -78,16 +77,16 @@ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www')
 
         <span class="fusionentire">
           <a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">
-            <img src="http://yuguo.us/files/2013/01/1.jpg" alt="Home&More淘宝店" />
+            <img src="/files/2013/07/kpw.jpg" alt="Home&More淘宝店" style="width:200px" />
           </a>
           <span class="fusiontext">
             <a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">
-              Home&More淘宝店是一个还不错的家居淘宝店。
+              Home&More淘宝店是一个靠谱的海外代购店。
 
             </a>
           </span>
         </span>
-        <p><a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">homemore.taobao.com</a></p>
+        <p><a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">http://homemore.taobao.com</a></p>
       </div><!-- .fusionads -->
 
     </div><!-- .ads -->
@@ -104,9 +103,15 @@ Best In Test: Firefox (transition performance)</p>
 
 <p>Full Support: Chrome, Firefox, Opera, Safari (latest versions of all browsers)</p>
 
-<p>Partial Support: IE9 (Functional, but does not support transitions)
-<pre><a href="http://yuguo.us/files/2012/04/1.jpg"><img title="1" src="http://yuguo.us/files/2012/04/1.jpg" alt=""   data-pinit="registered" /></a></pre><h2>幻灯片</h2>
-所有的幻灯片&lt;article&gt;挨着浮动在一起，然后放到一个大容器#slides #overflow #inner中。大容器通过#overflow溢出隐藏。当点击左右的滑动箭头的时候，对#inner设置left-margin: -100%;就会让所有幻灯片滑到左边。</p>
+<p>Partial Support: IE9 (Functional, but does not support transitions)</p>
+
+<pre><a href="http://yuguo.us/files/2012/04/1.jpg"><img title="1" src="http://yuguo.us/files/2012/04/1.jpg" alt=""   data-pinit="registered" /></a></pre>
+
+
+<h2>幻灯片</h2>
+
+
+<p>所有的幻灯片&lt;article&gt;挨着浮动在一起，然后放到一个大容器#slides #overflow #inner中。大容器通过#overflow溢出隐藏。当点击左右的滑动箭头的时候，对#inner设置left-margin: -100%;就会让所有幻灯片滑到左边。</p>
 
 <p>这一点跟普通的js幻灯片没有什么两样。</p>
 
@@ -114,98 +119,114 @@ Best In Test: Firefox (transition performance)</p>
 
 <p>页面中有5个label和5个select。左右两个箭头是对应其中两个label，点击之后会使label对应的select选中。</p>
 
-<p>select选中之后就会通过CSS3来触发margin的改变。
-<pre>#slide1:checked ~ #slides .inner { margin-left:0; }</p>
+<p>select选中之后就会通过CSS3来触发margin的改变。</p>
 
-<h1>slide2:checked ~ #slides .inner { margin-left:-100%; }</h1>
+<pre>#slide1:checked ~ #slides .inner { margin-left:0; }
 
-<h1>slide3:checked ~ #slides .inner { margin-left:-200%; }</h1>
+#slide2:checked ~ #slides .inner { margin-left:-100%; }
 
-<h1>slide4:checked ~ #slides .inner { margin-left:-300%; }</h1>
+#slide3:checked ~ #slides .inner { margin-left:-200%; }
 
-<h1>slide5:checked ~ #slides .inner { margin-left:-400%; }</pre></h1>
+#slide4:checked ~ #slides .inner { margin-left:-300%; }
 
-<p>然后同时改变label的显示和隐藏，也就是替换成其他的label。
-<pre>#slide1:checked ~ #controls label:nth-child(2),</p>
+#slide5:checked ~ #slides .inner { margin-left:-400%; }</pre>
 
-<h1>slide2:checked ~ #controls label:nth-child(3),</h1>
 
-<h1>slide3:checked ~ #controls label:nth-child(4),</h1>
+<p>然后同时改变label的显示和隐藏，也就是替换成其他的label。</p>
 
-<h1>slide4:checked ~ #controls label:nth-child(5),</h1>
+<pre>#slide1:checked ~ #controls label:nth-child(2),
 
-<h1>slide5:checked ~ #controls label:nth-child(1) {</h1>
-<div class="highlight"><pre><code class="text language-text" data-lang="text">background: url(&#39;next.png&#39;) no-repeat;
+#slide2:checked ~ #controls label:nth-child(3),
 
-float: right;
+#slide3:checked ~ #controls label:nth-child(4),
 
-margin: 0 -70px 0 0;
+#slide4:checked ~ #controls label:nth-child(5),
 
-display: block;
-</code></pre></div>
-<p>}/<em>右边的label，控制下一张幻灯片，所以当#slide1是当前幻灯片的时候，下一张幻灯片是第二个label，也就是#slide2，实现了切换</em>/</p>
+#slide5:checked ~ #controls label:nth-child(1) {
 
-<h1>slide1:checked ~ #controls label:nth-child(5),</h1>
+    background: url('next.png') no-repeat;
 
-<h1>slide2:checked ~ #controls label:nth-child(1),</h1>
+    float: right;
 
-<h1>slide3:checked ~ #controls label:nth-child(2),</h1>
+    margin: 0 -70px 0 0;
 
-<h1>slide4:checked ~ #controls label:nth-child(3),</h1>
+    display: block;
 
-<h1>slide5:checked ~ #controls label:nth-child(4) {</h1>
-<div class="highlight"><pre><code class="text language-text" data-lang="text">background: url(&#39;prev.png&#39;) no-repeat;
+}/*右边的label，控制下一张幻灯片，所以当#slide1是当前幻灯片的时候，下一张幻灯片是第二个label，也就是#slide2，实现了切换*/
 
-float: left;
+#slide1:checked ~ #controls label:nth-child(5),
 
-margin: 0 0 0 -70px;
+#slide2:checked ~ #controls label:nth-child(1),
 
-display: block;
-</code></pre></div>
-<p>}</pre>
-此外还有幻灯片上的文字信息的隐现：
-<pre>#slide1:checked ~ #slides article:nth-child(1) .info,</p>
+#slide3:checked ~ #controls label:nth-child(2),
 
-<h1>slide2:checked ~ #slides article:nth-child(2) .info,</h1>
+#slide4:checked ~ #controls label:nth-child(3),
 
-<h1>slide3:checked ~ #slides article:nth-child(3) .info,</h1>
+#slide5:checked ~ #controls label:nth-child(4) {
 
-<h1>slide4:checked ~ #slides article:nth-child(4) .info,</h1>
+    background: url('prev.png') no-repeat;
 
-<h1>slide5:checked ~ #slides article:nth-child(5) .info {</h1>
-<div class="highlight"><pre><code class="text language-text" data-lang="text">opacity: 1;
+    float: left;
 
--webkit-transition: all 1s ease-out 0.6s;
+    margin: 0 0 0 -70px;
 
--moz-transition: all 1s ease-out 0.6s;
+    display: block;
 
--o-transition: all 1s ease-out 0.6s;
+}</pre>
 
-transition: all 1s ease-out 0.6s;
-</code></pre></div>
-<p>}</pre>
-这样就会出现幻灯片快速滑动之后，文字慢慢隐现出来的感觉。
+
+<p>此外还有幻灯片上的文字信息的隐现：</p>
+
+<pre>#slide1:checked ~ #slides article:nth-child(1) .info,
+
+#slide2:checked ~ #slides article:nth-child(2) .info,
+
+#slide3:checked ~ #slides article:nth-child(3) .info,
+
+#slide4:checked ~ #slides article:nth-child(4) .info,
+
+#slide5:checked ~ #slides article:nth-child(5) .info {
+
+    opacity: 1;
+
+    -webkit-transition: all 1s ease-out 0.6s;
+
+    -moz-transition: all 1s ease-out 0.6s;
+
+    -o-transition: all 1s ease-out 0.6s;
+
+    transition: all 1s ease-out 0.6s;
+
+}</pre>
+
+
+<p>这样就会出现幻灯片快速滑动之后，文字慢慢隐现出来的感觉。</p>
+
 <h2>Responsive Design</h2>
-在国外很多前卫网站设计中，Responsive Design几乎成了标配（<a href="http://yuguo.us/weblog/">yuguo.us/weblog</a>也是），在这个幻灯片中通过@media标签把显示媒介分为桌面、平板电脑和手机三类。</p>
 
-<p>主要做了这样一些工作：
+
+<p>在国外很多前卫网站设计中，Responsive Design几乎成了标配（<a href="http://yuguo.us/weblog/">yuguo.us/weblog</a>也是），在这个幻灯片中通过@media标签把显示媒介分为桌面、平板电脑和手机三类。</p>
+
+<p>主要做了这样一些工作：</p>
+
 <ol>
     <li>label图标缩小
-<pre>#tablet:checked ~ #slider #controls label {</p>
+<pre>#tablet:checked ~ #slider #controls label {
 
-<p>-moz-transform: scale(0.8);</p>
+-moz-transform: scale(0.8);
 
-<p>-webkit-transform: scale(0.8);</p>
+-webkit-transform: scale(0.8);
 
-<p>-o-transform: scale(0.8);</p>
+-o-transform: scale(0.8);
 
-<p>-ms-transform: scale(0.8)</p>
+-ms-transform: scale(0.8)
 
-<p>transform: scale(0.8);</p>
+transform: scale(0.8);
 
-<p>}</pre></li>
+}</pre></li>
     <li>label图标移到幻灯片内容中</li>
-    <li>其他样式修饰，比如去掉圆角</li></ol></p>
+    <li>其他样式修饰，比如去掉圆角</li></ol>
+
 
 	      	<p class='previous-next-nav'><a href="http://yuguo.us//weblog/a-introduction-to-codeigniter/" class="next">CodeIgniter简介 &rarr;</a>
 	      	<a href="http://yuguo.us//weblog/clever-jpeg-optimization-techniques/" class="previous">&larr; 关于JPEG压缩优化的一点趣事</a>

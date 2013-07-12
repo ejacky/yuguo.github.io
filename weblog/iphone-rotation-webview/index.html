@@ -46,21 +46,20 @@ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www')
 	<div class="ads">
 
       <div class="fusionads">
-        <h2>项目</h2>
+        <h2>我的APP</h2>
 
         <span class="fusionentire">
-          <a href="http://33pu.net/" title="33号铺">
-            <img src="http://yuguo.us/files/2013/01/33pu-github.png" alt="33号铺" />
+          <a href="https://itunes.apple.com/cn/app/lu-da-shi-for-ying-xiong-lian/id646299086?mt=8" title="撸大师">
+            <img src="/files/2013/07/appstore.png" alt="撸大师" style="width:200px;"/>
           </a>
           <span class="fusiontext">
-                33号铺是一个简单好用的淘宝客瀑布流发布、管理系统。
+              撸大师是一款快速查看英雄联盟攻略的iPhone APP。
           </span>
         </span>
-        <p><a href="http://33pu.net/" title="访问33号铺">Demo</a> | <a href="http://github.com/yuguo/33pu" title="下载33号铺">下载</a></p>
-      </div><!-- .fusionads -->
+        </div><!-- .fusionads -->
       
       <div class="fusionads">
-        <h2>书</h2>
+        <h2>我的书</h2>
 
         <span class="fusionentire">
           <a href="http://yuguo.us/weblog/isux-and-smashing-book/" title="众妙之门3">
@@ -78,16 +77,16 @@ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www')
 
         <span class="fusionentire">
           <a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">
-            <img src="http://yuguo.us/files/2013/01/1.jpg" alt="Home&More淘宝店" />
+            <img src="/files/2013/07/kpw.jpg" alt="Home&More淘宝店" style="width:200px" />
           </a>
           <span class="fusiontext">
             <a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">
-              Home&More淘宝店是一个还不错的家居淘宝店。
+              Home&More淘宝店是一个靠谱的海外代购店。
 
             </a>
           </span>
         </span>
-        <p><a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">homemore.taobao.com</a></p>
+        <p><a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">http://homemore.taobao.com</a></p>
       </div><!-- .fusionads -->
 
     </div><!-- .ads -->
@@ -99,7 +98,8 @@ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www')
 	      	<span class="post-date">2013年 04月 10日</span>
 
 	      	<p>我的app基本上是由一个原生的navigation controller贯穿全局，然后在每一个scene中都有一个主要的<code>UIWebView</code>作为主要逻辑：</p>
-<div class="highlight"><pre><code class="text language-text" data-lang="text">- (void)viewDidLoad{
+
+<pre><code>- (void)viewDidLoad{
     ...
     self.webView = [[UIWebView alloc] initWithFrame:CGRectMake(.0f, 0.f, self.view.bounds.size.width, self.view.bounds.size.height -44)];//-44是减去标题栏高度
     self.webView.delegate = self;
@@ -107,25 +107,30 @@ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www')
     [self.view addSubview:self.webView];
 
 }
-</code></pre></div>
+</code></pre>
+
 <p>现在的问题是，当手机翻转的时候，webView的大小不会重绘，就会出现bug，解决办法很简单，就是实现翻转委托：</p>
-<div class="highlight"><pre><code class="text language-text" data-lang="text">- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation {
-        NSLog(@&quot;I have finished rotating&quot;);
+
+<pre><code>- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation {
+        NSLog(@"I have finished rotating");
     self.webView.frame = CGRectMake(.0f, 0.f, self.view.bounds.size.width, self.view.bounds.size.height));
 }
-</code></pre></div>
+</code></pre>
+
 <p>就可以了，然后在webView中做好宽度自适应：</p>
-<div class="highlight"><pre><code class="text language-text" data-lang="text">&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, user-scable=0, minimun-scale=1.0, maximum-scale=1.0&quot;&gt;
-</code></pre></div>
+
+<pre><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0, user-scable=0, minimun-scale=1.0, maximum-scale=1.0"&gt;
+</code></pre>
+
 <h2>备注</h2>
 
 <p>介绍一下view的三种坐标属性：</p>
 
-<p>Frame A view&#39;s frame (CGRect) is the position of its rectangle in the superview&#39;s coordinate system. By default it starts at the top left.</p>
+<p>Frame A view's frame (CGRect) is the position of its rectangle in the superview's coordinate system. By default it starts at the top left.</p>
 
-<p>Bounds A view&#39;s bounds (CGRect) expresses a view rectangle in its own coordinate system.</p>
+<p>Bounds A view's bounds (CGRect) expresses a view rectangle in its own coordinate system.</p>
 
-<p>Center A center is a CGPoint expressed in terms of the superview&#39;s coordinate system and it determines the position of the exact center point of the view.</p>
+<p>Center A center is a CGPoint expressed in terms of the superview's coordinate system and it determines the position of the exact center point of the view.</p>
 
 	      	<p class='previous-next-nav'><a href="http://yuguo.us//weblog/responsive-web-design/" class="next">《响应式Web设计实践》：前端+后台=响应式 &rarr;</a>
 	      	<a href="http://yuguo.us//weblog/maintainable-javascript/" class="previous">&larr; 《编写可维护的JavaScript》——野生JavaScript程序员必读</a>

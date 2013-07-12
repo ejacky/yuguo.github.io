@@ -156,7 +156,6 @@
 /weblog/badminton-2/
 /weblog/1000-reasons-i-love-you/
 /weblog/badminton-1/
-/weblog/develop-enviroment/
 /weblog/best-practice/
 /weblog/hanhan-carry/
 /weblog/groupon-in-china/
@@ -222,7 +221,6 @@
 /weblog/week-15/
 /weblog/auto-button/
 /weblog/risky-strategy-and-safe-strategy/
-/weblog/ie6-chi-eng-mix-bug/
 /weblog/week-14/
 /weblog/stupid-ass/
 /weblog/week-13/
@@ -244,13 +242,11 @@
 /weblog/css-framework-intro/
 /weblog/css-framework-blueprint/
 /weblog/css-framework-960/
-/weblog/css-framework-yui/
 /weblog/week-7/
 /weblog/css-framework-oocss/
 /weblog/moving/
 /weblog/assume/
 /weblog/week-5-and-6/
-/weblog/emeditor-snippet/
 /weblog/communicate-with-pdm/
 /weblog/webrebuild-2010/
 /weblog/tooth-problem/
@@ -265,6 +261,5 @@
 /weblog/start-work/
 /weblog/farewell-my-college/
 /weblog/the-fine-art-of-small-talk/
-/weblog/piss-out/
 /weblog/learn-from-graduate-thesis/
 /weblog/my-sites-immigrate-into-us/

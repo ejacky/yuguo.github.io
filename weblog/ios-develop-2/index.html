@@ -46,21 +46,20 @@ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www')
 	<div class="ads">
 
       <div class="fusionads">
-        <h2>项目</h2>
+        <h2>我的APP</h2>
 
         <span class="fusionentire">
-          <a href="http://33pu.net/" title="33号铺">
-            <img src="http://yuguo.us/files/2013/01/33pu-github.png" alt="33号铺" />
+          <a href="https://itunes.apple.com/cn/app/lu-da-shi-for-ying-xiong-lian/id646299086?mt=8" title="撸大师">
+            <img src="/files/2013/07/appstore.png" alt="撸大师" style="width:200px;"/>
           </a>
           <span class="fusiontext">
-                33号铺是一个简单好用的淘宝客瀑布流发布、管理系统。
+              撸大师是一款快速查看英雄联盟攻略的iPhone APP。
           </span>
         </span>
-        <p><a href="http://33pu.net/" title="访问33号铺">Demo</a> | <a href="http://github.com/yuguo/33pu" title="下载33号铺">下载</a></p>
-      </div><!-- .fusionads -->
+        </div><!-- .fusionads -->
       
       <div class="fusionads">
-        <h2>书</h2>
+        <h2>我的书</h2>
 
         <span class="fusionentire">
           <a href="http://yuguo.us/weblog/isux-and-smashing-book/" title="众妙之门3">
@@ -78,16 +77,16 @@ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www')
 
         <span class="fusionentire">
           <a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">
-            <img src="http://yuguo.us/files/2013/01/1.jpg" alt="Home&More淘宝店" />
+            <img src="/files/2013/07/kpw.jpg" alt="Home&More淘宝店" style="width:200px" />
           </a>
           <span class="fusiontext">
             <a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">
-              Home&More淘宝店是一个还不错的家居淘宝店。
+              Home&More淘宝店是一个靠谱的海外代购店。
 
             </a>
           </span>
         </span>
-        <p><a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">homemore.taobao.com</a></p>
+        <p><a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">http://homemore.taobao.com</a></p>
       </div><!-- .fusionads -->
 
     </div><!-- .ads -->
@@ -100,51 +99,70 @@ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www')
 
 	      	<h2>关于segue</h2>
 
+
 <p>segue就是在storyboard中描述两个场景（scene）的过渡关系的一个对象。</p>
 
 <p>比如在tableview和collectionview中常见的一种模式就是点击列表页中的一项之后“跳转”到详情页，这个“跳转”的逻辑和动画就是一个segue，实现方法也很简单，再tableview或者collectionview中实现prepareForSegue:sender方法即可，代码示例：
 <a href="https://gist.github.com/f0cd3f56050c30fc4a40">https://gist.github.com/f0cd3f56050c30fc4a40</a>
 第一步，我们需要知道被点击的条目的一些信息，比如是第几个tableCell被点击了，或者第几个collectionCell被点击了：</p>
 
-<p>tableCell：
-<pre>// get the selected index</p>
+<p>tableCell：</p>
 
-<p>NSInteger selectedIndex = [[self.tableView indexPathForSelectedRow] row];</pre>
-collectionCell
+<pre>// get the selected index
+
+NSInteger selectedIndex = [[self.tableView indexPathForSelectedRow] row];</pre>
+
+
+<p>collectionCell</p>
+
 <pre>NSInteger *selectedIndex = [[[self.collectionView indexPathsForSelectedItems] objectAtIndex:0] row];</pre>
-第二步，基本上我们还需要传递一些数据给详情页，告诉详情页是第几个条目被点击了，这个条目上的一些信息是啥，可以使用这个模式：
-<pre><code>DetailViewController *detailViewController = [segue destinationViewController]; //获取目标控制器 detailViewController.image = image; //数据传递</code></pre><h2>关于数组</h2>
-数组有两种，一种是不可变的NSArray，另一种是可变的NSMutableArray。</p>
 
-<p>对于NSArray，只能存储objective-c对象，而不能存储c语言中的基本数据类型，如int，float，或者NSArray中的随机指针。同时你不能用NSArray来存储nil。因为他要用nil放在最末尾，来代表结束，下面的例子你会看到。
-<pre>NSArray * array;</p>
 
-<p>array = [NSArray arrayWithObjects: @&quot;one&quot;, @&quot;two&quot;, @&quot;three&quot;, nill];</p>
+<p>第二步，基本上我们还需要传递一些数据给详情页，告诉详情页是第几个条目被点击了，这个条目上的一些信息是啥，可以使用这个模式：</p>
 
-<p>for(int i=0; i&lt;[array count]; i++)</p>
+<pre><code>DetailViewController *detailViewController = [segue destinationViewController]; //获取目标控制器 detailViewController.image = image; //数据传递</code></pre>
 
-<p>{</p>
 
-<p>    NSLog(@&quot;index %d has %@.&quot;, i , [array objectAtIndex: i ]);</p>
+<h2>关于数组</h2>
 
-<p>}</pre>
-NSArray创建的是不可变数组，一旦你用特定数量的对象创建了一个数组，那么他就固定下来了：你既不能添加也不能删除人和元素。当然，数组中的对像是可以改变的，但数组对象一直不变。</p>
 
-<p>NSMutableArray是NSArray的补充类，他所创建的是一个可变数组，可以随意的添加和删除数组中的元素。NSMutableArray通过方法arrayWithCapacity来创建新的可变数组，但这里的数组容量只是一个参考，不会真的限制数组的大小，它是为了能够对代码进行优化而存在的，也不会预写入数组。
-<pre>NSMutableArray * array;</p>
+<p>数组有两种，一种是不可变的NSArray，另一种是可变的NSMutableArray。</p>
 
-<p>array = [NSMutableArray arrayWithCapacity:9];</p>
+<p>对于NSArray，只能存储objective-c对象，而不能存储c语言中的基本数据类型，如int，float，或者NSArray中的随机指针。同时你不能用NSArray来存储nil。因为他要用nil放在最末尾，来代表结束，下面的例子你会看到。</p>
 
-<p>for (int i=0; i&lt;4; i++){</p>
+<pre>NSArray * array;
 
-<p>    Tire * tire = [Tire new];</p>
+array = [NSArray arrayWithObjects: @"one", @"two", @"three", nill];
 
-<p>    [array addObject: tire];</p>
+for(int i=0; i&lt;[array count]; i++)
 
-<p>}</p>
+{
 
-<p>[array removeObjectAtIndex:1]</pre>
-NSMutableArray使用addObject: 来在末尾添加对象；用removeObjectAtIndexx: 来删除指定索引处的对象，删除对象后，被删除对象后面的数组元素被前移来填补空缺。</p>
+    NSLog(@"index %d has %@.", i , [array objectAtIndex: i ]);
+
+}</pre>
+
+
+<p>NSArray创建的是不可变数组，一旦你用特定数量的对象创建了一个数组，那么他就固定下来了：你既不能添加也不能删除人和元素。当然，数组中的对像是可以改变的，但数组对象一直不变。</p>
+
+<p>NSMutableArray是NSArray的补充类，他所创建的是一个可变数组，可以随意的添加和删除数组中的元素。NSMutableArray通过方法arrayWithCapacity来创建新的可变数组，但这里的数组容量只是一个参考，不会真的限制数组的大小，它是为了能够对代码进行优化而存在的，也不会预写入数组。</p>
+
+<pre>NSMutableArray * array;
+
+array = [NSMutableArray arrayWithCapacity:9];
+
+for (int i=0; i&lt;4; i++){
+
+    Tire * tire = [Tire new];
+
+    [array addObject: tire];
+
+}
+
+[array removeObjectAtIndex:1]</pre>
+
+
+<p>NSMutableArray使用addObject: 来在末尾添加对象；用removeObjectAtIndexx: 来删除指定索引处的对象，删除对象后，被删除对象后面的数组元素被前移来填补空缺。</p>
 
 	      	<p class='previous-next-nav'><a href="http://yuguo.us//weblog/2012-end/" class="next">2012总结 &rarr;</a>
 	      	<a href="http://yuguo.us//weblog/ios-develop/" class="previous">&larr; iOS开发随笔</a>

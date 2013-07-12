@@ -46,21 +46,20 @@ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www')
 	<div class="ads">
 
       <div class="fusionads">
-        <h2>项目</h2>
+        <h2>我的APP</h2>
 
         <span class="fusionentire">
-          <a href="http://33pu.net/" title="33号铺">
-            <img src="http://yuguo.us/files/2013/01/33pu-github.png" alt="33号铺" />
+          <a href="https://itunes.apple.com/cn/app/lu-da-shi-for-ying-xiong-lian/id646299086?mt=8" title="撸大师">
+            <img src="/files/2013/07/appstore.png" alt="撸大师" style="width:200px;"/>
           </a>
           <span class="fusiontext">
-                33号铺是一个简单好用的淘宝客瀑布流发布、管理系统。
+              撸大师是一款快速查看英雄联盟攻略的iPhone APP。
           </span>
         </span>
-        <p><a href="http://33pu.net/" title="访问33号铺">Demo</a> | <a href="http://github.com/yuguo/33pu" title="下载33号铺">下载</a></p>
-      </div><!-- .fusionads -->
+        </div><!-- .fusionads -->
       
       <div class="fusionads">
-        <h2>书</h2>
+        <h2>我的书</h2>
 
         <span class="fusionentire">
           <a href="http://yuguo.us/weblog/isux-and-smashing-book/" title="众妙之门3">
@@ -78,16 +77,16 @@ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www')
 
         <span class="fusionentire">
           <a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">
-            <img src="http://yuguo.us/files/2013/01/1.jpg" alt="Home&More淘宝店" />
+            <img src="/files/2013/07/kpw.jpg" alt="Home&More淘宝店" style="width:200px" />
           </a>
           <span class="fusiontext">
             <a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">
-              Home&More淘宝店是一个还不错的家居淘宝店。
+              Home&More淘宝店是一个靠谱的海外代购店。
 
             </a>
           </span>
         </span>
-        <p><a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">homemore.taobao.com</a></p>
+        <p><a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">http://homemore.taobao.com</a></p>
       </div><!-- .fusionads -->
 
     </div><!-- .ads -->
@@ -100,92 +99,121 @@ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www')
 
 	      	<p>本文是<a href="http://net.tutsplus.com/tutorials/javascript-ajax/14-helpful-jquery-tricks-notes-and-best-practices/">《14 Helpful jQuery Tricks, Notes, and Best Practices》</a>的下半部分译文，上半部分为：
 <a href="http://yuguo.us/weblog/14-jquery-notes-1/">《14条关于jQuery的知识【上】》</a>
-译后记：我觉得jQuery的目标应该是三点：
+译后记：我觉得jQuery的目标应该是三点：</p>
+
 <ol>
-    <li>让程序员写出更<em>优雅、清晰</em>的的代码</li>
-    <li>让前端新手和设计师、重构人员<em>容易上手</em>，感受js的乐趣</li>
-    <li>以<em>开放的心态</em>和其他类库并存</li></ol>
-以下是译文
+<li>让程序员写出更_优雅、清晰_的的代码</li>
+<li>让前端新手和设计师、重构人员_容易上手_，感受js的乐趣</li>
+<li>以_开放的心态_和其他类库并存
+以下是译文</li>
+</ol>
+
+
 <h2>8.获取原生js属性和方法</h2>
-从之前的例子中我们学到我们可以直接取得元素比如a标签的属性：
-<pre><code>var anchor = document.getElementById(&#39;someAnchor&#39;);</p>
 
-<p>//anchor.id</p>
+<p>从之前的例子中我们学到我们可以直接取得元素比如a标签的属性：
+    var anchor = document.getElementById('someAnchor');</p>
 
-<p>// anchor.href</p>
+<pre><code>//anchor.id
 
-<p>// anchor.title</p>
+// anchor.href
 
-<p>// .etc
+// anchor.title
+
+// .etc
 </code></pre>
-但是当你想通过jQuery取得DOM元素的时候，是不能通过这种方法来取得属性的：
-<pre><code>// Fails</p>
 
-<p>var id = $(&#39;#someAnchor&#39;).id;
+<p>但是当你想通过jQuery取得DOM元素的时候，是不能通过这种方法来取得属性的：</p>
+
+<pre><code>// Fails
+
+var id = $('#someAnchor').id;
 </code></pre>
-所以，当你需要获取href属性或者其他属性的是，你需要使用其他方法，方法很多：
-<pre><code>// OPTION 1 - Use jQuery</p>
 
-<p>var id = $(&#39;#someAnchor&#39;).attr(&#39;id&#39;);</p>
+<p>所以，当你需要获取href属性或者其他属性的是，你需要使用其他方法，方法很多：</p>
 
-<p>// OPTION 2 - 取到DOM元素再取值</p>
+<pre><code>// OPTION 1 - Use jQuery
 
-<p>var id = $(&#39;#someAnchor&#39;)[0].id;</p>
+var id = $('#someAnchor').attr('id');
 
-<p>// OPTION 3 - 用jQuery的get方法</p>
+// OPTION 2 - 取到DOM元素再取值
 
-<p>var id = $(&#39;#someAnchor&#39;).get(0).id;</p>
+var id = $('#someAnchor')[0].id;
 
-<p>// OPTION 3b - 用不带参数的get</p>
+// OPTION 3 - 用jQuery的get方法
 
-<p>anchorsArray = $(&#39;.someAnchors&#39;).get();</p>
+var id = $('#someAnchor').get(0).id;
 
-<p>var thirdId = anchorsArray[2].id;
+// OPTION 3b - 用不带参数的get
+
+anchorsArray = $('.someAnchors').get();
+
+var thirdId = anchorsArray[2].id;
 </code></pre>
-get()方法十分有效，它能把jQuery对象集合转化成一个数组。
+
+<p>get()方法十分有效，它能把jQuery对象集合转化成一个数组。</p>
+
 <h2>9.用PHP检测Ajax请求</h2>
-事实是，在我们的大多数项目中不能依赖js来完成所有工作比如验证或者Ajax，假如js被禁用了怎么办呢？一个通用的解决办法是使用服务器端程序验证Ajax请求是否被发起。</p>
 
-<p>jQuery使得这一做法变得很简单，可以通过$.ajax方法很方便地设置请求的头部。
-<pre><code>// 设置头部，这样接受请求的服务器端语言知道这是一个XMLHttpRequest</p>
+<p>事实是，在我们的大多数项目中不能依赖js来完成所有工作比如验证或者Ajax，假如js被禁用了怎么办呢？一个通用的解决办法是使用服务器端程序验证Ajax请求是否被发起。</p>
 
-<p>// Only send the header if it&#39;s not a remote XHR</p>
+<p>jQuery使得这一做法变得很简单，可以通过$.ajax方法很方便地设置请求的头部。</p>
 
-<p>if ( !remote ) {</p>
-<div class="highlight"><pre><code class="text language-text" data-lang="text">xhr.setRequestHeader(&quot;X-Requested-With&quot;, &quot;XMLHttpRequest&quot;);
-</code></pre></div>
-<p>}
+<pre><code>// 设置头部，这样接受请求的服务器端语言知道这是一个XMLHttpRequest
+
+// Only send the header if it's not a remote XHR
+
+if ( !remote ) {
+
+    xhr.setRequestHeader("X-Requested-With", "XMLHttpRequest");
+
+}
 </code></pre>
-设置了这个头部之后，我们可以用PHP（或者其他服务器编程语言）来检查这个头部，然后相应地做出反应。用PHP的话，可以通过$<em>SERVER[&#39;HTTP</em>X<em>REQUESTED</em>WITH&#39;]来判断。
-<pre><code>function isXhr() {</p>
 
-<p>return $<em>SERVER[&#39;HTTP</em>X<em>REQUESTED</em>WITH&#39;] === &#39;XMLHttpRequest&#39;;</p>
+<p>设置了这个头部之后，我们可以用PHP（或者其他服务器编程语言）来检查这个头部，然后相应地做出反应。用PHP的话，可以通过<code>$_SERVER['HTTP_X_REQUESTED_WITH']</code>来判断。</p>
 
-<p>}
-</code></pre><h2>10.jQuery和$</h2>
-知道为什么jQuery和$可以互换么？看看jQuery的源码：
+<pre><code>function isXhr() {
+
+  return $_SERVER['HTTP_X_REQUESTED_WITH'] === 'XMLHttpRequest';
+
+}
+</code></pre>
+
+<h2>10.jQuery和$</h2>
+
+<p>知道为什么jQuery和$可以互换么？看看jQuery的源码：</p>
+
 <pre><code>window.jQuery = window.$ = jQuery;
 </code></pre>
-由于jQuery本身运行在一个很大 的function中，这样做的好处是能最大程度地避免全局变量的出现。但也因为如此$在外面是undefined的，为了解决这个问题，把jQuery裸露给全局变量window，同时还给它一个别名$。
+
+<p>由于jQuery本身运行在一个很大 的function中，这样做的好处是能最大程度地避免全局变量的出现。但也因为如此$在外面是undefined的，为了解决这个问题，把jQuery裸露给全局变量window，同时还给它一个别名$。</p>
+
 <h2>11.根据条件载入jQuery</h2>
-我们都喜欢CDN，特别是Google的免费CDN，可是让我们不使用googleapi提供的CDN的一个阻挠就是大陆功夫墙的不可预知性。但是可以这么写，是<a href="http://html5boilerplate.com/">HTML5 Boilerplate</a>提供的方法：
-<pre><code>&lt;!-- Grab Google CDN jQuery. fall back to local if necessary --&gt;</p>
 
-<p>&lt;script src=&quot;http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js&quot;&gt;&lt;/script&gt;</p>
+<p>我们都喜欢CDN，特别是Google的免费CDN，可是让我们不使用googleapi提供的CDN的一个阻挠就是大陆功夫墙的不可预知性。但是可以这么写，是<a href="http://html5boilerplate.com/">HTML5 Boilerplate</a>提供的方法：</p>
 
-<p>&lt;script&gt;!window.jQuery &amp;&amp; document.write(&#39;&lt;script src=&quot;js/jquery-1.4.2.min.js&quot;&gt;&lt;\/script&gt;&#39;)&lt;/script&gt;
+<pre><code>&amp;lt;!-- Grab Google CDN jQuery. fall back to local if necessary --&amp;gt;
+
+&amp;lt;script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"&amp;gt;&amp;lt;/script&amp;gt;
+
+&amp;lt;script&amp;gt;!window.jQuery &amp;amp;&amp;amp; document.write('&amp;lt;script src="js/jquery-1.4.2.min.js"&amp;gt;&amp;lt;\/script&amp;gt;')&amp;lt;/script&amp;gt;
 </code></pre>
-相当直观，如果window.jQuery是未定义的，那就是说下载js文件出了问题，这时候&amp;&amp;右边的句子就会为ture，所以就会插入一个本地版本的jQuery。Really brillant, isn&#39;t it?
-<h2>12.jQuery Filters</h2><pre><code>&lt;scrip&gt;</p>
-<div class="highlight"><pre><code class="text language-text" data-lang="text">$(&#39;p:first&#39;).data(&#39;info&#39;, &#39;value&#39;); // 填充 $的data对象，下文展示用
+
+<p>相当直观，如果window.jQuery是未定义的，那就是说下载js文件出了问题，这时候&amp;&amp;右边的句子就会为ture，所以就会插入一个本地版本的jQuery。Really brillant, isn't it?</p>
+
+<h2>12.jQuery Filters</h2>
+
+<pre><code>&amp;lt;scrip&amp;gt;
+
+$('p:first').data('info', 'value'); // 填充 $的data对象，下文展示用
 
 $.extend(
 
-    jQuery.expr[&quot;:&quot;], {
+    jQuery.expr[":"], {
 
         block: function(elem) {
 
-            return $(elem).css(&quot;display&quot;) === &quot;block&quot;;
+            return $(elem).css("display") === "block";
 
         },
 
@@ -199,39 +227,53 @@ $.extend(
 
 );
 
-$(&quot;p:hasData&quot;).text(&quot;has data&quot;); // 可以获取所有有data属性的元素
+$("p:hasData").text("has data"); // 可以获取所有有data属性的元素
 
-$(&quot;p:block&quot;).text(&quot;are block level&quot;); // 获取所有拥有display:block属性的元素
-</code></pre></div>
-<p>&lt;/scrip&gt;
+$("p:block").text("are block level"); // 获取所有拥有display:block属性的元素
+
+&amp;lt;/scrip&amp;gt;
 </code></pre>
-jQuery.expr[&#39;:&#39;]是jQuery.expr.filters的别名，上面的代码用$.extend扩展了jQuery的:也就是filter。
+
+<p>jQuery.expr[':']是jQuery.expr.filters的别名，上面的代码用$.extend扩展了jQuery的:也就是filter。</p>
+
 <h2>13.单参数的hover方法</h2>
-在jQuery1.4之前，hover必须接受两个参数，分别显示in和out时候的handler function，而现在hover可以只接受一个参数了，每当产生mouseenter和mouseout事件的时候就会用这个function参数（一般是匿名的）来处理，如果处理得当的话，可以用一个function就完成两个function的效果，可以节省字符。</p>
+
+<p>在jQuery1.4之前，hover必须接受两个参数，分别显示in和out时候的handler function，而现在hover可以只接受一个参数了，每当产生mouseenter和mouseout事件的时候就会用这个function参数（一般是匿名的）来处理，如果处理得当的话，可以用一个function就完成两个function的效果，可以节省字符。</p>
 
 <p>余果注：官方API<a href="http://api.jquery.com/hover/">http://api.jquery.com/hover/</a>上有很好的例子。
-<a href="http://api.jquery.com/hover/"></a><h2>14.属性对象作参数</h2>
-之前
-<pre><code>$(&#39;<a>&#39;)</p>
+<a href="http://api.jquery.com/hover/"></a></p>
 
-<p>.attr({</p>
-<div class="highlight"><pre><code class="text language-text" data-lang="text">id : &#39;someId&#39;,
+<h2>14.属性对象作参数</h2>
 
-className : &#39;someClass&#39;,
+<p>之前</p>
 
-href : &#39;somePath.html&#39;
-</code></pre></div>
-<p>});
-</a></code><a></a></pre><a>现在</a><pre><a><code>$(&#39;</code></a><code>&#39;, {</p>
-<div class="highlight"><pre><code class="text language-text" data-lang="text">id : &#39;someId&#39;,
+<pre><code>$('&lt;a&gt;')
 
-className : &#39;someClass&#39;,
+  .attr({
 
-href : &#39;somePath.html&#39;
-</code></pre></div>
-<p>});
+    id : 'someId',
+
+    className : 'someClass',
+
+    href : 'somePath.html'
+
+  });
 </code></pre>
-jQuery1.4以后，可以在新建DOM元素的时候给它传递一个（通常是匿名的）对象作为第二个参数，这样代码更加清晰简单，我们设置可以给这个对象里面传递一些jQuery特有的属性和事件，比如click和text。</p>
+
+<p>现在</p>
+
+<pre><code>$('&lt;/code&gt;&lt;/a&gt;&lt;code&gt;', {
+
+    id : 'someId',
+
+    className : 'someClass',
+
+    href : 'somePath.html'
+
+});
+</code></pre>
+
+<p>jQuery1.4以后，可以在新建DOM元素的时候给它传递一个（通常是匿名的）对象作为第二个参数，这样代码更加清晰简单，我们设置可以给这个对象里面传递一些jQuery特有的属性和事件，比如click和text。</p>
 
 	      	<p class='previous-next-nav'><a href="http://yuguo.us//weblog/960-grid-system-is-getting-old/" class="next">960px宽的网格已经过时了？ &rarr;</a>
 	      	<a href="http://yuguo.us//weblog/week-9/" class="previous">&larr; 第九周流水记</a>

@@ -46,21 +46,20 @@ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www')
 	<div class="ads">
 
       <div class="fusionads">
-        <h2>项目</h2>
+        <h2>我的APP</h2>
 
         <span class="fusionentire">
-          <a href="http://33pu.net/" title="33号铺">
-            <img src="http://yuguo.us/files/2013/01/33pu-github.png" alt="33号铺" />
+          <a href="https://itunes.apple.com/cn/app/lu-da-shi-for-ying-xiong-lian/id646299086?mt=8" title="撸大师">
+            <img src="/files/2013/07/appstore.png" alt="撸大师" style="width:200px;"/>
           </a>
           <span class="fusiontext">
-                33号铺是一个简单好用的淘宝客瀑布流发布、管理系统。
+              撸大师是一款快速查看英雄联盟攻略的iPhone APP。
           </span>
         </span>
-        <p><a href="http://33pu.net/" title="访问33号铺">Demo</a> | <a href="http://github.com/yuguo/33pu" title="下载33号铺">下载</a></p>
-      </div><!-- .fusionads -->
+        </div><!-- .fusionads -->
       
       <div class="fusionads">
-        <h2>书</h2>
+        <h2>我的书</h2>
 
         <span class="fusionentire">
           <a href="http://yuguo.us/weblog/isux-and-smashing-book/" title="众妙之门3">
@@ -78,16 +77,16 @@ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www')
 
         <span class="fusionentire">
           <a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">
-            <img src="http://yuguo.us/files/2013/01/1.jpg" alt="Home&More淘宝店" />
+            <img src="/files/2013/07/kpw.jpg" alt="Home&More淘宝店" style="width:200px" />
           </a>
           <span class="fusiontext">
             <a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">
-              Home&More淘宝店是一个还不错的家居淘宝店。
+              Home&More淘宝店是一个靠谱的海外代购店。
 
             </a>
           </span>
         </span>
-        <p><a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">homemore.taobao.com</a></p>
+        <p><a href="http://homemore.taobao.com/" title="访问Home&More淘宝店">http://homemore.taobao.com</a></p>
       </div><!-- .fusionads -->
 
     </div><!-- .ads -->
@@ -98,33 +97,46 @@ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www')
 	      	<h1>做一个瀑布流的wordpress主题【2】</h1>
 	      	<span class="post-date">2012年 02月 16日</span>
 
-	      	<p>上一篇已经实现了瀑布流wordpress主题的基本布局，接下来讲ajax加载内容。
+	      	<p>上一篇已经实现了瀑布流wordpress主题的基本布局，接下来讲ajax加载内容。</p>
+
 <h2>翻页代码</h2>
-标准的wordpress翻页代码是在大循环之外有以下代码：
-<pre>&lt;div id=&quot;nav-previous&quot;&gt;</p>
 
-<p>&lt;?php next<em>posts</em>link( __( &#39;Older posts&#39;) ); ?&gt;</p>
 
-<p>&lt;/div&gt;</pre>
-也就是说后台设置了每页显示10篇文章之后，就会每10篇一个翻页。
+<p>标准的wordpress翻页代码是在大循环之外有以下代码：</p>
+
+<pre>&lt;div id="nav-previous"&gt;
+
+ &lt;?php next_posts_link( __( 'Older posts') ); ?&gt;
+
+&lt;/div&gt;</pre>
+
+
+<p>也就是说后台设置了每页显示10篇文章之后，就会每10篇一个翻页。
 <a href="http://yuguo.us/files/2012/02/1.png"><img class="aligncenter size-full wp-image-1138" title="1" src="http://yuguo.us/files/2012/02/1.png" alt=""   data-pinit="registered" /></a><h2>无限滚动</h2>
 当屏幕滚动到页面底部的时候，我们希望触发一个事件来ajax载入新的文章进来。有一个js插件可以很方便的做到这一点：<a href="https://github.com/paulirish/infinite-scroll">infinitescroll.js</a>
 infinitescroll有一个<a href="http://www.infinite-scroll.com/">官网</a>，但已经停止更新好多年了，代码和文档都已经失效。最新的代码在<a href="https://github.com/paulirish/infinite-scroll">github</a>可以下载。读源代码也有比较清晰的说明。</p>
 
-<p>引入infinitescroll.js之后可以在你的站点js中加入以下代码：
-<pre>$container.infinitescroll({//这里是所有条目的容器，我们在上一篇中已经有了jQuery Object，就是$container</pre><pre>    navSelector  : &quot;#nav-previous&quot;,</p>
-<div class="highlight"><pre><code class="text language-text" data-lang="text">               // 页面导航的选择器，这个会被隐藏
+<p>引入infinitescroll.js之后可以在你的站点js中加入以下代码：</p>
 
-nextSelector : &quot;#nav-previous a&quot;,
+<pre>$container.infinitescroll({//这里是所有条目的容器，我们在上一篇中已经有了jQuery Object，就是$container</pre>
 
-               // 这个是触发器，页面滚动到触发器的时候，就会开始ajax加载
 
-itemSelector : &quot;.goods&quot;
+<pre>    navSelector  : "#nav-previous",
 
-               // selector for all items you&#39;ll retrieve
-</code></pre></div>
-<p>});</pre>
-除了基本的用法之外，插件还提供了一些参数来配置一些自定义风格，比如载入的动画。</p>
+                   // 页面导航的选择器，这个会被隐藏
+
+    nextSelector : "#nav-previous a",
+
+                   // 这个是触发器，页面滚动到触发器的时候，就会开始ajax加载
+
+    itemSelector : ".goods"
+
+                   // selector for all items you'll retrieve
+
+  });</pre>
+
+
+<p>除了基本的用法之外，插件还提供了一些参数来配置一些自定义风格，比如载入的动画。</p>
 
 <p>此外，在masonry的官网也有介绍<a href="http://masonry.desandro.com/demos/infinite-scroll.html">如何跟infinitescroll插件</a>结合。</p>
 
