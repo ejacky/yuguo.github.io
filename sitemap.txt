@@ -6,6 +6,7 @@
 /index.html
 /sitemap.txt
 
+/weblog/qzone-2-year/
 /weblog/june-reading-list/
 /weblog/cdc-2013/
 /weblog/kindle-paperwhite/

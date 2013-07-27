@@ -6,6 +6,45 @@
 		<atom:link href="http://yuguo.us//feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>QQ空间的勇敢开发者</title>
+				<description>&lt;p&gt;前几天正好是腾讯正式入职3周年，当时在QQ音乐打杂一段时间，次年3月正式入伙QQ空间。&lt;/p&gt;
+
+&lt;p&gt;从最开始的分啥任务就做啥任务，到现在有更多地时间和意识去关注产品，我觉得自己心态上的改变还是挺大的。&lt;/p&gt;
+
+&lt;p&gt;昨天在v2ex有个帖子&lt;a href=&quot;http://v2ex.com/t/77060#reply32&quot;&gt;请允许我表达一下对 QQ 空间团队的不满与忿恨&lt;/a&gt;，我认真地看完了之后，心里的第一反应就是“有些事情我们可以做得更好点”。&lt;/p&gt;
+
+&lt;p&gt;不是“我也是QQ空间团队了你怎么这样骂我”，也不是“我也做不了什么还是闪了吧”，而是潜意识里有责任，马上回复“我可以解决和反馈”。&lt;/p&gt;
+
+&lt;p&gt;我没有任何划分阵营的感觉和意识，但是很奇怪，很多网友都会自己是v2ex用户，莫名的优越感。其实平台跟人的关系真的不大。若说到v2ex跟QQ空间不能有交集，那是自己的世界观太狭隘了。&lt;/p&gt;
+
+&lt;p&gt;v2ex的老板@livid的很多对论坛规则的设定，和一些号召都对我有不小的影响，比如&lt;a href=&quot;http://v2ex.com/t/74511#reply83&quot;&gt;他真的是一个很聪明的人&lt;/a&gt;中的原话“这个世界有太多人意识不到自己是在浪费时间。”&lt;/p&gt;
+
+&lt;p&gt;比如&lt;a href=&quot;http://v2ex.com/t/76799#reply68&quot;&gt;请大家不要在 V2EX 用排队形的方式回复&lt;/a&gt;中的回复：“你在互联网上留下的这些痕迹，究竟有哪些是有意义持续存在的。”&lt;/p&gt;
+
+&lt;p&gt;我年轻的时候世界观也不怎么完善，而且做了不少浪费时间的事情。现在年纪大一点，总是很在意自己是不是在浪费时间。现在偶尔能看到自己几年前的一些痕迹，感慨自己当年的幼稚，今天看到年轻人在论坛的发帖，一样的感慨。&lt;/p&gt;
+
+&lt;p&gt;后来我留下QQ跟楼主聊了一会，记录了几个问题，之后又有别的用户来加我聊天。&lt;/p&gt;
+
+&lt;p&gt;QQ空间有亿万级别的用户，哪怕一点点的优化也会改善很多人的体验，其实我对这种数据和措辞都麻木了。因为“用户”这个词常常在耳边环绕，就不会觉得他们是“人”了，会觉得是数据，以万为最小单位的数据。&lt;/p&gt;
+
+&lt;p&gt;但是跟用户直接的沟通会让我脑补用户的使用画面，有个v2ex网友加我QQ反馈他女朋友每次点开原创动态，再关闭的时候，背景音乐就停止了。我马上想象一个喜欢在QQ音乐听歌的妹子，在点开原创动态的时候，音乐突然停止的画面，就再次打开音乐，再点原创，又停止……问题很严重有木有！&lt;/p&gt;
+
+&lt;p&gt;QQ空间是一个非常巨大的产品，背后的团队是大几百人（可能快到1k了），这时候工程师可能会很沮丧，会有“我也做不了什么，推不动，干脆摆烂，反正打份工”的想法。&lt;/p&gt;
+
+&lt;p&gt;有一句话是说，最勇敢的事情是认清了生活的真相之后依旧热爱生活。&lt;/p&gt;
+
+&lt;p&gt;其实从刚进入职场的的初生牛犊，觉得什么问题都能解决，什么问题都去反馈，到现在，&lt;strong&gt;渐渐认清自己能力和影响力的边界，认识到团队的不完美，认识到流程的局限，但是仍然热爱自己所做的产品，在自己的能力内，一点一点让产品变好，我觉得这就是勇敢&lt;/strong&gt;。&lt;/p&gt;
+
+&lt;p&gt;我的QQ是 289796721 ，使用QQ空间（特别是个人中心）有任何问题都可以找我聊，请注明“QQ空间反馈”。&lt;/p&gt;
+
+&lt;p&gt;好久没写这么鸡汤的日志，先干为敬……&lt;/p&gt;
+</description>
+				<pubDate>Sat, 27 Jul 2013 23:59:00 +0800</pubDate>
+				<link>http://yuguo.us//weblog/qzone-2-year/</link>
+				<guid isPermaLink="true">http://yuguo.us//weblog/qzone-2-year/</guid>
+			</item>
+		
+			<item>
 				<title>6月荐书单</title>
 				<description>&lt;p&gt;6月读的这几本书很值得推荐。&lt;/p&gt;
 
@@ -407,45 +446,6 @@
 				<pubDate>Sun, 05 May 2013 13:20:00 +0800</pubDate>
 				<link>http://yuguo.us//weblog/make-it-better/</link>
 				<guid isPermaLink="true">http://yuguo.us//weblog/make-it-better/</guid>
-			</item>
-		
-			<item>
-				<title>新项目预研</title>
-				<description>&lt;p&gt;因为hex大人在&lt;a href=&quot;http://codeigniter.org.cn&quot;&gt;codeigniter官网&lt;/a&gt;推荐了33号铺，加上有一些用户在其他群里推荐33号铺，所以最近33号铺突然有一股热潮，导致我异常繁忙地处理各种安装问题。&lt;/p&gt;
-
-&lt;p&gt;事实上这些问题非常难处理：&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;所有用户的服务器环境都非常非常不同，也有一些安装没按顺序来的，所以出现奇怪的bug&lt;/li&gt;
-&lt;li&gt;用户一定要有编程基础，懂得如何创建数据库&lt;/li&gt;
-&lt;li&gt;如果是Apache服务器的话，用户需要理解.htaccess来优化url&lt;/li&gt;
-&lt;li&gt;代码如果有更新的话，用户非常难应用到自己的项目中，虽然可以用git来修改，但门槛也很高&lt;/li&gt;
-&lt;li&gt;即使用户费尽千辛万苦总算在本地安装成功了，还需要去open.taobao.com创建并配置网站，以得到自己的appkey和appsecret&lt;/li&gt;
-&lt;li&gt;最后如果要上线的话，用户需要购买域名和主机&lt;/li&gt;
-&lt;li&gt;当代码出现bug我想要更新的时候，非常难通知所有的用户去更新&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;所以我想做一个新的更简单的项目，适合毫无编程基础的用户，可以免去上面所有的步骤：&lt;/p&gt;
-
-&lt;p&gt;这个项目是一个类似格子铺的网站，访客会看到很多格主的格子，里面有反映格主风格的各种商品，点击过去就可以购买。&lt;/p&gt;
-
-&lt;p&gt;那么这个格主是谁呢，她可能仅仅是一个喜欢漂亮裙子的女孩，需要做的非常简单&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;她需要注册登录格子铺网站，可以用QQ登录，或者支付宝登录&lt;/li&gt;
-&lt;li&gt;她创建一个格子，开始搜索并添加商品&lt;/li&gt;
-&lt;li&gt;随后就会有收入了，她可以输入自己的支付宝账户，钱会自动打过去&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;一些技术细节：站点所有的淘宝客id都是我自己的淘宝客id，但是会带上所有用户自己的id，以让我分清楚哪些用户带来了哪些收入，随后会把收入转给你，我从中收取非常少量的手续费。这样是为了避免所有用户都要注册自己的开发者帐号（现阶段可以传入自己的pid，但10月以后淘宝会不再支持这个参数）。&lt;/p&gt;
-
-&lt;p&gt;当然33号铺项目还是继续维护，为了一些喜欢折腾的朋友。但对于不希望折腾的，希望总是用新的代码的朋友，你们有什么意见和建议呢？&lt;/p&gt;
-</description>
-				<pubDate>Fri, 03 May 2013 16:20:00 +0800</pubDate>
-				<link>http://yuguo.us//weblog/new-project-miloge/</link>
-				<guid isPermaLink="true">http://yuguo.us//weblog/new-project-miloge/</guid>
 			</item>
 		
 	</channel>
