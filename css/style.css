@@ -24,8 +24,8 @@ hgroup,
 nav,
 section                         { display: block; }
 
-html                           { font-size: 62.5%;font-family: Tahoma;}
-body                           { margin: 0; font-size: 1.4em;}
+html                           { font-size: 62.5%;font-family:palatino, "times new roman", serif;}
+body                           { margin: 0;}
 a img {border:0 none;}
 h1, h2, h3, h4, h5, h6 { font-weight:normal; }
 
@@ -49,11 +49,11 @@ a:hover {color:#9c6}
    /* ----------------------------------------------------------------------------------------------------------
   08 Blog Archive ---------------------------------------------------------------------------------------------
   ---------------------------------------------------------------------------------------------------------- */
-  .archive-page p,
+    .archive-page {font-size: 1.4em;}
+    .archive-page p,
   .archive-page li                          { padding:0.5em 0;}
   .archive-page li {list-style:none;}
-  .archive-page {margin-top: -35px;}
-  .archive-page h2 {color:rgba(0,0,0,0.3);font-size: 4em;margin:0 0 10px;}
+  .archive-page h2 {color:rgba(0,0,0,0.3);font-size: 4em;margin:0 0 10px;line-height: 1.2;}
   .archive-page h3 {color:rgba(0,0,0,0.3);font-size: 2em;margin: 10px 0;}
   .archive-page span.date                    { color:rgba(0,0,0,0.3); display:block; }
   .archive-page span.category-tag {color:rgba(0,0,0,0.3);}
@@ -61,8 +61,9 @@ a:hover {color:#9c6}
 
   /* 04 Basic Layout --------------------------------------------------------------------------------------------- */
   div.container {line-height: 1.5;}
+  .primary {font-size: 1.2em;}
 
-  .primary h1                          { color:rgba(0,0,0,0.3);font-size: 16px; }
+  .primary h1                          { color:rgba(0,0,0,0.3);font-size: 1.3em; }
 
     div.primary div div         { border-top:1px solid rgba(0,0,0,0.05); padding:3em 0; }
     div.ads                     { display:block; }
@@ -100,12 +101,13 @@ a:hover {color:#9c6}
   div.authenticjobs p.job-listings + p { clear:both; }
 
   /* 07 Blog Posts ----------------------------------------------------------------------------------------------- */
-  .single-post {word-wrap: break-word;}
+  .single-post {word-wrap: break-word;font-size: 1.6em;line-height: 1.8;}
   .single-post a {text-decoration:underline;}
   .single-post img {max-width:100%;display:block;}
   .single-post p,
   .single-post pre,
-  .single-post img {margin:1em 0;}
+  .single-post img {margin:1.6em 0;}
+  .single-post p {text-align: justify;}
   .single-post h1 {font-size:2.5em;-webkit-margin-before: 0;}
   .single-post h2                          {margin: 20px 0 10px; }
   .single-post p + h3,
@@ -143,5 +145,5 @@ a:hover {color:#9c6}
 @media all and (min-width:640px) {
   div.container {display: table;}
   div.primary                 { background:#f6f6f6; padding:100px 5%; display: table-cell; width:30%;}
-  div.content                 { padding:100px 5%; display: table-cell; }
+  div.content                 { padding:100px 10%; display: table-cell; }
 }
