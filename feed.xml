@@ -6,6 +6,45 @@
 		<atom:link href="http://yuguo.us//feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>介绍Reveal.js</title>
+				<description>&lt;p&gt;jQuery reveal是最近在用的一个jQuery插件，作用是控制弹出层的显示和消失。这个插件非常轻量，而且使用简单，如果页面中已经加载了jQuery的话，只需要额外1.35k的大小就能使用reveal.js。&lt;/p&gt;
+
+&lt;p&gt;使用方法可以在其&lt;a href=&quot;http://zurb.com/playground/reveal-modal-plugin&quot;&gt;官方网站&lt;/a&gt;上看到介绍。&lt;/p&gt;
+
+&lt;h1&gt;链接触发浮层&lt;/h1&gt;
+
+&lt;p&gt;首先加载需要的样式、jQuery和reveal.js之后，我们如果需要点击一个链接弹出一个弹出层，只需要在链接中加上&lt;code&gt;data-reveal-id&lt;/code&gt;属性：&lt;/p&gt;
+
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://snipt.net/embed/a7a11463256a8e55e13ab69feadfa9d0/&quot;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;然后在对应弹出层的id跟链接的&lt;code&gt;data-reveal-id&lt;/code&gt;保持一致即可。&lt;/p&gt;
+
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://snipt.net/embed/3bc5dfa546b4780472545eb8fea109f6/&quot;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;浮层一般会有一个关闭按钮，我们不用在按钮上绑定事件来关闭浮层了，只需要简单地使用class：&lt;code&gt;close-reveal-modal&lt;/code&gt;即可。&lt;/p&gt;
+
+&lt;h1&gt;代码触发浮层&lt;/h1&gt;
+
+&lt;p&gt;有时候我们希望用代码来触发浮层操作，也非常简单：&lt;/p&gt;
+
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://snipt.net/embed/d497a8f659e1c610f6ce1a48e8669105/&quot;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;如果要使用html属性来触发这些option，也可以：&lt;/p&gt;
+
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://snipt.net/embed/34db731ca7ab2b9eabe5ac5dd381ea28/&quot;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;总的来说，使用reveal.js插件可以帮助我们更专注于页面逻辑，也不用在页面事件和触发上操太多心。&lt;/p&gt;
+</description>
+				<pubDate>Tue, 20 Aug 2013 17:40:00 +0800</pubDate>
+				<link>http://yuguo.us//weblog/introduce-revealjs/</link>
+				<guid isPermaLink="true">http://yuguo.us//weblog/introduce-revealjs/</guid>
+			</item>
+		
+			<item>
 				<title>不可以放弃的事情</title>
 				<description>&lt;p&gt;&lt;img src=&quot;/files/2013/08/supper.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
@@ -493,28 +532,6 @@
 				<pubDate>Mon, 20 May 2013 11:01:00 +0800</pubDate>
 				<link>http://yuguo.us//weblog/driving-technical-change/</link>
 				<guid isPermaLink="true">http://yuguo.us//weblog/driving-technical-change/</guid>
-			</item>
-		
-			<item>
-				<title>重拾kindle</title>
-				<description>&lt;p&gt;我发现一个现象，人在“碎片时间”干的事跟在“整块时间”干的事是一样的。&lt;/p&gt;
-
-&lt;p&gt;碎片时间我花5分钟刷30条微博，那么在整块的50分钟我就会不自觉地刷300条微博；碎片时间我花2分钟打一盘手游，那么整块的1个小时我就歪在床上打手游……我以为用来填补我的碎片时间的那些小事渐渐成为一种习惯，填满我的生活。&lt;/p&gt;
-
-&lt;p&gt;所以我拿出放了快一年的kindle 3，吹一次上面的灰尘，提示文字说电池电量低了，然后充一下电竟然启动了，之前放在里面的书都还在呢。因为之前更新了多看系统的，所以我试试能不能直接更新到最新，到系统设置里检查了一下最新版本，竟然可以直接升级到2013版。&lt;/p&gt;
-
-&lt;p&gt;然后我就一键升级到了2013版的系统，多看做的很好，可以直接登陆多看账号，然后购买图书和下载。&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;现在的中文阅读环境已经比一两年前好很多了，两年前多看商城就一些名著精选和玄幻小说什么的，现在品种比较丰富，IT类的也不少。&lt;/li&gt;
-&lt;li&gt;kindle 3看电子书效果还是不错的，当然没有背光没有226的ppi，但是看中文书够用了&lt;/li&gt;
-&lt;li&gt;kindle paperwhite也不能看英文pdf（特点是尺寸固定，文字小，在ipad2上看都嫌字体不清晰），所以暂时不入手了&lt;/li&gt;
-&lt;/ol&gt;
-
-</description>
-				<pubDate>Sun, 12 May 2013 13:01:00 +0800</pubDate>
-				<link>http://yuguo.us//weblog/repick-kindle/</link>
-				<guid isPermaLink="true">http://yuguo.us//weblog/repick-kindle/</guid>
 			</item>
 		
 	</channel>

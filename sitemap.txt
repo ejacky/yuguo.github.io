@@ -7,6 +7,7 @@
 /index.html
 /sitemap.txt
 
+/weblog/introduce-revealjs/
 /weblog/my-supper/
 /weblog/system-and-fortune/
 /weblog/qzone-2-year/
