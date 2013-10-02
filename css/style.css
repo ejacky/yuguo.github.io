@@ -27,7 +27,7 @@ section                         { display: block; }
 html                           { font-size: 62.5%;font-family:palatino, "times new roman", serif;}
 body                           { margin: 0;}
 a img {border:0 none;}
-h1, h2, h3, h4, h5, h6 { font-weight:normal; }
+h1, h2, h3, h4, h5, h6 { font-weight:normal; font-family: helveticaneue-light, arial, sans-serif;}
 
 input,
 select,
@@ -42,7 +42,7 @@ table                            { border-collapse: collapse; border-spacing: 0;
 
 td                            { vertical-align: top; }
 /* 02e - Links */
-a                           { color:#666; text-decoration:none; -webkit-transition:color 0.2s ease-in-out; -moz-transition:color 0.2s ease-in-out;transition:color 0.2s ease-in-out; }
+a                           { color:#666; -webkit-transition:color 0.2s ease-in-out; -moz-transition:color 0.2s ease-in-out;transition:color 0.2s ease-in-out; }
 a:hover {color:#9c6}
 
 
@@ -50,6 +50,7 @@ a:hover {color:#9c6}
   08 Blog Archive ---------------------------------------------------------------------------------------------
   ---------------------------------------------------------------------------------------------------------- */
     .archive-page {font-size: 1.4em;}
+    .archive-page a {text-decoration: none;}
     .archive-page p,
   .archive-page li                          { padding:0.5em 0;}
   .archive-page li {list-style:none;}

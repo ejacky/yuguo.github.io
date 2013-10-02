@@ -94,7 +94,7 @@
 
 &lt;p&gt;使用方法可以在其&lt;a href=&quot;http://zurb.com/playground/reveal-modal-plugin&quot;&gt;官方网站&lt;/a&gt;上看到介绍。&lt;/p&gt;
 
-&lt;h1&gt;链接触发浮层&lt;/h1&gt;
+&lt;h2&gt;链接触发浮层&lt;/h2&gt;
 
 &lt;p&gt;首先加载需要的样式、jQuery和reveal.js之后，我们如果需要点击一个链接弹出一个弹出层，只需要在链接中加上&lt;code&gt;data-reveal-id&lt;/code&gt;属性：&lt;/p&gt;
 
@@ -108,7 +108,7 @@
 
 &lt;p&gt;浮层一般会有一个关闭按钮，我们不用在按钮上绑定事件来关闭浮层了，只需要简单地使用class：&lt;code&gt;close-reveal-modal&lt;/code&gt;即可。&lt;/p&gt;
 
-&lt;h1&gt;代码触发浮层&lt;/h1&gt;
+&lt;h2&gt;代码触发浮层&lt;/h2&gt;
 
 &lt;p&gt;有时候我们希望用代码来触发浮层操作，也非常简单：&lt;/p&gt;
 
