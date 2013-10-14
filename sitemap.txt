@@ -7,6 +7,7 @@
 /index.html
 /sitemap.txt
 
+/weblog/my-readding/
 /weblog/tencent-3-years/
 /weblog/introduce-revealjs/
 /weblog/my-supper/
