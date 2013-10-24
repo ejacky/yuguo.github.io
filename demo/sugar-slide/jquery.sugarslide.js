@@ -1,9 +1,8 @@
 /**
- * Created with JetBrains WebStorm.
  * User: yuguo
  * Date: 13-10-24
- * Time: 下午3:03
- * To change this template use File | Settings | File Templates.
+ * Time: 3:03 pm
+ * https://github.com/yuguo/sugarslide/
  */
 
 (function( $ ) {
