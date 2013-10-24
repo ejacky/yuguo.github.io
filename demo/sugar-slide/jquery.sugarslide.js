@@ -37,7 +37,7 @@
         widthArray = [];
         $('.sugarslide-controller', element).children().each(function(i, that){
             var thisWidth = $(that).outerWidth();
-            if(intFrameWidth > thisWidth){
+            if(intFrameWidth >= thisWidth){
                 if(intFrameWidth - widthTemp >  thisWidth){
                     widthTemp += thisWidth;
                 }else{
@@ -45,7 +45,9 @@
                     widthTemp = thisWidth;
                 }
             }else{
-                widthArray.push(widthTemp);
+                if(widthTemp != 0){
+                    widthArray.push(widthTemp);
+                }
                 widthArray.push(thisWidth);
                 widthTemp = 0;
             }
@@ -55,6 +57,7 @@
             }
         });
 
+        console.log(widthArray);
         // next and previous
         currentPage = 0;
         $('.'+settings.nextClass).click(function(e) {
