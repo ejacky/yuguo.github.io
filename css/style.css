@@ -126,7 +126,10 @@ a:hover {color:#9c6}
   .single-post .previous-next-nav {overflow: hidden;*zoom:1;}
   .single-post .previous {float:left;}
   .single-post .next {float:right;}
-  .single-post blockquote p    { padding-left:1em; }
+  .single-post blockquote {margin: 0 0 1.25em;
+      padding: 0.5625em 1.25em 0 1.1875em;
+      border-left: 1px solid #dddddd;}
+  .single-post blockquote p    { line-height: 1.6; color: #6f6f6f; margin:0.8em 0;}
 
 
   .tag-box {overflow: hidden;*zoom:1;margin-bottom: 20px;list-style:none;}
