@@ -2,8 +2,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Yuguo's Blog</title>
-		<link>http://yuguo.us/</link>
-		<atom:link href="http://yuguo.us//feed.xml" rel="self" type="application/rss+xml" />
+		<link>http://yuguo.us</link>
+		<atom:link href="http://yuguo.us/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
 				<title>前端工业化2：缓存</title>
@@ -91,8 +91,8 @@
 &lt;p&gt;我只是简单提到了运行原则，但是实际操作中有很多细节要处理，包括前端同学要注意的和运维同学在CDN上的工作量。新的缓存策略现在还在试行之中，所以也没有全面部署，只有在未来有了更自动化的方案的时候才会全面部署。&lt;/p&gt;
 </description>
 				<pubDate>Wed, 30 Oct 2013 14:00:00 +0800</pubDate>
-				<link>http://yuguo.us//weblog/frontend-industrialize-2/</link>
-				<guid isPermaLink="true">http://yuguo.us//weblog/frontend-industrialize-2/</guid>
+				<link>http://yuguo.us/weblog/frontend-industrialize-2/</link>
+				<guid isPermaLink="true">http://yuguo.us/weblog/frontend-industrialize-2/</guid>
 			</item>
 		
 			<item>
@@ -205,8 +205,8 @@
 &lt;p&gt;话分两边，工具侧我们一直没有停止进步，朝着更自动化的方向迅猛发展。那么真正面向用户的缓存和请求侧又有哪些进展呢，下一篇日志会讲讲缓存和更新缓存。&lt;/p&gt;
 </description>
 				<pubDate>Fri, 25 Oct 2013 14:00:00 +0800</pubDate>
-				<link>http://yuguo.us//weblog/frontend-industrialize/</link>
-				<guid isPermaLink="true">http://yuguo.us//weblog/frontend-industrialize/</guid>
+				<link>http://yuguo.us/weblog/frontend-industrialize/</link>
+				<guid isPermaLink="true">http://yuguo.us/weblog/frontend-industrialize/</guid>
 			</item>
 		
 			<item>
@@ -239,8 +239,8 @@
 &lt;blockquote&gt;&lt;p&gt;  有个年轻人崇拜杨绛，高中毕业的时候给杨绛写了一封长信，表达自己的仰慕之情兼倾诉人生困惑，杨绛给他回信了。淡黄色的竖排红格信纸，毛笔字。除了寒暄和一些鼓励晚辈的句子之外，杨绛的信里其实只写了一句话，诚恳而不客气：“你的问题主要在于读书不多而想得太多。”&lt;/p&gt;&lt;/blockquote&gt;
 </description>
 				<pubDate>Mon, 14 Oct 2013 14:00:00 +0800</pubDate>
-				<link>http://yuguo.us//weblog/my-reading/</link>
-				<guid isPermaLink="true">http://yuguo.us//weblog/my-reading/</guid>
+				<link>http://yuguo.us/weblog/my-reading/</link>
+				<guid isPermaLink="true">http://yuguo.us/weblog/my-reading/</guid>
 			</item>
 		
 			<item>
@@ -322,8 +322,8 @@
 &lt;p&gt;变化正在到来，敬请期待。&lt;/p&gt;
 </description>
 				<pubDate>Tue, 01 Oct 2013 10:40:00 +0800</pubDate>
-				<link>http://yuguo.us//weblog/tencent-3-years/</link>
-				<guid isPermaLink="true">http://yuguo.us//weblog/tencent-3-years/</guid>
+				<link>http://yuguo.us/weblog/tencent-3-years/</link>
+				<guid isPermaLink="true">http://yuguo.us/weblog/tencent-3-years/</guid>
 			</item>
 		
 			<item>
@@ -361,8 +361,8 @@
 &lt;p&gt;总的来说，使用reveal.js插件可以帮助我们更专注于页面逻辑，也不用在页面事件和触发上操太多心。&lt;/p&gt;
 </description>
 				<pubDate>Tue, 20 Aug 2013 17:40:00 +0800</pubDate>
-				<link>http://yuguo.us//weblog/introduce-revealjs/</link>
-				<guid isPermaLink="true">http://yuguo.us//weblog/introduce-revealjs/</guid>
+				<link>http://yuguo.us/weblog/introduce-revealjs/</link>
+				<guid isPermaLink="true">http://yuguo.us/weblog/introduce-revealjs/</guid>
 			</item>
 		
 			<item>
@@ -385,8 +385,8 @@
 &lt;p&gt;这就是我不可以放弃的事情。&lt;/p&gt;
 </description>
 				<pubDate>Thu, 08 Aug 2013 20:10:00 +0800</pubDate>
-				<link>http://yuguo.us//weblog/my-supper/</link>
-				<guid isPermaLink="true">http://yuguo.us//weblog/my-supper/</guid>
+				<link>http://yuguo.us/weblog/my-supper/</link>
+				<guid isPermaLink="true">http://yuguo.us/weblog/my-supper/</guid>
 			</item>
 		
 			<item>
@@ -480,8 +480,8 @@
 &lt;p&gt;本书的内容质量非常高，远高出本书标题给人的感觉。本书在多看和豆瓣阅读上都由电子版，推荐大家去购买。&lt;/p&gt;
 </description>
 				<pubDate>Mon, 29 Jul 2013 23:40:00 +0800</pubDate>
-				<link>http://yuguo.us//weblog/system-and-fortune/</link>
-				<guid isPermaLink="true">http://yuguo.us//weblog/system-and-fortune/</guid>
+				<link>http://yuguo.us/weblog/system-and-fortune/</link>
+				<guid isPermaLink="true">http://yuguo.us/weblog/system-and-fortune/</guid>
 			</item>
 		
 			<item>
@@ -519,8 +519,8 @@
 &lt;p&gt;好久没写这么鸡汤的日志，先干为敬……&lt;/p&gt;
 </description>
 				<pubDate>Sat, 27 Jul 2013 23:59:00 +0800</pubDate>
-				<link>http://yuguo.us//weblog/qzone-2-year/</link>
-				<guid isPermaLink="true">http://yuguo.us//weblog/qzone-2-year/</guid>
+				<link>http://yuguo.us/weblog/qzone-2-year/</link>
+				<guid isPermaLink="true">http://yuguo.us/weblog/qzone-2-year/</guid>
 			</item>
 		
 			<item>
@@ -544,8 +544,8 @@
 &lt;p&gt;本书最主要的观点是中国的制度没有保护私有财产，在资金流动上没有鼓励资源有效的配置……而信息时代的财富主要是由制度决定的，所以中国现在真的进入很危险的阶段。中国目前还可以凭借廉价的人力成本、丰沛的出口需求（逐年下降了）、制造业来拉动经济增长，但未来更大的增长点在于内需、更高的人力成本、服务业等……&lt;/p&gt;
 </description>
 				<pubDate>Tue, 02 Jul 2013 11:01:00 +0800</pubDate>
-				<link>http://yuguo.us//weblog/june-reading-list/</link>
-				<guid isPermaLink="true">http://yuguo.us//weblog/june-reading-list/</guid>
+				<link>http://yuguo.us/weblog/june-reading-list/</link>
+				<guid isPermaLink="true">http://yuguo.us/weblog/june-reading-list/</guid>
 			</item>
 		
 			<item>
@@ -644,8 +644,8 @@
 &lt;p&gt;&lt;img src=&quot;/files/2013/06/cdc-3.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 </description>
 				<pubDate>Sun, 30 Jun 2013 18:01:00 +0800</pubDate>
-				<link>http://yuguo.us//weblog/cdc-2013/</link>
-				<guid isPermaLink="true">http://yuguo.us//weblog/cdc-2013/</guid>
+				<link>http://yuguo.us/weblog/cdc-2013/</link>
+				<guid isPermaLink="true">http://yuguo.us/weblog/cdc-2013/</guid>
 			</item>
 		
 	</channel>
