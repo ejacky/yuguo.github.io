@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="all" />
+<title>前端工业化2：缓存</title>
+<link rel="stylesheet" type="text/css" href="/css/style.css" />
+<!--[if (lt IE 9) & (!IEMobile)]>
+<link rel="stylesheet" type="text/css" href="/css/ie.css" />
+<![endif]-->
+</head>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-741276-12']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+})();
+</script>
+<body>
+	<div class="container group">
+		
+  <div class="primary">
+    <header>
+      <h1><a href="/">余果</a>，腾讯ISUX前端开发设计师……<a href="http://yuguo.us/about.html">About me</a>
+      </h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="http://yuguo.us/categories.html">分类</a>
+          </li>
+        <li>
+            <a href="http://yuguo.us/blogroll.html">友情链接</a>
+        </li>
+        </ul>
+      </nav>
+
+    </header>
+
+	<div class="ads">
+
+      <div class="fusionads">
+        <h2>我的APP</h2>
+
+        <span class="fusionentire">
+          <a href="https://itunes.apple.com/cn/app/lu-da-shi-for-ying-xiong-lian/id646299086?mt=8" title="撸大师">
+            <img src="/files/2013/07/appstore.png" alt="撸大师" style="width:200px;"/>
+          </a>
+          <span class="fusiontext">
+              撸大师是一款快速查看英雄联盟攻略的iPhone APP。
+          </span>
+        </span>
+        </div><!-- .fusionads -->
+      
+      <div class="fusionads">
+        <h2>我的书</h2>
+
+        <span class="fusionentire">
+          <a href="http://yuguo.us/weblog/isux-and-smashing-book/" title="众妙之门3">
+            <img src="http://yuguo.us/files/2013/04/sm3-cover.jpg" alt="众妙之门3" style="width:300px;"/>
+          </a>
+          <span class="fusiontext">
+                《众妙之门3》是一本关于HTML5、CSS3、新JS API、Retina屏、Web App、基于Responsive Design的工作流……的设计书，是《Smashing Book #3 Redesign The Web》的中文译本。
+          </span>
+        </span>
+        <p><a href="http://yuguo.us/weblog/isux-and-smashing-book/" title="众妙之门3">介绍</a> | <a href="http://product.dangdang.com/product.aspx?product_id=23212058">当当购买</a></p>
+      </div><!-- .fusionads -->
+
+        <div class="fusionads">
+        <h2>广告</h2>
+
+        <span class="fusionentire">
+          <a href="http://hkmore.taobao.com/" title="香港超级代购">
+            <img src="/files/2013/07/kpw.jpg" alt="香港超级代购" style="width:200px" />
+          </a>
+          <span class="fusiontext">
+            <a href="http://hkmore.taobao.com/" title="访问香港超级代购">
+              HKmore是一个靠谱的海外代购和香港代购店。
+
+            </a>
+          </span>
+        </span>
+        <p><a href="http://hkmore.taobao.com/" title="访问香港超级代购">http://hkmore.taobao.com</a></p>
+      </div><!-- .fusionads -->
+
+    </div><!-- .ads -->
+
+  </div><!-- .primary -->
+
+        <div class="content single-post">
+	      	<h1>前端工业化2：缓存</h1>
+	      	<span class="post-date">2013年 10月 30日</span>
+
+	      	<blockquote><p>There are only two hard things in Computer Science: cache invalidation and naming things.</p>
+
+<p>-- Phil Karlton</p></blockquote>
+
+<h2>缓存基础</h2>
+
+<p>在开始讲缓存技术之前，需要先了解设置缓存有两个作用：</p>
+
+<ol>
+<li>对客户来说，减少请求，可以更快加载页面。如果客户是在手机上用3G访问页面，那也能节省他的流量。</li>
+<li>对网站来说，减少带宽压力，如果有1亿的访问量，如果能在CSS上节省10k，那也是非常庞大的流量节省。</li>
+</ol>
+
+
+<p>从技术上讲，有两种技术被统称为“缓存”。</p>
+
+<p>一个被称为<strong>高速缓存</strong>，浏览器直接从缓存中读取文件而不发出任何请求。另一个是<code>HTTP 304</code>（Cache Control），浏览器会询问服务器文件是否更改，服务器回答没有修改（304），或者修改了（200）。</p>
+
+<p>想要详细的了解，可以看看我去年的一篇旧文<a href="http://yuguo.us/weblog/send-the-correct-headers-to-leverage-browser-caching/">如何正确设置缓存</a>。</p>
+
+<p>结论是：</p>
+
+<blockquote><p>200(缓存)是最快的，因为没有请求发生。304则产生了HTTP请求：浏览器发送一个带有<code>If-Modified-Since</code>的请求，服务器根据情况返回304来告诉浏览器使用本地文件。</p>
+
+<p>所以304比200（缓存）慢一点，静态文件都应该使用Expires头来减少请求，提高访问速度。（根据HTTPWATCH的说法：“Don't cache HTML, Cache everything else forever”）</p></blockquote>
+
+<h3>Ajax与缓存</h3>
+
+<p>Ajax调用就像任何其他的HTTP请求一样可以用来构建一个网页。然而，由于其动态的性质人们常常忽略了可以缓存它们而从中受益。</p>
+
+<p>高性能网站建设的第14条规则:</p>
+
+<blockquote><p>缓存Ajax</p>
+
+<p>确保您的Ajax请求遵循这条规则，特别是包含一个Expires头。</p></blockquote>
+
+<p>现代浏览器的HTTP系统和缓存系统要比Ajax的<code>XMLHttpRequest</code>对象更靠近底层. 在这个层面上，浏览器并不知道或关心Ajax请求。它只是服从正常的基于从服务器返回的HTTP响应头缓存规则。</p>
+
+<p>如果你已经知道HTTP缓存，您可以将这种知识应用到Ajax的缓存。</p>
+
+<p>当然，如果您使用Ajax的POST方法，这并不适用，因为POST请求不会被缓存。如果您的Ajax请求有安全性要求，你应该总是使用POST方法，例如：银行帐户的资金转账。</p>
+
+<h2>缓存与更新缓存</h2>
+
+<p>在几年前，我们团队控制缓存的唯一办法就是把资源丢到<code>/ac/</code>路径上去发布，CDN对这个文件夹的处理方式是输出的HTTP header设置更长的缓存时间。而要更新缓存就是手动修改对文件引用路径的query string。</p>
+
+<p>历史在进步，后来我们的CDN权限支持url query string的方法来吐出对应的缓存header。从这个时候开始，我们的资源请求都变成了这个样子：</p>
+
+<pre><code>http://ctc.qzonestyle.gtimg.cn/qzone_v6/icenter.css?max_age=19830212&amp;d=131016151112
+</code></pre>
+
+<p>通过修改query string，就可以控制返回header的cache-control。后面的d则是无意义的字符串，当有新版本的时候我们需要半自动去修改它，对于浏览器来说只要修改了query string，它就认为是请求了新文件，从而放弃本地缓存而重新请求。</p>
+
+<p>这种通过修改query string更新缓存的方法有几个问题：</p>
+
+<p>1 这种方法是替换的方法来发布，那么在“html生效”和“css生效”之间如果出现任何时间差，哪怕是10s，就会出现错误的情况。尤其是雪碧图如果是自动计算生成的，错位就很严重了，几乎满屏的雪碧图都会错位。腾讯有几十台CDN，无法保证生效时间的精确性。
+2 可能遭到缓存攻击，具体可以看看<a href="http://www.infoq.com/cn/articles/front-end-engineering-and-performance-optimization-part1">前端工程与性能优化（上）：静态资源版本更新与缓存</a>
+3 可能被网络提供商保存一份旧文件的副本，这样即使我们更新了&amp;d=xxxx这个时间戳，网络提供商也仍然给你老的文件。也就是说浏览器认为这是新文件，向网络重新请求，而网络提供商可能认为这还是老文件，所以给你旧文件。
+4 发布流程麻烦，前端工程师需要同时关注样式的生效，和时间戳的生效。
+5 缺乏对组件的动态管理和统计，因为我们相当于在本地生成了一个完整的public静态资源文件夹，然后发布出去，从那以后就跟前端没有关系了。</p>
+
+<h3>修改文件名</h3>
+
+<p>现在我们前端同学经过跟运维同事的讨论，总结出一套更好的更新缓存的办法，修改资源的名称。所以如果现在如果你可以访问QQ空间公测版（V8）的话，抓包会发现这样的CSS请求：</p>
+
+<pre><code>http://ctc.qzonestyle.gtimg.cn/aoi/icenter-wei131025143515.css
+</code></pre>
+
+<p>新的文件名有很多好处：</p>
+
+<p>1 这种方法采用增量的方法来发布，不存在“html生效”和“css生效”之间的延迟，因为css可以提前发布生效，html再调用新的文件
+2 遇到问题回滚简单，不用回滚所有的静态资源，只需要回滚html
+3 完全杜绝了网络提供商提供旧文件副本的问题
+4 使用不规律的文件名，不可能遭到缓存攻击</p>
+
+<p>我只是简单提到了运行原则，但是实际操作中有很多细节要处理，包括前端同学要注意的和运维同学在CDN上的工作量。新的缓存策略现在还在试行之中，所以也没有全面部署，只有在未来有了更自动化的方案的时候才会全面部署。</p>
+
+	      	<p class='previous-next-nav'><a href="http://yuguo.us/" class="next"> &rarr;</a>
+	      	<a href="http://yuguo.us//weblog/frontend-industrialize/" class="previous">&larr; 前端工业化1：自动化</a>
+	      	</p>
+	      	
+	      	
+			    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'yuguo'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+        </div>
+
+	</div>
+
+	<p class="copyright">&copy; 2009&#8201;&ndash;&#8201;2012 Yuguo. Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a> and host by <a href="https://github.com/yuguo">Github</a>。 如果喜欢本站，您可以 <a href="http://feeds.feedburner.com/yuguo">订阅我的 RSS feed</a>。
+</p>
+
+</body>
+</html>

@@ -6,6 +6,90 @@
 		<atom:link href="http://yuguo.us/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>前端工业化2：缓存</title>
+				<description>&lt;blockquote&gt;&lt;p&gt;There are only two hard things in Computer Science: cache invalidation and naming things.&lt;/p&gt;
+
+&lt;p&gt;-- Phil Karlton&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;h2&gt;缓存基础&lt;/h2&gt;
+
+&lt;p&gt;在开始讲缓存技术之前，需要先了解设置缓存有两个作用：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;对客户来说，减少请求，可以更快加载页面。如果客户是在手机上用3G访问页面，那也能节省他的流量。&lt;/li&gt;
+&lt;li&gt;对网站来说，减少带宽压力，如果有1亿的访问量，如果能在CSS上节省10k，那也是非常庞大的流量节省。&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;从技术上讲，有两种技术被统称为“缓存”。&lt;/p&gt;
+
+&lt;p&gt;一个被称为&lt;strong&gt;高速缓存&lt;/strong&gt;，浏览器直接从缓存中读取文件而不发出任何请求。另一个是&lt;code&gt;HTTP 304&lt;/code&gt;（Cache Control），浏览器会询问服务器文件是否更改，服务器回答没有修改（304），或者修改了（200）。&lt;/p&gt;
+
+&lt;p&gt;想要详细的了解，可以看看我去年的一篇旧文&lt;a href=&quot;http://yuguo.us/weblog/send-the-correct-headers-to-leverage-browser-caching/&quot;&gt;如何正确设置缓存&lt;/a&gt;。&lt;/p&gt;
+
+&lt;p&gt;结论是：&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;200(缓存)是最快的，因为没有请求发生。304则产生了HTTP请求：浏览器发送一个带有&lt;code&gt;If-Modified-Since&lt;/code&gt;的请求，服务器根据情况返回304来告诉浏览器使用本地文件。&lt;/p&gt;
+
+&lt;p&gt;所以304比200（缓存）慢一点，静态文件都应该使用Expires头来减少请求，提高访问速度。（根据HTTPWATCH的说法：“Don&#39;t cache HTML, Cache everything else forever”）&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;h3&gt;Ajax与缓存&lt;/h3&gt;
+
+&lt;p&gt;Ajax调用就像任何其他的HTTP请求一样可以用来构建一个网页。然而，由于其动态的性质人们常常忽略了可以缓存它们而从中受益。&lt;/p&gt;
+
+&lt;p&gt;高性能网站建设的第14条规则:&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;缓存Ajax&lt;/p&gt;
+
+&lt;p&gt;确保您的Ajax请求遵循这条规则，特别是包含一个Expires头。&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;现代浏览器的HTTP系统和缓存系统要比Ajax的&lt;code&gt;XMLHttpRequest&lt;/code&gt;对象更靠近底层. 在这个层面上，浏览器并不知道或关心Ajax请求。它只是服从正常的基于从服务器返回的HTTP响应头缓存规则。&lt;/p&gt;
+
+&lt;p&gt;如果你已经知道HTTP缓存，您可以将这种知识应用到Ajax的缓存。&lt;/p&gt;
+
+&lt;p&gt;当然，如果您使用Ajax的POST方法，这并不适用，因为POST请求不会被缓存。如果您的Ajax请求有安全性要求，你应该总是使用POST方法，例如：银行帐户的资金转账。&lt;/p&gt;
+
+&lt;h2&gt;缓存与更新缓存&lt;/h2&gt;
+
+&lt;p&gt;在几年前，我们团队控制缓存的唯一办法就是把资源丢到&lt;code&gt;/ac/&lt;/code&gt;路径上去发布，CDN对这个文件夹的处理方式是输出的HTTP header设置更长的缓存时间。而要更新缓存就是手动修改对文件引用路径的query string。&lt;/p&gt;
+
+&lt;p&gt;历史在进步，后来我们的CDN权限支持url query string的方法来吐出对应的缓存header。从这个时候开始，我们的资源请求都变成了这个样子：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;http://ctc.qzonestyle.gtimg.cn/qzone_v6/icenter.css?max_age=19830212&amp;amp;d=131016151112
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;通过修改query string，就可以控制返回header的cache-control。后面的d则是无意义的字符串，当有新版本的时候我们需要半自动去修改它，对于浏览器来说只要修改了query string，它就认为是请求了新文件，从而放弃本地缓存而重新请求。&lt;/p&gt;
+
+&lt;p&gt;这种通过修改query string更新缓存的方法有几个问题：&lt;/p&gt;
+
+&lt;p&gt;1 这种方法是替换的方法来发布，那么在“html生效”和“css生效”之间如果出现任何时间差，哪怕是10s，就会出现错误的情况。尤其是雪碧图如果是自动计算生成的，错位就很严重了，几乎满屏的雪碧图都会错位。腾讯有几十台CDN，无法保证生效时间的精确性。
+2 可能遭到缓存攻击，具体可以看看&lt;a href=&quot;http://www.infoq.com/cn/articles/front-end-engineering-and-performance-optimization-part1&quot;&gt;前端工程与性能优化（上）：静态资源版本更新与缓存&lt;/a&gt;
+3 可能被网络提供商保存一份旧文件的副本，这样即使我们更新了&amp;amp;d=xxxx这个时间戳，网络提供商也仍然给你老的文件。也就是说浏览器认为这是新文件，向网络重新请求，而网络提供商可能认为这还是老文件，所以给你旧文件。
+4 发布流程麻烦，前端工程师需要同时关注样式的生效，和时间戳的生效。
+5 缺乏对组件的动态管理和统计，因为我们相当于在本地生成了一个完整的public静态资源文件夹，然后发布出去，从那以后就跟前端没有关系了。&lt;/p&gt;
+
+&lt;h3&gt;修改文件名&lt;/h3&gt;
+
+&lt;p&gt;现在我们前端同学经过跟运维同事的讨论，总结出一套更好的更新缓存的办法，修改资源的名称。所以如果现在如果你可以访问QQ空间公测版（V8）的话，抓包会发现这样的CSS请求：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;http://ctc.qzonestyle.gtimg.cn/aoi/icenter-wei131025143515.css
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;新的文件名有很多好处：&lt;/p&gt;
+
+&lt;p&gt;1 这种方法采用增量的方法来发布，不存在“html生效”和“css生效”之间的延迟，因为css可以提前发布生效，html再调用新的文件
+2 遇到问题回滚简单，不用回滚所有的静态资源，只需要回滚html
+3 完全杜绝了网络提供商提供旧文件副本的问题
+4 使用不规律的文件名，不可能遭到缓存攻击&lt;/p&gt;
+
+&lt;p&gt;我只是简单提到了运行原则，但是实际操作中有很多细节要处理，包括前端同学要注意的和运维同学在CDN上的工作量。新的缓存策略现在还在试行之中，所以也没有全面部署，只有在未来有了更自动化的方案的时候才会全面部署。&lt;/p&gt;
+</description>
+				<pubDate>Wed, 30 Oct 2013 14:00:00 +0800</pubDate>
+				<link>http://yuguo.us//weblog/frontend-industrialize-2/</link>
+				<guid isPermaLink="true">http://yuguo.us//weblog/frontend-industrialize-2/</guid>
+			</item>
+		
+			<item>
 				<title>前端工业化1：自动化</title>
 				<description>&lt;p&gt;最近在学习百度前端工程师张云龙的F.I.S系统的时候，了解到他关于“前端工业化”的理解，我也经历过很多前端架构方法和架构工具的变迁，所以希望借写这篇文章的机会，自己也整理一下。&lt;/p&gt;
 
@@ -556,72 +640,6 @@
 				<pubDate>Sun, 30 Jun 2013 18:01:00 +0800</pubDate>
 				<link>http://yuguo.us//weblog/cdc-2013/</link>
 				<guid isPermaLink="true">http://yuguo.us//weblog/cdc-2013/</guid>
-			</item>
-		
-			<item>
-				<title>Kindle Paper White——五星级产品</title>
-				<description>&lt;p&gt;使用了新的kindle paperwhite一段时间之后，我爱死这台电子书了。&lt;/p&gt;
-
-&lt;p&gt;kpw是亚马逊出的最新电子书主打产品，目标群是重症阅读用户、希望随时随地阅读的用户。&lt;/p&gt;
-
-&lt;p&gt;kpw是阅读者的随身物件，不是需要供奉的宝物，所以不建议购买皮套，甚至贴膜。它应该随时出现在你的背包、口袋中，方便阅读，而不是小心翼翼地供奉。日版kpw才600左右，皮套要200。&lt;/p&gt;
-
-&lt;p&gt;建议买了kindle之后刷一个多看系统，因为多看书城的中文电子书更多一点，而且也经常有新书上架。kindle里不能直接购买多看电子书，但是可以把链接发送到邮箱，然后电脑上或者手机上购买。我更喜欢的流程是在手机多看app书城浏览购买好电子书，使用苹果内购直接付款，然后再在kindle的个人中心下载。&lt;/p&gt;
-
-&lt;p&gt;一个月来我买了27本书，大部分是6元的，也有12元和18元的。算起来还是比纸质书便宜很多，更重要的是通过这个设备我可以马上拿到这本书，并且可以一步步，看下去。&lt;/p&gt;
-
-&lt;p&gt;有一些书很好看，很值得，还有一些不那么好看，也没关系。多看时支持试读的。&lt;/p&gt;
-
-&lt;p&gt;多看书城有一个设定是我每买一本书就可以获得这本书的推荐链接，通过这个邀请码注册的新用户可以免费获得这本书，下面我发一些我觉得很好的书的邀请码：&lt;/p&gt;
-
-&lt;p&gt;《盛夏的方程式》（东野圭吾新书） 988PAC45192F
-《了不起的盖茨比》 8DAP9508F4F2
-《瓦尔登湖》 1BEP23E0F805
-《爸爸爱喜禾》 F4AP030E0DA5
-《清醒思考的艺术》（非常喜欢） C4FPFEEFB205
-《极简欧洲史》 4F9P43F40A32
-《黄瓜的黄，西瓜的西》 96EP942FC70C
-《安静，内向性格的竞争力》（非常喜欢） EE9P92B8320A
-《APP创富传奇》 864PC93C5461
-。。。&lt;/p&gt;
-
-&lt;p&gt;比起上一代同类产品kindle3（也叫kindle keyboard）有这几个优势：&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;PPI更高，字迹圆润清晰，虽然比不上iphone retina，但是阅读已经完全没问题了。&lt;/li&gt;
-&lt;li&gt;体积更小，因为去掉了物理keyboard，所以放在口袋是没问题了。&lt;/li&gt;
-&lt;li&gt;增加了背光灯！在阳光下看不出来有背光存在，而光线稍暗一点的时候能看到电子书的屏幕上发出淡淡微光，在完全黑暗的夜晚就显得很明亮了，可以当小手电筒用。&lt;/li&gt;
-&lt;li&gt;响应速度更快，翻页更快。&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;kpw不适合以下用户：&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;希望浏览网页，或者玩游戏；&lt;/li&gt;
-&lt;li&gt;希望阅读和处理移动文档（word、pdf等）。&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;这是我的多看阅历统计图：&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/large/79b328c9jw1e5t9q7ci0dj20l20rewfn.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;早上平均6点半起床后看书，然后班车上是8点20到9点，中午有一个高峰期是吃完饭12：30到1：30，下午的高峰期是7点的班车上，晚上的高峰期是10点入睡前了。不过最近忙于几个app的制作，看的少了一点。&lt;/p&gt;
-
-&lt;p&gt;最后是购买建议，国行的价格是849，简直是坑爹了。建议海淘，注册一个海淘网站，支付一点转运费，然后在日本亚马逊上购买日版kwp，到手才600左右。&lt;/p&gt;
-
-&lt;p&gt;如果觉得海淘麻烦，或者不懂日文，可以来我本人的淘宝店下单，640直接寄到你家里。&lt;/p&gt;
-
-&lt;h2&gt;&lt;a href=&quot;http://item.taobao.com/item.htm?spm=a1z10.1.w137644-274570537.2.3C4jrE&amp;amp;id=20986547732&quot;&gt;http://item.taobao.com/item.htm?spm=a1z10.1.w137644-274570537.2.3C4jrE&amp;amp;id=20986547732&lt;/a&gt;&lt;/h2&gt;
-
-&lt;p&gt;因为亚马逊限购，也不能合单转运，所以要提价了。&lt;/p&gt;
-
-&lt;p&gt;640太低了，亏本的厉害，做不到，调整了价格，具体以淘宝店为准，抱歉。&lt;/p&gt;
-</description>
-				<pubDate>Wed, 19 Jun 2013 16:01:00 +0800</pubDate>
-				<link>http://yuguo.us//weblog/kindle-paperwhite/</link>
-				<guid isPermaLink="true">http://yuguo.us//weblog/kindle-paperwhite/</guid>
 			</item>
 		
 	</channel>
