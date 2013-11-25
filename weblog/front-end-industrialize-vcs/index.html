@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="all" />
+<title>前端工业化3：VCS</title>
+<link rel="stylesheet" type="text/css" href="/css/style.css" />
+<!--[if (lt IE 9) & (!IEMobile)]>
+<link rel="stylesheet" type="text/css" href="/css/ie.css" />
+<![endif]-->
+</head>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-741276-12']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+})();
+</script>
+<body>
+	<div class="container group">
+		
+  <div class="primary">
+    <header>
+      <h1><a href="/">余果</a>，腾讯ISUX前端开发设计师……<a href="http://yuguo.us/about.html">About me</a>
+      </h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="http://yuguo.us/categories.html">分类</a>
+          </li>
+        <li>
+            <a href="http://yuguo.us/blogroll.html">友情链接</a>
+        </li>
+        </ul>
+      </nav>
+
+    </header>
+
+	<div class="ads">
+
+      <div class="fusionads">
+        <h2>我的APP</h2>
+
+        <span class="fusionentire">
+          <a href="https://itunes.apple.com/cn/app/lu-da-shi-for-ying-xiong-lian/id646299086?mt=8" title="撸大师">
+            <img src="/files/2013/07/appstore.png" alt="撸大师" style="width:200px;"/>
+          </a>
+          <span class="fusiontext">
+              撸大师是一款快速查看英雄联盟攻略的iPhone APP。
+          </span>
+        </span>
+        </div><!-- .fusionads -->
+      
+      <div class="fusionads">
+        <h2>我的书</h2>
+
+        <span class="fusionentire">
+          <a href="http://yuguo.us/weblog/isux-and-smashing-book/" title="众妙之门3">
+            <img src="http://yuguo.us/files/2013/04/sm3-cover.jpg" alt="众妙之门3" style="width:300px;"/>
+          </a>
+          <span class="fusiontext">
+                《众妙之门3》是一本关于HTML5、CSS3、新JS API、Retina屏、Web App、基于Responsive Design的工作流……的设计书，是《Smashing Book #3 Redesign The Web》的中文译本。
+          </span>
+        </span>
+        <p><a href="http://yuguo.us/weblog/isux-and-smashing-book/" title="众妙之门3">介绍</a> | <a href="http://product.dangdang.com/product.aspx?product_id=23212058">当当购买</a></p>
+      </div><!-- .fusionads -->
+
+        <div class="fusionads">
+        <h2>广告</h2>
+
+        <span class="fusionentire">
+          <a href="http://hkmore.taobao.com/" title="香港超级代购">
+            <img src="/files/2013/07/kpw.jpg" alt="香港超级代购" style="width:200px" />
+          </a>
+          <span class="fusiontext">
+            <a href="http://hkmore.taobao.com/" title="访问香港超级代购">
+              HKmore是一个靠谱的海外代购和香港代购店。
+
+            </a>
+          </span>
+        </span>
+        <p><a href="http://hkmore.taobao.com/" title="访问香港超级代购">http://hkmore.taobao.com</a></p>
+      </div><!-- .fusionads -->
+
+    </div><!-- .ads -->
+
+  </div><!-- .primary -->
+
+        <div class="content single-post">
+	      	<h1>前端工业化3：VCS</h1>
+	      	<span class="post-date">2013年 11月 26日</span>
+
+	      	<p>任何慎重地对待编程的程序员和团队都会使用VCS（主要是Git或者SVN），主要有这样几个作用：</p>
+
+<ul>
+<li>对于程序员个人，记录代码避免丢失，方便查看修改并回溯，分支同一个代码仓库中的不同需求，记录小型里程碑</li>
+<li>对于团队协作来说，VCS的自动合并能省去我们95%的合并代码工作量</li>
+<li>对于代码审查者来说，方便监视主干代码的修改，并接受或者拒绝提交的代码</li>
+<li>通过使用一些行为钩子，可以在VCS行为之前或者之后自动触发其它事件</li>
+</ul>
+
+
+<p>我在加入ISUX团队之前是一个菜鸟学生，从来没有使用过VCS，对于当时的我来说，SVN就只有一个作用：<strong>合并代码到主干</strong>。</p>
+
+<p>所以当时的我既累又容易出错，因为我使用SVN的方法完全错误：</p>
+
+<ul>
+<li>在trunk上直接开发</li>
+<li>完成一个完整的需求才commit一次</li>
+<li>只commit这个需求需要的文件和代码，人工检查</li>
+<li>代码库中残留越来越多没有提交的脏代码</li>
+</ul>
+
+
+<p>我没有利用到SVN的其它功能：频繁记录代码里程碑，多个分支切换，让这些外部信息从大脑里释放，保持代码库的干净。但是随着我需要接入的项目越来越多，越来越需要快速在多个项目切换，并且也开始使用其它VCS（Git），我开始对VCS有了更好的理解。<strong>VCS并不只是帮助代码合并的团队工具，也是个人管理代码的很好方式。</strong></p>
+
+<p>我现在非常喜欢使用Git管理版本，因为它跟SVN有一个完全不同的地方是它是分布式的，完整的代码库存在在每一台部署了代码库的机器上，我在本地切换分支，新建分支非常快，秒级生效，而且无需网络就可以commit代码。最后，世界上最好的开源代码社区是使用Git搭建（Github），你还有什么理由不使用Git呢？</p>
+
+<p>关于各种VCS的用法和实践，其实我不用在本文一一说明，因为资料已经太多。推荐阅读：</p>
+
+<ol>
+<li><a href="&lt;http://www.ruanyifeng.com/blog/2012/07/git.html>">Git分支管理策略</a>。</li>
+<li><a href="&lt;http://www.tigris.org/scdocs/SVNTips.html.zh-cn>">SVN最佳实践</a></li>
+<li><a href="&lt;http://ihower.tw/blog/archives/5140>">Git flow开发流程</a></li>
+</ol>
+
+
+	      	<p class='previous-next-nav'><a href="http://yuguo.us/" class="next"> &rarr;</a>
+	      	<a href="http://yuguo.us//weblog/frontend-industrialize-2/" class="previous">&larr; 前端工业化2：缓存</a>
+	      	</p>
+	      	
+	      	
+			    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'yuguo'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+        </div>
+
+	</div>
+
+	<p class="copyright">&copy; 2009&#8201;&ndash;&#8201;2012 Yuguo. Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a> and host by <a href="https://github.com/yuguo">Github</a>。 如果喜欢本站，您可以 <a href="http://feeds.feedburner.com/yuguo">订阅我的 RSS feed</a>。
+</p>
+
+</body>
+</html>

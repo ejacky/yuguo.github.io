@@ -7,6 +7,7 @@
 /index.html
 /sitemap.txt
 
+/weblog/front-end-industrialize-vcs/
 /weblog/frontend-industrialize-2/
 /weblog/frontend-industrialize/
 /weblog/my-reading/

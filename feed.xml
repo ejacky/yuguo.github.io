@@ -6,6 +6,48 @@
 		<atom:link href="http://yuguo.us/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>前端工业化3：VCS</title>
+				<description>&lt;p&gt;任何慎重地对待编程的程序员和团队都会使用VCS（主要是Git或者SVN），主要有这样几个作用：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;对于程序员个人，记录代码避免丢失，方便查看修改并回溯，分支同一个代码仓库中的不同需求，记录小型里程碑&lt;/li&gt;
+&lt;li&gt;对于团队协作来说，VCS的自动合并能省去我们95%的合并代码工作量&lt;/li&gt;
+&lt;li&gt;对于代码审查者来说，方便监视主干代码的修改，并接受或者拒绝提交的代码&lt;/li&gt;
+&lt;li&gt;通过使用一些行为钩子，可以在VCS行为之前或者之后自动触发其它事件&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;我在加入ISUX团队之前是一个菜鸟学生，从来没有使用过VCS，对于当时的我来说，SVN就只有一个作用：&lt;strong&gt;合并代码到主干&lt;/strong&gt;。&lt;/p&gt;
+
+&lt;p&gt;所以当时的我既累又容易出错，因为我使用SVN的方法完全错误：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;在trunk上直接开发&lt;/li&gt;
+&lt;li&gt;完成一个完整的需求才commit一次&lt;/li&gt;
+&lt;li&gt;只commit这个需求需要的文件和代码，人工检查&lt;/li&gt;
+&lt;li&gt;代码库中残留越来越多没有提交的脏代码&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;我没有利用到SVN的其它功能：频繁记录代码里程碑，多个分支切换，让这些外部信息从大脑里释放，保持代码库的干净。但是随着我需要接入的项目越来越多，越来越需要快速在多个项目切换，并且也开始使用其它VCS（Git），我开始对VCS有了更好的理解。&lt;strong&gt;VCS并不只是帮助代码合并的团队工具，也是个人管理代码的很好方式。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;我现在非常喜欢使用Git管理版本，因为它跟SVN有一个完全不同的地方是它是分布式的，完整的代码库存在在每一台部署了代码库的机器上，我在本地切换分支，新建分支非常快，秒级生效，而且无需网络就可以commit代码。最后，世界上最好的开源代码社区是使用Git搭建（Github），你还有什么理由不使用Git呢？&lt;/p&gt;
+
+&lt;p&gt;关于各种VCS的用法和实践，其实我不用在本文一一说明，因为资料已经太多。推荐阅读：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;&amp;lt;http://www.ruanyifeng.com/blog/2012/07/git.html&gt;&quot;&gt;Git分支管理策略&lt;/a&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;&amp;lt;http://www.tigris.org/scdocs/SVNTips.html.zh-cn&gt;&quot;&gt;SVN最佳实践&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;&amp;lt;http://ihower.tw/blog/archives/5140&gt;&quot;&gt;Git flow开发流程&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+</description>
+				<pubDate>Tue, 26 Nov 2013 01:00:00 +0800</pubDate>
+				<link>http://yuguo.us/weblog/front-end-industrialize-vcs/</link>
+				<guid isPermaLink="true">http://yuguo.us/weblog/front-end-industrialize-vcs/</guid>
+			</item>
+		
+			<item>
 				<title>前端工业化2：缓存</title>
 				<description>&lt;blockquote&gt;&lt;p&gt;There are only two hard things in Computer Science: cache invalidation and naming things.&lt;/p&gt;
 
@@ -546,106 +588,6 @@
 				<pubDate>Tue, 02 Jul 2013 11:01:00 +0800</pubDate>
 				<link>http://yuguo.us/weblog/june-reading-list/</link>
 				<guid isPermaLink="true">http://yuguo.us/weblog/june-reading-list/</guid>
-			</item>
-		
-			<item>
-				<title>2013年中国开发者大会</title>
-				<description>&lt;p&gt;昨天有幸参加了在广州举办的&lt;a href=&quot;http://cdc.9ria.com/2013gz/index.html&quot;&gt;2013年中国开发者大会&lt;/a&gt;，因为早上要从深圳出发，两小时的车程后才到达广州白云国际会议中心，所以上午的话题只能听到两个了，但是都非常有感悟。下午的话题分为6个主题在6个场馆分别举行，6个话题分别是HTML5、iOS、Android、Unity、Cocos2d-x、Flash，我比较感兴趣的是iOS和HTML5，所以下午听了3个iOS的话题之后去了HTML5会场，我就说说我的所见所闻吧。&lt;/p&gt;
-
-&lt;p&gt;中国开发者大会是由9tech社区、搜狐畅游、搜狗、51CTO、17173、开源中国社区、segmentfault联合主办，基本上媒体和社区居多，但是现场站台不限于媒体，还有一些APP厂商、游戏厂商、硬件厂商（黑莓），展台不多，二十来个的样子。等我们到达的时候已经没什么活动了的样子，都去听嘉宾分享了。&lt;/p&gt;
-
-&lt;h2&gt;艾媒解读：移动互联网当前热点&lt;/h2&gt;
-
-&lt;p&gt;上午我们到达会场的时候正好听到艾媒的这个分享，&lt;a href=&quot;http://www.iimedia.cn/&quot;&gt;艾媒&lt;/a&gt;是专门分析移动数据的咨询公司，经常在官网上会发布一些不错的数据和报告，或者企业提供咨询服务。&lt;/p&gt;
-
-&lt;p&gt;今天分享的主要内容是移动互联网的一些方向，没有具体到某个应用或者分析，而是非常概括地指出了一些方向：&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;医疗&lt;/li&gt;
-&lt;li&gt;教育&lt;/li&gt;
-&lt;li&gt;政府&lt;/li&gt;
-&lt;li&gt;……&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;其实针对中国app store榜清一色的游戏排名，我们开发者都会希望在其他分类多出一些优秀的app，能改变游戏一枝独秀的情况吧。想想v2ex上有开发者晒自己的开发者账户的时候，如果不是游戏开发，下面总会有人说：“赞不是游戏开发”。不是说做游戏不好，而是如果在中国区如果不做游戏而还是能有不错的收入的话，是非常受高端用户欢迎的。当然如果能做出非常独特好玩的游戏，我觉得也是非常赞的，只是优秀游戏的比例太少了，无脑跟风的太多了。&lt;/p&gt;
-
-&lt;p&gt;题外话，推荐看部电源&lt;a href=&quot;http://movie.douban.com/subject/7015793/&quot;&gt;《独立游戏大电影》&lt;/a&gt;。&lt;/p&gt;
-
-&lt;h2&gt;关注用户体验，打磨优秀应用&lt;/h2&gt;
-
-&lt;p&gt;Testlink云测试的CEO分享了这个话题，我开始还有点奇怪，为什么一个做云测试的公司的CEO会来讲用户体验的问题，这不应该是产品经理或者设计师考虑的么？听了他的分享，我开始理解他的观点，颇有点布道者的意思。&lt;/p&gt;
-
-&lt;p&gt;因为经常测试所有的android手机，他们发现很多用户，包括移动互联网的“原住民”生下来就会用手机，用的是299元5寸大屏的android手机，每月5元的GPRS流量套餐。而且这些用户在我们的付费用户中占据了很大的比例，所以需要非常谨慎地考虑他们的手机在运行我们的应用的时候的体验，这些体验包括：&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;应用启动的速度&lt;/li&gt;
-&lt;li&gt;应用耗电量&lt;/li&gt;
-&lt;li&gt;应用耗流量&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;这是他推荐的最佳实践：&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;总是用最差的android手机来测试自己的app&lt;/li&gt;
-&lt;li&gt;不要申请不需要的权限，避免不必要的耗电量，净化android软件环境&lt;/li&gt;
-&lt;li&gt;不要使用不必要的网络连接，少使用网络通信（除非是做即时通信app）&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;h2&gt;iOS分层架构设计&lt;/h2&gt;
-
-&lt;p&gt;下午我们一行人分开去了不同场馆，有html5、Cocos2d-X、Android，我去了iOS，iOS分层架构设计是iOS会场下午的第一个主题。&lt;/p&gt;
-
-&lt;p&gt;关东升是移动开发专家，但他这个话题其实比较偏基础了。架构设计最主要的目标是减少耦合，细化开发角色。逻辑层、数据层、UI层可以分开运作。所以最基础的就是MVC架构，逻辑层不用管数据层是把数据存储在文件中还是数据库中，也不用管UI层如何显示数据。好处是可以分开测试每一个环节。&lt;/p&gt;
-
-&lt;p&gt;如果你想要分享一部分功能又不想开源，静态链接库是最好的选择。&lt;/p&gt;
-
-&lt;p&gt;静态链接库适用于：&lt;/p&gt;
-
-&lt;p&gt;1.你想将一部分以后都不会修改的代码打包，供其他项目使用&lt;/p&gt;
-
-&lt;p&gt;2.你想将一部分代码封装起来给别人用，又不愿别人看到你的实现方法&lt;/p&gt;
-
-&lt;p&gt;有兴趣的可以自行google下。&lt;/p&gt;
-
-&lt;p&gt;还有一个是工作空间（workspace）的概念。一般的某个应用单独新建一个 project 就可以了，然后把所有的程序文件都放在里面，这个可以满足大部分普通的需求，但是有时候，项目有可能要使用其他的项目文件，或者引入其他的静态库文件，这个时候 workspace 就派上用场了，workspace即可以单独管理多个项目，又可以通过配置，让各个项目相互依赖，如果不用workspace，以前的做法是如果用到其他项目的文件，要手动 copy 文件到当前的项目，在 workspace 里这个步骤不需要了。&lt;/p&gt;
-
-&lt;h2&gt;iOS应用原形设计&lt;/h2&gt;
-
-&lt;p&gt;赵大羽是移动平台交互设计总监，他分享的这个话题其实没有讲太多工具的使用，而是介绍了iOS设计的工作流和草图绘制方法。&lt;/p&gt;
-
-&lt;p&gt;独立开发者一般请不起设计师的话一般采用这样的工作流：首先用基本元素随笔搞搞，功能能用了，然后找个美工过来，说，给我整好看点，按钮整的让人有点击的欲望，图标要醒目……&lt;/p&gt;
-
-&lt;p&gt;赵大羽不推荐这样的工作流，因为设计的工作不仅是美化页面。所以要么让设计师从产品创意阶段就开始参与，要么自己作为独立开发者多学习一些设计知识。&lt;/p&gt;
-
-&lt;p&gt;在产品创意阶段，他推荐的方法是头脑风暴。在原型草图阶段，他认为简陋的草图能力反而很珍贵，因为拥有更多的可能性，就像表现主义一样。然后还分析了画草图的一些技术细节，比如线条要么交叉要么断开等。&lt;/p&gt;
-
-&lt;p&gt;他还分析了iOS6设计风格大变的原因：&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;12年未变的设计风格，用户有点审美疲劳&lt;/li&gt;
-&lt;li&gt;隐喻的设计风格无论是对于苹果还是app厂商，成本都太大，无法批量生产&lt;/li&gt;
-&lt;li&gt;华丽的纹理细节和光影对于硬件的消耗比较大，不值得&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;所以iOS6变为更加简约和工业的设计风格，但是在细节处也有一些包豪斯解构主义的思路在里面。&lt;/p&gt;
-
-&lt;h2&gt;小节&lt;/h2&gt;
-
-&lt;p&gt;参加一次这样的会议也许不是性价比最高的学习方法，但偶尔去一下的话也能感受一下行业的脉搏，特别是参会者中还有一些广州本地的年轻学生。比较遗憾这次没有印名片就去了，也许下次考虑印一盒名片过去，哈哈。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/files/2013/06/cdc-1.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/files/2013/06/cdc-2.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/files/2013/06/cdc-3.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-</description>
-				<pubDate>Sun, 30 Jun 2013 18:01:00 +0800</pubDate>
-				<link>http://yuguo.us/weblog/cdc-2013/</link>
-				<guid isPermaLink="true">http://yuguo.us/weblog/cdc-2013/</guid>
 			</item>
 		
 	</channel>
