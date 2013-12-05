@@ -1,0 +1,313 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="all" />
+    <title>Bigpipe用Nodejs的实现</title>
+    <link rel="stylesheet" href="/css/reveal.css">
+    <link rel="stylesheet" href="/css/theme/default.css" id="theme">
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="/lib/css/zenburn.css">
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<div class="reveal">
+
+    <div class="slides">
+
+
+        <p><section></p>
+
+<h1>Bigpipe用Nodejs的实现</h1>
+
+
+<p><a href="http://yuguo.us/weblog/bigpipe-in-nodejs">http://yuguo.us/weblog/bigpipe-in-nodejs/</a></p>
+
+
+<p>
+<small>Created by <a href="http://yuguo.us">Yuguo</a></small>
+</p>
+
+
+<p></section></p>
+
+<p><section data-markdown></p>
+
+<h2>什么是Bigpipe</h2>
+
+<ul>
+<li>是一种不局限于语言的前后端整合技术方案</li>
+<li>由Facebook首创</li>
+<li>适合比较大型的，需要大量服务器运算的站点</li>
+<li>有效减少HTTP请求</li>
+<li>兼容多浏览器
+</section></li>
+</ul>
+
+
+<p><section data-markdown></p>
+
+<h2>Bigpipe解决的问题</h2>
+
+<ul>
+<li>下载非阻塞</li>
+<li>服务器与浏览器算力不浪费
+</section></li>
+</ul>
+
+
+<p><section data-markdown></p>
+
+<h2>页面解析步骤</h2>
+
+<ol>
+<li>浏览器发送HTTP请求</li>
+<li>服务器接收到HTTP请求，解析请求，从存储层拉取数据，拼接HTML，发回一个HTTP响应</li>
+<li>这个请求通过网络传输到浏览器</li>
+<li>浏览器解析接收到的数据，构造DOM树，下载CSS和JavaScript</li>
+<li>浏览器下载了CSS之后，开始解析CSS，渲染页面</li>
+<li>下载JavaScript之后，开始解析JavaScript，执行JavaScript
+</section></li>
+</ol>
+
+
+<p><section data-markdown></p>
+
+<h2>传统流程</h2>
+
+<p><strong>整个完整的页面</strong>渲染依次经过以下步骤。
+</section></p>
+
+<p><section data-markdown></p>
+
+<h2>Bigpipe解析步骤</h2>
+
+<p><strong>每一个Pagelet</strong>都经过以下每一个步骤才会出现在浏览器中，但是多个Pagelet可以同步进行处理。
+</section></p>
+
+<p><section data-markdown></p>
+
+<h1>DEMO</h1>
+
+<p></section></p>
+
+<p><section data-markdown></p>
+
+<h2>Bigpipe的速度提升</h2>
+
+<p>Facebook的页面分块
+<img src="/files/2013/12/facebook.jpg" alt="" /></p>
+
+<p></section>
+<section data-markdown></p>
+
+<h2>Bigpipe的速度提升</h2>
+
+<p>页面分片越多，性能提升越明显
+<img src="/files/2013/12/facebook-bigpipe.jpg" alt="" /></p>
+
+<p></section></p>
+
+<p><section data-markdown></p>
+
+<h2>Bigpipe不适合</h2>
+
+<p>简单页面，适合服务器直出全部HTML
+</section></p>
+
+<p><section data-markdown></p>
+
+<h2>Nodejs是什么</h2>
+
+<ul>
+<li>一个JavaScript运行环境</li>
+</ul>
+
+
+<hr />
+
+<h2>Nodejs不是什么</h2>
+
+<ul>
+<li>不是一个库
+</section></li>
+</ul>
+
+
+<p><section data-markdown></p>
+
+<h2>Bigpipe in Nodejs</h2>
+
+<p>是一种技术方案（Bigpipe）在一种环境（Nodejs）中用一种语言（JavaScript）的实现。</p>
+
+<p></section></p>
+
+<p><section data-markdown></p>
+
+<h2>Why Nodejs?</h2>
+
+<p>Bigpipe的服务器端可以用各种语言来实现（基于HTTP1.1与JavaScript），为什么使用Nodejs？
+</section></p>
+
+<p><section data-markdown></p>
+
+<h2>Why Nodejs?</h2>
+
+<ol>
+<li>异步特性适合Web，适合用少量服务器服务海量用户</li>
+<li>同一种语言模板同时运行在服务器和浏览器中</li>
+<li>开源社区支持
+</section></li>
+</ol>
+
+
+<p><section data-markdown></p>
+
+<h2>关键技术点</h2>
+
+<p>HTTP 1.1引入分块传输编码</p>
+
+<p>HTTP分块传输编码允许服务器为动态生成的内容维持HTTP持久链接。
+</section></p>
+
+<p><section data-markdown></p>
+
+<h2>HTTP分块传输编码格式</h2>
+
+<pre><code>Transfer-Encoding: chunked
+</code></pre>
+
+<p>如果一个HTTP消息（请求消息或应答消息）的Transfer-Encoding消息头的值为chunked，那么，消息体由数量未定的块组成，并以最后一个大小为0的块为结束。
+</section></p>
+
+<p><section data-markdown></p>
+
+<h2>Nodejs自动开启 chunked encoding</h2>
+
+<p>除非通过sendHeader()设置Content-Length头。
+</section></p>
+
+<p><section data-markdown></p>
+
+<h2>Nodejs Express</h2>
+
+<p>使用Express简单架设一个web服务器（简化原生Nodejs http api），并使用jade来渲染页面模板（让代码简单）。
+</section></p>
+
+<p><section data-markdown></p>
+
+<h2>res.render</h2>
+
+<pre><code>res.render('view', option);
+</code></pre>
+
+<p>只有两个参数时，<code>res.render()</code>自动调用<code>res.send()</code>，res.send包括<code>res.end()</code>
+</section></p>
+
+<p><section data-markdown></p>
+
+<h2>res.render设置第三个参数</h2>
+
+<pre><code>res.render('view', option, function(err, html){
+    res.write(html);
+    res.end();
+});
+</code></pre>
+
+<p>设置了第三个参数时，不会自动<code>res.end()</code>，Good！
+</section></p>
+
+<p><section data-markdown></p>
+
+<h2>发送多个pagelet</h2>
+
+<pre><code>res.render(view, options, function (err, str) {
+    if (err) return res.req.next(err)
+    res.setHeader('content-type', 'text/html; charset=utf-8')
+    res.write(str)
+    if (!res.pipeCount) res.end()
+  })
+</code></pre>
+
+<p>如果要发送n个pagelet，就可以在每渲染一个pagelet之后计数-1，当全部渲染完成之后才调用<code>res.end()</code></p>
+
+<p></section></p>
+
+<p><section data-markdown></p>
+
+<h2>layout.jade</h2>
+
+<pre><code>doctype html
+
+head
+  title Hello, World!
+  link(href="/static/style.css", rel="stylesheet")
+  script(src="/static/jquery.js")
+  script(src="/static/jade.js")
+
+section#s1!=s1
+section#s2!=s2
+</code></pre>
+
+<p></section></p>
+
+<p><section data-markdown></p>
+
+<h2>更复杂点的浏览器端渲染</h2>
+
+<p>todo
+</section></p>
+
+
+    </div>
+
+</div>
+
+<script src="/lib/js/head.min.js"></script>
+<script src="/js/reveal.min.js"></script>
+
+<script>
+
+    // Full list of configuration options available here:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
+
+//                Parallax scrolling
+        parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-2.jpg',
+        parallaxBackgroundSize: '2100px 900px',
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+            { src: '/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+            { src: '/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+    });
+
+</script>
+
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-741276-12']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+})();
+</script>
+
+</body>
+</html>
