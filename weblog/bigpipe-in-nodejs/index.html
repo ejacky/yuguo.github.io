@@ -64,6 +64,14 @@
 
 <p><section data-markdown></p>
 
+<h2>现有的阻塞模型</h2>
+
+<p><img src="/files/2013/12/traditional-network.jpg" alt="" /></p>
+
+<p></section></p>
+
+<p><section data-markdown></p>
+
 <h2>页面解析步骤</h2>
 
 <ol>
@@ -93,7 +101,11 @@
 
 <p><section data-markdown></p>
 
-<h1>DEMO</h1>
+<h2>Bigpipe的速度提升</h2>
+
+<p>Facebook的页面分块</p>
+
+<p><img src="/files/2013/12/facebook.jpg" alt="" /></p>
 
 <p></section></p>
 
@@ -101,18 +113,35 @@
 
 <h2>Bigpipe的速度提升</h2>
 
-<p>Facebook的页面分块
-<img src="/files/2013/12/facebook.jpg" alt="" /></p>
+<p>Facebook的页面分块</p>
 
-<p></section>
-<section data-markdown></p>
+<p><img src="/files/2013/12/facebook-page-parts.jpg" alt="" /></p>
+
+<p></section></p>
+
+<p><section data-markdown></p>
 
 <h2>Bigpipe的速度提升</h2>
 
-<p>页面分片越多，性能提升越明显
-<img src="/files/2013/12/facebook-bigpipe.jpg" alt="" /></p>
+<p>页面分片越多，性能提升越明显</p>
+
+<p><img src="/files/2013/12/facebook-bigpipe.jpg" alt="" /></p>
 
 <p></section></p>
+
+<p><section data-markdown></p>
+
+<h2>YSlow优化建议</h2>
+
+<p>提早flush
+</section></p>
+
+<p><section data-markdown></p>
+
+<h2>flush()</h2>
+
+<p>PHP中的<code>flush()</code>函数可以建立一个HTTP持久链接，达到分块传输的效果，YSlow建议在输出<code>&lt;head&gt;</code>之后马上<code>flush()</code>，以便浏览器下载资源。
+</section></p>
 
 <p><section data-markdown></p>
 
@@ -120,6 +149,12 @@
 
 <p>简单页面，适合服务器直出全部HTML
 </section></p>
+
+<p><section data-markdown></p>
+
+<h1>Nodejs实现Bigpipe的DEMO</h1>
+
+<p></section></p>
 
 <p><section data-markdown></p>
 
@@ -152,7 +187,9 @@
 
 <h2>Why Nodejs?</h2>
 
-<p>Bigpipe的服务器端可以用各种语言来实现（基于HTTP1.1与JavaScript），为什么使用Nodejs？
+<p>Bigpipe的服务器端可以用各种语言来实现，为什么使用Nodejs？</p>
+
+<p><small>注：Bigpipe技术的服务器端需要HTTP1.1支持，浏览器端需要JavaScript支持。</small>
 </section></p>
 
 <p><section data-markdown></p>
@@ -173,7 +210,7 @@
 
 <p>HTTP 1.1引入分块传输编码</p>
 
-<p>HTTP分块传输编码允许服务器为动态生成的内容维持HTTP持久链接。
+<p><small>注：HTTP分块传输编码允许服务器为动态生成的内容维持HTTP持久链接。</small>
 </section></p>
 
 <p><section data-markdown></p>
@@ -259,10 +296,73 @@ section#s2!=s2
 
 <p><section data-markdown></p>
 
-<h2>更复杂点的浏览器端渲染</h2>
+<h2>第一部分数据</h2>
 
-<p>todo
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;head&gt;&lt;title&gt;Hello, World!&lt;/title&gt;
+&lt;link href="/static/style.css" rel="stylesheet"&gt;
+&lt;script src="/static/jquery.js"&gt;&lt;/script&gt;
+&lt;script src="/static/jade.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;section id="s1"&gt;
+&lt;span id="pipe_08554240758530796_1386255294914"&gt;&lt;/span&gt;
+&lt;/section&gt;
+&lt;section id="s2"&gt;
+&lt;span id="pipe_020325828110799193_1386255294914"&gt;&lt;/span&gt;
+&lt;/section&gt;
+</code></pre>
+
+<p></section></p>
+
+<p><section data-markdown></p>
+
+<h2>第二部分数据</h2>
+
+<pre><code>&lt;script&gt;
+$("#pipe_08554240758530796_1386255294914")
+.replaceWith("&lt;h1&gt;Partial 1&lt;/h1&gt;&lt;div class=\"content\"&gt;"+
++"Hello, I'm the first section.&lt;/div&gt;");
+&lt;/script&gt;
+</code></pre>
+
+<p></section></p>
+
+<p><section data-markdown></p>
+
+<h2>第三部分数据</h2>
+
+<pre><code>&lt;script&gt;
+$("#pipe_020325828110799193_1386255294914")
+.replaceWith("&lt;h1&gt;Partial 2&lt;/h1&gt;&lt;div class=\"content\"&gt;"
++"Hello, I'm the second section. Takes 5 seconds to render.&lt;/div&gt;");
+&lt;/script&gt;
+</code></pre>
+
+<p></section></p>
+
+<p><section data-markdown></p>
+
+<h2>第四部分数据</h2>
+
+<p>空数据（END）
 </section></p>
+
+<p><section data-markdown></p>
+
+<h2>更复杂的实现</h2>
+
+<pre><code>&lt;script type="text/javascript"&gt;
+big_pipe.onPageletArrive(
+{id:"pagelet_composer",
+content:"&lt;HTML&gt;",
+css:"[..]",
+js:"[..]",
+…}
+);
+&lt;/script&gt;
+</code></pre>
+
+<p></section></p>
 
 
     </div>
