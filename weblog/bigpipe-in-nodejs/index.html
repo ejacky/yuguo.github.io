@@ -39,6 +39,13 @@
 
 <p><section data-markdown></p>
 
+<h2>Source &amp; Thanks</h2>
+
+<p><a href="https://github.com/undoZen">https://github.com/undoZen</a>
+</section></p>
+
+<p><section data-markdown></p>
+
 <h2>什么是Bigpipe</h2>
 
 <ul>
@@ -56,8 +63,8 @@
 <h2>Bigpipe解决的问题</h2>
 
 <ul>
-<li>下载非阻塞</li>
-<li>服务器与浏览器算力不浪费
+<li>下载阻塞</li>
+<li>服务器与浏览器算力浪费
 </section></li>
 </ul>
 
@@ -103,7 +110,7 @@
 
 <h2>Bigpipe的速度提升</h2>
 
-<p>Facebook的页面分块</p>
+<p>Facebook的Pagelet</p>
 
 <p><img src="/files/2013/12/facebook.jpg" alt="" /></p>
 
@@ -113,7 +120,7 @@
 
 <h2>Bigpipe的速度提升</h2>
 
-<p>Facebook的页面分块</p>
+<p>Facebook的Pagelet</p>
 
 <p><img src="/files/2013/12/facebook-page-parts.jpg" alt="" /></p>
 
@@ -131,6 +138,13 @@
 
 <p><section data-markdown></p>
 
+<h2>Bigpipe不适合</h2>
+
+<p>简单页面，适合服务器直出全部HTML
+</section></p>
+
+<p><section data-markdown></p>
+
 <h2>YSlow优化建议</h2>
 
 <p>提早flush
@@ -141,13 +155,6 @@
 <h2>flush()</h2>
 
 <p>PHP中的<code>flush()</code>函数可以建立一个HTTP持久链接，达到分块传输的效果，YSlow建议在输出<code>&lt;head&gt;</code>之后马上<code>flush()</code>，以便浏览器下载资源。
-</section></p>
-
-<p><section data-markdown></p>
-
-<h2>Bigpipe不适合</h2>
-
-<p>简单页面，适合服务器直出全部HTML
 </section></p>
 
 <p><section data-markdown></p>
@@ -179,15 +186,15 @@
 
 <h2>Bigpipe in Nodejs</h2>
 
-<p>是一种技术方案（Bigpipe）在一种环境（Nodejs）中用一种语言（JavaScript）的实现。</p>
+<p>是一种技术方案（Bigpipe）在一种环境（Nodejs）中的实现。</p>
 
 <p></section></p>
 
 <p><section data-markdown></p>
 
-<h2>Why Nodejs?</h2>
+<p>Bigpipe的服务器端可以用各种语言来实现</p>
 
-<p>Bigpipe的服务器端可以用各种语言来实现，为什么使用Nodejs？</p>
+<h2>为什么使用Nodejs？</h2>
 
 <p><small>注：Bigpipe技术的服务器端需要HTTP1.1支持，浏览器端需要JavaScript支持。</small>
 </section></p>
@@ -363,6 +370,20 @@ js:"[..]",
 </code></pre>
 
 <p></section></p>
+
+<p><section data-markdown></p>
+
+<h1>Thank You!</h1>
+
+<p><small>Created by <a href="http://yuguo.us">Yuguo</a></small>
+</section></p>
+
+<p><section data-markdown></p>
+
+<h2>课后问答</h2>
+
+<p>Bigpipe对SEO的影响是什么？如何解决？
+</section></p>
 
 
     </div>
