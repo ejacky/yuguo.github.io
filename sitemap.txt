@@ -7,6 +7,7 @@
 /index.html
 /sitemap.txt
 
+/weblog/motivate-and-response/
 /weblog/bigpipe-in-nodejs/
 /weblog/front-end-industrialize-vcs/
 /weblog/frontend-industrialize-2/
