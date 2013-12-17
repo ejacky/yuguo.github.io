@@ -6,6 +6,7 @@
 /feed.xml
 /index.html
 /sitemap.txt
+/weblog/index.html
 
 /weblog/motivate-and-response/
 /weblog/bigpipe-in-nodejs/
