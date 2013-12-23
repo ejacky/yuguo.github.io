@@ -140,7 +140,7 @@ a:hover {color:#9c6}
     border-radius: 10px;right: -13px;top: -5px;}
     
 @media all and (max-width:639px) {
-  div.primary header {display: none;}
+  div.primary header h1 {display: none;}
   div.ads {display: none;}
   div.primary nav li {float:left;border-right:1px solid #666;margin-right:10px;padding-right:10px;}
   div.primary nav li:last-child {border-right:0 none;}
