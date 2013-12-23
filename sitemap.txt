@@ -8,6 +8,7 @@
 /sitemap.txt
 /weblog/index.html
 
+/weblog/2013-year/
 /weblog/motivate-and-response/
 /weblog/bigpipe-in-nodejs/
 /weblog/front-end-industrialize-vcs/
