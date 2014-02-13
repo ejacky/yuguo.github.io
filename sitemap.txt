@@ -8,6 +8,7 @@
 /sitemap.txt
 /weblog/index.html
 
+/weblog/interest-is-not-good-enough/
 /weblog/art-of-dramatic-writing/
 /weblog/2013-year/
 /weblog/motivate-and-response/
