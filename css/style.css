@@ -70,7 +70,7 @@ a:hover {color:#9c6}
     div.ads                     { display:block; }
     .primary h1,
     .primary p                   { width:85%; }
-    div.ads span                { display:block; /* Purely for the sake of the span */ width:90%; }
+    div.ads span                { display:block;  }
 
     header nav ul               { padding:2em 0 3em 0; }
     header nav ul li            { display:block; padding:0; }
