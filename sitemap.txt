@@ -8,6 +8,7 @@
 /sitemap.txt
 /weblog/index.html
 
+/weblog/money-flow/
 /weblog/the-effective-executive/
 /weblog/interest-is-not-good-enough/
 /weblog/art-of-dramatic-writing/
