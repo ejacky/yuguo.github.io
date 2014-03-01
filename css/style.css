@@ -42,7 +42,7 @@ table                            { border-collapse: collapse; border-spacing: 0;
 
 td                            { vertical-align: top; }
 /* 02e - Links */
-a                           { color:#666; -webkit-transition:color 0.2s ease-in-out; -moz-transition:color 0.2s ease-in-out;transition:color 0.2s ease-in-out; }
+a                           { color:#666; }
 a:hover {color:#9c6}
 
 
@@ -131,13 +131,10 @@ a:hover {color:#9c6}
       border-left: 1px solid #dddddd;}
   .single-post blockquote p    { line-height: 1.6; color: #6f6f6f; margin:0.8em 0;}
 
-
-  .tag-box {overflow: hidden;*zoom:1;margin-bottom: 20px;list-style:none;}
-  .tag-box li {float:left;margin-right: 15px;}
-  .tag-box li a {display: block;background: #fefefe;border: 1px solid #ddd;border-radius: 5px;
-    padding: 2px 7px;position: relative;}
-  .tag-box li span {position: absolute;color: #fff;background: #FE6600;display: block;padding: 0 5px;
-    border-radius: 10px;right: -13px;top: -5px;}
+.tag-box {list-style: none; padding: 0; line-height: 2;}
+.tag-box a {text-decoration: none;}
+.tag-box .cat-name {display: inline-block; width: 60%;}
+.tag-box .cat-number {display: inline-block; width: 30%;}
     
 @media all and (max-width:639px) {
   div.primary header h1 {display: none;}

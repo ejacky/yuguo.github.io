@@ -1,6 +1,5 @@
 
 /about.html
-/blogroll.html
 /categories.html
 /feed/index.xml
 /feed.xml
