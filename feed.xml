@@ -6,6 +6,51 @@
 		<atom:link href="http://yuguo.us/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>纸牌屋里的专业主义者</title>
+				<description>&lt;p&gt;前段时间看完了美版《纸牌屋》一二两季，剧情非常精彩，情节转折也非常快，虽然到后面有点主角光环的感觉了，各种逆天，但整体上是非常好的美剧，五星好评！&lt;/p&gt;
+
+&lt;p&gt;除了主角夫妇惊天地泣鬼神的爱情，我印象很深的是几个非常职业的配角，他们给我做事非常“专业”的感觉。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/files/2014/03/house-of-cards-1.jpg&quot; alt=&quot;Doug&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Doug，是Frank的头马，几乎万能地处理Frank的一切事情，在跟Frank的对手交涉的时候也很有魄力。曾经酗酒，后来戒了。&lt;/p&gt;
+
+&lt;p&gt;他之所以给我专业的感觉，是因为他能把绝大部分问题都控制在自己下面，而不用上升到boss那里。比如Rachel，还有很多事情，他都能保证不让Frank烦心。&lt;/p&gt;
+
+&lt;p&gt;只有当他真正需要帮助的时候，他会很直接地请求Frank的帮助，比如Tom Hammerschmidt要介入调查，Doug就马上告诉了Frank，我没法控制Tom。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/files/2014/03/house-of-cards-2.jpg&quot; alt=&quot;Remy Danton&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Remy Danton，他的职业是lobbyist（政治说客），大公司财团的传声筒。他的任务一方面是把大公司的政治诉求传达到华盛顿，进而影响法案和决策，另一方面啥都干。&lt;/p&gt;
+
+&lt;p&gt;他的老板Raymond Tusk有一次让他做一件事的时候，他说，我只是一个说客。Tusk说，我不需要说客。&lt;/p&gt;
+
+&lt;p&gt;大概就能说明说客这个职业对于老板的意义，无论你用什么手段，使用什么名头，最终解决问题就对了。不过这个角色对事业不够坚定，有点摇摆，造成了他最后的失败。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/files/2014/03/house-of-cards-3.jpg&quot; alt=&quot;Edward Meechum&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Edward Meechum小帅哥，Frank的贴身保镖，随着Frank的升职 ，他也步步高升。&lt;/p&gt;
+
+&lt;p&gt;曾经的他也不怎么懂事，Frank要一个人去人群比较多的地方的时候，他说，“由于安全条例规定，我不能允许你一个人过去”。Frank把他凶了一顿：“在我面前，你只能说两个词，yes和sir”。&lt;/p&gt;
+
+&lt;p&gt;后来他差点被炒掉，Frank挽回他之后，他非常感激，并且随后展现了自己的价值：自己有个侦探朋友，可以找到任何人。而且他的忠心也是剧中仅次于Doug的了。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/files/2014/03/house-of-cards-4.jpg&quot; alt=&quot;Seth Grayson&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Seth Grayson，他本来是Remy雇佣的间谍。但是本身能力非常强，见识到了Frank的政治能力之后毅然投向了Frank。&lt;/p&gt;
+
+&lt;p&gt;他的职业是Frank的新闻发言官，但是后来Doug请他帮忙一起查找Frank的“盲点”的时候，Doug说，这要请你帮个忙，但是可不是发布新闻。&lt;/p&gt;
+
+&lt;p&gt;Seth耸耸肩说，“新闻发布官只是一个头衔”。&lt;/p&gt;
+
+&lt;p&gt;所以我觉得，专业主义者，总会很清楚，自己的职位和职业只是一个头衔，但自己的核心竞争力是自己提供的服务。自己能处理的就不用上升，需要上升的，就尽快上升。&lt;/p&gt;
+</description>
+				<pubDate>Thu, 20 Mar 2014 08:35:00 +0800</pubDate>
+				<link>http://yuguo.us/weblog/house-of-cards/</link>
+				<guid isPermaLink="true">http://yuguo.us/weblog/house-of-cards/</guid>
+			</item>
+		
+			<item>
 				<title>爱上北上广深</title>
 				<description>&lt;p&gt;在QQ空间看到这样一段话：&lt;/p&gt;
 
@@ -751,120 +796,6 @@ js:&quot;[..]&quot;,
 				<pubDate>Wed, 30 Oct 2013 14:00:00 +0800</pubDate>
 				<link>http://yuguo.us/weblog/frontend-industrialize-2/</link>
 				<guid isPermaLink="true">http://yuguo.us/weblog/frontend-industrialize-2/</guid>
-			</item>
-		
-			<item>
-				<title>前端工业化1：自动化</title>
-				<description>&lt;p&gt;最近在学习百度前端工程师张云龙的F.I.S系统的时候，了解到他关于“前端工业化”的理解，我也经历过很多前端架构方法和架构工具的变迁，所以希望借写这篇文章的机会，自己也整理一下。&lt;/p&gt;
-
-&lt;p&gt;之前有读者建议我写写关于D.R.Y的经验，其实好的架构能让你免于Repeat Yourself。但是架构的目的不仅限于在开发者侧更轻松，更有组织，而更重要的是在客户侧更简洁纯粹。&lt;/p&gt;
-
-&lt;p&gt;张云龙关于架构有一段话很好：&lt;/p&gt;
-
-&lt;blockquote&gt;&lt;p&gt;因为优化原则中很多要求是与工程管理相违背的，比如“把css放在头部”和“把js放在尾部”这两条原则，我们不能让团队的工程师在写样式和脚本引用的时候都去修改一个相同的页面文件。&lt;/p&gt;&lt;/blockquote&gt;
-
-&lt;p&gt;就像是硬币的两面，&lt;strong&gt;一面朝客户，关注性能、缓存、减少重复、保持一致；一面朝前端团队，关注维护、发布流程&lt;/strong&gt;。&lt;/p&gt;
-
-&lt;p&gt;小型团队也需要合理的架构，这样可以增强扩展性和安全性。当网站从小团队渐渐发展到大团队，网站渐渐拥有千万用户的时候，整个流程更加要自动化。如果说求职的时候需要的“精通CSS”是考察开发者手工技艺，那么前端工业化就是关于如何让开发者团队可以无缝工作。&lt;/p&gt;
-
-&lt;p&gt;先介绍我们Qzone团队是怎样从刀耕火种的原始时代过度到现在的。&lt;/p&gt;
-
-&lt;h2&gt;手工&lt;/h2&gt;
-
-&lt;p&gt;大概是2010年之前，我们SVN的目录结构很简单。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;┌ html
-├ public
-├ PSD
-├ 规范
-└ 一些批处理脚本
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;public里的东西就是对应外网发布的静态资源，包括css和图片，雪碧图全手工拼接。外网代码中甚至能看到注释。&lt;/p&gt;
-
-&lt;p&gt;CDN输出静态资源采用统一的缓存规定，好像是一个小时。要发布新代码就直接发布覆盖旧文件，反正缓存时间不长。&lt;/p&gt;
-
-&lt;p&gt;但是我们也有长缓存的需求，比如一个黄钻vip的图标，可能一年都不会变，这时候我们规定了一个目录叫/ac/，代表长缓存，至于有多长，这个没法定制，反正运维人员给CDN统一设定了一个很长的时间，开发者想长缓存的东西就丢进去好了。&lt;/p&gt;
-
-&lt;p&gt;这个/ac/目录出于某种神秘的原因甚至不在SVN的管理之中，我们要修改的话直接去服务器上拿（后来那台服务器挂了，我们就从外网拿）。&lt;/p&gt;
-
-&lt;h2&gt;cssgaga&lt;/h2&gt;
-
-&lt;p&gt;因为我们发布文件的第一步需要把文件放在一台服务器上，然后通过发布系统分发到CDN。放文件这个过程不是很优雅，也不太可靠。需要我们打开两个资源管理器（远程服务器还要输入用户名和密码），然后拷贝过去。&lt;/p&gt;
-
-&lt;p&gt;第二步，分发系统（ARS）需要知道文件在哪台服务器上的哪个路径（linux路径），所以我们提交发布单的时候还要提供linux路径列表（称为提单列表），这就很麻烦。&lt;/p&gt;
-
-&lt;p&gt;于是我们的团队成员&lt;a href=&quot;http://www.99css.com/&quot;&gt;yt&lt;/a&gt; 就研发了一个工具叫做&lt;a href=&quot;http://www.99css.com/archives/tag/cssgaga&quot;&gt;cssgaga&lt;/a&gt;。在windows上运行，简单配置之后，只要把需要发布的文件拖拽到工具里，就可以自动登录远程服务器并且把文件放在对应的地方，非常方便。&lt;/p&gt;
-
-&lt;p&gt;再后来，yt慢慢在cssgaga中加入了更多的功能，比如css文件中的@import语法，可以自动合并成一个css文件，这样减少了http请求和渲染阻塞。&lt;/p&gt;
-
-&lt;p&gt;还有data-uri，可以把引入的图片变成data-url，进一步请求，不过这个比较极端，很少用到。比如图片关联性检查，会遍历CSS中对img的引用，并自动生成提单列表。&lt;/p&gt;
-
-&lt;p&gt;真正让cssgaga成为团队必不可少人人都用的是在2010年12月，cssgaga加入了自动雪碧图的功能，那篇介绍雪碧图功能的文章获得了80个评论。因为市面上的雪碧图工具都不太好用，拼雪碧图还处于半手工的状态，而cssgaga是完全自动化的。&lt;/p&gt;
-
-&lt;p&gt;其实cssgaga这几年一直都在更新，加入了大量团队需要的功能，但是最核心的几条原则从来没有改变过：&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;本地的CSS源码也是完全合法的语法，没有自定义的语法规则，可以直接打开静态页面，最终cssgaga生成的代码也是最符合雅虎14条的压缩代码。&lt;/li&gt;
-&lt;li&gt;assets之间的关系通过合法的语法关联起来，而不是像F.I.S或者Grunt那样有一个配置关联表。举例来说，多个css组件被@import到同一个A.css中，然后拖A.css的时候就会自动搜寻相对路径中的那些css进来。拖某个css到cssgaga中（并勾选检查关联性），就会自动搜寻当前目录下所有@import了这个css的css文件，并全部发布。&lt;/li&gt;
-&lt;li&gt;黑盒+不开源&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;我很欣赏yt有自己的坚持，有清晰的理念支持的工具，但是我们也应该了解其他可能的选择。&lt;/p&gt;
-
-&lt;h2&gt;Shell编程&lt;/h2&gt;
-
-&lt;p&gt;之前写过一篇文章&lt;a href=&quot;http://yuguo.us/weblog/make-bootstrap/&quot;&gt;Bootstrap的编译机制&lt;/a&gt;，当时Bootstrap的CSS文件是使用Make来编译的，如果你没有看过这篇文章，强烈推荐你先阅读这篇文章，再回来也许能更好的理解Make。&lt;/p&gt;
-
-&lt;p&gt;GNU make是一个方便的工具，目的是把大量的shell 命令组合起来完成一个任务。这些命令之所以能组合起来，跟Linux哲学是息息相关的：&lt;/p&gt;
-
-&lt;blockquote&gt;&lt;p&gt;程序要能协作。程序要能处理文本流，因为这是最通用的接口。&lt;/p&gt;&lt;/blockquote&gt;
-
-&lt;p&gt;程序协作是通过“依赖”来实现，而make能很好地解决任务之间的依赖问题。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;gh-pages: bootstrap docs
-    rm -f docs/assets/bootstrap.zip
-    zip -r docs/assets/bootstrap.zip bootstrap
-    rm -r bootstrap
-    rm -f ../bootstrap-gh-pages/assets/bootstrap.zip
-    node docs/build production
-    cp -r docs/* ../bootstrap-gh-pages
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;gh-pages是工作目标；&lt;/li&gt;
-&lt;li&gt;bootstrap docs是必要条件；&lt;/li&gt;
-&lt;li&gt;以后的6行是命令&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;Makefile的语法是linux shell语法，所以对于前端开发来说需要一定的学习成本。这里有一篇不错的文章，可以看一下&lt;a href=&quot;http://www.linuxforu.com/2012/06/gnu-make-in-detail-for-beginners/&quot;&gt;GNU Make in Detail for Beginners&lt;/a&gt;。&lt;/p&gt;
-
-&lt;h2&gt;Grunt&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://Gruntjs.org&quot;&gt;Grunt&lt;/a&gt;的自我介绍是：“The JavaScript Task Runner”。&lt;/p&gt;
-
-&lt;p&gt;Grunt 是一个开源的基于任务 (Task) 的前端构建框架。它除了有 Jake 的优点（跨平台、开发简单）以外，还有一套设计良好的 task 框架用来组织各种构建任务。Grunt 内置了几个非常常见的构建任务：&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt; concat - 组合各种文件&lt;/li&gt;
-&lt;li&gt; lint - 用 JSHint 检查代码&lt;/li&gt;
-&lt;li&gt; min - 用 UglifyJS 压缩代码&lt;/li&gt;
-&lt;li&gt; qunit - 跑 QUnit 单元测试&lt;/li&gt;
-&lt;li&gt; watch - 当源代码文件发生变化时自动执行任务&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;除此之外还可以通过 npm 来方便的获取几百个现成的 task，比如用 closure 而不是 UglifyJS 来压缩 js，或者用 less 来生成 css，又或者用 jslint 而不是 jshint 来检查语法等，这些任务都可以在 npm 上找到。如果这些任务无法满足你的需求，Grunt 还允许你方便的添加自定任务，就像写 nodejs 代码一样简单。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;对于前端开发者来说，Grunt语法可比Shell友好多了，而且Gruntfile.js是合法的javascript文件，在里面可以运行任何合法的javascript代码，非常灵活。&lt;/strong&gt;关于从Shell过度到Grunt这个过程，有兴趣的可以参考这篇文章&lt;a href=&quot;http://lostjs.com/2012/12/08/Grunt-the-best/&quot;&gt;Grunt -- 最好的前端构建框架&lt;/a&gt;。&lt;/p&gt;
-
-&lt;p&gt;话分两边，工具侧我们一直没有停止进步，朝着更自动化的方向迅猛发展。那么真正面向用户的缓存和请求侧又有哪些进展呢，下一篇日志会讲讲缓存和更新缓存。&lt;/p&gt;
-</description>
-				<pubDate>Fri, 25 Oct 2013 14:00:00 +0800</pubDate>
-				<link>http://yuguo.us/weblog/frontend-industrialize/</link>
-				<guid isPermaLink="true">http://yuguo.us/weblog/frontend-industrialize/</guid>
 			</item>
 		
 	</channel>
