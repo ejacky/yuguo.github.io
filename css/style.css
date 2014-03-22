@@ -24,7 +24,7 @@ hgroup,
 nav,
 section                         { display: block; }
 
-html                           { font-size: 62.5%;font-family:palatino, "times new roman", serif;}
+html                           { font-size: 62.5%;font-family:'Open Sans','Helvetica Neue',Arial,'Hiragino Sans GB','Microsoft YaHei','WenQuanYi Micro Hei',sans-serif;}
 body                           { margin: 0;}
 a img {border:0 none;}
 h1, h2, h3, h4, h5, h6 { font-weight:normal; font-family: helveticaneue-light, arial, sans-serif;}
@@ -103,7 +103,7 @@ a:hover {color:#9c6}
   div.authenticjobs p.job-listings + p { clear:both; }
 
   /* 07 Blog Posts ----------------------------------------------------------------------------------------------- */
-  .single-post {word-wrap: break-word;font-size: 1.6em;line-height: 1.8;}
+  .single-post {word-wrap: break-word;font-size: 1.6em;line-height: 1.8; max-width: 600px; margin:0 auto; padding-top: 20px;}
   .single-post a {text-decoration:underline;}
   .single-post img {max-width:100%;display:block;}
   .single-post p,
@@ -114,7 +114,8 @@ a:hover {color:#9c6}
   .single-post h2                          {margin: 20px 0 10px; }
   .single-post p + h3,
   .single-post li + h3                     { padding-top:1.5em; } /* Only an h3 that follows a p or an li */
-  .single-post .post-date {color:rgba(0,0,0,0.4);display: block;margin-bottom: 1em;}
+  .single-post .post-meta {color:rgba(0,0,0,0.4);display: block;margin-bottom: 1em;}
+  .single-post .post-meta a:active {text-decoration: none; color:rgba(0,0,0,0.4)}
   .single-post ul,
   .single-post ol {margin:0.5em 0;}
   .single-post ul li {list-style: disc inside none;}
