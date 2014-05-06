@@ -1,0 +1,9 @@
+baseurl:
+url: "http://yuguo.us"
+title: Yuguo's Blog
+author: Yuguo
+email: me@yuguo.us
+permalink: weblog/:title/
+markdown: redcarpet
+JB :
+  categories_path: categories.html

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="all" />
+<title>{{ page.title }}</title>
+<link rel="stylesheet" type="text/css" href="/css/style.css" />
+<!--[if (lt IE 9) & (!IEMobile)]>
+<link rel="stylesheet" type="text/css" href="/css/ie.css" />
+<![endif]-->
+</head>
+{% include ga.html %}
+<body>
+	<div class="container group">
+		{% include sidebar.html %}
+
+        <div class="content">
+	      	{{ content }}
+        </div>
+
+	</div>
+
+	{% include footer.html %}
+
+</body>
+</html>
