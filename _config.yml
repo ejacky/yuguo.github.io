@@ -1,9 +1,10 @@
 baseurl:
 url: "http://yuguo.us"
-title: Yuguo's Blog
+name: Yuguo's Blog
 author: Yuguo
 email: me@yuguo.us
 permalink: weblog/:title/
 markdown: redcarpet
+highlighter: pygments
 JB :
   categories_path: categories.html
