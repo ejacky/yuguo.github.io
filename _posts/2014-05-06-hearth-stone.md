@@ -2,7 +2,8 @@
 layout: post
 title: 我从《炉石传说》学到的
 tagline: null
-category: [水]
+categories:
+  - 水
 tags: []
 published: true
 ---
