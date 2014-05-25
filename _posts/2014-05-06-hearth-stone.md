@@ -2,10 +2,11 @@
 layout: post
 title: 我从《炉石传说》学到的
 tagline: null
-categories:
-  - 水
+categories: 水
 tags: []
-published: true---
+published: true
+----
+
 过去的两个星期从接触《炉石传说》开始上瘾，然后一个星期也只是打到天梯10级。5月赛季开始之后学会了自己的思路和配牌方法，开始越来越稳。
 
 《炉石》是暴雪出品的一款联网卡牌游戏，我认为无论是从游戏性还是商业模式来看，它都是一款极其成功的游戏。
